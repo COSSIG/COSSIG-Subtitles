@@ -280,7 +280,7 @@ First, in the age of computing,
 
 57
 00:03:00,640 --> 00:03:04,240
-大公司拥有指数级的规模优势；
+大公司拥有指数级的规模优势
 you've got exponentially scaling advantages for the big fish.
 
 58
