@@ -240,32 +240,32 @@ like DevOps and containers and on and on,
 
 49
 00:02:39,680 --> 00:02:42,600
-为了那些早期的开发者 我有义务了解它们从何而来 
+为了那些早期的开发者 我有义务了解它们从何而来
 well, I feel like I owe it to all those earlier developers
 
 50
 00:02:42,600 --> 00:02:44,200
-为了那些早期的开发者 我有义务了解它们从何而来 
+为了那些早期的开发者 我有义务了解它们从何而来
 to know where this stuff came from.
 
 51
 00:02:45,560 --> 00:02:47,400
-所以 让我们暂时先不用担心内存泄露和缓冲溢出 
+所以 让我们暂时先不用担心内存泄露和缓冲溢出
 So, let's take a short break
 
 52
 00:02:47,400 --> 00:02:49,520
-所以 让我们暂时先不用担心内存泄露和缓冲溢出 
+所以 让我们暂时先不用担心内存泄露和缓冲溢出
 from worrying about memory leaks and buffer overflows.
 
 53
 00:02:50,120 --> 00:02:52,440
-我们的旅程将从操作系统之战开始 
+我们的旅程将从操作系统之战开始
 Our journey begins with the OS wars,
 
 54
 00:02:52,440 --> 00:02:54,800
-这是一场波澜壮阔的桌面控制之战 
+这是一场波澜壮阔的桌面控制之战
 that epic battle for control of the desk top.
 
 55
@@ -275,7 +275,7 @@ It was like nothing that the world had ever seen, and I'll tell you why.
 
 56
 00:02:58,920 --> 00:03:00,640
-首先 在计算机时代 
+首先 在计算机时代
 First, in the age of computing,
 
 57
@@ -285,47 +285,47 @@ you've got exponentially scaling advantages for the big fish.
 
 58
 00:03:04,240 --> 00:03:07,040
-其次 从未有过这么一场控制争夺战是如此变化多端 
+其次 从未有过这么一场控制争夺战是如此变化多端
 And second, there's never been such a battle for control
 
 59
 00:03:07,040 --> 00:03:09,400
-其次 从未有过这么一场控制争夺战是如此变化多端 
+其次 从未有过这么一场控制争夺战是如此变化多端
 on a ground that's constantly shifting.
 
 60
 00:03:10,120 --> 00:03:12,440
-比尔·盖茨和史蒂夫·乔布斯? 目前为止他们也不知道事情会如何发展 
+比尔·盖茨和史蒂夫·乔布斯? 目前为止他们也不知道事情会如何发展
 Bill Gates and Steve Jobs? They don't know it yet,
 
 61
 00:03:12,440 --> 00:03:15,120
-但是到这个故事进行到一半的时候 
+但是到这个故事进行到一半的时候
 but by the time this story is halfway done,
 
 62
 00:03:15,120 --> 00:03:18,200
-他们所争夺的所有东西都将发生改变、进化 
+他们所争夺的所有东西都将发生改变、进化
 everything they're fighting for is going to change, evolve,
 
 63
 00:03:18,200 --> 00:03:20,120
-最终上升到云端 
+最终上升到云端
 and even ascend into the cloud.
 
 64
 00:03:24,720 --> 00:03:29,000
-好的 让我们回到 1983 年的秋季 还有六年我才出生 
+好的 让我们回到 1983 年的秋季 还有六年我才出生
 Okay. It's the fall of 1983, I was negative six years old.
 
 65
 00:03:29,000 --> 00:03:30,520
-那时候的总统还是罗纳德·里根 
+那时候的总统还是罗纳德·里根
 Ronald Regan's the president,
 
 66
 00:03:30,520 --> 00:03:35,040
-美国和苏联扬言要把地球拖入核战争之中 
+美国和苏联扬言要把地球拖入核战争之中
 and the US and the Soviet Union are threatening to drag the planet into nucler war.
 
 67
@@ -335,62 +335,62 @@ Over the city center of Honolulu,
 
 68
 00:03:36,760 --> 00:03:39,320
-正在举办一年一度的苹果公司销售会议 
+正在举办一年一度的苹果公司销售会议
 it's the annual Apple sales conference.
 
 69
 00:03:39,320 --> 00:03:43,160
-一群苹果公司的员工正在等待史蒂夫·乔布斯上台 
+一群苹果公司的员工正在等待史蒂夫·乔布斯上台
 An exclusive bunch of Apple emplyees are waiting for Steve Jobs to get on stage.
 
 70
 00:03:43,160 --> 00:03:45,960
-他 28 岁 热情洋溢 看起来非常自信 
+他 28 岁 热情洋溢 看起来非常自信
 He's the super-bright-eyed twenty-eight-year-old,
 
 71
 00:03:45,960 --> 00:03:47,200
-他 28 岁 热情洋溢 看起来非常自信 
+他 28 岁 热情洋溢 看起来非常自信
 and he's looking pretty confident.
 
 72
 00:03:48,120 --> 00:03:51,880
-乔布斯很严肃地对着麦克风说 
+乔布斯很严肃地对着麦克风说
 In a very serious voice, Jobs speaks into the mic and says
 
 73
 00:03:51,880 --> 00:03:54,720
-他邀请了三个行业专家 
+他邀请了三个行业专家
 that he's invited three industry experts to have
 
 74
 00:03:54,760 --> 00:03:57,000
-来就他的软件进行一次小组讨论 
+来就他的软件进行一次小组讨论
 a penal discussion on software.
 
 75
 00:03:58,040 --> 00:04:01,000
-然而随后发生的事情你肯定想不到 
+然而随后发生的事情你肯定想不到
 But the next thing that happenes is not what you would expect.
 
 76
 00:04:02,520 --> 00:04:05,200
-超级俗气的 80 年代音乐响彻整个房间 
+超级俗气的 80 年代音乐响彻整个房间
 Super cheesy 80s music fills the room,
 
 77
 00:04:05,200 --> 00:04:08,120
-一堆多彩灯管照亮了舞台 
+一堆多彩灯管照亮了舞台
 a bunch of multicolored tube lights light up the stage,
 
 78
 00:04:08,120 --> 00:04:09,760
-然后一个播音员的声音响起  
+然后一个播音员的声音响起 
 and then an announcer's voice says-
 
 79
 00:04:10,200 --> 00:04:14,040
-女士们 先生们 现在是麦金塔软件的约会游戏时间 
+女士们 先生们 现在是麦金塔软件的约会游戏时间
 And now, ladies and gentlemen, the Macintosh Software Dating Game.
 
 80
@@ -400,92 +400,92 @@ Jobs has this big grin on his face as he reveals
 
 81
 00:04:18,640 --> 00:04:22,400
-台上的三个CEO必须轮流向他示好 
+台上的三个CEO必须轮流向他示好
 that the three CEOs on stage have to take turns wooing him.
 
 82
 00:04:22,400 --> 00:04:26,320
-他简直就是 80 年代科技界的钻石王老五 
+他简直就是 80 年代科技界的钻石王老五
 It's essentially an 80s version of The Bachelor, but for tech love.
 
 83
 00:04:26,920 --> 00:04:29,400
-两个软件大佬讲完话 
+两个软件大佬讲完话
 Two of the software bigwigs say their bit,
 
 84
 00:04:29,400 --> 00:04:32,640
-接着轮到了第三个人 
+接着轮到了第三个人
 and then it's over to contestant number three.
 
 85
 00:04:33,400 --> 00:04:35,080
-难不成 ？是的 
+难不成 ？是的
 Is that-? Yep.
 
 86
 00:04:35,080 --> 00:04:39,440
-那是年轻的比尔·盖茨 戴着一服大大的 遮住了半张脸的方框眼镜 
+那是年轻的比尔·盖茨 戴着一服大大的 遮住了半张脸的方框眼镜
 A fresh-faced Bill Gates with large square glasses that cover half his face.
 
 87
 00:04:39,440 --> 00:04:41,760
-他宣称在1984年 
+他宣称在1984年
 He proclaimes that during 1984,
 
 88
 00:04:41,760 --> 00:04:45,040
-微软一半的收入渠道会来源于麦金塔软件 
+微软一半的收入渠道会来源于麦金塔软件
 half of Microsoft's avenue was gonna come from Macintosh Software.
 
 89
 00:04:46,800 --> 00:04:50,000
-他的这番话引来了观众热情的掌声 
+他的这番话引来了观众热情的掌声
 The audience loves it, and give him a big round of applause.
 
 90
 00:04:52,640 --> 00:04:55,960
-但是他们不知道的是 在一个月后 
+但是他们不知道的是 在一个月后
 What they don't know is that one month after this event,
 
 91
 00:04:55,960 --> 00:04:59,280
-比尔·盖茨将会宣布发布 Windows 1.0 的计划 
+比尔·盖茨将会宣布发布 Windows 1.0 的计划
 Bill Gates will announce his plans to release Windows 1.0.
 
 92
 00:05:00,680 --> 00:05:05,280
-你永远也猜不到乔布斯正在跟苹果未来最大的敌人打情骂俏 
+你永远也猜不到乔布斯正在跟苹果未来最大的敌人打情骂俏
 You'd never guess Jobs is flirting with someone who'd end up as Apple's biggest rival.
 
 93
 00:05:05,680 --> 00:05:09,960
-但微软和苹果即将举行科技史上最糟糕的婚礼 
+但微软和苹果即将举行科技史上最糟糕的婚礼
 But Microsoft and Apple are about to live through the worst marriage in tech history.
 
 94
 00:05:09,960 --> 00:05:13,400
-他们会彼此背叛、相互毁灭 
+他们会彼此背叛、相互毁灭
 They're going to betray each other, they're going to try and destroy each other,
 
 95
 00:05:13,400 --> 00:05:17,000
-但又深深地、痛苦地捆绑在一起 
+但又深深地、痛苦地捆绑在一起
 and they're going to be deeply, painfully bound to each other.
 
 96
 00:05:17,000 --> 00:05:24,880
-我猜从哲学角度上来讲 苹果是更理想化、注重用户体验高于一切 
+我猜从哲学角度上来讲 苹果是更理想化、注重用户体验高于一切
 I guess philosophically, one was more idealistic and focused on the user experience above all else,
 
 97
 00:05:24,880 --> 00:05:28,760
-一体化的组织 
+一体化的组织
 and was an integrated organization,
 
 98
 00:05:28,760 --> 00:05:32,600
-而微软则更务实 更模块化  
+而微软则更务实 更模块化 
 whereas Microsoft much more pragmatic, a modular focus-
 
 99
@@ -494,27 +494,27 @@ whereas Microsoft much more pragmatic, a modular focus-
 
 100
 00:05:34,200 --> 00:05:38,040
-他是一位高产的科技作家 曾在苹果零售的企业团队工作 
+他是一位高产的科技作家 曾在苹果零售的企业团队工作
 He's a prolific tech writer who worked inside the corporate team of Apple Retail.
 
 101
 00:05:38,040 --> 00:05:42,160
-注意他对苹果的定义 一个一体化的组织 
+注意他对苹果的定义 一个一体化的组织
 Notice that definition of Apple he gives. An integrated organization.
 
 102
 00:05:42,160 --> 00:05:48,400
-那种只对自己负责 不想依赖别人的公司 这是关键 
+那种只对自己负责 不想依赖别人的公司 这是关键
 That sense of a company beholden only to itself. A company that doesn't want to rely on others. That's key.
 
 103
 00:05:48,400 --> 00:05:50,680
-苹果是一家一体化的公司 
+苹果是一家一体化的公司
 Apple was the integrated player,
 
 104
 00:05:50,680 --> 00:05:54,240
-它希望专注于令人愉悦的用户体验 
+它希望专注于令人愉悦的用户体验
 and it wanted to focus on a delightful user experience,
 
 105
@@ -524,7 +524,7 @@ and that meant that it wanted to control the entire stack and everything that wa
 
 106
 00:05:58,600 --> 00:06:01,240
-从硬件到操作系统 
+从硬件到操作系统
 from the hardware to the operating system,
 
 107
@@ -538,67 +538,67 @@ And that always served it well in periods where new innovations, important innov
 
 109
 00:06:12,480 --> 00:06:19,360
-才能很好地进入市场 
+才能很好地进入市场
 were coming to market where you needed to be across both hardware and software,
 
 110
 00:06:19,360 --> 00:06:23,160
-当你能够根据自己意愿来改变软件和硬件时 
+当你能够根据自己意愿来改变软件和硬件时
 and where being able to change the hardware based on what you wanted to do
 
 111
 00:06:23,160 --> 00:06:25,160
-你就有了极大的优势 
+你就有了极大的优势
 that was new in software was an advantage.
 
 112
 00:06:25,160 --> 00:06:25,760
-例如 
+例如
 For example-
 
 113
 00:06:25,760 --> 00:06:30,000
-很多人喜欢这种一体化的模式 并因此成为了苹果的铁杆粉丝 
+很多人喜欢这种一体化的模式 并因此成为了苹果的铁杆粉丝
 A lot of people loved that integration, and became die hard Apple fans.
 
 114
 00:06:30,000 --> 00:06:32,000
-不过还有是很多人则选择了微软 
+不过还有是很多人则选择了微软
 Plenty of others stuck with Microsoft.
 
 115
 00:06:32,240 --> 00:06:34,240
-让我们回到檀香山的销售会议上 
+让我们回到檀香山的销售会议上
 Back to that sales conference in Honolulu.
 
 116
 00:06:34,240 --> 00:06:40,160
-在同一场活动中 乔布斯向观众展示了他即将发布的超级碗广告 
+在同一场活动中 乔布斯向观众展示了他即将发布的超级碗广告
 At that very same event, Jobs gave his audience a sneak peek at the Superbowl ad he was about to release.
 
 117
 00:06:40,880 --> 00:06:42,520
-你可能已经亲眼见过这则广告了 
+你可能已经亲眼见过这则广告了
 You might have seen it for yourself.
 
 118
 00:06:42,520 --> 00:06:45,160
-想想乔治·奥威尔的 《一九八四》 
+想想乔治·奥威尔的 《一九八四》
 Think George Orwell's 1984.
 
 119
 00:06:45,160 --> 00:06:47,600
-在这个冰冷、灰暗的世界里 
+在这个冰冷、灰暗的世界里
 In this cold and gray world,
 
 120
 00:06:47,600 --> 00:06:52,120
-无意识的机器人正在独裁者投射的凝视下徘徊 
+无意识的机器人正在独裁者投射的凝视下徘徊
 mindless automatons are shuffling along under a dictator's projected gaze.
 
 121
 00:06:52,120 --> 00:06:54,240
-这些机器人代表 IBM 的用户 
+这些机器人代表 IBM 的用户
 They represent IBM users.
 
 122
@@ -608,42 +608,42 @@ Then, beautiful, athletic Anya Major, representing Apple,
 
 123
 00:06:58,400 --> 00:07:00,720
-穿着鲜艳的衣服跑过大厅 
+穿着鲜艳的衣服跑过大厅
 comes running through the hall in full color.
 
 124
 00:07:01,120 --> 00:07:04,760
-她向着老大哥的屏幕猛地投出大锤 将它砸成了碎片 
+她向着老大哥的屏幕猛地投出大锤 将它砸成了碎片
 She hurls her sledgehammer at Big Brother's screen, smashing it to bits.
 
 125
 00:07:05,520 --> 00:07:07,000
-老大哥的咒语解除了 
+老大哥的咒语解除了
 Big Brother's spell is broken,
 
 126
 00:07:07,000 --> 00:07:11,320
-一个低沉的声音响起 苹果公司要开始介绍麦金塔了 
+一个低沉的声音响起 苹果公司要开始介绍麦金塔了
 and a booming voice tells us that Apple is about to introduce the Macintosh.
 
 127
 00:07:11,320 --> 00:07:17,560
-这就是为什么我们的 1984 年 跟小说《一九八四》描写的不一样 
+这就是为什么我们的 1984 年 跟小说《一九八四》描写的不一样
 And you'll see why 1984 will not be like 1984.
 
 128
 00:07:19,160 --> 00:07:21,560
-是的 现在回顾那则广告 
+是的 现在回顾那则广告
 And yeah, looking back at that commercial,
 
 129
 00:07:21,560 --> 00:07:26,800
-把苹果说成一个致力于解放大众的自由斗士有点言过其实了 
+把苹果说成一个致力于解放大众的自由斗士有点言过其实了
 the idea that Apple was a freedom fighter working to set the masses free is a bit much.
 
 130
 00:07:26,800 --> 00:07:28,320
-但这则广告触动了人们的神经 
+但这则广告触动了人们的神经
 But the thing hit a nerve.
 
 131
@@ -658,67 +658,67 @@ He was Steve Jobs' advertising guy for more than a decade in the early days.
 
 133
 00:07:36,800 --> 00:07:40,240
-1984 这则广告的负担的风险很大 
+1984 这则广告的负担的风险很大
 Well, the 1984 commercial came with a lot of risk.
 
 134
 00:07:40,240 --> 00:07:42,600
-事实上 它的风险实在太大 
+事实上 它的风险实在太大
 In fact, it was so risky
 
 135
 00:07:42,600 --> 00:07:44,800
-乃至苹果公司在看到它的时候都不想播出它 
+乃至苹果公司在看到它的时候都不想播出它
 that Apple didn't want to run it when they saw it.
 
 136
 00:07:45,880 --> 00:07:50,800
-你可能听说了史蒂夫喜欢它 
+你可能听说了史蒂夫喜欢它
 You've probably heard stories that Steve liked it,
 
 137
 00:07:50,800 --> 00:07:52,920
-但苹果公司董事会的人并不喜欢它 
+但苹果公司董事会的人并不喜欢它
 but the Apple board did not like it.
 
 138
 00:07:52,920 --> 00:07:57,200
-事实上他们很愤怒 为什么这么多钱被花在这样一件事情上 
+事实上他们很愤怒 为什么这么多钱被花在这样一件事情上
 In fact, they were so outraged that so much money had been spent on such a thing
 
 139
 00:07:57,200 --> 00:07:59,280
-以至于他们想解雇广告代理商 
+以至于他们想解雇广告代理商
 that they wanted to fire the ad agency.
 
 140
 00:07:59,720 --> 00:08:02,520
-史蒂夫则为我们公司辩护 
+史蒂夫则为我们公司辩护
 Steve was the one sticking up for the agency.
 
 141
 00:08:04,080 --> 00:08:07,280
-乔布斯一如既往地 慧眼识英雄 
+乔布斯一如既往地 慧眼识英雄
 Jobs, as usual, knew a good mythology when he saw one.
 
 142
 00:08:07,560 --> 00:08:12,600
-这则广告在公司内、在业界内都引起了共鸣 
+这则广告在公司内、在业界内都引起了共鸣
 That commercial struck such a chord within the company, within the industry,
 
 143
 00:08:12,600 --> 00:08:15,880
-成为了苹果产品的代表 
+成为了苹果产品的代表
 that it became this thing for Apple.
 
 144
 00:08:15,880 --> 00:08:19,000
-无论人们那天是否有在购买电脑 
+无论人们那天是否有在购买电脑
 Whether or not people were buying computers that day,
 
 145
 00:08:19,000 --> 00:08:23,640
-它都带来了一种持之以恒的影响 
+它都带来了一种持之以恒的影响
 it had a sort of an aura that stayed around for years and years and years,
 
 146
@@ -728,12 +728,12 @@ and helped define the character of the company.
 
 147
 00:08:26,800 --> 00:08:29,160
-我们是叛军 我们是拿着大锤的人 
+我们是叛军 我们是拿着大锤的人
 We're the rebels. We're the guys with the sledgehammer.
 
 148
 00:08:29,920 --> 00:08:35,200
-因此 在争夺数十亿潜在消费者心智的过程中 
+因此 在争夺数十亿潜在消费者心智的过程中
 So in their battle for the hearts and minds of literally billions of potential consumers,
 
 149
@@ -743,77 +743,77 @@ the emperors of Apple and Microsoft were learning to frame themselves as redeeme
 
 150
 00:08:39,960 --> 00:08:43,560
-非凡的英雄 选择自己就是选择一种生活方式 
+非凡的英雄 选择自己就是选择一种生活方式
 As singular heroes. As lifestyle choices.
 
 151
 00:08:43,560 --> 00:08:47,200
-但比尔·盖茨明白一些苹果难以理解的事情 
+但比尔·盖茨明白一些苹果难以理解的事情
 But Bill Gates knew something that Apple had trouble understanding.
 
 152
 00:08:47,200 --> 00:08:49,600
-那就是在一个相互连接的世界里 
+那就是在一个相互连接的世界里
 This idea that in a wired world,
 
 153
 00:08:49,600 --> 00:08:53,760
-没有人   即便他是帝王 能独自完成任务 
+没有人   即便他是帝王 能独自完成任务
 nobody, not even an emperor, can really go it alone.
 
 154
 00:08:59,240 --> 00:09:01,520
-1985 年 6 月 25 日 
+1985 年 6 月 25 日
 June 25th, 1985.
 
 155
 00:09:01,520 --> 00:09:04,880
-盖茨给当时的苹果 CEO John Scully 发了一份备忘录 
+盖茨给当时的苹果 CEO John Scully 发了一份备忘录
 Gates sends a memo to Apple's then CEO John Scully.
 
 156
 00:09:04,880 --> 00:09:06,880
-那是一个迷失的年代 
+那是一个迷失的年代
 This was during the wilderness years.
 
 157
 00:09:06,880 --> 00:09:11,440
-乔布斯刚刚被逐出公司 直到 1996 年才回到苹果 
+乔布斯刚刚被逐出公司 直到 1996 年才回到苹果
 Jobs had just been excommunicated, and wouldn't return to Apple until 1996.
 
 158
 00:09:11,440 --> 00:09:15,640
-也许正是因为乔布斯离开了 盖茨才敢写这份东西 
+也许正是因为乔布斯离开了 盖茨才敢写这份东西
 Maybe it was because Jobs was out that Gates felt confident enough to write what he wrote.
 
 159
 00:09:15,920 --> 00:09:21,240
-在备忘录中 他鼓励苹果授权制造商分发他们的操作系统 
+在备忘录中 他鼓励苹果授权制造商分发他们的操作系统
 In the memo, he encourages Apple to license their OS to clone makers.
 
 160
 00:09:21,600 --> 00:09:23,720
-我想读一下备忘录的最后部分 
+我想读一下备忘录的最后部分
 I want to read a bit from the end of the memo,
 
 161
 00:09:23,720 --> 00:09:26,040
-让你们知道这份备忘录是多么的有洞察力 
+让你们知道这份备忘录是多么的有洞察力
 just to give you a sense of how perceptive it was.
 
 162
 00:09:26,680 --> 00:09:31,560
-盖茨写道：“如果没有其他个人电脑制造商的支持 
+盖茨写道：“如果没有其他个人电脑制造商的支持
 Gates writes, "It is now impossible for Apple to create a standard out of their innovative technology
 
 163
 00:09:31,560 --> 00:09:35,080
-苹果现在不可能让他们的创新技术成为标准 
+苹果现在不可能让他们的创新技术成为标准
 without support from other personal computer manufacturers.
 
 164
 00:09:35,080 --> 00:09:37,240
-苹果必须开放麦金塔的架构 
+苹果必须开放麦金塔的架构
 Apple must open the Macintosh architecture
 
 165
@@ -823,22 +823,22 @@ to have the independent support required to gain momentum and establish a standa
 
 166
 00:09:42,320 --> 00:09:45,560
-换句话说 你们不要再自己玩自己的了 
+换句话说 你们不要再自己玩自己的了
 In other words, no more operating in a silo, you guys.
 
 167
 00:09:45,560 --> 00:09:47,960
-你们必须有与他人合作的意愿 
+你们必须有与他人合作的意愿
 You've got to be willing to partner with others.
 
 168
 00:09:47,960 --> 00:09:50,240
-你们必须与开发者合作 
+你们必须与开发者合作
 You have to work with developers.
 
 169
 00:09:51,520 --> 00:09:53,560
-多年后你依然可以看到这条思想 
+多年后你依然可以看到这条思想
 You see this philosophy years later,
 
 170
@@ -858,42 +858,42 @@ Developers, developers, developers, developers, developers, developers, develope
 
 173
 00:10:11,400 --> 00:10:14,560
-你懂我的意思了吧 微软喜欢开发人员 
+你懂我的意思了吧 微软喜欢开发人员
 You get the idea. Microsoft likes developers.
 
 174
 00:10:14,560 --> 00:10:17,120
-不是说他们打算与开发人员共享源代码 
+不是说他们打算与开发人员共享源代码
 Now, they're not about to share source code with them,
 
 175
 00:10:17,120 --> 00:10:20,280
-但是他们确实想建立起整个为合作伙伴服务的生态系统 
+但是他们确实想建立起整个为合作伙伴服务的生态系统
 but they do want to build this whole ecosystem of partners.
 
 176
 00:10:20,280 --> 00:10:23,000
-而当比尔·盖茨建议苹果公司也这么做时 
+而当比尔·盖茨建议苹果公司也这么做时
 And when Bill Gates suggests that Apple do the same,
 
 177
 00:10:23,000 --> 00:10:26,280
-如你可能已经猜到的 这个想法被苹果公司抛到了九霄云外 
+如你可能已经猜到的 这个想法被苹果公司抛到了九霄云外
 as you might have guessed, the idea is tossed out the window.
 
 178
 00:10:26,280 --> 00:10:28,560
-苹果划清了界限 
+苹果划清了界限
 Apple had drawn a line in the sand,
 
 179
 00:10:28,560 --> 00:10:33,920
-五个月后 微软发布了 Windows 1.0 
+五个月后 微软发布了 Windows 1.0
 and five months after they trashed Gates' memo, Microsoft released Windows 1.0.
 
 180
 00:10:34,280 --> 00:10:35,920
-战争开始了 
+战争开始了
 The war was on.
 
 181
@@ -913,47 +913,47 @@ developers, developers, developers, developers,
 
 184
 00:10:53,640 --> 00:10:58,600
-开发者、开发者、开发者、开发者、开发者、开发者 
+开发者、开发者、开发者、开发者、开发者、开发者
 developers, developers, developers, developers, developers, developers.
 
 185
 00:11:01,400 --> 00:11:05,600
-你正在收听的是来自红帽公司的原创播客《代码英雄》 
+你正在收听的是来自红帽公司的原创播客《代码英雄》
 You're listening to Command Line Heroes, an original podcast from Red Hat.
 
 186
 00:11:05,920 --> 00:11:11,640
-本集是第一集 我们将回到过去 重温操作系统战争的史诗 
+本集是第一集 我们将回到过去 重温操作系统战争的史诗
 In this inaugural episode, we go back in time to relive the epic story of the OS wars,
 
 187
 00:11:11,640 --> 00:11:14,880
-我们将会发现 科技巨头之间的战争 
+我们将会发现 科技巨头之间的战争
 and we're going to find out, how did a war between tech giants
 
 188
 00:11:14,880 --> 00:11:18,200
-是如何为我们今天所生活的开源世界开辟前路的 
+是如何为我们今天所生活的开源世界开辟前路的
 clear the way for the open source world we all live in today?
 
 189
 00:11:20,240 --> 00:11:21,840
-好的 让我们先来个背景故事吧 
+好的 让我们先来个背景故事吧
 Okay, a little backstory.
 
 190
 00:11:21,840 --> 00:11:24,240
-如果你已经听过了也请别介意 它实在是经典 
+如果你已经听过了也请别介意 它实在是经典
 And forgive me if you've heard this one, but it's a classic.
 
 191
 00:11:24,560 --> 00:11:26,040
-当时是 1979 年 
+当时是 1979 年
 It's 1979,
 
 192
 00:11:26,040 --> 00:11:30,520
-史蒂夫·乔布斯开车去帕洛阿尔托的施乐公园研究中心 
+史蒂夫·乔布斯开车去帕洛阿尔托的施乐公园研究中心
 and Steve Jobs drives up to the Xerox Park research center in Palo Alto.
 
 193
@@ -963,47 +963,47 @@ The engineers there have been developing this whole fleet of elements
 
 194
 00:11:34,200 --> 00:11:37,080
-开发一系列的元素 
+开发一系列的元素
 for what they call a graphical user interface.
 
 195
 00:11:37,080 --> 00:11:38,240
-也许你听说过 
+也许你听说过
 Maybe you've heard of it.
 
 196
 00:11:38,240 --> 00:11:43,680
-它们有菜单、滚动条、按钮、文件夹和层叠的窗口 
+它们有菜单、滚动条、按钮、文件夹和层叠的窗口
 They've got menus, they've got scroll bars, they've got buttons and folders and overlapping windows.
 
 197
 00:11:43,680 --> 00:11:49,840
-这是对计算机界面的一个前所未有的美丽新设想 
+这是对计算机界面的一个前所未有的美丽新设想
 It was a beautiful new vision of what a computer interface could look like. And nobody had any of this stuff.
 
 198
 00:11:50,160 --> 00:11:53,280
-作家兼记者 Steve Levy 谈到了它的潜力 
+作家兼记者 Steve Levy 谈到了它的潜力
 Author and journalist Steven Levy talks about its potential.
 
 199
 00:11:54,400 --> 00:11:58,040
-有很多人为这个新界面令人感到激动 
+有很多人为这个新界面令人感到激动
 There was a lot of excitement about this new interface
 
 200
 00:11:58,040 --> 00:12:02,280
-它比以前的交互界面更友好 
+它比以前的交互界面更友好
 that was going to be much friendlier than what we had before,
 
 201
 00:12:02,280 --> 00:12:04,400
-以前用的交互界面被称为命令行  
+以前用的交互界面被称为命令行 
 which used what was called the command line,
 
 202
 00:12:04,400 --> 00:12:13,040
-这不是在现实生活中使用的交互方式 
+这不是在现实生活中使用的交互方式
 where there was really no interaction between you and the computer in the way you'd interact with something in real life.
 
 203
@@ -1013,37 +1013,37 @@ The mouse and the graphics on the computer gave you a way to do that,
 
 204
 00:12:18,600 --> 00:12:21,560
-让你可以像指向现实生活中的东西一样 指向电脑上的东西 
+让你可以像指向现实生活中的东西一样 指向电脑上的东西
 to point to something just like you'd point to something in real life.
 
 205
 00:12:21,560 --> 00:12:24,760
-这让事情变得简单多了 你不需要记住那些代码 
+这让事情变得简单多了 你不需要记住那些代码
 It made it a lot easier. You didn't have to memorize all these codes.
 
 206
 00:12:24,760 --> 00:12:30,200
-不过 施乐的高管们并没有意识到他们正坐在白金矿上 
+不过 施乐的高管们并没有意识到他们正坐在白金矿上
 Except, the Xerox executives did not get that they were sitting on top of a platinum mine.
 
 207
 00:12:30,200 --> 00:12:33,720
-一如既往地 工程师比主管们更清楚它的价值 
+一如既往地 工程师比主管们更清楚它的价值
 The engineers were more aware than the execs. Typical.
 
 208
 00:12:33,720 --> 00:12:35,720
-因此那些工程师 
+因此那些工程师
 So those engineers were, yeah,
 
 209
 00:12:35,720 --> 00:12:40,040
-在被要求向乔布斯展示这些东西是如何工作时 有点紧张 
+在被要求向乔布斯展示这些东西是如何工作时 有点紧张
 a little stressed out that they were instructed to show Jobs how everything worked.
 
 210
 00:12:40,040 --> 00:12:42,200
-然而这毕竟是高管的命令 
+然而这毕竟是高管的命令
 But the executives were calling the shots.
 
 211
@@ -1053,12 +1053,12 @@ Jobs felt, quote,
 
 212
 00:12:43,560 --> 00:12:46,480
-“这个天才产品本来能够让施乐公司垄断整个行业 
+“这个天才产品本来能够让施乐公司垄断整个行业
 "The product genius that brought them to that monopolistic position
 
 213
 00:12:46,480 --> 00:12:49,200
-却被公司的经营者毁了 
+却被公司的经营者毁了
 gets rotted out by people running these companies
 
 214
@@ -1068,37 +1068,37 @@ that have no conception of a good product versus a bad product."
 
 215
 00:12:54,400 --> 00:12:55,560
-这话有些苛刻 
+这话有些苛刻
 That's sort of harsh,
 
 216
 00:12:55,560 --> 00:13:00,760
-但是 乔布斯带着一卡车施乐高管忽视的想法离开了会议 
+但是 乔布斯带着一卡车施乐高管忽视的想法离开了会议
 but hey, Jobs walked out of that meeting with a truckload of ideas that Xerox executives had missed.
 
 217
 00:13:00,760 --> 00:13:05,800
-这几乎包含了所有他革新桌面计算体验需要的东西 
+这几乎包含了所有他革新桌面计算体验需要的东西
 Pretty much everything he needed to revolutionize the desktop computing experience.
 
 218
 00:13:05,800 --> 00:13:08,120
-1983 年 苹果发布了 Lisa 电脑 
+1983 年 苹果发布了 Lisa 电脑
 Apple releases the Lisa in 1983,
 
 219
 00:13:08,120 --> 00:13:10,120
-1984 年又发布了 Mac 电脑 
+1984 年又发布了 Mac 电脑
 and then the Mac in 1984.
 
 220
 00:13:10,120 --> 00:13:13,680
-这些设备的创意都是抄袭自施乐公司的 
+这些设备的创意都是抄袭自施乐公司的
 These devices are made by the ideas swiped from Xerox.
 
 221
 00:13:14,560 --> 00:13:15,840
-让我感兴趣的是 
+让我感兴趣的是
 What's interesting to me
 
 222
@@ -1123,12 +1123,12 @@ He tells one reporter, "We have always been shameless about stealing great ideas
 
 226
 00:13:30,800 --> 00:13:32,800
-伟大的艺术家偷窃 好吧 
+伟大的艺术家偷窃 好吧
 Great artists steal. Okay.
 
 227
 00:13:32,800 --> 00:13:35,400
-我的意思是 我们说的并不是严格意义上的“偷窃” 
+我的意思是 我们说的并不是严格意义上的“偷窃”
 I mean, we're not talking about stealing in a hard sense.
 
 228
@@ -1138,17 +1138,17 @@ Nobody's obtaining proprietary source code
 
 229
 00:13:37,680 --> 00:13:40,280
-并公然将其集成到他们自己的操作系统中去 
+并公然将其集成到他们自己的操作系统中去
 and blatantly incorporating it into their operating system.
 
 230
 00:13:40,280 --> 00:13:43,400
-这事情更温和些 更像是创意的借用 
+这事情更温和些 更像是创意的借用
 This is softer, more like idea borrowing.
 
 231
 00:13:43,840 --> 00:13:48,040
-但乔布斯自己即将学到 这东西很难以控制 
+但乔布斯自己即将学到 这东西很难以控制
 And that's much more difficult to control, as Jobs himself was about to learn.
 
 232
@@ -1159,22 +1159,22 @@ Legendary software wizard, and true command line hero, Andy Hertzfeld,
 
 233
 00:13:53,160 --> 00:13:56,040
-就是麦金塔开发团队的最初成员 
+就是麦金塔开发团队的最初成员
 was an original member of the Macintosh development team.
 
 234
 00:13:56,520 --> 00:14:01,720
-是的 微软是麦金塔电脑软件的第一个合作伙伴 
+是的 微软是麦金塔电脑软件的第一个合作伙伴
 Yeah, Microsoft was our first software partner with the Macintosh.
 
 235
 00:14:01,720 --> 00:14:05,600
-当时 我们并没有把他们当成是竞争对手 
+当时 我们并没有把他们当成是竞争对手
 At the time, we didn't really consider them a competitor.
 
 236
 00:14:05,600 --> 00:14:12,080
-他们是苹果之外 我们第一家交付麦金塔电脑原型的公司 
+他们是苹果之外 我们第一家交付麦金塔电脑原型的公司
 They were the very first company outside of Apple that we gave Macintosh prototypes to.
 
 237
@@ -1194,57 +1194,57 @@ They gave us very important feedback,
 
 240
 00:14:26,040 --> 00:14:29,520
-总的来说 我认为我们的关系非常好 
+总的来说 我认为我们的关系非常好
 and in general I would say the relationship was pretty good.
 
 241
 00:14:29,520 --> 00:14:34,120
-但我也注意到 在我与技术主管的交谈中 
+但我也注意到 在我与技术主管的交谈中
 But I also noticed in my conversations with the technical lead,
 
 242
 00:14:34,120 --> 00:14:40,320
-他开始问一些系统实现方面的问题 而他本无需知道这些 
+他开始问一些系统实现方面的问题 而他本无需知道这些
 he started asking questions that he didn't really need to know about how the system was implemented,
 
 243
 00:14:40,320 --> 00:14:44,880
-我觉得他们想要复制麦金塔电脑 
+我觉得他们想要复制麦金塔电脑
 and I got the idea that they were trying to copy the Macintosh.
 
 244
 00:14:44,880 --> 00:14:47,560
-我很早以前就向史蒂夫·乔布斯反馈过这件事 
+我很早以前就向史蒂夫·乔布斯反馈过这件事
 I told Steve Jobs about it pretty early on,
 
 245
 00:14:47,560 --> 00:14:53,080
-但在 1983 年秋天 这件事发展到了高潮 
+但在 1983 年秋天 这件事发展到了高潮
 but it really came to a head in the fall of 1983.
 
 246
 00:14:53,080 --> 00:14:57,520
-我们发现 他们没有提前告诉我们 
+我们发现 他们没有提前告诉我们
 We discovered that they actually, without telling us ahead of time,
 
 247
 00:14:57,520 --> 00:15:01,600
-就在 1983 年 11 月的 COMDEX 上发布了 Windows 
+就在 1983 年 11 月的 COMDEX 上发布了 Windows
 they announced Windows at the COMDEX in November 1983
 
 248
 00:15:01,600 --> 00:15:04,000
-对此史蒂夫·乔布斯勃然大怒 
+对此史蒂夫·乔布斯勃然大怒
 and Steve Jobs hit the roof.
 
 249
 00:15:04,000 --> 00:15:06,400
-他认为那是一种背叛 
+他认为那是一种背叛
 He really considered that a betrayal.
 
 250
 00:15:07,320 --> 00:15:09,400
-随着新版 Windows 的发布 
+随着新版 Windows 的发布
 As newer versions of Windows were released,
 
 251
@@ -1254,22 +1254,22 @@ it became pretty clear that Microsoft had lifted from Apple
 
 252
 00:15:12,920 --> 00:15:15,960
-苹果从施乐那里学来的所有想法 
+苹果从施乐那里学来的所有想法
 all the ideas that Apple had lifted from Xerox.
 
 253
 00:15:15,960 --> 00:15:18,240
-乔布斯变得很易怒 
+乔布斯变得很易怒
 Jobs was apoplectic.
 
 254
 00:15:18,240 --> 00:15:23,320
-他发表的伟大艺术家善于偷窃的毕加索名言被别人学去了  
+他发表的伟大艺术家善于偷窃的毕加索名言被别人学去了 
 His Picasso line about how great artists steal. Yeah. That goes out the window.
 
 255
 00:15:23,680 --> 00:15:25,560
-盖茨也正是这么做的 
+盖茨也正是这么做的
 Though maybe Gates was using it now.
 
 256
@@ -1279,12 +1279,12 @@ Reportedly, when Jobs screamed at Gates that he'd stolen from them, Gates respon
 
 257
 00:15:30,800 --> 00:15:34,800
-“史蒂夫 我觉得这更像是我们都有一个叫施乐的富有邻居 
+“史蒂夫 我觉得这更像是我们都有一个叫施乐的富有邻居
 "Well Steve, I think it's more like we both had this rich neighbor named Xerox,
 
 258
 00:15:34,800 --> 00:15:36,960
-我闯进他家偷电视机 
+我闯进他家偷电视机
 and I broke into his house to steal the TV set,
 
 259
@@ -1294,12 +1294,12 @@ and found out that you'd already stolen it."
 
 260
 00:15:40,320 --> 00:15:45,160
-苹果最终以窃取 GUI 的外观和风格为名起诉了微软 
+苹果最终以窃取 GUI 的外观和风格为名起诉了微软
 Apple ends up suing Microsoft for stealing the look and feel of their GUI.
 
 261
 00:15:45,160 --> 00:15:47,000
-这个案子持续了好几年 
+这个案子持续了好几年
 The case goes on for years,
 
 262
@@ -1309,117 +1309,117 @@ but in 1993, a judge from the 9th Circuit Court of Appeals
 
 263
 00:15:50,760 --> 00:15:52,600
-最终站在了微软一边 
+最终站在了微软一边
 finally sides with Microsoft.
 
 264
 00:15:52,600 --> 00:15:57,400
-Vaughn Walker 法官宣布外观和风格不受版权保护 
+Vaughn Walker 法官宣布外观和风格不受版权保护
 Judge Vaughn Walker declares that look and feel are not covered by copyright,
 
 265
 00:15:57,400 --> 00:15:59,560
-这是非常重要的事情 
+这是非常重要的事情
 and this is super important.
 
 266
 00:15:59,560 --> 00:16:02,800
-这一决定让苹果再无法垄断桌面计算的界面 
+这一决定让苹果再无法垄断桌面计算的界面
 That decision prevented Apple from creating a monopoly
 
 267
 00:16:02,800 --> 00:16:05,760
-这一决定让苹果再无法垄断桌面计算的界面 
+这一决定让苹果再无法垄断桌面计算的界面
 with the interface that would dominate desktop computing.
 
 268
 00:16:06,880 --> 00:16:09,880
-很快 苹果短暂的领先优势消失了 
+很快 苹果短暂的领先优势消失了
 Soon enough, Apple's brief lead had vanished.
 
 269
 00:16:09,880 --> 00:16:11,320
-以下是 Steven Levy 的观点 
+以下是 Steven Levy 的观点
 Here's Steven Levy's take.
 
 270
 00:16:11,320 --> 00:16:17,040
-他们之所以失去领先地位 不是因为微软方面窃取了知识产权 
+他们之所以失去领先地位 不是因为微软方面窃取了知识产权
 They lost the lead not because of intellectual property theft on Microsoft's part,
 
 271
 00:16:17,040 --> 00:16:20,840
-而是因为他们无法巩固自己在上世纪 80 年代就拥有的 
+而是因为他们无法巩固自己在上世纪 80 年代就拥有的
 but because they were unable to consolidate their advantage
 
 272
 00:16:20,840 --> 00:16:24,080
-更优越的操作系统的优势 
+更优越的操作系统的优势
 in having a better operating system during the 1980s.
 
 273
 00:16:24,080 --> 00:16:26,120
-坦率地说 他们的电脑索价过高 
+坦率地说 他们的电脑索价过高
 They overcharged for their computers, quite frankly.
 
 274
 00:16:26,800 --> 00:16:31,800
-微软从 20 世纪 80 年代中期开始开发 Windows 系统 
+微软从 20 世纪 80 年代中期开始开发 Windows 系统
 So Microsoft had been developing Windows, starting with the mid-1980s,
 
 275
 00:16:31,800 --> 00:16:36,240
-但直到 1990 年才开发出来 Windows 3 
+但直到 1990 年才开发出来 Windows 3
 but it wasn't until Windows 3 in 1990, I believe,
 
 276
 00:16:36,240 --> 00:16:41,720
-我想 这算是第一个开启黄金时代的版本 
+我想 这算是第一个开启黄金时代的版本
 where they really came across with a version that was ready for prime time.
 
 277
 00:16:41,720 --> 00:16:43,960
-真正可供大众使用 
+真正可供大众使用
 Ready for masses of people to use.
 
 278
 00:16:43,960 --> 00:16:52,480
-从此以后 微软能够将数以亿计的用户迁移到图形界面 
+从此以后 微软能够将数以亿计的用户迁移到图形界面
 At that point is where Microsoft was able to migrate huge numbers of people, hundreds of millions,
 
 279
 00:16:52,480 --> 00:16:57,440
-而这是苹果无法做到的 
+而这是苹果无法做到的
 over to the graphical interface in a way that Apple had not been able to do.
 
 280
 00:16:57,440 --> 00:17:00,960
-虽然苹果公司有一个非常好的操作系统 
+虽然苹果公司有一个非常好的操作系统
 Even though they had a really good operating system,
 
 281
 00:17:00,960 --> 00:17:03,520
-但是那已经是 1984 年的产品了 
+但是那已经是 1984 年的产品了
 they used it since 1984.
 
 282
 00:17:04,640 --> 00:17:07,720
-现在微软主导着操作系统的战场 
+现在微软主导着操作系统的战场
 Microsoft now dominated the OS battlefield.
 
 283
 00:17:07,720 --> 00:17:09,360
-他们占据了 90% 的市场份额 
+他们占据了 90% 的市场份额
 They held 90% of the market,
 
 284
 00:17:09,360 --> 00:17:12,600
-并且针对各种各样的个人电脑进行了标准化 
+并且针对各种各样的个人电脑进行了标准化
 and standardized their OS across a whole variety of PCs.
 
 285
 00:17:12,600 --> 00:17:15,720
-操作系统的未来看起来会由微软掌控 
+操作系统的未来看起来会由微软掌控
 The future of the OS looked like it'd be controlled by Microsoft.
 
 286
@@ -1429,52 +1429,52 @@ And then?
 
 287
 00:17:17,720 --> 00:17:21,400
-1997 年 波士顿 Macworld 博览会上 
+1997 年 波士顿 Macworld 博览会上
 Well, at the 1997 Macworld Expo in Boston,
 
 288
 00:17:21,400 --> 00:17:23,840
-你看到了一个几近破产的苹果 
+你看到了一个几近破产的苹果
 you have an almost bankrupt Apple.
 
 289
 00:17:23,840 --> 00:17:26,480
-一个比之前谦逊得多的史蒂夫·乔布斯走上舞台 
+一个比之前谦逊得多的史蒂夫·乔布斯走上舞台
 A more humble Steve Jobs gets on stage,
 
 290
 00:17:26,480 --> 00:17:29,400
-开始谈论伙伴关系的重要性  
+开始谈论伙伴关系的重要性 
 and starts talking about the importance of partnerships,
 
 291
 00:17:29,400 --> 00:17:33,720
-其中之一已经变得格外重要 
+其中之一已经变得格外重要
 and one in particular, he says, has become very, very meaningful.
 
 292
 00:17:33,720 --> 00:17:36,160
-那就是和微软的合作 
+那就是和微软的合作
 Their new partnership with Microsoft.
 
 293
 00:17:37,280 --> 00:17:40,680
-史蒂夫·乔布斯呼吁双方缓和关系 停止火拼 
+史蒂夫·乔布斯呼吁双方缓和关系 停止火拼
 Steve Jobs is calling for a détente, a ceasefire.
 
 294
 00:17:40,680 --> 00:17:43,160
-微软将坐享巨大的市场份额 
+微软将坐享巨大的市场份额
 Microsoft could have their enormous market share.
 
 295
 00:17:43,160 --> 00:17:47,840
-从表面看 我们可能会认为世界和平了 
+从表面看 我们可能会认为世界和平了
 If we didn't know better, we might think we were entering a period of peace in the kingdom.
 
 296
 00:17:47,840 --> 00:17:51,600
-但当利益如此巨大时 事情就没那么简单了 
+但当利益如此巨大时 事情就没那么简单了
 But when stakes are this high, it's never that simple.
 
 297
@@ -1484,112 +1484,112 @@ Just as Apple and Microsoft were finally retreating to their corners,
 
 298
 00:17:56,120 --> 00:17:58,120
-最终败退到死角之际 
+最终败退到死角之际
 pretty bruised from decades of fighting,
 
 299
 00:17:58,120 --> 00:18:01,840
-一名 21 岁的芬兰计算机科学专业学生出现了 
+一名 21 岁的芬兰计算机科学专业学生出现了
 along came a 21-year-old Finnish computer science student
 
 300
 00:18:01,840 --> 00:18:06,360
-十分偶然的 他彻底改变了一切 
+十分偶然的 他彻底改变了一切
 who, almost by accident, changed absolutely everything.
 
 301
 00:18:15,640 --> 00:18:19,000
-我是 Saron Yitbarek 这里是代码英雄 
+我是 Saron Yitbarek 这里是代码英雄
 I'm Saron Yitbarek, and this is Command Line Heroes.
 
 302
 00:18:20,520 --> 00:18:24,640
-正当某些科技巨头正忙着就专有软件相互攻击时 
+正当某些科技巨头正忙着就专有软件相互攻击时
 While certain tech giants were busy bashing each other over proprietary software,
 
 303
 00:18:24,640 --> 00:18:29,640
-自由软件和开源软件的新领军者如雨后春笋般涌现 
+自由软件和开源软件的新领军者如雨后春笋般涌现
 there were new champions of free and open source software popping up like mushrooms.
 
 304
 00:18:30,560 --> 00:18:33,160
-其中一位优胜者就是理查德·斯托曼 
+其中一位优胜者就是理查德·斯托曼
 One of these champions was Richard Stallman.
 
 305
 00:18:33,160 --> 00:18:34,680
-你也许对他的工作很熟悉 
+你也许对他的工作很熟悉
 You're probably familiar with his work.
 
 306
 00:18:34,680 --> 00:18:37,280
-他想要拥有自由软件的自由社会 
+他想要拥有自由软件的自由社会
 He wanted free software and a free society.
 
 307
 00:18:37,280 --> 00:18:38,840
-这就像言论自由一样的自由 
+这就像言论自由一样的自由
 That's free as in free speech,
 
 308
 00:18:38,840 --> 00:18:40,080
-而不是像免费啤酒一样的免费 
+而不是像免费啤酒一样的免费
 not free as in free beer.
 
 309
 00:18:40,080 --> 00:18:42,440
-早在 80 年代 斯托尔曼就发现 
+早在 80 年代 斯托尔曼就发现
 Back in the '80s, Stallman saw that
 
 310
 00:18:42,440 --> 00:18:44,240
-除了昂贵的专有操作系统（如 UNIX）外 
+除了昂贵的专有操作系统（如 UNIX）外
 there was no viable alternative
 
 311
 00:18:44,240 --> 00:18:47,440
-没有其他可行的替代品 
+没有其他可行的替代品
 to pricey, proprietary OSs, like UNIX .
 
 312
 00:18:47,440 --> 00:18:49,720
-因此他决定自己做一个 
+因此他决定自己做一个
 So, he decided to make his own.
 
 313
 00:18:49,720 --> 00:18:52,520
-斯托尔曼的自由软件基金会开发了 GNU 
+斯托尔曼的自由软件基金会开发了 GNU
 Stallman's Free Software Foundation developed GNU,
 
 314
 00:18:52,520 --> 00:18:54,640
-当然 它的意思是 “GNU's not UNIX” 
+当然 它的意思是 “GNU's not UNIX”
 which stood for GNU's not UNIX , of course.
 
 315
 00:18:54,640 --> 00:18:56,760
-它将是一个像 UNIX 一样的操作系统 
+它将是一个像 UNIX 一样的操作系统
 It'd be an OS like UNIX,
 
 316
 00:18:56,760 --> 00:18:58,400
-但不包含 UNIX 代码 
+但不包含 UNIX 代码
 but free of all UNIX code,
 
 317
 00:18:58,400 --> 00:19:00,400
-而且所有用户可以自由共享它 
+而且所有用户可以自由共享它
 and free for users to share.
 
 318
 00:19:00,400 --> 00:19:05,400
-为了让你体会到上世纪 80 年代自由软件概念的重要性 
+为了让你体会到上世纪 80 年代自由软件概念的重要性
 Just to give you a sense of how important that idea of free software was in the 1980s,
 
 319
 00:19:05,400 --> 00:19:08,400
-从不同角度来说拥有 UNIX 代码的两家公司 
+从不同角度来说拥有 UNIX 代码的两家公司
 the companies that owned the UNIX code at different points,
 
 320
@@ -1599,27 +1599,27 @@ AT&T Bell Laboratories and then UNIX System Laboratories,
 
 321
 00:19:11,960 --> 00:19:18,480
-威胁将会起诉任何看过 UNIX 源代码后又创建自己操作系统的人 
+威胁将会起诉任何看过 UNIX 源代码后又创建自己操作系统的人
 they threatened lawsuits on anyone making their own OS after looking at UNIX source code.
 
 322
 00:19:18,480 --> 00:19:21,040
-这些人的占有欲简直是另一种层面 
+这些人的占有欲简直是另一种层面
 These guys were next - level proprietary.
 
 323
 00:19:21,840 --> 00:19:23,600
-用这两家公司的话来说 
+用这两家公司的话来说
 All those programmers were,
 
 324
 00:19:23,600 --> 00:19:26,800
-所有这些程序员都在“精神上受到了污染” 
+所有这些程序员都在“精神上受到了污染”
 in the words of the two companies, "mentally contaminated,"
 
 325
 00:19:26,800 --> 00:19:29,160
-因为他们都见过 UNIX 代码 
+因为他们都见过 UNIX 代码
 because they'd seen UNIX code.
 
 326
@@ -1629,22 +1629,22 @@ In a famous court case
 
 327
 00:19:30,640 --> 00:19:33,800
-和伯克利软件设计公司之间的一个著名的法庭案例中 
+和伯克利软件设计公司之间的一个著名的法庭案例中
 between UNIX System Laboratories and Berkeley Software Design,
 
 328
 00:19:33,800 --> 00:19:37,480
-有人认为即使它本身没有使用 UNIX 代码 
+有人认为即使它本身没有使用 UNIX 代码
 it was argued that any functionally similar system,
 
 329
 00:19:37,480 --> 00:19:41,400
-拥有类似功能的系统也侵犯版权 
+拥有类似功能的系统也侵犯版权
 even though it didn't use the UNIX code itself, was a breach of copyright.
 
 330
 00:19:42,240 --> 00:19:44,480
-Paul Jones 当时是一名开发人员 
+Paul Jones 当时是一名开发人员
 Paul Jones was a developer at that time.
 
 331
@@ -1653,12 +1653,12 @@ Paul Jones was a developer at that time.
 
 332
 00:19:49,080 --> 00:19:56,360
-他们的观点是 任何看过代码的人 都受到了精神污染 
+他们的观点是 任何看过代码的人 都受到了精神污染
 Anyone who has seen any of the code is mentally contaminated was their argument.
 
 333
 00:19:56,360 --> 00:20:03,040
-因此 几乎所有在安装有与 UNIX 相关操作系统的电脑上工作过的人 
+因此 几乎所有在安装有与 UNIX 相关操作系统的电脑上工作过的人
 And that would have made almost anyone who had worked on a computer operating system that involved UNIX ,
 
 334
@@ -1668,107 +1668,107 @@ and any computer science department that was in the country,
 
 335
 00:20:08,480 --> 00:20:10,080
-都受到了精神上的污染 
+都受到了精神上的污染
 was mentally contaminated.
 
 336
 00:20:10,080 --> 00:20:11,760
-在 USENIX 的一年里 
+在 USENIX 的一年里
 So in one year at USENIX,
 
 337
 00:20:11,760 --> 00:20:15,160
-我们都得到了一个写着红色字母的白色小别针 
+我们都得到了一个写着红色字母的白色小别针
 we all got little white bar pins with red letters
 
 338
 00:20:15,160 --> 00:20:16,800
-上面写着“精神受到了污染” 
+上面写着“精神受到了污染”
 that say mentally contaminated,
 
 339
 00:20:16,800 --> 00:20:21,640
-我们很喜欢带着这些别针到处走 
+我们很喜欢带着这些别针到处走
 and we all wear those around to our own great pleasure,
 
 340
 00:20:21,640 --> 00:20:25,240
-表达我们在这件事上对贝尔实验室的讽刺 
+表达我们在这件事上对贝尔实验室的讽刺
 to show that we were sticking it to Bell because we were mentally contaminated.
 
 341
 00:20:25,960 --> 00:20:28,320
-整个世界都被精神污染了 
+整个世界都被精神污染了
 The whole world was getting mentally contaminated.
 
 342
 00:20:28,320 --> 00:20:31,360
-想要保持纯粹、保持事物的美好 
+想要保持纯粹、保持事物的美好
 Staying pure, keeping things nice and proprietary,
 
 343
 00:20:31,360 --> 00:20:34,840
-和完整地拥有一个软件的旧思想正变得越来越不现实 
+和完整地拥有一个软件的旧思想正变得越来越不现实
 that old philosophy was getting less and less realistic.
 
 344
 00:20:34,840 --> 00:20:37,480
-正是在这被污染的现实中 
+正是在这被污染的现实中
 It was into this contaminated reality
 
 345
 00:20:37,480 --> 00:20:41,160
-历史上最伟大的代码英雄之一诞生了 
+历史上最伟大的代码英雄之一诞生了
 that one of history's biggest command line heroes was born,
 
 346
 00:20:41,160 --> 00:20:44,400
-他是一个芬兰男孩 名叫林纳斯·托瓦兹 
+他是一个芬兰男孩 名叫林纳斯·托瓦兹
 a boy in Finland named Linus Torvalds.
 
 347
 00:20:44,400 --> 00:20:48,200
-如果这是《星球大战》 那么林纳斯·托瓦兹就是我们的卢克·天行者 
+如果这是《星球大战》 那么林纳斯·托瓦兹就是我们的卢克·天行者
 If this is Star Wars, then Linus Torvalds is our Luke Skywalker.
 
 348
 00:20:48,200 --> 00:20:51,440
-他是赫尔辛基大学的一名温文尔雅的研究生 
+他是赫尔辛基大学的一名温文尔雅的研究生
 He was a mild-mannered grad student at the University of Helsinki.
 
 349
 00:20:51,440 --> 00:20:54,160
-有才华 但缺乏大志 
+有才华 但缺乏大志
 Talented, but lacking in grand visions.
 
 350
 00:20:54,160 --> 00:20:56,080
-典型的被逼上梁山的英雄 
+典型的被逼上梁山的英雄
 The classic reluctant hero.
 
 351
 00:20:56,080 --> 00:20:59,480
-和其他年轻的英雄一样 他也感到沮丧 
+和其他年轻的英雄一样 他也感到沮丧
 And, like any young hero, he was also frustrated.
 
 352
 00:21:00,640 --> 00:21:05,360
-他想把 386 处理器整合到他的新电脑中 
+他想把 386 处理器整合到他的新电脑中
 He wanted to incorporate the 386 processor into his new PC's functions.
 
 353
 00:21:05,360 --> 00:21:08,760
-他对自己兼容 IBM 的电脑上运行 MS-DOS 操作系统并不感冒 
+他对自己兼容 IBM 的电脑上运行 MS-DOS 操作系统并不感冒
 He wasn't impressed by the MS-DOS running on his IBM clone,
 
 354
 00:21:08,760 --> 00:21:13,280
-也负担不起 UNIX 软件 5000 美元的价格 
+也负担不起 UNIX 软件 5000 美元的价格
 and he couldn't afford the $5,000 price tag on the UNIX software
 
 355
 00:21:13,280 --> 00:21:16,080
-但只有 UNIX 才能让他自由地编程 
+但只有 UNIX 才能让他自由地编程
 that would have given him some programming freedom.
 
 356
@@ -1778,112 +1778,112 @@ The solution, which Torvalds crafted on MINIX in the spring of 1991,
 
 357
 00:21:20,280 --> 00:21:23,160
-基于 MINIX 开发了一个名为 Linux 的操作系统内核 
+基于 MINIX 开发了一个名为 Linux 的操作系统内核
 was an OS kernel called Linux.
 
 358
 00:21:23,160 --> 00:21:25,640
-他自己的操作系统内核 
+他自己的操作系统内核
 The kernel of an OS of his very own.
 
 359
 00:21:26,040 --> 00:21:31,720
-林纳斯·托瓦兹真的只是想找点乐子而已 
+林纳斯·托瓦兹真的只是想找点乐子而已
 Linus Torvalds really just wanted to have something to play with.
 
 360
 00:21:31,720 --> 00:21:35,600
-Steven Vaughan-Nichols 是 ZDNet.com 的特约编辑 
+Steven Vaughan-Nichols 是 ZDNet.com 的特约编辑
 Steven Vaughan-Nichols is a contributing editor at ZDNet.com,
 
 361
 00:21:35,600 --> 00:21:40,160
-而且他从科技行业出现以来就一直在写科技行业相关的内容 
+而且他从科技行业出现以来就一直在写科技行业相关的内容
 and he's been writing about the business of technology since there was a business of technology.
 
 362
 00:21:40,160 --> 00:21:44,280
-当时有几个类似的操作系统 
+当时有几个类似的操作系统
 There were a couple of operating systems like it at the time.
 
 363
 00:21:44,280 --> 00:21:48,240
-他最关注的是一个名叫 MINIX  
+他最关注的是一个名叫 MINIX 
 The main one that he was concerned about was called MINIX,
 
 364
 00:21:48,240 --> 00:21:55,320
-旨在让学生学习如何构建操作系统的项目 
+旨在让学生学习如何构建操作系统的项目
 and that was an operating system that was meant for students to learn how to build operating systems.
 
 365
 00:21:55,320 --> 00:21:58,960
-林纳斯看到了这些并且觉得它很有趣 
+林纳斯看到了这些并且觉得它很有趣
 Linus looked at that, and thought that it was interesting,
 
 366
 00:21:58,960 --> 00:22:00,560
-但他打算建立自己的操作系统 
+但他打算建立自己的操作系统
 but he wanted to build his own.
 
 367
 00:22:00,560 --> 00:22:06,120
-所以 Linux 实际上始于赫尔辛基的一个 DIY 项目 
+所以 Linux 实际上始于赫尔辛基的一个 DIY 项目
 So it really started as a do-it-yourself project at Helsinki.
 
 368
 00:22:06,120 --> 00:22:08,840
-一切就这样开始了 
+一切就这样开始了
 And that's how it all started,
 
 369
 00:22:08,840 --> 00:22:16,000
-基本上就是一个大孩子在玩耍 学习如何做些什么 
+基本上就是一个大孩子在玩耍 学习如何做些什么
 it's just basically a big kid playing around and learning how to do things.
 
 370
 00:22:17,440 --> 00:22:25,920
-但不同之处在于 他足够聪明、足够执着 
+但不同之处在于 他足够聪明、足够执着
 But what was different in his case is that he was both bright enough and persistent enough,
 
 371
 00:22:25,920 --> 00:22:31,200
-也足够友好 能让其他人都参与进来 
+也足够友好 能让其他人都参与进来
 and also friendly enough to get all these other people working on it,
 
 372
 00:22:31,200 --> 00:22:33,680
-然后他开始把这个项目进行到底 
+然后他开始把这个项目进行到底
 and then he started seeing the project through.
 
 373
 00:22:33,680 --> 00:22:39,400
-27 年后 这个项目变得比他想象的要大得多 
+27 年后 这个项目变得比他想象的要大得多
 27 years later, it is much, much bigger than he ever dreamed it would be.
 
 374
 00:22:40,720 --> 00:22:45,760
-到 1991 年秋季 托瓦兹发布了 10000 行代码 
+到 1991 年秋季 托瓦兹发布了 10000 行代码
 By the fall of 1991, Torvalds releases 10,000 lines of code,
 
 375
 00:22:45,760 --> 00:22:48,560
-世界各地的人们开始评头论足 
+世界各地的人们开始评头论足
 and people around the world start offering comments,
 
 376
 00:22:48,560 --> 00:22:51,000
-然后进行优化、添加和修改代码 
+然后进行优化、添加和修改代码
 then tweaks, additions, edits.
 
 377
 00:22:51,000 --> 00:22:53,800
-对于今天的开发人员来说似乎很正常 
+对于今天的开发人员来说似乎很正常
 That might seem totally normal to you as a developer today,
 
 378
 00:22:53,800 --> 00:22:55,720
-但请记住 在那个时候 
+但请记住 在那个时候
 but remember, at that time,
 
 379
@@ -1893,87 +1893,87 @@ open collaboration like that was a moral affront to the whole proprietary system
 
 380
 00:23:00,560 --> 00:23:04,000
-这些靠专利盈利的公司的精神侮辱 
+这些靠专利盈利的公司的精神侮辱
 that Microsoft, Apple, and IBM had done so well by.
 
 381
 00:23:04,000 --> 00:23:06,920
-随后这种开放性被奉上神坛 
+随后这种开放性被奉上神坛
 And then that openness gets enshrined.
 
 382
 00:23:06,920 --> 00:23:10,920
-托瓦兹将 Linux 置于 GNU 通用公共许可证之下 
+托瓦兹将 Linux 置于 GNU 通用公共许可证之下
 Torvalds places Linux under the GNU general public license.
 
 383
 00:23:10,920 --> 00:23:13,920
-曾经保障斯托尔曼的 GNU 系统自由的许可证 
+曾经保障斯托尔曼的 GNU 系统自由的许可证
 The license that had kept Stallman's GNU system free
 
 384
 00:23:13,920 --> 00:23:15,840
-现在也将保障 Linux 的自由 
+现在也将保障 Linux 的自由
 was now going to keep Linux free, too.
 
 385
 00:23:15,840 --> 00:23:18,800
-GPL 许可基本上能永远保证软件的自由和开放性 
+GPL 许可基本上能永远保证软件的自由和开放性
 The importance of that move to incorporate GPL,
 
 386
 00:23:18,800 --> 00:23:23,880
-它的重要性被怎么强调都不过分 
+它的重要性被怎么强调都不过分
 basically preserving the freedom and openness of the software forever, cannot be overstated.
 
 387
 00:23:23,880 --> 00:23:25,880
-Vaughan-Nichols 解释道 
+Vaughan-Nichols 解释道
 Vaughan-Nichols explains.
 
 388
 00:23:25,880 --> 00:23:28,040
-事实上 根据 Linux 所遵循的许可协议 
+事实上 根据 Linux 所遵循的许可协议
 In fact, by the license that it's under,
 
 389
 00:23:28,040 --> 00:23:30,600
-即 GPL 第 2 版 
+即 GPL 第 2 版
 which is called GPL version 2,
 
 390
 00:23:30,600 --> 00:23:32,480
-如果你想贩卖 Linux 或者向全世界展示它 
+如果你想贩卖 Linux 或者向全世界展示它
 you have to share the code
 
 391
 00:23:32,480 --> 00:23:37,320
-你必须与他人共享代码 
+你必须与他人共享代码
 if you're going to try to sell it or present it to the world,
 
 392
 00:23:37,320 --> 00:23:40,040
-所以如果你对其做了一些改进 
+所以如果你对其做了一些改进
 so that if you make an improvement,
 
 393
 00:23:40,040 --> 00:23:42,920
-仅仅给别人使用打包的代码是不够的 
+仅仅给别人使用打包的代码是不够的
 it's not enough just to give someone the improvement.
 
 394
 00:23:42,920 --> 00:23:49,000
-你必须和他们分享这些变化的所有细节代码 
+你必须和他们分享这些变化的所有细节代码
 You actually have to share with them the nuts and bolts of all those changes.
 
 395
 00:23:49,000 --> 00:23:52,120
-然后这些改进足够好时 也许就会被 Linux 所吸收 
+然后这些改进足够好时 也许就会被 Linux 所吸收
 Then they are adapted into Linux if they're good enough.
 
 396
 00:23:52,120 --> 00:23:55,320
-事实证明 这种公开的方式极具吸引力 
+事实证明 这种公开的方式极具吸引力
 That public approach proved massively attractive.
 
 397
@@ -1987,7 +1987,7 @@ wrote in his famous essay that,
 
 399
 00:23:59,960 --> 00:24:04,840
-“微软和苹果这样的公司一直在试图建造软件大教堂 
+“微软和苹果这样的公司一直在试图建造软件大教堂
 "Corporations like Microsoft and Apple have been trying to build software cathedrals,
 
 400
@@ -1997,7 +1997,7 @@ while Linux and its kind were offering a great babbling bazaar
 
 401
 00:24:08,480 --> 00:24:10,480
-由不同议程和方法组成的巨大集市 
+由不同议程和方法组成的巨大集市
 of different agendas and approaches.
 
 402
@@ -2007,152 +2007,152 @@ The bazaar was a lot more fun than the cathedral."
 
 403
 00:24:14,520 --> 00:24:17,640
-我认为在那个时候 真正吸引人们的是  
+我认为在那个时候 真正吸引人们的是 
 I think at the time, what attracted people
 
 404
 00:24:17,640 --> 00:24:21,320
-他们终于可以掌控这个属于他们的世界了 
+他们终于可以掌控这个属于他们的世界了
 is that they were going to be in control of their own world.
 
 405
 00:24:21,320 --> 00:24:23,680
-Stormy Peters 是一位行业分析师 
+Stormy Peters 是一位行业分析师
 Stormy Peters is an industry analyst,
 
 406
 00:24:23,680 --> 00:24:26,200
-也是自由和开源软件的倡导者 
+也是自由和开源软件的倡导者
 and an advocate for free and open source software.
 
 407
 00:24:26,200 --> 00:24:30,880
-当开源软件第一次出现的时候 所有的操作系统都是专有的 
+当开源软件第一次出现的时候 所有的操作系统都是专有的
 When open source software first came out, the OS was all proprietary.
 
 408
 00:24:30,880 --> 00:24:36,400
-如果不使用专有软件 你甚至不能添加打印机 
+如果不使用专有软件 你甚至不能添加打印机
 You couldn't even add a printer without going through proprietary software.
 
 409
 00:24:36,400 --> 00:24:38,040
-不能添加耳机 
+不能添加耳机
 You couldn't add a headset.
 
 410
 00:24:38,040 --> 00:24:40,840
-不能自己开发一个小型硬件设备 
+不能自己开发一个小型硬件设备
 You couldn't develop a small hardware device of your own,
 
 411
 00:24:40,840 --> 00:24:42,440
-然后让它在你的笔记本电脑上运行 
+然后让它在你的笔记本电脑上运行
 and make it work with your laptop.
 
 412
 00:24:42,440 --> 00:24:46,440
-你甚至不能放入 DVD 并复制它 
+你甚至不能放入 DVD 并复制它
 You couldn't even put in a DVD and copy it,
 
 413
 00:24:46,440 --> 00:24:48,200
-因为你不能改变软件 
+因为你不能改变软件
 because you couldn't change the software.
 
 414
 00:24:48,200 --> 00:24:50,920
-即使你拥有这张 DVD 你也无法改变它的内容 
+即使你拥有这张 DVD 你也无法改变它的内容
 Even if you owned the DVD, you couldn't copy it.
 
 415
 00:24:50,920 --> 00:24:55,720
-你无法掌控你购买的硬件 / 软件系统 
+你无法掌控你购买的硬件 / 软件系统
 You had no control over this hardware/software system that you'd bought.
 
 416
 00:24:55,720 --> 00:24:59,800
-你不能从中创造出任何新的、更大的、更好的东西 
+你不能从中创造出任何新的、更大的、更好的东西
 You couldn't create anything new and bigger and better out of it.
 
 417
 00:24:59,800 --> 00:25:05,240
-这就是为什么开源操作系统在一开始就如此重要 
+这就是为什么开源操作系统在一开始就如此重要
 That's why an open source operating system was so important at the beginning.
 
 418
 00:25:05,240 --> 00:25:10,240
-我们需要一个开源协作环境 在那里我们可以构建更大更好的东西 
+我们需要一个开源协作环境 在那里我们可以构建更大更好的东西
 We needed an open source collaborative environment where we could build bigger and better things.
 
 419
 00:25:11,680 --> 00:25:15,560
-请注意 Linux 并不是一个纯粹的平等乌托邦 
+请注意 Linux 并不是一个纯粹的平等乌托邦
 Mind you, Linux isn't a purely egalitarian utopia.
 
 420
 00:25:15,560 --> 00:25:18,960
-林纳斯·托瓦兹并没有负责批准所有对内核的修改 
+林纳斯·托瓦兹并没有负责批准所有对内核的修改
 Linus Torvalds doesn't approve everything that goes into the kernel,
 
 421
 00:25:18,960 --> 00:25:21,280
-但他主导了内核的变更 
+但他主导了内核的变更
 but he does preside over its changes.
 
 422
 00:25:21,280 --> 00:25:25,720
-他安排了十几个人来管理内核的不同部分 
+他安排了十几个人来管理内核的不同部分
 He's installed a dozen or so people below him to manage different parts of the kernel.
 
 423
 00:25:25,720 --> 00:25:30,360
-这些人也会信任自己下面的人 以此类推 形成信任金字塔 
+这些人也会信任自己下面的人 以此类推 形成信任金字塔
 They, in turn, trust people under themselves, and so on, in a pyramid of trust.
 
 424
 00:25:31,280 --> 00:25:35,080
-变化可能来自任何地方 但它们都经过了判断和策划 
+变化可能来自任何地方 但它们都经过了判断和策划
 Changes might come from anywhere, but they're all judged and curated.
 
 425
 00:25:37,080 --> 00:25:41,200
-然而 考虑到到林纳斯的 DIY 项目一开始是多么的简陋和随意 
+然而 考虑到到林纳斯的 DIY 项目一开始是多么的简陋和随意
 It is amazing, though, to think how humble, and kind of random,
 
 426
 00:25:41,200 --> 00:25:43,840
-这项成就令人十分惊讶 
+这项成就令人十分惊讶
 Linus' DIY project was to begin with.
 
 427
 00:25:43,840 --> 00:25:47,200
-他完全不知道自己就是这一切中的卢克·天行者 
+他完全不知道自己就是这一切中的卢克·天行者
 He didn't have a clue he was the Luke Skywalker figure in all this.
 
 428
 00:25:47,200 --> 00:25:50,520
-当时他只有 21 岁 已经编程了半辈子 
+当时他只有 21 岁 已经编程了半辈子
 He was just 21, and had been programming half his life.
 
 429
 00:25:50,520 --> 00:25:55,040
-不过当魔盒第一次被打开时 人们开始给他反馈 
+不过当魔盒第一次被打开时 人们开始给他反馈
 But this was the first time the silo opened up, and people started giving him feedback.
 
 430
 00:25:55,040 --> 00:25:59,240
-几十个 然后几百个 成千上万的贡献者 
+几十个 然后几百个 成千上万的贡献者
 Dozens, then hundreds, and thousands of contributors.
 
 431
 00:25:59,240 --> 00:26:05,000
-有了这样的众包基础 Linux 很快就开始成长 而且成长得很快 
+有了这样的众包基础 Linux 很快就开始成长 而且成长得很快
 With crowdsourcing like that, it doesn't take long before Linux starts growing. Really growing.
 
 432
 00:26:05,000 --> 00:26:08,080
-甚至最终引起了微软的注意 
+甚至最终引起了微软的注意
 It even finally gets noticed by Microsoft.
 
 433
@@ -2162,67 +2162,67 @@ Their CEO, Steve Ballmer, called Linux, and I quote,
 
 434
 00:26:11,760 --> 00:26:18,280
-“一种癌症 从知识产权的角度来看 它传染了任何它接触的东西” 
+“一种癌症 从知识产权的角度来看 它传染了任何它接触的东西”
 "A cancer that attaches itself in an intellectual property sense to everything it touches."
 
 435
 00:26:18,720 --> 00:26:21,120
-Steven Levy 将会描述 Ballmer 的立场 
+Steven Levy 将会描述 Ballmer 的立场
 Steven Levy describes where Ballmer was coming from.
 
 436
 00:26:21,600 --> 00:26:24,840
-一旦微软真正巩固了它的垄断地位  
+一旦微软真正巩固了它的垄断地位 
 Once Microsoft really solidified its monopoly,
 
 437
 00:26:24,840 --> 00:26:28,720
-而且它也确实被联邦法院判定为垄断 
+而且它也确实被联邦法院判定为垄断
 and indeed it was judged in federal court as a monopoly,
 
 438
 00:26:28,720 --> 00:26:33,760
-他们将会对任何可能对其构成威胁的事情做出强烈反应 
+他们将会对任何可能对其构成威胁的事情做出强烈反应
 anything that could be a threat to that, they reacted very strongly to.
 
 439
 00:26:33,760 --> 00:26:38,760
-他们很自然的将自由软件看成是一种癌症 
+他们很自然的将自由软件看成是一种癌症
 So of course, the idea that free software would be emerging,
 
 440
 00:26:38,760 --> 00:26:44,040
-因为微软要通过软件来赚钱 
+因为微软要通过软件来赚钱
 when they were charging for software, they saw as a cancer.
 
 441
 00:26:44,040 --> 00:26:48,000
-他们试图提出一个知识产权理论 
+他们试图提出一个知识产权理论
 They tried to come up with an intellectual property theory
 
 442
 00:26:48,000 --> 00:26:52,640
-来解释为什么开源对消费者不利 
+来解释为什么开源对消费者不利
 about why this was going to be bad for consumers.
 
 443
 00:26:53,080 --> 00:26:56,120
-Linux 在不断传播 微软也开始担心起来 
+Linux 在不断传播 微软也开始担心起来
 Linux was spreading, and Microsoft was worried.
 
 444
 00:26:56,120 --> 00:27:01,960
-到了 2006 年 Linux 成为仅次于 Windows 的第二大常用操作系统 
+到了 2006 年 Linux 成为仅次于 Windows 的第二大常用操作系统
 By 2006, Linux would become the second most widely used operating system after Windows,
 
 445
 00:27:01,960 --> 00:27:05,560
-约有 5000 名开发者在世界各地开发它 
+约有 5000 名开发者在世界各地开发它
 with about 5,000 developers working on it worldwide.
 
 446
 00:27:05,560 --> 00:27:07,560
-5000 名开发者 
+5000 名开发者
 Five thousand.
 
 447
@@ -2232,32 +2232,32 @@ Remember that memo that Bill Gates sent to Apple,
 
 448
 00:27:10,320 --> 00:27:13,960
-在那份备忘录中 他向苹果公司的员工们论述了与他人合作的重要性 
+在那份备忘录中 他向苹果公司的员工们论述了与他人合作的重要性
 the one where he's lecturing them about the importance of partnering with other people?
 
 449
 00:27:13,960 --> 00:27:19,160
-事实证明 开源将把伙伴关系的概念提升到一个全新的水平 
+事实证明 开源将把伙伴关系的概念提升到一个全新的水平
 Turns out, open source would take that idea of partnerships to a whole new level,
 
 450
 00:27:19,160 --> 00:27:22,080
-这是比尔·盖茨从未预见到的 
+这是比尔·盖茨从未预见到的
 in a way Bill Gates would have never foreseen.
 
 451
 00:27:31,680 --> 00:27:34,320
-我们一直在谈论操作系统之间的大战 
+我们一直在谈论操作系统之间的大战
 We've been talking about these huge battles for the OS,
 
 452
 00:27:34,320 --> 00:27:39,640
-但是到目前为止 无名英雄和开发者们还没有完全介入战场 
+但是到目前为止 无名英雄和开发者们还没有完全介入战场
 but so far, the unsung heroes, the developers, haven't fully made it onto the battlefield.
 
 453
 00:27:39,640 --> 00:27:42,600
-在下集中 情况就不同了 
+在下集中 情况就不同了
 That changes next time, on Command Line Heroes.
 
 454
@@ -2266,55 +2266,55 @@ That changes next time, on Command Line Heroes.
 
 455
 00:27:48,080 --> 00:27:51,920
-资本们醒悟过来 认识到了开发人员的重要性 
+资本们醒悟过来 认识到了开发人员的重要性
 Businesses wake up, and realize the importance of developers.
 
 456
 00:27:51,920 --> 00:27:54,240
-这些开源反叛者变得越来越强大 
+这些开源反叛者变得越来越强大
 These open source rebels grow stronger,
 
 457
 00:27:54,240 --> 00:27:57,880
-战场从桌面转移到了服务器领域 
+战场从桌面转移到了服务器领域
 and the battlefield shifts from the desktop to the server room.
 
 458
 00:27:57,880 --> 00:28:00,600
-这里有商业间谍活动、新的英雄人物 
+这里有商业间谍活动、新的英雄人物
 There's corporate espionage, new heroes,
 
 459
 00:28:00,600 --> 00:28:03,560
-还有科技史上最不可思议的改变 
+还有科技史上最不可思议的改变
 and the unlikeliest change of heart in tech history.
 
 460
 00:28:03,560 --> 00:28:07,560
-这一切都在操作系统大战的后半集内达到了高潮 
+这一切都在操作系统大战的后半集内达到了高潮
 It all comes to a head in the concluding half of the OS wars.
 
 461
 00:28:08,240 --> 00:28:11,880
-在这一季剩下的时间里 我们将参观最新的战场 
+在这一季剩下的时间里 我们将参观最新的战场
 Over the rest of the season, we're visiting the latest battlefields,
 
 462
 00:28:11,880 --> 00:28:17,080
-相互争斗的版图 这里是下一代的代码英雄留下印记的地方 
+相互争斗的版图 这里是下一代的代码英雄留下印记的地方
 the up-for-grab territories where the next generation of Command Line Heroes are making their mark.
 
 463
 00:28:17,640 --> 00:28:21,040
-代码英雄是一款红帽公司原创的博客节目 
+代码英雄是一款红帽公司原创的博客节目
 Command Line Heroes is an original podcast from Red Hat.
 
 464
 00:28:21,040 --> 00:28:25,120
-更多信息 请访问https://www.redhat.com/en/command-line-heroes 
+更多信息 请访问https://www.redhat.com/en/command-line-heroes
 For more info, check us out at redhat.com/commandlineheroes.
 
 465
 00:28:48,080 --> 00:28:51,680
-我是 Saron Yitbarek 感谢收听 请坚持编程 
+我是 Saron Yitbarek 感谢收听 请坚持编程
 I'm Saron Yitbarek. Thanks for listening, and keep on coding.
