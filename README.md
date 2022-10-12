@@ -1,6 +1,8 @@
 # COSSIG-Subtitles
 _这个 repo 负责保存本 SIG 贡献者制作的字幕，和字幕制作相关的工具。_
 
+如果想要为本项目贡献字幕，请先查看我们的[字幕样式规范](https://github.com/COSSIG/COSSIG-Subtitles/blob/main/SUBTITLE-STANDARD.md)。
+
 贡献者提交字幕请将你的字幕文件加入到 submitted-subtitles 文件夹，然后通过 pull request 提交到本储存库。此后，管理员会对你的字幕进行审核，审核通过的字幕会被移动到 reviewed-subtitles。
 
 在开始贡献字幕之前，请查看我们的[任务分配表单](https://github.com/COSSIG/Mission-Control/blob/main/mission-status.csv)以确定你打算做的任务没有被申领。你也可以通过 pull request 对以上这个表单进行修改（新建一行，写入你的 Github 用户名和任务名称，剩下的部分管理员会替你填写）来申领任务。
