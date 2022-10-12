@@ -490,7 +490,8 @@ whereas Microsoft much more pragmatic, a modular focus-
 
 99
 00:05:32,600 --> 00:05:34,200
-这位是 James Allworth That's James Allworth.
+这位是 James Allworth
+That's James Allworth.
 
 100
 00:05:34,200 --> 00:05:38,040
@@ -529,7 +530,8 @@ from the hardware to the operating system,
 
 107
 00:06:01,240 --> 00:06:05,840
-甚至运行在操作系统上的应用程序 to even some of the applications that ran on top of the operating system.
+甚至运行在操作系统上的应用程序
+to even some of the applications that ran on top of the operating system.
 
 108
 00:06:05,840 --> 00:06:12,480
@@ -2262,7 +2264,8 @@ That changes next time, on Command Line Heroes.
 
 454
 00:27:43,360 --> 00:27:48,080
-第二集讲的还是操作系统大战 关于 Linux 崛起的第二部分 In episode two, part two of the OS wars, it's the rise of Linux.
+第二集讲的还是操作系统大战 关于 Linux 崛起的第二部分
+In episode two, part two of the OS wars, it's the rise of Linux.
 
 455
 00:27:48,080 --> 00:27:51,920
