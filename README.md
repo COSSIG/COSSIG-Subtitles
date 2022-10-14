@@ -13,3 +13,11 @@ _这个 repo 负责保存本 SIG 贡献者制作的字幕，和字幕制作相�
 **注意：出于规范化和进一步处理方便的考虑，原则上我们鼓励提交 .srt 格式的字幕。**
 
 如果你提交了其它格式的字幕，我们会在审核时为你转换成 srt。请**不要**直接将**非 srt 字幕**放进 reviewed-subtitles 文件夹。
+
+### 关于代码英雄
+翻译后文件可在 [LCRH repo](https://github.com/LCTT/LCRH) 里找到，源文件以及音频请在 [红帽官网](https://www.redhat.com/en/command-line-heroes)访问。
+
+**如何在红帽网站获取音频？** 右键 - 检查或 F12 开发者工具，在查看器里搜索 mp3
+![](https://github.com/acyanbird/COSSIG-Subtitles/blob/update-%E4%BB%A3%E7%A0%81%E8%8B%B1%E9%9B%84/pic/findMP3.png)
+复制链接到新网页打开，右键保存
+![](https://github.com/acyanbird/COSSIG-Subtitles/blob/update-%E4%BB%A3%E7%A0%81%E8%8B%B1%E9%9B%84/pic/downloadMP3.png)
