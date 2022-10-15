@@ -1,0 +1,2035 @@
+﻿1
+00:00:00,000 --> 00:00:02,240
+这玩意开着的吗？
+Is this thing on?
+
+2
+00:00:02,240 --> 00:00:06,000
+让我们播放一段跟星球大战电影一样的开场字幕吧 第二集开始了！
+Cue the epic Star Wars crawl, and, action.
+
+3
+00:00:06,000 --> 00:00:09,000
+OS 战争第二部分：Linux 的崛起
+Episode Two: Rise of Linux®.
+
+4
+00:00:09,000 --> 00:00:14,200
+微软帝国控制着 90％ 的用桌面用户
+The empire of Microsoft controls 90 % of desktop users.
+
+5
+00:00:14,200 --> 00:00:17,860
+操作系统的完全标准化似乎是板上钉钉的事了
+Complete standardization of operating systems seems assured.
+
+6
+00:00:17,860 --> 00:00:23,760
+所以公司们把它们的注意力从桌面端的个人用户 转移到了专业人士上
+However, the advent of the internet swerves the focus of the war from the desktop toward enterprise,
+
+7
+00:00:23,760 --> 00:00:26,760
+它们为了服务器的所有权打得不可开交
+where all businesses scramble to claim a server of their own.
+
+8
+00:00:27,400 --> 00:00:33,000
+但是一个有点让人意想不到的英雄出现在开源“反叛组织”中
+Meanwhile, an unlikely hero arises from amongst the band of open source rebels .
+
+9
+00:00:33,000 --> 00:00:41,000
+戴着眼镜 固执的林纳斯·托瓦兹免费发布了他的 Linux® 程序
+Linus Torvalds, head strong, bespectacled, releases his Linux system free of charge.
+
+10
+00:00:41,000 --> 00:00:46,500
+微软摔了个趔趄 并且开始重新调整战略
+Microsoft reels — and regroups.
+
+11
+00:00:47,000 --> 00:00:49,500
+哦 我们极客们就是喜欢那样
+Oh, the nerd in me just loves that.
+
+12
+00:00:49,500 --> 00:00:51,000
+上一次我们讲到哪了？
+So, where were we?
+
+13
+00:00:51,000 --> 00:00:54,300
+苹果和微软互相攻伐
+Apple and Microsoft were trading blows,
+
+14
+00:00:54,300 --> 00:00:57,300
+试图在争夺桌面用户的战争中占据主导地位
+trying to dominate in a war over desktop users.
+
+15
+00:00:57,300 --> 00:01:01,600
+在第一集的结尾 我们看到微软获得了大部分的市场份额
+By the end of episode one, we saw Microsoft claiming most of the prize.
+
+16
+00:01:01,600 --> 00:01:05,000
+很快 互联网的兴起以及随之而来的开发者大军
+Soon, the entire landscape went through a seismic upheaval.
+
+17
+00:01:05,000 --> 00:01:10,000
+让整个市场都经历了一场地震
+That's all because of the rise of the internet and the army of developers that rose with it.
+
+18
+00:01:10,000 --> 00:01:14,340
+互联网将战场从在家庭和办公室中的个人电脑用户
+So the internet moves the battlefield from PC users in their home offices
+
+19
+00:01:14,340 --> 00:01:17,300
+转移到拥有数百台服务器的大型商业客户中
+to giant business clients with hundreds of servers.
+
+20
+00:01:17,300 --> 00:01:19,600
+这意味着巨量资源的迁移
+This is a huge resource shift.
+
+21
+00:01:19,600 --> 00:01:26,600
+突然间 所有相关企业不仅被迫为服务器空间和网站建设付费
+Not only does every company out there wanting to remain relevant suddenly have to pay for server space and get a website built
+
+22
+00:01:26,600 --> 00:01:32,000
+还必须集成软件来进行资源跟踪和数据库监控等工作
+they also have to integrate software to track resources, monitor databases, et cetera, et cetera.
+
+23
+00:01:32,000 --> 00:01:37,000
+至少那时候大家都是这么做的 你需要很多开发人员来帮助你
+You're going to need a lot of developers to help you with that. At least, back then you did.
+
+24
+00:01:37,000 --> 00:01:42,500
+在操作系统之战的第二部分 我们将看到固有优势的巨大转变
+In part two of the OS wars, we'll see how that enormous shift in priorities,
+
+25
+00:01:42,500 --> 00:01:46,620
+以及像林纳斯·托瓦兹和理查德·斯托尔曼这样的开源反叛者
+and the work of a few open source rebels like Linus Torvalds and Richard Stallman,
+
+26
+00:01:46,620 --> 00:01:52,000
+是如何成功地在微软和整个软件行业的核心引发恐惧的
+managed to strike fear in the heart of Microsoft, and an entire software industry.
+
+27
+00:01:52,720 --> 00:01:58,000
+我是 Saron Yitbarek 你现在收听的是代码英雄 一款红帽公司原创的播客节目
+I'm Saron Yitbarek and you're listening to Command Line Heroes, an original podcast from Red Hat.
+
+28
+00:01:58,000 --> 00:02:04,400
+每一集 我们都会给你带来“从码开始” 用技术改变科技的人 他们的故事
+In each episode, we're bringing you stories about the people who transform technology from the command line up.
+
+29
+00:02:11,500 --> 00:02:15,800
+好 想象一下你是 1991 年时的微软
+Okay. Imagine for a second that you're Microsoft in 1991.
+
+30
+00:02:15,800 --> 00:02:17,200
+你自我感觉良好 对吧？
+You're feeling pretty good, right?
+
+31
+00:02:17,200 --> 00:02:21,400
+你满怀信心 确立了全球主导地位的感觉真不错
+Pretty confident. Assured global domination feels nice.
+
+32
+00:02:21,400 --> 00:02:24,060
+你已经掌握了与其他企业合作的艺术
+You've mastered the art of partnering with other businesses,
+
+33
+00:02:24,060 --> 00:02:28,400
+但是仍然将大部分开发人员、程序员和系统管理员排除在联盟之外
+but you're still pretty much cutting out the developers, programmers, and sys admins
+
+34
+00:02:28,400 --> 00:02:30,600
+而他们才是真正的武装力量
+that are the real foot soldiers out there.
+
+35
+00:02:30,600 --> 00:02:33,600
+这时出现了一个叫林纳斯·托瓦兹的芬兰极客
+There is this Finnish geek named Linus Torvalds.
+
+36
+00:02:33,600 --> 00:02:38,000
+他和一帮信奉开源的程序员开始发布 Linux
+He and his team of open source programmers are starting to put out versions of Linux,
+
+37
+00:02:38,000 --> 00:02:41,000
+这个操作系统内核是由他们一起编写出来的
+this OS kernel that they're duct taping together.
+
+38
+00:02:41,000 --> 00:02:43,150
+坦白地说 如果你是微软公司
+If you're Microsoft,
+
+39
+00:02:43,150 --> 00:02:46,150
+你并不会太在意 Linux 甚至不太关心开源运动
+frankly, you're not too concerned about Linux or even about open source in general,
+
+40
+00:02:48,000 --> 00:02:52,400
+但是最终 Linux 的规模变得如此之大
+but eventually, the sheer size of Linux gets so big
+
+41
+00:02:52,400 --> 00:02:55,400
+以至于微软不可能不注意到
+that it becomes impossible for Microsoft not to notice.
+
+42
+00:02:55,600 --> 00:03:01,000
+Linux 第一个版本出现在 1991 年 当时大概有 1 万行代码
+The first version comes out in 1991 and it's got maybe 10,000 lines of code.
+
+43
+00:03:01,000 --> 00:03:04,800
+十年后 则是 300 万行代码
+A decade later, there will be three million lines of code.
+
+44
+00:03:04,800 --> 00:03:08,400
+如果你想了解知道现在的 Linux 怎么样了 - 它有 2000 万行代码
+And in case you're wondering, today it's at 20 million.
+
+45
+00:03:10,360 --> 00:03:13,000
+让我们在 90 年代初停留一会儿
+For a moment, let's stay in the early 90s.
+
+46
+00:03:13,000 --> 00:03:16,000
+那时 Linux 还没有成为我们现在所知道的庞然大物
+Linux hasn't yet become the behemoth we know now.
+
+47
+00:03:16,000 --> 00:03:20,000
+这只是一个正在蔓延的 拥有病毒一般感染力的奇怪操作系统
+and the geeks and hackers of the world are falling in love with it.
+
+48
+00:03:20,000 --> 00:03:23,500
+不过全世界的极客和黑客都爱上了它
+and the geeks and hackers of the world are falling in love with it.
+
+49
+00:03:23,500 --> 00:03:26,600
+那时候我还太年轻 但有点希望我曾经历过那个年代
+I was too young in those early days, but I sort of wish I'd been there.
+
+50
+00:03:26,600 --> 00:03:32,000
+我是说在那个时候 发现 Linux 就如同进入了一个秘密结社
+I mean at that time,discovering Linux was like gaining access to a secret society.
+
+51
+00:03:32,000 --> 00:03:35,079
+程序员与朋友们分享刻录的 Linux CD 集
+Programmers would share the Linux CD set with friends the same way other people would share mixtapes of underground music.
+
+52
+00:03:35,079 --> 00:03:38,000
+就像其他人分享地下音乐混音带一样
+the same way other people would share mixtapes of underground music.
+
+53
+00:03:38,000 --> 00:03:45,000
+开发者 Tristram Oaten 讲讲你 16 岁时第一次接触 Linux 的故事吧
+Developer Tristram Oaten tells the story of how he first encountered Linux when he was 16 years old.
+
+54
+00:03:45,000 --> 00:03:50,000
+我和我的家人去了红海的 Hurghada 潜水度假
+We went on a scuba diving holiday, my family and I, to Hurghada, which is on the Red Sea.
+
+55
+00:03:50,000 --> 00:03:52,000
+那是一个美丽的地方 强烈推荐
+Beautiful place, highly recommend it.
+
+56
+00:03:52,000 --> 00:03:56,340
+也许我妈妈跟我说过不要这么做 但第一天 我还是喝了自来水
+The first day, I drank the tap water. Probably, my mom told me not to.
+
+57
+00:03:56,340 --> 00:04:00,800
+所以我整个星期都病得很厉害 没法离开旅馆房间
+So I was really sick the whole week — didn't leave the hotel room.
+
+58
+00:04:00,800 --> 00:04:05,300
+当时我只带了一台新安装了 Slackware Linux 的笔记本电脑
+All I had with me was a laptop with a fresh install of Slackware Linux,
+
+59
+00:04:05,300 --> 00:04:08,300
+我只是听说过这玩意 现在却要尝试使用它
+this thing that I'd heard about and was giving it a try.
+
+60
+00:04:08,300 --> 00:04:10,550
+我手上没有其他的应用程序
+There were no extra apps,
+
+61
+00:04:10,550 --> 00:04:13,000
+我能接触的所有东西只有刻录在 8 张 CD 上的代码
+just what came on the eight CDs.
+
+62
+00:04:13,000 --> 00:04:16,800
+这种情况下 我整个星期能做的事情
+By necessity, all I had to do this whole week
+
+63
+00:04:16,800 --> 00:04:19,000
+就是了解这个外星造物一般的系统
+was to get to grips with this alien system.
+
+64
+00:04:19,000 --> 00:04:21,440
+我阅读手册 摆弄着终端
+I read man pages, played around with the terminal.
+
+65
+00:04:21,440 --> 00:04:26,190
+我记得当时我甚至不知道“.”和“..”之间的区别
+I remember not knowing the difference between a single dot, meaning the current directory, and two dots, meaning the previous directory.
+
+66
+00:04:26,190 --> 00:04:28,600
+我一点头绪都没有 犯过很多错误
+I had no clue. I must have made so many mistakes,
+
+67
+00:04:28,600 --> 00:04:31,600
+但慢慢的 在这种被迫造成的孤独中
+but slowly, over the course of this forcible solitude,
+
+68
+00:04:31,600 --> 00:04:39,000
+我突破了障碍 开始明白并理解命令行到底是怎么回事
+I broke through this barrier and started to understand and figure out what this command line thing was all about.
+
+69
+00:04:39,000 --> 00:04:43,750
+假期结束时 我没有看过金字塔、尼罗河等任何埃及遗址
+By the end of the holiday, I hadn't seen the pyramids, the Nile, or any Egyptian sites,
+
+70
+00:04:43,750 --> 00:04:46,000
+但我解锁了现代世界的一个奇迹
+but I had unlocked one of the wonders of the modern world.
+
+71
+00:04:46,200 --> 00:04:49,000
+我接触了 Linux 接下来的事大家都知道了
+I'd unlocked Linux, and the rest is history.
+
+72
+00:04:49,000 --> 00:04:53,000
+你会从很多人那里听到关于这个故事的不同版本
+You can hear some variation on that story from a lot of people.
+
+73
+00:04:53,550 --> 00:04:58,000
+访问 Linux 命令行是一种革命性的体验
+Getting access to that Linux command line was a transformative experience.
+
+74
+00:04:59,775 --> 00:05:02,925
+它提供了源代码 我当时的感觉是 “太神奇了 ”
+This thing gave me the source code. I was like, "That's amazing."
+
+75
+00:05:03,560 --> 00:05:08,000
+我们正在参加一个名为 Flock to Fedora 的 2017 年 Linux 开发者大会
+We're at a 2017 Linux developers conference called Flock to Fedora.
+
+76
+00:05:08,000 --> 00:05:09,000
+…非常有吸引力
+... very appealing.
+
+77
+00:05:09,000 --> 00:05:14,300
+我觉得随着我掌控这个系统越深 它就越吸引我
+I felt like I had more control over the system and it just drew me in more and more.
+
+78
+00:05:14,300 --> 00:05:23,800
+我想 从 1995 年我第一次编译 Linux 内核那时起 我就迷上了它
+So,From there, I guess, after my first Linux kernel compile in 1995, I was hooked, so, yeah.
+
+79
+00:05:23,800 --> 00:05:26,800
+这是开发者 David Cantrell 与 Joe Brockmire
+Developers David Cantrell and Joe Brockmire.
+
+80
+00:05:26,800 --> 00:05:32,000
+我在 Cheap Software 转的时候发现了一套四张 CD 的 Slackware Linux
+I was going through the cheap software and found a four - CD set of Slackware Linux.
+
+81
+00:05:32,000 --> 00:05:36,200
+它看起来会非常令人兴奋而且很有趣 所以我把它带回家
+And it sounded really exciting and interesting so I took it home,
+
+82
+00:05:36,200 --> 00:05:40,300
+安装在我的第二台电脑上 开始摆弄它
+and installed it on a second computer, started playing with it,
+
+83
+00:05:41,000 --> 00:05:43,595
+有两件事情让我感到很兴奋：
+and really got excited about two things.
+
+84
+00:05:43,595 --> 00:05:47,302
+一个是我运行的不是 Windows
+One was, I was excited not to be running Windows,
+
+85
+00:05:47,750 --> 00:05:51,111
+另一个是 Linux 的开源特性
+and I was excited by the open source nature of Linux.
+
+86
+00:05:52,925 --> 00:05:56,780
+某种程度上来说 使用命令行的人总是存在的
+That access to the command line was, in some ways, always there.
+
+87
+00:05:56,780 --> 00:06:00,000
+在开源真正开始流行起来的二十年前
+Decades before open source really took off,
+
+88
+00:06:00,000 --> 00:06:02,600
+人们总是希望能够做到完全控制机器
+there was always a desire to have complete control,
+
+89
+00:06:02,600 --> 00:06:04,000
+至少…对于开发者来说是这样的
+at least among developers.
+
+90
+00:06:04,000 --> 00:06:07,720
+让我们回到操作系统大战之前的那个时代
+Go way back to a time before the OS wars,
+
+91
+00:06:07,720 --> 00:06:10,540
+在苹果和微软为他们的 GUI 而战之前
+before Apple and Microsoft were fighting over their GUIs.
+
+92
+00:06:10,540 --> 00:06:12,500
+那时也有代码英雄
+There were command line heroes then, too.
+
+93
+00:06:12,500 --> 00:06:17,940
+保罗·琼斯教授（在线图书馆 ibiblio.org 的负责人）
+Paul Jones is the director of the online library ibiblio.org.
+
+94
+00:06:17,940 --> 00:06:20,060
+就是一名那个古老年代的开发人员
+He worked as a developer during those early days.
+
+95
+00:06:20,060 --> 00:06:26,180
+从本质上讲 互联网在那个时候客户端-服务器架构还是比较少的
+The internet, by its nature, at that time, was less client server,
+
+96
+00:06:26,180 --> 00:06:28,000
+而更多的是点对点架构的
+totally, and more peer to peer.
+
+97
+00:06:28,000 --> 00:06:33,000
+确实 我们会说 某种 VAX 到 VAX 的连接
+We're talking about, really, some sort of VAX to VAX,
+
+98
+00:06:33,000 --> 00:06:36,400
+某种科学工作站到科学工作站的连接
+some sort of scientific workstation, the scientific workstation.
+
+99
+00:06:36,400 --> 00:06:42,000
+这并不意味着没有客户端-服务端的架构及应用程序
+That doesn't mean that client and server relationships and applications weren't there,
+
+100
+00:06:42,000 --> 00:06:48,000
+但这的确意味着 最初的设计是思考如何实现点对点
+but it does mean that the original design was to think of how to do peer - to - peer things,
+
+101
+00:06:48,000 --> 00:06:50,580
+它与 IBM 一直在做的东西相对立
+the opposite of what IBM had been doing,
+
+102
+00:06:50,580 --> 00:06:58,400
+IBM 给你的只有哑终端 这种终端只能让你管理用户界面
+in which they had dumb terminals that had only enough intelligence to manage the user interface,
+
+103
+00:06:58,400 --> 00:07:05,600
+却无法让你像真正的终端一样为所欲为
+but not enough intelligence to actually let you do anything in the terminal that would expose anything to it.
+
+104
+00:07:05,600 --> 00:07:09,130
+当图形用户界面在普通用户中普及的同时
+As popular as GUI was becoming among casual users,
+
+105
+00:07:09,130 --> 00:07:13,500
+在工程师和开发人员中总是存在着一股相反的力量
+there was always a pull in the opposite direction for the engineers and developers.
+
+106
+00:07:13,500 --> 00:07:16,510
+早在 Linux 出现之前的二十世纪七八十年代
+Before Linux in the 1970s and 80s,
+
+107
+00:07:16,510 --> 00:07:19,100
+这股力量就存在于 Emacs 和 GNU 中
+that resistance was there, with EMACS and GNU.
+
+108
+00:07:19,100 --> 00:07:25,020
+斯托曼的自由软件基金会中的某些人想要使用完全命令行
+W th Stallman's free software foundation, certain folks were always begging for access to the command line,
+
+109
+00:07:25,020 --> 00:07:29,200
+但直到上世纪 90 年代的 Linux 出现 才提供了前所未有的东西
+but it was Linux in the 1990s that delivered like no other.
+
+110
+00:07:29,525 --> 00:07:33,600
+Linux 和其他开源软件的早期爱好者是都是先驱
+The early lovers of Linux and other open source software were pioneers.
+
+111
+00:07:33,600 --> 00:07:37,000
+我正站在他们的肩膀上 我们都是
+I'm standing on their shoulders. We all are.
+
+112
+00:07:44,600 --> 00:07:48,800
+你现在收听的是代码英雄 一款由红帽公司原创的播客
+You're listening to Command Line Heroes, an original podcast from Red Hat.
+
+113
+00:07:48,800 --> 00:07:53,000
+这是操作系统大战的第二部分：Linux 崛起
+This is part two of the OS wars: Rise of Linux.
+
+114
+00:07:53,000 --> 00:07:57,700
+1998 年的时候 情况发生了变化
+By 1998, things have changed.
+
+115
+00:07:57,700 --> 00:08:01,800
+Steven Vaughan-Nichols 是 zdnet.com 的特约编辑
+Steven Vaughan-Nichols is a contributing editor at zdnet.com,
+
+116
+00:08:01,800 --> 00:08:05,500
+他已经写了几十年从商业方面论述技术的文章了
+and he's been writing for decades about the business side of technology.
+
+117
+00:08:05,500 --> 00:08:09,640
+他将向我们讲述 Linux 是如何慢慢变得越来越流行
+He describes how Linux slowly became more and more popular
+
+118
+00:08:09,640 --> 00:08:15,700
+直到自愿贡献者的数量远远超过了工作于 Windows 上的微软开发人员的数量
+until the number of volunteer contributors was way larger than the number of Microsoft developers working on Windows.
+
+119
+00:08:16,000 --> 00:08:20,070
+不过 Linux 桌面版本从未真正追上 Windows
+Linux never really went after Microsoft's desktop customers, though,
+
+120
+00:08:20,070 --> 00:08:22,400
+这也许就是微软最开始时忽略了 Linux 及其开发者的原因
+and maybe that's why Microsoft ignored them at first.
+
+121
+00:08:22,400 --> 00:08:25,400
+Linux 真正大放光彩的地方是服务器机房
+Where Linux did shine was in the server room.
+
+122
+00:08:25,400 --> 00:08:27,390
+当企业开始线上业务时
+When businesses went online,
+
+123
+00:08:27,390 --> 00:08:30,390
+每个企业都需要一个满足其独特需求的解决方案
+each one required a unique programming solution for their needs.
+
+124
+00:08:30,500 --> 00:08:33,700
+Windows NT 于 1993 年问世
+Windows NT comes out in 1993
+
+125
+00:08:33,700 --> 00:08:36,419
+当时它已经在与其他的服务器操作系统展开竞争了
+and it's competing with other server operating systems,
+
+126
+00:08:36,419 --> 00:08:38,200
+但是许多开发人员都在想
+but lots of developers are thinking,
+
+127
+00:08:38,200 --> 00:08:41,490
+为什么我要傻乎乎地买 AIX 或者大型的 Windows 设备呢?
+"Why am I going to buy an AIX box or a large windows box
+
+128
+00:08:41,490 --> 00:08:44,000
+我明明可以通过 Apache 来构建低成本的基于 linux 的系统
+when I could set up a cheap Linux-based system with Apache?"
+
+129
+00:08:44,000 --> 00:08:49,000
+鉴于这个优点 Linux 代码已经开始渗透到几乎所有的在线机器中
+Point is, Linux code started seeping into just about everything online.
+
+130
+00:08:49,000 --> 00:08:54,580
+让微软开始意识到并感到惊讶的是
+Microsoft realizes that Linux, quite to their surprise,
+
+131
+00:08:54,580 --> 00:08:57,700
+Linux 实际上已经有了一些商业应用
+is actually beginning to get some of the business,
+
+132
+00:08:57,700 --> 00:09:01,300
+不是在桌面环境 而是在商业服务器上
+not so much on the desktop, but on business servers.
+
+133
+00:09:01,300 --> 00:09:05,870
+因此 他们发起了一场运动
+As a result of that, they start a campaign,
+
+134
+00:09:05,870 --> 00:09:09,380
+我们称之为 FUD - 恐惧、不确定和怀疑
+what we like to call FUD — fear, uncertainty and doubt
+
+135
+00:09:09,390 --> 00:09:17,270
+他们说 “哦 Linux 这玩意 真的没有那么好 它不太可靠 你根本不能相信它”
+It's not very reliable. You can't trust it with anything."
+
+136
+00:09:20,700 --> 00:09:24,000
+这种软宣传式的攻击持续了一段时间
+That soft propaganda style attack goes on for a while.
+
+137
+00:09:24,000 --> 00:09:27,600
+微软也不是唯一一个对 Linux 感到紧张的公司
+Microsoft wasn't the only one getting nervous about Linux, either.
+
+138
+00:09:27,600 --> 00:09:31,600
+整个行业其实都在对抗这个奇怪新人的挑战
+It was really a whole industry versus that weird new guy.
+
+139
+00:09:31,600 --> 00:09:37,000
+例如 任何与 UNIX 有利害关系的人都可能将 Linux 视为篡夺者
+For example, anyone with a stake in UNIX was likely to see Linux as a usurper.
+
+140
+00:09:37,000 --> 00:09:41,000
+有一个案例很著名 那就是 SCO 组织,它发行过一种 UNIX 版本
+Famously, the SCO Group, which had produced a version of UNIX,
+
+141
+00:09:41,000 --> 00:09:46,000
+在过去 10 多年里发起一系列的诉讼 试图阻止 Linux 的传播
+waged lawsuits for over a decade to try and stop the spread of Linux.
+
+142
+00:09:46,000 --> 00:09:49,000
+而 SCO 最终失败而且破产了
+SCO ultimately failed and went bankrupt.
+
+143
+00:09:49,000 --> 00:09:52,000
+与此同时 微软一直在寻找机会
+Meanwhile, Microsoft kept searching for their opening.
+
+144
+00:09:52,000 --> 00:09:55,000
+他们必须要采取动作
+They were a company that needed to make a move.
+
+145
+00:09:55,000 --> 00:09:58,000
+只是不清楚具体该怎么做
+It just wasn't clear what that move was going to be.
+
+146
+00:09:58,000 --> 00:10:00,580
+第二年 真正让微软担心的事情发生了
+What will make Microsoft really concerned about
+
+147
+00:10:00,580 --> 00:10:05,160
+在 2000 年的时候
+it is the next year, in 2000,
+
+148
+00:10:05,160 --> 00:10:10,600
+IBM 宣布 他们将于 2001 年投资 10 亿美元在 Linux 上
+IBM will announce that they will invest a billion dollars in Linux in 2001.
+
+149
+00:10:10,600 --> 00:10:14,650
+现在 IBM 已经不再涉足个人电脑业务
+Now, IBM is not really in the PC business anymore.
+
+150
+00:10:14,650 --> 00:10:17,000
+那时他们还没有走出那一步 但他们正朝着这个方向前进
+They're not out yet, but they're going in that direction,
+
+151
+00:10:17,000 --> 00:10:25,440
+他们将 Linux 视为服务器和大型计算机的未来
+but what they are doing is they see Linux as being the future of servers and mainframe computers,
+
+152
+00:10:25,440 --> 00:10:30,000
+在这一点上 - 剧透警告 IBM 是正确的
+which, spoiler alert, IBM was correct.
+
+153
+00:10:30,000 --> 00:10:34,000
+Linux 将主宰服务器世界
+Linux is going to dominate the server world.
+
+154
+00:10:34,000 --> 00:10:37,390
+这已经不再仅仅是一群黑客所钟爱的
+This was no longer just about a bunch of hackers loving their
+
+155
+00:10:37,390 --> 00:10:39,300
+对命令行绝地武士式的控制了
+Jedi-like control of the command line.
+
+156
+00:10:39,300 --> 00:10:44,400
+事实上金钱的投入对 Linux 助力极大
+This was about the money side working in Linux's favor in a major way.
+
+157
+00:10:45,000 --> 00:10:51,000
+程序员们着迷的这些东西恰好对大公司也极具吸引力
+So the thing programmers are getting obsessed with also happens to be deeply attractive to big business.
+
+158
+00:10:51,000 --> 00:10:54,290
+但由于 FUD 的作用 一些企业对此持谨慎态度
+Some businesses were wary. The FUD was having an effect.
+
+159
+00:10:54,290 --> 00:10:57,500
+他们听到开源 就想：“开源
+They heard open source and thought, "Open.
+
+160
+00:10:57,500 --> 00:11:01,000
+这看起来不太可靠 很混乱 充满了 BUG”
+That doesn't sound solid. It's going to be chaotic, full of bugs,"
+
+161
+00:11:01,000 --> 00:11:06,000
+但是金钱有一种有趣的魔力 可以说服人们不再踌躇
+but money has a funny way of convincing people to get over their hangups.
+
+162
+00:11:06,000 --> 00:11:11,000
+甚至那些只需要网站的小公司也加入了 Linux 阵营
+Even little businesses, all of which needed websites, were coming on board.
+
+163
+00:11:11,000 --> 00:11:16,200
+与一些昂贵的专有选择相比
+The cost of working with a cheap Linux system over some expensive proprietary option,
+
+164
+00:11:16,200 --> 00:11:18,350
+使用 Linux 开销较低的优势显而易见
+I mean there was really no comparison.
+
+165
+00:11:18,350 --> 00:11:21,550
+如果你是一家雇佣专业人员来构建网站的商店
+there was really no comparison. If you were a shop hiring a pro to build your website,
+
+166
+00:11:21,550 --> 00:11:24,000
+那么你肯定想让他们使用 Linux
+you wanted them to use Linux.
+
+167
+00:11:24,000 --> 00:11:25,900
+让我们快进几年
+Fast forward a few years.
+
+168
+00:11:25,900 --> 00:11:27,550
+Linux 充当着几乎所有网站的服务器
+Linux runs everybody's website.
+
+169
+00:11:27,550 --> 00:11:30,010
+Linux 已经征服了服务器世界
+Linux has conquered the server world,
+
+170
+00:11:30,010 --> 00:11:33,010
+然后智能手机也随之诞生
+and then, along comes the smartphone.
+
+171
+00:11:33,010 --> 00:11:36,220
+当然 苹果和他们的 iPhone 占据了相当大的市场份额
+Apple and their iPhones take a sizeable share of the market,
+
+172
+00:11:36,220 --> 00:11:39,000
+而且微软也希望能进入这个市场
+of course, and Microsoft hoped to get in on that,
+
+173
+00:11:39,000 --> 00:11:42,000
+但令人惊讶的是 Linux 已经等在那里并做好准备
+except, surprise, Linux was there, too,
+
+174
+00:11:42,000 --> 00:11:43,700
+Linux也迫不及待要大展拳脚
+ready and raring to go.
+
+175
+00:11:43,700 --> 00:11:46,000
+这是作家兼记者 James Allworth
+Author and journalist James Allworth.
+
+176
+00:11:46,000 --> 00:11:48,600
+肯定还有容纳第二个竞争者的空间
+There was certainly room for a second player,
+
+177
+00:11:48,600 --> 00:11:50,780
+那本可以是微软
+and that could well have been Microsoft,
+
+178
+00:11:50,780 --> 00:11:54,050
+但是实际上却是 Android 而 Andrid 是基于 Linux 的
+but for the fact of Android, which was fundamentally based on Linux,
+
+179
+00:11:54,050 --> 00:11:57,920
+众所周知 Android 被谷歌所收购
+and because Android, famously acquired by Google,
+
+180
+00:11:57,920 --> 00:12:01,500
+现在运行在世界上大部分的智能手机上
+and now running a majority of the world's smartphones,
+
+181
+00:12:01,500 --> 00:12:03,720
+谷歌在 Linux 的基础上创建了 Android
+Google built it on top of that.
+
+182
+00:12:03,720 --> 00:12:09,400
+Linux 使他们能够以零成本 基于一个非常复杂的操作系统构建一个新的东西
+They were able to start with a very sophisticated operating system and a cost basis of zero.
+
+183
+00:12:09,400 --> 00:12:12,460
+他们盘算着推广这个系统 并最终成功地实现了这一目标
+They managed to pull it off, and it ended up
+
+184
+00:12:12,460 --> 00:12:19,100
+至少从操作系统的角度来看是这样 他们将微软挡在了下一代手机竞争之外
+locking Microsoft out of the next generation of devices, by and large, at least from an operating system perspective.
+
+185
+00:12:19,100 --> 00:12:21,600
+为此 微软肯定对此感到非常紧张
+So,they would right to be very worry about it.
+
+186
+00:12:21,600 --> 00:12:27,300
+这可是个大地震 很大程度上 微软有被埋没的风险
+The ground was breaking up, big time, and Microsoft was in danger of falling into the cracks.
+
+187
+00:12:27,300 --> 00:12:31,350
+John Gossman 是微软 Azure 团队的首席架构师
+John Gossman is the chief architect on the Azure team at Microsoft.
+
+188
+00:12:31,350 --> 00:12:34,350
+他还记得当时公司的迷茫
+He remembers the confusion that gripped the company at that time.
+
+189
+00:12:34,350 --> 00:12:42,000
+像许多公司一样 微软也非常担心知识产权污染
+Like a lot of companies, Microsoft was very concerned about IP pollution.
+
+190
+00:12:42,000 --> 00:12:47,270
+他们认为 如果允许开发人员使用开源代码
+They thought that if you let developers use open source
+
+191
+00:12:47,270 --> 00:12:52,000
+即使只是将一些代码复制粘贴到某些产品中
+they would likely just copy and paste bits of code into some product
+
+192
+00:12:52,000 --> 00:12:55,600
+也会让某种病毒式的许可证生效从而引发未知的风险…
+and then some sort of a viral license might take effect that ...
+
+193
+00:12:55,600 --> 00:12:59,850
+他们也很困惑 我认为 这跟公司文化有关
+And they were also very confused, I think, it was just culturally,
+
+194
+00:12:59,850 --> 00:13:02,000
+很多公司 包括微软
+a lot of companies, Microsoft included,
+
+195
+00:13:02,000 --> 00:13:08,900
+对开源开发的意义和商业模式之间的分歧感到困惑
+were confused on the difference between what open source development meant and what the business model was.
+
+196
+00:13:08,900 --> 00:13:15,000
+有一种观点认为 开源意味着你所有的软件都是免费的 人们永远不会付钱
+This is kind of idea that open source meant that all your software was free and people were never going to pay anything.
+
+197
+00:13:16,000 --> 00:13:20,230
+任何习惯于投资于旧的、专有软件模式的人
+Anybody invested in the old, proprietary model of software
+
+198
+00:13:20,230 --> 00:13:22,500
+都会觉得这里发生的一切对他们构成了威胁
+is going to feel threatened by what's happening here.
+
+199
+00:13:22,500 --> 00:13:25,090
+当你威胁到像微软这样的大公司时
+When you threaten an enormous company like Microsoft,
+
+200
+00:13:25,090 --> 00:13:28,090
+是的 他们一定会做出反应
+Yeah, you can bet they're going to react.
+
+201
+00:13:28,090 --> 00:13:30,400
+他们推动所有这些 FUD
+It makes sense they were pushing all that FUD —
+
+202
+00:13:30,400 --> 00:13:32,000
+恐惧、不确定性和怀疑
+fear, uncertainty and doubt.
+
+203
+00:13:32,000 --> 00:13:36,200
+当时 商业运作的方式基本上就是相互竞争
+At the time, an “ us versus them ” attitude was pretty much how business worked.
+
+204
+00:13:37,200 --> 00:13:39,200
+不过 如果是其他公司的话
+If they'd been any other company, though,
+
+205
+00:13:39,200 --> 00:13:42,200
+他们可能还会一直怀恨在心 抱残守缺
+they might have kept that old grudge, that old thinking,
+
+206
+00:13:42,200 --> 00:13:46,700
+但到了 2013 年的微软 一切都变了
+but then, in 2013, everything changes.
+
+207
+00:13:46,700 --> 00:13:50,660
+微软的云计算服务 Azure 上线了
+Microsoft's cloud computing service, Azure, goes online
+
+208
+00:13:50,660 --> 00:13:55,600
+令人震惊的是 它从第一天开始就提供了 Linux 虚拟机
+and, shockingly, it offers Linux virtual machines from day one.
+
+209
+00:13:55,600 --> 00:13:59,150
+史蒂夫·鲍尔默,这位把 Linux 称为癌症的首席执行官
+Steve Ballmer, the CEO who called Linux a cancer,
+
+210
+00:13:59,150 --> 00:14:00,000
+已经离开了
+he's out,
+
+211
+00:14:00,000 --> 00:14:04,300
+代替他的是一位新的有远见的首席执行官 - 萨提亚·纳德拉
+and a new forward - thinking CEO, Satya Nadella, has been brought in.
+
+212
+00:14:04,675 --> 00:14:07,620
+萨提亚有不同的看法
+Satya has a different attitude.
+
+213
+00:14:07,620 --> 00:14:13,000
+他属于另一个世代,比保罗、比尔和史蒂夫更年轻的世代
+He's another generation. He's a generation younger than Paul and Bill and Steve were,
+
+214
+00:14:13,000 --> 00:14:16,400
+他对开源有不同的看法
+and had a different perspective on open source.
+
+215
+00:14:16,400 --> 00:14:19,400
+这是 John Gossman 他还是来自微软 Azure 团队
+John Gossman, again, from Microsoft's Azure team.
+
+216
+00:14:19,400 --> 00:14:24,670
+大约四年前 我们在 Azure 中添加了 Linux 支持
+We added Linux support into Azure about four years ago,
+
+217
+00:14:24,670 --> 00:14:28,000
+迫于求生欲
+and that was for very pragmatic reasons.
+
+218
+00:14:28,000 --> 00:14:31,000
+如果访问任何一家企业客户
+If you go to any enterprise customer,
+
+219
+00:14:31,000 --> 00:14:32,580
+你都会发现
+ you will find that
+
+220
+00:14:32,580 --> 00:14:38,510
+他们并不是现在才决定是用 Windows 还是 Linux
+they are not trying to decide whether to use Windows to use Linux
+
+221
+00:14:38,510 --> 00:14:41,000
+或是用 .NET 还是 Java
+or to use Linux
+
+222
+00:14:41,000 --> 00:14:46,300
+他们在很久以前就做出了决定 - 大约 15 年前
+They made all those decisions a long time ago — about 15 years or so ago,
+
+223
+00:14:46,300 --> 00:14:47,800
+虽然对此有一些争论
+there was some of this argument.
+
+224
+00:14:47,800 --> 00:14:52,590
+现在 我见过的每一家公司都混合了
+Now, every company that I have ever seen has a mix of
+
+225
+00:14:52,590 --> 00:14:56,342
+Linux 和 Java、Windows 和 .NET、
+Linux and Java and Windows and .NET 
+
+226
+00:14:56,342 --> 00:15:00,170
+SQL Server、Oracle 和 MySQL 等
+and SQL Server and Oracle and MySQL
+
+227
+00:15:00,170 --> 00:15:04,900
+这些基于专有源代码的产品和开放源代码的产品
+— proprietary source code - based products and open source code products.
+
+228
+00:15:04,900 --> 00:15:07,100
+如果你打算运维一个云服务
+And if you're going to operate a cloud
+
+229
+00:15:07,100 --> 00:15:14,300
+允许这些公司在云上运行他们的业务
+you're going to allow and enable those companies to run their businesses on the cloud,
+
+230
+00:15:14,300 --> 00:15:16,000
+那么你根本不能告诉他们
+you simply cannot tell them,
+
+231
+00:15:16,000 --> 00:15:19,000
+“你可以使用这个软件 不能使用那个软件 ”
+"You can use this software but you can't use this software."
+
+232
+00:15:22,000 --> 00:15:25,400
+这正是萨提亚·纳德拉采纳的哲学思想
+That's exactly the philosophy that Satya Nadella adopted.
+
+233
+00:15:25,400 --> 00:15:28,400
+2014 年秋季 他站在舞台上
+In the fall of 2014, he gets up on stage
+
+234
+00:15:28,400 --> 00:15:31,400
+希望传递一个重要信息
+and he wants to get across one big, fat point.
+
+235
+00:15:31,400 --> 00:15:34,000
+“微软爱 Linux”
+Microsoft loves Linux.
+
+236
+00:15:34,000 --> 00:15:37,410
+他接着说 “20% 的 Azure 业务已经是 Linux 了
+He goes on to say that 20 % of Azure is already Linux
+
+237
+00:15:37,410 --> 00:15:41,840
+微软将始终对 Linux 发行版提供一流的支持”
+and that Microsoft will always have first - class support for Linux distros.
+
+238
+00:15:41,840 --> 00:15:46,000
+没有哪怕一丝对开源的宿怨
+There's not even a whiff of that old antagonism toward open source.
+
+239
+00:15:46,000 --> 00:15:47,880
+为了说明这一点
+To drive the point home,
+
+240
+00:15:47,880 --> 00:15:50,880
+在他们的背后有一个巨大的标志 上面写着：
+there's literally a giant sign behind them that reads,
+
+241
+00:15:51,540 --> 00:15:53,270
+“Microsoft ❤️ Linux”
+"Microsoft hearts Linux."
+
+242
+00:15:53,270 --> 00:15:57,000
+噢 对我们中的一些人来说 这种转变有点令人震惊
+Aww. For some of us, that turnaround was a bit of a shock,
+
+243
+00:15:57,000 --> 00:15:58,600
+但实际上 无需如此震惊
+but really, it shouldn't have been.
+
+244
+00:15:58,600 --> 00:16:01,600
+下面是 Steven Levy 一名科技记者兼作家
+Here's Steven Levy, a tech journalist and author.
+
+245
+00:16:01,600 --> 00:16:08,000
+当你在踢足球的时候 如果草坪变滑了
+When you're playing a football game and the turf becomes really slick,
+
+246
+00:16:08,000 --> 00:16:15,000
+换种不同的鞋子 才能继续在上面玩耍
+maybe you switch to a different kind of footwear in order to play on that turf.
+
+247
+00:16:15,000 --> 00:16:16,220
+微软当初就是这么做的
+That's what they were doing.
+
+248
+00:16:16,220 --> 00:16:19,600
+他们不能否认现实 而且他们也是聪明人
+They can't deny reality and there are smart people there
+
+249
+00:16:19,600 --> 00:16:27,980
+所以他们必须意识到 这就是这个世界的运行方式
+so they had to realize that this is the way the world is and put aside what they said earlier,
+
+250
+00:16:27,980 --> 00:16:31,670
+即使他们有一点尴尬
+even though they might be a little embarrassed
+
+251
+00:16:31,670 --> 00:16:33,200
+但是不管他们早些时候说了什么现在都要抛开
+at their earlier statements,
+
+252
+00:16:33,200 --> 00:16:39,260
+不然让他们之前那些“开源多么可怕”的言论影响到现在的决策
+but it would be crazy to let their statements about how horrible open source was earlier,
+
+253
+00:16:39,260 --> 00:16:41,600
+才真的是不明智之举
+affect their smart decisions now.
+
+254
+00:16:41,600 --> 00:16:45,000
+微软低下了它高傲的头
+Microsoft swallowed its pride in a big way.
+
+255
+00:16:45,000 --> 00:16:46,900
+你可能还记得苹果公司
+You might remember that Apple,
+
+256
+00:16:46,900 --> 00:16:52,300
+经过多年的孤立无援 最终转向与微软构建合作伙伴关系
+after years of splendid isolation, finally shifted toward a partnership with Microsoft.
+
+257
+00:16:52,300 --> 00:16:55,300
+现在轮到微软进行 180 度转变了
+Well,Now it was Microsoft's turn to do a 180.
+
+258
+00:16:55,300 --> 00:16:58,300
+经过多年的与开源方式的战斗后
+After years of battling the open source approach,
+
+259
+00:16:58,300 --> 00:17:00,000
+他们正在重塑自己
+they were reinventing themselves.
+
+260
+00:17:00,000 --> 00:17:02,600
+要么改变 要么死亡
+It was change or perish.
+
+261
+00:17:02,600 --> 00:17:04,000
+下一个发言的是 Steven Vaughan-Nichols
+Steven Vaughan-Nichols.
+
+262
+00:17:04,000 --> 00:17:06,380
+即使是像微软这样规模的公司
+Even a company the size of Microsoft
+
+263
+00:17:06,380 --> 00:17:17,000
+也无法与数千个开发着包括 Linux 在内的各类开源大项目的开发者竞争
+simply can't compete with the thousands of open source developers working on all these other major projects, including Linux.
+
+264
+00:17:17,000 --> 00:17:20,760
+很长时间以来他们都不愿意合作
+They were very loath e to do so for a long time.
+
+265
+00:17:20,760 --> 00:17:26,810
+前微软首席执行官史蒂夫·鲍尔默对 Linux 用接近信仰的方式深恶痛绝
+The former Microsoft CEO, Steve Ballmer, hated Linux with a passion.
+
+266
+00:17:26,810 --> 00:17:30,000
+由于它使用的 GPL 许可证 他视 Linux 为一种癌症
+Because of its GPL license, it was a cancer,
+
+267
+00:17:30,000 --> 00:17:35,010
+不过一旦鲍尔默被扫地出门
+but once Ballmer was finally shown the door,
+
+268
+00:17:35,010 --> 00:17:38,750
+新的微软领导层表示
+the new Microsoft leadership said,
+
+269
+00:17:38,750 --> 00:17:42,077
+“这就好像试图命令潮流不要过来
+"This is like trying to order the tide to stop coming in.
+
+270
+00:17:42,077 --> 00:17:44,077
+但潮水依然会不断涌进来
+The tide is going to keep coming in.
+
+271
+00:17:44,425 --> 00:17:49,000
+我们应该与 Linux 合作 而不是与之对抗 ”
+We should work with Linux, not against it."
+
+272
+00:17:49,000 --> 00:17:53,330
+说真的 线上技术史中最大的胜利之一
+Really, one of the big wins of the history of online techs
+
+273
+00:17:53,330 --> 00:17:58,000
+就是微软终于做出这个改变 而且还成功了
+is the way Microsoft was able to make this pivit when they finally decided to.
+
+274
+00:17:58,000 --> 00:18:04,110
+当然 Linux 的老支持者对微软支持开源一事仍持怀疑态度
+Of course, older hard core Linux supporters were pretty sceptical when Microsoft showed up at the open source table.
+
+275
+00:18:04,110 --> 00:18:06,800
+他们不确定能不能欢迎这些家伙
+They weren't sure if they can embrace these guys.
+
+276
+00:18:06,800 --> 00:18:08,700
+但正如 Vaughan-Nichols 所说
+But, as Vaughan-Nichols  points out,
+
+277
+00:18:08,700 --> 00:18:12,480
+如今的微软已不再是上一辈人所见的微软了
+today's Microsoft simply is not your mom and dad's Microsoft.
+
+278
+00:18:12,500 --> 00:18:17,160
+2017 年的微软既不是史蒂夫·鲍尔默的微软
+Microsoft 2017 is not Steve Ballffmer's Microsoft,
+
+279
+00:18:17,160 --> 00:18:19,000
+也不是比尔·盖茨的微软
+nor is it Bill Gates' Microsoft.
+
+280
+00:18:19,000 --> 00:18:25,000
+这是一家完全不同的公司 有着完全不同的理念
+It's an entirely different company with a very different approach
+
+281
+00:18:25,000 --> 00:18:33,000
+而且 一旦使用了开源 你就无法退回到之前的阶段
+and, again, once you start using open source, it's not like you can really pull back.
+
+282
+00:18:33,000 --> 00:18:41,000
+开源已经吞噬了整个技术世界
+For that matter, Open source has devoured the entire technology world.
+
+283
+00:18:41,000 --> 00:18:48,070
+从未听说过 Linux 的人可能对它并不了解
+People who have never heard of Linux as such, don't know it,
+
+284
+00:18:48,070 --> 00:18:52,000
+但是每次他们访问 Facebook 他们都在运行 Linux
+but every time they're on Facebook, they're running Linux.
+
+285
+00:18:52,000 --> 00:18:56,000
+每次执行谷歌搜索时 你都在运行 Linux
+Every time you do a Google search, you're running Linux.
+
+286
+00:18:56,000 --> 00:19:01,020
+每次你用 Android 手机 你都在运行 Linux
+Every time you do anything with your Android phone, you're running Linux again.
+
+287
+00:19:01,020 --> 00:19:04,020
+事实上它早已无处不在
+It literally is everywhere,
+
+288
+00:19:04,020 --> 00:19:07,580
+微软无法阻止它
+and Microsoft can't stop that,
+
+289
+00:19:07,580 --> 00:19:14,000
+而且我认为 以为微软想用某种方式接管它的想法太天真了
+and thinking that Microsoft can somehow take it all over, I think is naïve.
+
+290
+00:19:14,000 --> 00:19:20,000
+开源支持者可能一直担心微软会像混入羊群中的狼一样
+So Open source supporters might have been worrying about Microsoft coming in like a wolf in the flock,
+
+291
+00:19:20,000 --> 00:19:25,600
+但事实是 开源软件的本质保护了它 让它无法被完全控制
+but the truth is, the very nature of open source software protects it from total domination.
+
+292
+00:19:25,600 --> 00:19:30,500
+没有一家公司能够拥有 Linux 并以某种特定的方式控制它
+No single company can own Linux and control it in any specific way.
+
+293
+00:19:30,500 --> 00:19:34,000
+Greg Kroah-Hartman 是 Linux 基金会的一名成员
+Greg Kroah-Hartman is a fellow at the Linux Foundation.
+
+294
+00:19:34,000 --> 00:19:38,300
+每个公司和个人都因为自己的利益对 Linux 做出贡献
+Every company and every individual contributes to Linux in a selfish manner.
+
+295
+00:19:38,300 --> 00:19:41,000
+他们之所以这样做是因为他们想要解决他们所面临的问题
+They're doing so because they want to solve a problem that they have,
+
+296
+00:19:41,000 --> 00:19:45,650
+可能是硬件无法工作 或者是他们想要添加一个新功能来做其他事情
+be it hardware isn't working , or they want to add a new feature to do something else,
+
+297
+00:19:45,650 --> 00:19:49,600
+又或者想引导 Linux 的开发轨道 这样他们的新产品就能使用它
+or want to take it in a direction that they'll build that they can use for their product.
+
+298
+00:19:49,600 --> 00:19:53,550
+这很棒 因为他们会把代码贡献回去 此后每个人都会从中受益
+That's great, because then everybody benefits from that because they're releasing the code back,
+
+299
+00:19:53,550 --> 00:19:55,000
+这样每个人都可以用到这份代码
+so everybody can use it.
+
+300
+00:19:55,000 --> 00:20:01,207
+正是因为这种自私 所有的公司 所有的人都能从中受益
+So,It's because of that selfishness that all companies and all people have, everybody benefits.
+
+301
+00:20:02,000 --> 00:20:05,380
+微软已经意识到 在即将到来的云战争中
+Microsoft has realized that in the coming cloud wars,
+
+302
+00:20:05,380 --> 00:20:10,600
+与 Linux 对抗就好比与空气斗智斗勇
+fighting Linux would be like going to war with, well, a cloud.
+
+303
+00:20:10,600 --> 00:20:15,000
+Linux 和开源不是敌人 它们是空气
+Linux and open source aren't the enemy, they're the atmosphere.
+
+304
+00:20:15,000 --> 00:20:19,000
+如今 微软以白金会员的身份加入了 Linux 基金会
+Today, Microsoft has joined the Linux Foundation as a platinum member.
+
+305
+00:20:19,000 --> 00:20:22,500
+他们成为 GitHub 开源项目的头号贡献者
+They became the number one contributor to open source on GitHub.
+
+306
+00:20:22,500 --> 00:20:26,800
+2017 年 9 月 他们甚至加入了开源促进联盟（OSI）
+In September, 2017, they even joined the Open Source Initiative.
+
+307
+00:20:26,800 --> 00:20:31,350
+现在 微软在开源许可证下发布了很多代码
+These days, Microsoft releases a lot of its code under open licenses.
+
+308
+00:20:31,350 --> 00:20:35,700
+微软的 John Gossman 描述了他们开源 .NET 时所发生的事情
+Microsoft's John Gossman describes what happened when they open sourced .NET.
+
+309
+00:20:35,700 --> 00:20:38,700
+起初 他们并不认为自己能得到什么回报
+At first, they didn't really think they'd get much back.
+
+310
+00:20:38,700 --> 00:20:41,600
+我们本没有指望来自社区的贡献
+We didn't count on contributions from the community,
+
+311
+00:20:41,600 --> 00:20:51,000
+然而 三年后 超过 50% 的对 .NET 框架库的贡献来自于微软之外
+and yet, three years in, over 50 per cent of the contributions to the .NET framework libraries, now, are coming from outside of Microsoft.
+
+312
+00:20:51,000 --> 00:20:54,100
+这些是大量的代码
+This includes big pieces of code.
+
+313
+00:20:54,100 --> 00:20:59,800
+三星为 .NET 提供了 ARM 支持
+Samsung has contributed ARM support to .NET.
+
+314
+00:20:59,800 --> 00:21:03,360
+Intel 和 ARM 以及其他一些芯片厂商
+Intel and ARM and a couple other chip
+
+315
+00:21:03,360 --> 00:21:10,000
+已经为 .NET 框架贡献了特定于他们处理器的代码
+people have contributed code generation specific for their processors to the .NET framework,
+
+316
+00:21:10,000 --> 00:21:14,350
+以及数量惊人的修复 bug、性能改进等等
+as well as a surprising number of fixes, performance improvements , and stuff
+
+317
+00:21:14,350 --> 00:21:18,000
+既有单个贡献者也有社区
+- from just individual contributors to the community.
+
+318
+00:21:18,000 --> 00:21:21,550
+直到几年前 今天的这个微软
+Up until a few years ago, the Microsoft we have today,
+
+319
+00:21:21,550 --> 00:21:25,000
+这个开放的微软 还是不可想象的
+this open Microsoft, would have been unthinkable.
+
+320
+00:21:38,000 --> 00:21:42,000
+我是 Saron Yitbarek 这里是代码英雄
+I'm Saron Yitbarek, and this is Command Line Heroes.
+
+321
+00:21:42,000 --> 00:21:47,440
+好吧 我们已经看到了为了赢得数百万桌面用户的爱而战的激烈场面
+Okay, we've seen titanic battles for the love of millions of desktop users.
+
+322
+00:21:47,440 --> 00:21:49,780
+我们已经看到开源软件在专有软件巨头的背后悄然崛起
+We've seen open source software creep up
+
+323
+00:21:49,780 --> 00:21:53,220
+并攫取了巨大的市场份额
+behind the proprietary titans, and nab huge market share.
+
+324
+00:21:53,260 --> 00:21:55,650
+我们已经看到了一批批的代码英雄
+We've seen fleets of command line heroes
+
+325
+00:21:55,650 --> 00:22:00,000
+将编程领域变成了我你今天看到的这个样子
+transform the programming landscape into the one handed down to people like me and you.
+
+326
+00:22:00,000 --> 00:22:03,600
+如今 大企业正在吸收开源软件
+Today, big business is absorbing open source software,
+
+327
+00:22:03,600 --> 00:22:07,000
+通过这一切 每个人都从他人那里受益
+and through it all, everybody is still borrowing from everybody.
+
+328
+00:22:07,000 --> 00:22:10,000
+在技术的西部荒野 一贯如此
+In the tech wild west, it's always been that way.
+
+329
+00:22:10,000 --> 00:22:14,000
+苹果受到施乐（Xerox）的启发 微软受到苹果的启发
+Apple gets inspired by Xerox, Microsoft gets inspired by Apple,
+
+330
+00:22:14,000 --> 00:22:16,000
+Linux 受到 UNIX 的启发
+Linux gets inspired by UNIX.
+
+331
+00:22:16,000 --> 00:22:19,000
+进化、借鉴、不断成长
+Evolve, borrow, constantly grow.
+
+332
+00:22:19,000 --> 00:22:23,620
+如果比喻成大卫和歌利亚的话 开源软件不再是大卫
+In David and Goliath terms, open source software is no longer a David,
+
+333
+00:22:23,620 --> 00:22:26,430
+但是 你知道吗？它也不是歌利亚
+but, you know what? It's not even Goliath, either.
+
+334
+00:22:26,430 --> 00:22:28,760
+开源已经超越了这些角色
+Open source has transcended.
+
+335
+00:22:28,760 --> 00:22:31,760
+它成为了其他人战斗的战场
+It's become the battlefield that others fight on.
+
+336
+00:22:31,760 --> 00:22:34,460
+随着开源变得不可避免
+So the open source approach becomes inevitable,
+
+337
+00:22:34,460 --> 00:22:35,390
+新的战争
+new wars,
+
+338
+00:22:35,390 --> 00:22:37,450
+那些在云计算中进行的战争
+wars that are fought in the cloud,
+
+339
+00:22:37,450 --> 00:22:40,450
+那些在开源战场上进行的战争正在加剧
+wars that are fought on the open source battlefield, are ramping up.
+
+340
+00:22:41,000 --> 00:22:43,000
+这是 Steven Levy 他是一名作者
+Here's author Steven Levy.
+
+341
+00:22:43,000 --> 00:22:44,330
+基本上 到目前为止
+Basically, right now,
+
+342
+00:22:44,330 --> 00:22:48,000
+基本上 到目前为止 包括微软在内 有四到五家公司
+Basically, right now, we have four or five companies, if you count Microsoft,
+
+343
+00:22:48,000 --> 00:22:50,170
+正以各种方式
+they in various ways
+
+344
+00:22:50,170 --> 00:22:54,720
+努力把自己打造成为全方位的平台 比如人工智能领域
+are fighting to be the platform for all we do, for artificial intelligence, say.
+
+345
+00:22:54,720 --> 00:22:59,620
+你能看到智能助手之间的战争 你猜怎么着？
+You see wars between intelligent assistants, and guess what?
+
+346
+00:22:59,620 --> 00:23:02,090
+苹果有一个智能助手 叫 Siri
+Apple has an intelligent assistant, Siri.
+
+347
+00:23:02,090 --> 00:23:04,130
+微软有一个 叫 Cortana
+Microsoft has one, Cortana.
+
+348
+00:23:04,130 --> 00:23:08,000
+谷歌有谷歌助手
+Google has the Google Assistant.
+
+349
+00:23:08,000 --> 00:23:10,620
+三星也有一个智能助手
+Samsung has an intelligent assistant.
+
+350
+00:23:10,620 --> 00:23:13,620
+亚马逊也有一个 叫 Alexa
+Amazon has one, Alexa.
+
+351
+00:23:13,620 --> 00:23:18,800
+我们看到这些战斗遍布各地
+We see these battles shifting to different areas, there.
+
+352
+00:23:18,800 --> 00:23:23,000
+也许 你可以说 最热门的人工智能平台
+Maybe, you could say, the hottest one is would be, whose AI platform
+
+353
+00:23:23,000 --> 00:23:26,000
+将控制我们生活中所有的东西
+is going to control all the stuff in our lives there,
+
+354
+00:23:26,000 --> 00:23:29,000
+而这五家公司就是在为此而争斗
+and those five companies are all competing for that.
+
+355
+00:23:29,000 --> 00:23:30,800
+如果你正在寻找另一个反叛者
+If you're looking for another rebel
+
+356
+00:23:30,800 --> 00:23:33,000
+它们就像 Linux 奇袭微软那样
+that's going to sneak up behind Facebook or
+
+357
+00:23:33,000 --> 00:23:37,450
+偷偷躲在 Facebook、谷歌或亚马逊身后
+Google or Amazon and blindside them the way Linux blindsided Microsoft,
+
+358
+00:23:37,450 --> 00:23:42,000
+你也许要等很久 因为正如作家 James Allworth 所指出的
+you might be looking a long time, because as author James Allworth points out,
+
+359
+00:23:42,000 --> 00:23:45,000
+成为一个真正的反叛者只会变得越来越难
+being a true rebel is only getting harder and harder.
+
+360
+00:23:45,725 --> 00:23:51,400
+规模一直以来都是一种优势 但规模优势本质上…
+Scale's always been an advantage but the nature of scale advantages are almost ...
+
+361
+00:23:51,400 --> 00:23:55,000
+怎么说呢 我认为以前它们在本质上是线性的
+Whereas, I think previously they were more linear in nature,
+
+362
+00:23:55,000 --> 00:23:57,000
+现在它们在本质上是指数型的了
+now it's more exponential in nature,
+
+363
+00:23:57,000 --> 00:24:00,950
+所以 一旦你开始以某种方法走在前面
+and so, once you start to get out in front with something like this ,
+
+364
+00:24:00,950 --> 00:24:04,600
+另一个新玩家要想赶上来就变得越来越难了
+it becomes harder and harder for a new player to come in and catch up.
+
+365
+00:24:04,600 --> 00:24:08,700
+我认为在互联网时代这大体来说来说是正确的
+I think this is true of the internet era in general,
+
+366
+00:24:08,700 --> 00:24:18,000
+无论是因为规模 还是数据赋予组织的竞争力的重要性和优势
+whether it's scale like that or the importance and advantages that data bestow on an organization in terms of its ability to compete.
+
+367
+00:24:18,000 --> 00:24:21,000
+一旦你走在前面 你就会吸引更多的客户
+Once you get out in front, you attract more customers,
+
+368
+00:24:21,000 --> 00:24:25,250
+这就给了你更多的数据 让你能做得更好
+and then that gives you more data and that enables you to do an even better job,
+
+369
+00:24:25,250 --> 00:24:29,430
+这之后 客户还有什么理由选择排名第二的公司呢
+and then, why on earth would you want to go with the number two player,
+
+370
+00:24:29,430 --> 00:24:31,000
+难道是因为因为他们落后了这么远么？
+because they're so far behind?
+
+371
+00:24:31,000 --> 00:24:34,000
+我认为在云的时代这个逻辑也不会有什么不同
+I think it's going to be no different in cloud.
+
+372
+00:24:35,775 --> 00:24:40,400
+这个故事始于史蒂夫·乔布斯和比尔·盖茨这样的非凡的英雄
+This story began with singular heroes like Steve Jobs and Bill Gates,
+
+373
+00:24:40,400 --> 00:24:45,000
+但科技的进步已经呈现出一种众包、自有生命的感觉
+but the progress of technology has taken on a crowdsourced, organic feel.
+
+374
+00:24:45,000 --> 00:24:49,000
+我认为据说我们的开源英雄林纳斯·托瓦兹
+I think it's telling that our open source hero, Linus Torvalds,
+
+375
+00:24:49,000 --> 00:24:52,000
+在第一次发明 Linux 内核时甚至没有一个真正的计划
+didn't even have a real plan when he first invented the Linux kernel.
+
+376
+00:24:52,000 --> 00:24:54,600
+他无疑是一位才华横溢的年轻开发者
+He was a brilliant, young developer for sure,
+
+377
+00:24:54,600 --> 00:24:59,000
+但他也像潮汐前的一滴水一样
+but he was also like a single drop of water at the very front of a tidal wave.
+
+378
+00:24:59,000 --> 00:25:02,000
+变革是不可避免的
+The revolution was inevitable.
+
+379
+00:25:02,500 --> 00:25:06,000
+据估计 对于一家专有软件公司来说
+It's been estimated that for a proprietary company to create
+
+380
+00:25:06,000 --> 00:25:09,700
+用他们老式的、专有的方式创建一个 Linux 发行版
+a Linux distribution in their old - fashioned, proprietary way,
+
+381
+00:25:09,700 --> 00:25:13,450
+将花费他们超过 100 亿美元
+it would cost them well over $10 billion.
+
+382
+00:25:13,450 --> 00:25:16,000
+这说明了开源的力量
+That points to the power of open source.
+
+383
+00:25:16,000 --> 00:25:20,000
+最后 这并不是一个专有模型所能与之竞争的东西
+In the end, it's not something that a proprietary model is going to compete with.
+
+384
+00:25:20,000 --> 00:25:23,000
+成功的公司必须保持开放
+Successful companies have to remain open.
+
+385
+00:25:23,000 --> 00:25:25,500
+这是最大、最终极的教训
+That's the big, ultimate lesson in all this.
+
+386
+00:25:25,500 --> 00:25:29,000
+还有一点要记住：当我们团结在一起的时候
+Something else to keep in mind: When we're wired together,
+
+387
+00:25:29,000 --> 00:25:33,660
+我们在已有基础上成长和建设的能力是无限的
+our capacity to grow and build on what we've already accomplished becomes limitless.
+
+388
+00:25:33,660 --> 00:25:38,500
+不管这些公司有多大 我们都不必坐等他们给我们更好的东西
+As big as these companies get, we don't have to sit around waiting for them to give us something better.
+
+389
+00:25:38,500 --> 00:25:42,800
+想想那些为了纯粹的创造乐趣而学习编码的新开发者
+Think about the new developer who learns to code for the sheer joy of creating,
+
+390
+00:25:42,800 --> 00:25:48,000
+那些自己动手丰衣足食的人
+the mom who decides that if nobody's going to build what she needs, then she'll build it herself.
+
+391
+00:25:48,000 --> 00:25:50,780
+未来的优秀程序员不论来自何方
+Wherever tomorrow's great programmers come from,
+
+392
+00:25:50,780 --> 00:25:57,400
+只要能够访问代码 他们就能构建下一个大项目
+they're always going to have the capacity to build the next big thing, so long as there's access to the command line.
+
+393
+00:26:10,820 --> 00:26:13,401
+以上就是我们关于操作系统战争的故事
+That's it for our two - part tale on the OS wars
+
+394
+00:26:13,401 --> 00:26:15,140
+这场战争塑造了我们的数字生活的形态
+that shaped our digital lives.
+
+395
+00:26:15,140 --> 00:26:19,000
+争夺主导地位的斗争从桌面转移到了服务器机房
+The struggle for dominance moved from the desktop to the server room,
+
+396
+00:26:19,000 --> 00:26:21,000
+最终进入了云计算领域
+and ultimately into the cloud.
+
+397
+00:26:21,000 --> 00:26:23,650
+过去的敌人难以置信地变成了盟友
+Old enemies became unlikely allies,
+
+398
+00:26:23,650 --> 00:26:26,650
+众包的未来让一切都变得开放
+and a crowdsourced future left everything open.
+
+399
+00:26:26,650 --> 00:26:31,310
+听着 我知道 在这段历史之旅中 还有很多英雄我们没有提到 
+Listen, I know, there are a hundred other heroes we didn't have space for in this history trip,
+
+400
+00:26:31,310 --> 00:26:38,056
+所以给我们写信吧 分享你的故事 我恭候佳音
+so drop us a line. Share your story. Redhat.com/commandlineheroes. I'm listening.
+
+401
+00:26:39,420 --> 00:26:43,640
+在本季剩下的时间里 我们将学习今天的英雄们在创造什么
+We're spending the rest of the season learning what today's heroes are creating,
+
+402
+00:26:43,640 --> 00:26:47,400
+以及他们要经历什么样的战斗才能将他们的创造物带入我们的生活
+and what battles they're going through to bring their creations to life.
+
+403
+00:26:47,400 --> 00:26:51,350
+让我们从壮丽的编程一线 回来看看更多的传奇故事吧
+Come back for more tales — from the epic front lines of programming.
+
+404
+00:26:51,350 --> 00:26:53,670
+我们每两周放一集新的播客
+We drop a new episode every two weeks.
+
+405
+00:26:53,670 --> 00:26:59,000
+几周后 我们将为你带来第三集：敏捷革命
+In a couple weeks' time, we bring you episode three: the Agile Revolution.
+
+406
+00:26:59,000 --> 00:27:03,000
+代码英雄是一款红帽公司原创的播客
+Command Line Heroes is an original podcast from Red Hat.
+
+407
+00:27:32,100 --> 00:27:36,000
+这里是 Saron Yitbarek 感谢收听 请继续编程
+I'm Saron Yitbarek. Thanks for listening. Keep on coding.
+
