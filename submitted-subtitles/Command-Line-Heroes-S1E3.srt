@@ -1,0 +1,2248 @@
+1
+00:00:01,600 --> 00:00:04,800
+有些故事的走向和结局会重新定义一个行业
+There are certain stories that end up defining an industry.
+
+2
+00:00:04,800 --> 00:00:07,666
+在这些故事中也传唱着 我们来自哪里
+Stories we tell ourselves about where we come from,
+
+3
+00:00:07,666 --> 00:00:09,566
+我们是谁 我们正在做什么
+who we are, what we do.
+
+4
+00:00:09,566 --> 00:00:13,766
+上一集中 我们追溯了 Linux 开源技术的崛起
+Last episode, we tracked the rise of Linux , an open source technology. 
+
+5
+00:00:14,000 --> 00:00:17,200
+但这一集我要讲的 是紧接着发生的故事
+This story though this one's about what happened next
+
+6
+00:00:17,200 --> 00:00:20,933
+操作系统之战结束后 开发者们成为了战争争夺的对象和核心
+After the os wars, developers were front and center.
+
+7
+00:00:21,133 --> 00:00:25,099
+在那个新的战场 开发者们将要重塑自己的工作
+And that new prominence meant they were going to reinvent their jobs.
+
+8
+00:00:25,500 --> 00:00:28,566
+本集播客 我们将深入了解以开发人员为核心
+This episode, we'll learn how a focus on the developer
+
+9
+00:00:28,666 --> 00:00:32,333
+产生的一种全新的软件开发方法论
+brought about an entirely new methodology for software development
+
+10
+00:00:32,466 --> 00:00:34,499
+这种新颖的工作流程
+And how that new approach to workflow 
+
+11
+00:00:34,533 --> 00:00:39,133
+产生了哪些远超我们屏幕上显示的代码所能控制的 意想不到的事情
+is having an unexpected impact far beyond the action on our screens
+
+12
+00:00:42,100 --> 00:00:43,333
+我是 Saron Yitbarek
+I'm Saron Yitbarek
+
+13
+00:00:43,333 --> 00:00:47,366
+欢迎收听红帽的原创播客
+this Command Line Heroes,  an original podcast from Red Hat.
+
+14
+00:00:47,866 --> 00:00:50,733
+《代码英雄 第三集 敏捷革命》
+Episode three, The Agile Revolution.
+
+15
+00:00:52,900 --> 00:00:55,533
+今天的故事始于 2001 年 2 月
+Today's story begins in February 2001,
+
+16
+00:00:55,800 --> 00:00:58,166
+发生在美国犹他州的滑雪小屋里
+and it's set at a ski lodge in Utah.
+
+17
+00:01:02,366 --> 00:01:05,799
+我们面前有个小屋 眼前是松树梁
+We turned up at a lodge, you know, the pine beams and the
+
+18
+00:01:06,100 --> 00:01:08,533
+壁炉 还有进入屋子的小门
+fireplace, and the entry way.
+
+19
+00:01:08,766 --> 00:01:09,999
+我们前一天晚上到达这里时
+We got there the night before
+
+20
+00:01:10,000 --> 00:01:11,333
+然后基本上只是围坐在一起
+and we basically just sat around
+
+21
+00:01:11,333 --> 00:01:12,999
+讨论谈我们准备探讨的内容
+and talked about what we're going to talk about.
+
+22
+00:01:13,866 --> 00:01:15,366
+紧接着第二天 我们都起床
+And then next day, we turned up.
+
+23
+00:01:15,766 --> 00:01:18,299
+并来到了预定的会议室
+and we'd reserved a meeting room.
+
+24
+00:01:18,366 --> 00:01:20,966
+先把桌子移到边上去
+We took the tables and moved them out to the edge
+
+25
+00:01:20,966 --> 00:01:23,699
+然后将椅子摆放成一圈 确切地说是一个椭圆
+And we just put the chairs in a circle, or an oval
+
+26
+00:01:24,166 --> 00:01:26,933
+这样一来我们就可以面对面交流
+so you know we could basically be facing each other and
+
+27
+00:01:27,133 --> 00:01:28,133
+一定程度上也让人感觉到可以敞开心扉 畅所欲言
+some up more open
+
+28
+00:01:29,200 --> 00:01:34,400
+Dave Thomas 和其他的 16 个人 在那个冬天集聚在雪鸟滑雪场
+That was Dave Thomas, Dave and 16 others got together at Snowbird Ski Resort that winter.
+
+29
+00:01:34,500 --> 00:01:35,400
+但是他们的目的并不是滑雪 
+Not to ski, 
+
+30
+00:01:35,500 --> 00:01:39,400
+而是探讨在 90 年代开发者的世界所面临的问题
+but to talk about what was wrong with the developers world in the 1990's. 
+
+31
+00:01:39,500 --> 00:01:42,366
+在这里我用“探讨” 但实际上用“辩论”更准确
+I say talk, but argue might be more like it. 
+
+32
+00:01:42,533 --> 00:01:48,533
+他们最初是在 面向对象编程 语言及系统 ( OOPSLA ) 的会议上认识的
+They had originally met at a conference called OOPSLA,  Object-Oriented Programming, Languages and Systems.
+
+33
+00:01:48,566 --> 00:01:50,399
+实际上正是那次会议
+and it was actually at that conference
+
+34
+00:01:50,400 --> 00:01:53,766
+让他们意识到当前的软件开发方式很混乱
+that they all agreed that creating software was messy.
+
+35
+00:01:54,066 --> 00:01:56,299
+只是对于该怎么办没有达成一致
+They just hadn't agreed on what they should do about it.
+
+36
+00:01:56,466 --> 00:01:58,566
+所以此次在雪鸟山上的开会
+So, the meeting on the mountain at Snowbird,
+
+37
+00:01:58,700 --> 00:02:02,333
+试图寻找 解决这个问题的方法
+that was where they were going to try and nail down a solution to that problem.
+
+38
+00:02:03,166 --> 00:02:05,099
+那么究竟是这个问题具体该怎么描述？
+And what was that problem exactly?
+
+39
+00:02:05,533 --> 00:02:09,133
+于是我询问 Dave 开发人员之前的使用方式到底出现了什么问题
+I asked Dave what was wrong with the way developers used to do things
+
+40
+00:02:09,366 --> 00:02:12,599
+所以 我不知道…你有没有装饰过房间
+So, have you ever ... I don't know, decorated a room
+
+41
+00:02:13,000 --> 00:02:13,866
+我有
+I've tried.
+
+42
+00:02:14,100 --> 00:02:18,866
+好 如果我先告诉你
+Or had ... Okay. So if I said to you up front okay
+
+43
+00:02:18,866 --> 00:02:21,299
+“我想让你坐下来 然后给你一张白纸
+"I want you to sit down please here's a piece of paper
+
+44
+00:02:21,533 --> 00:02:23,699
+接着我希望你能描绘下
+and I want you to specify exactly
+
+45
+00:02:23,700 --> 00:02:27,000
+这个房间完成后大概的样子 ”
+what this room should look like when you're finished right
+
+46
+00:02:27,166 --> 00:02:28,166
+可以想象吗？
+Could you do that?
+
+47
+00:02:28,466 --> 00:02:30,133
+实际上 我的办公室就是这么布置出来的
+Actually, I did this for my own office.
+
+48
+00:02:30,266 --> 00:02:33,799
+首先 我画了一个简单的草图 然后加上一些修饰
+I tried making up a little sketch and a little rendering and
+
+49
+00:02:34,000 --> 00:02:35,900
+最后把所有架子摆放在我觉得合适的位置
+putting all the shells where I thought they would be
+
+50
+00:02:36,066 --> 00:02:36,699
+不过这种方式没有真正起到作用 
+it didn't really work
+
+51
+00:02:36,700 --> 00:02:39,166
+我的计划也没有实现
+though it didn't end up the way that I planned
+
+52
+00:02:39,166 --> 00:02:41,399
+但是 即使你尝试了这种方式 你都做了什么？
+But, even if you do that, what do you do?
+
+53
+00:02:41,400 --> 00:02:43,033
+先把架子放起来 然后说
+You put this shells up, and you go 
+
+54
+00:02:43,133 --> 00:02:45,466
+“哦…这样放不行 因为会挡道 ”
+"Oh that's not gonna work because the door is gonna get in the way
+
+55
+00:02:45,866 --> 00:02:48,066
+所以 你又紧接着把架子移到其它地方
+so you move the shelves somewhere else, or you
+
+56
+00:02:48,066 --> 00:02:50,299
+“你知道吗 我真的不能把地毯放在那里
+say you know I can't really put carpet there
+
+57
+00:02:50,300 --> 00:02:52,500
+因为我的椅子脚会陷进去 ”状况频发
+because my chair is gonna get stuck on it." Whatever it might be.
+
+58
+00:02:52,500 --> 00:03:00,466
+遇到未知的情况 你总需要一种“迭代”的方式去应对
+You always are going to iterate whenever it involves any unknowns at all
+
+59
+00:03:00,600 --> 00:03:06,333
+人类的大脑无法准确地对现实世界的发展进行预判
+The human brain is just not up to modeling the real world accurately enough
+
+60
+00:03:06,366 --> 00:03:08,166
+从而提前预知哪里需要改变
+to be able to know what it wants up front
+
+61
+00:03:08,566 --> 00:03:10,599
+所以 软件开发也是一样的
+So, software development is the same
+
+62
+00:03:10,766 --> 00:03:13,566
+人们不知道他们的需求会怎么改变 对吗？
+People don't know up front what they want. Right?
+
+63
+00:03:13,866 --> 00:03:17,099
+我经历过太多这样的情况
+And the number of times where I have gone through that process,
+
+64
+00:03:17,100 --> 00:03:19,466
+当我从客户那里拿到了详细的要求
+where i've got a spec from a customer
+
+65
+00:03:19,500 --> 00:03:23,366
+然后我已经很好地完成了每一条细则
+and I have implemented it pretty much identical to that spec.
+
+66
+00:03:23,766 --> 00:03:26,966
+但却总是吵得不欢而散 “这不是我们想要的 ”
+It gets to the end, and they go, "But that's not what we wanted." 
+
+67
+00:03:27,966 --> 00:03:30,733
+但我想说的是 “这就是你要求的啊 ” 他们说 “是的
+And you go, "But that's what you asked for." And they said, "Yeah but that's not what I meant." You know?
+
+68
+00:03:30,733 --> 00:03:32,266
+但这不是我的意思 ”
+but that's not what I meant
+
+69
+00:03:32,733 --> 00:03:33,533
+你懂这种情况吗？
+you know
+
+70
+00:03:34,233 --> 00:03:37,499
+所以说 理想情况是  你可以详细说明流程的每一步
+So, this whole process that you can specify,
+
+71
+00:03:37,566 --> 00:03:42,333
+然后通过非常机械的步骤就可以完成一切
+and then move through some mechanical sort of steps, and then at the end you're done. 
+
+72
+00:03:42,466 --> 00:03:43,533
+是啊
+yeah
+
+73
+00:03:43,600 --> 00:03:44,900
+但是在软件行业可行不通
+Doesn't work in software. 
+
+74
+00:03:45,166 --> 00:03:47,933
+这种方式不适用于有任何模棱两可的情况
+It doesn't work in anything where there is ambiguity.
+
+75
+00:03:48,066 --> 00:03:50,799
+也不适用于需要判断的情况
+It doesn't work in anything where there is some degree of judgment.
+
+76
+00:03:51,066 --> 00:03:55,599
+就像任何艺术尝试一样
+Almost like any quote artistic endeavor
+
+77
+00:03:55,600 --> 00:03:57,566
+这种方式就是行不通 
+it's just not going to work.
+
+78
+00:03:57,566 --> 00:04:00,666
+总是缺失了关键的一步：反馈
+There always has to be feedback, and that was the missing step.
+
+79
+00:04:03,700 --> 00:04:04,866
+也许
+So, maybe
+
+80
+00:04:04,866 --> 00:04:08,999
+你已经听说过上世纪 90 年代的软件危机
+you've heard of the software crisis that ran through the 1990s
+
+81
+00:04:09,000 --> 00:04:11,666
+当时的软件开发一团糟
+Software development at the time was just a mess.
+
+82
+00:04:11,700 --> 00:04:16,533
+相比于开发软件的费用 公司在修复软件上的钱花的多得多
+Companies were spending more money fixing software than they were creating it in the first place
+
+83
+00:04:16,600 --> 00:04:20,500
+与此同时 你我这样的开发人员进退不得
+And meanwhile, developers like you and me we were log jammed
+
+84
+00:04:20,666 --> 00:04:24,933
+有时候 我们每隔好几年时间才能推出新的软件
+In some cases, we could only put new software out every few years
+
+85
+00:04:24,933 --> 00:04:29,066
+我们疲于应付这些缓慢 陈旧 瀑布式开发的工作流程
+We were stuck with these sluggish, old, waterfall, workflows
+
+86
+00:04:29,133 --> 00:04:32,299
+从 A 到 B 到 C 完全都是提前确定好的
+A to B to C, totally predetermined.
+
+87
+00:04:32,400 --> 00:04:36,233
+因此  寻找更好的软件开发方式新流程
+So, the search for new processes to get software made
+for better ways 
+
+88
+00:04:36,233 --> 00:04:38,566
+是主要的时间花费
+was sort of all consuming at the time
+
+89
+00:04:39,200 --> 00:04:42,533
+事实上 每个月似乎都有新的开发者
+In fact every month, there seemed to be somebody new 
+
+90
+00:04:42,566 --> 00:04:46,599
+对如何改善软件开发的过程提出宏伟的设想
+who had a grand vision for how they were going to fix the software development process
+
+91
+00:04:46,600 --> 00:04:49,466
+其中就有极限编程 有 Kanban 还有统一软件开发过程等
+there was Kanban, rational unified process
+
+92
+00:04:49,466 --> 00:04:50,799
+不胜枚举
+the list goes on.
+
+93
+00:04:51,133 --> 00:04:54,299
+在这些方法论的激烈竞争中
+The methodology wars saw a slew of competing new visions
+
+94
+00:04:54,300 --> 00:04:56,666
+也催生出了新的观点和改进方法
+new fixes and that was the scuffle
+
+95
+00:04:56,666 --> 00:04:59,766
+那就是 Dave Thomas 和他在雪鸟滑雪场的朋友们迫不及待开始探讨的领域
+Dave thomas and his buddies up at Snowbird were stepping into
+
+96
+00:05:01,100 --> 00:05:05,866
+值得让这群人齐声欢呼喝彩的就是《敏捷软件开发宣言》
+Their own salvo was something called the manifesto for agile software development.
+
+97
+00:05:05,933 --> 00:05:08,699
+当时的开发速度正在以前所未有的速度保持增长
+The speed of production was ramping up like never before
+
+98
+00:05:08,966 --> 00:05:11,699
+而开源使开发人员变得更强大
+open source had made developers more powerful
+
+99
+00:05:11,733 --> 00:05:16,599
+另一方面 开发人员也需要一种新的敏捷的开发模式
+And, in turn, developers needed a new more agile mode of production.
+
+100
+00:05:17,466 --> 00:05:18,933
+顺便提一下 那些在雪鸟滑雪场会面的人
+The guys who met at Snowbird
+
+101
+00:05:18,933 --> 00:05:22,099
+在经过一番你来我往的争论后 才确定用这个词
+argued a long time before landing on that word by the way
+
+102
+00:05:22,200 --> 00:05:23,966
+敏捷
+agile in the end
+
+103
+00:05:24,066 --> 00:05:25,899
+这个词非常切题
+It was the descriptor that made sense
+
+104
+00:05:26,000 --> 00:05:29,266
+这种方式就好像国家地理描述大型猫科动物的方式
+It's how you describe big cats in National Geographic.
+
+105
+00:05:29,466 --> 00:05:34,766
+一个与瀑布式开发预设路径正好相反的词
+A word that describes the exact opposite of a waterfall's pre ordained path.
+
+106
+00:05:34,966 --> 00:05:36,333
+随着新的信息层出不穷
+As new information came up,
+
+107
+00:05:36,500 --> 00:05:39,333
+这个词让那些愿意改变航向的人看到了一线曙光
+it's a word for people willing to change course on a dime
+
+108
+00:05:39,566 --> 00:05:42,799
+请注意这可不是一个名词 而是一个形容词
+And notice that it's not a noun, it's an adjective.
+
+109
+00:05:43,066 --> 00:05:46,566
+敏捷更像是一种习惯 而不是一种具体的说辞
+Agile would be a mode of being, not a concrete saying. 
+
+110
+00:05:47,333 --> 00:05:49,966
+那么 那些采用敏捷的开发者提供了什么呢
+So, what did those agile guys have to offer?
+
+111
+00:05:50,100 --> 00:05:51,966
+他们的总体解决方案是什么？
+What was their big solution?
+
+112
+00:05:52,333 --> 00:05:57,299
+现在很多人都认为敏捷是一个复杂的集合 包括不同的角色和系统
+The agile that many of us know today is a complex set of roles and systems
+
+113
+00:05:57,800 --> 00:05:59,000
+会有一个项目经理
+You've got a scrum master
+
+114
+00:05:59,000 --> 00:06:01,066
+一个项目团队 产品负责人
+a scrum team, a product owner.
+
+115
+00:06:01,133 --> 00:06:04,566
+同时他们都要进行一到两周的冲刺工作
+And they're all going through one or two week sprints of work.
+
+116
+00:06:04,866 --> 00:06:09,899
+与此同时 工作都堆积在“冰盒”和“沙盒”中
+Meanwhile, work is piling up in ice boxes, and sand boxes,
+
+117
+00:06:09,900 --> 00:06:12,666
+好吧 听起来感觉流程很多
+and well, let's say it can feel like a lot of process
+
+118
+00:06:12,900 --> 00:06:14,866
+但一开始的时候是没有这些流程的
+But none of that was there at the beginning
+
+119
+00:06:15,133 --> 00:06:19,533
+撰写该敏捷宣言的人 目标是简单 和清晰
+The guys who wrote that manifesto aimed for simplicity and clarity 
+
+120
+00:06:19,633 --> 00:06:22,199
+实际上 简单是它制胜的法宝
+The vision was so simple, in fact
+
+121
+00:06:22,200 --> 00:06:27,866
+从那时起 它就具有定义几乎每个开发人员命运之路的能力
+that it had the power to define the path of almost every developer's destiny from then on.
+
+122
+00:06:28,733 --> 00:06:35,099
+我们已经提到了 我们更喜欢某种方式而不是另一种方式
+We came up with the, we prefer a over b way of expressing the values 
+
+123
+00:06:35,166 --> 00:06:39,633
+事实上 我们就写下了几乎所有的观点
+And we actually wrote down pretty much the full values 
+
+124
+00:06:39,633 --> 00:06:43,333
+现在都是敏捷宣言的一部分 在午餐这段时间
+that are now part of the manifesto over lunch.
+
+125
+00:06:44,100 --> 00:06:46,700
+这是可以管理开发的四个奇思妙想
+Four big ideas that could govern development
+
+126
+00:06:46,733 --> 00:06:49,299
+如果你尚且还不熟悉那些敏捷的诫命
+In case you don't know those agile commandments by heart
+
+127
+00:06:49,466 --> 00:06:50,733
+他们会这样解释
+they go like this:
+
+128
+00:06:51,900 --> 00:06:55,766
+个体和互动胜过流程和工档；
+Individuals and interactions over processes and tools.
+
+129
+00:06:56,000 --> 00:06:59,666
+可工作的软件胜过文档；
+Working software over comprehensive documentation.
+
+130
+00:07:00,166 --> 00:07:03,766
+客户协作胜过合同谈判；
+Customer collaboration over contract negotiation.
+
+131
+00:07:04,100 --> 00:07:07,300
+响应变化胜过遵循计划
+Responding to change over following a plan.
+
+132
+00:07:09,500 --> 00:07:12,566
+我记得第一次看到这个宣言时的情形
+I remember the first time I encountered the manifesto.
+
+133
+00:07:12,866 --> 00:07:14,566
+我刚开始学习编程
+I was newish to coding
+
+134
+00:07:14,666 --> 00:07:17,333
+老实说 当时我并没有觉得这个想法有多棒
+and to be honest I didn't get what the big deal was.
+
+135
+00:07:17,700 --> 00:07:21,733
+一直到我了解到那些支持敏捷开发的工具和平台
+Until I understood the tools and platforms that make agile work
+
+136
+00:07:21,866 --> 00:07:24,299
+对我来说 这只是一些模糊的概念
+to me, it was just some fuzzy concepts.
+
+137
+00:07:24,700 --> 00:07:28,466
+但是 对于长期以来一直被这些问题纠缠的开发人员来说
+But, for developers who been struggling with these issues for a long time
+
+138
+00:07:28,566 --> 00:07:30,166
+这是一个很好的行动方案
+it was a call to action
+
+139
+00:07:30,566 --> 00:07:35,099
+该宣言是一盏灯 可以激发更多奇思妙想
+the manifesto was designed to be a spark that 
+could inspire something bigger
+
+140
+00:07:35,466 --> 00:07:41,699
+这四点宣言和一些支持材料都发布在 Agilemanifesto.org 网站上
+These four values and some supporting materialwere posted on a website Agilemanifesto.org
+
+141
+00:07:41,866 --> 00:07:46,133
+并且呼吁其他开发者签名以表示支持
+and they just straight up asked other developers to sign their names to show support
+
+142
+00:07:46,566 --> 00:07:48,266
+我想我们都惊呆了
+i think we're all stunned
+
+143
+00:07:48,533 --> 00:07:53,166
+很快获得了 1000 个签名 接着 10000 个 然后签名数一直在增长
+when we got to a thousand signatures, and then ten thousand then just keep growing and growing and growing
+
+144
+00:07:53,533 --> 00:07:56,866
+这基本上变成了一场革新运动
+and it basically it became a movement
+
+145
+00:07:59,533 --> 00:08:03,799
+他们从来没有计划过把这份敏捷宣言带出滑雪小屋
+It was never their plan to walk out of that ski lodge with a manifesto per se
+
+146
+00:08:04,266 --> 00:08:07,399
+这只是一群热衷于软件开发的人
+They were just a group of people passionate about software development
+
+147
+00:08:07,500 --> 00:08:12,933
+并且对帮助他人更好地发展充满热情
+who felt a kind of evangelical zeal about helping others do development better.
+
+148
+00:08:13,300 --> 00:08:15,700
+但很明显 “敏捷” 本身像长了腿一样
+It became clear though, that agile had legs
+
+149
+00:08:15,800 --> 00:08:18,566
+红帽公司首席开发倡导者 Burr Sutter 
+Red Hat's chief developer advocate, Burr Sutter
+
+150
+00:08:18,700 --> 00:08:23,300
+谈到了“敏捷”对于还困在“瀑布”中的开发人员来说是一种解脱
+talks about what a relief agile was for developers trapped under a waterfall 
+
+151
+00:08:23,600 --> 00:08:27,600
+因此 敏捷的概念从根本上引起了人们的共鸣
+So, the concept of agile fundamentally resonated with people 
+
+152
+00:08:27,600 --> 00:08:29,933
+基本上是在说：“看 我们专注于人员而不是流程
+because it basically said"Look, we focus on people over processes.
+
+153
+00:08:29,933 --> 00:08:33,933
+我们专注于交互和协作而不是工具和文档
+We focus on interactions and collaboration over tools and documentation
+
+154
+00:08:34,366 --> 00:08:36,766
+我们认为工作软件高于一切
+We value working software above all else
+
+155
+00:08:36,900 --> 00:08:39,066
+我们宁愿人们通过小批量的工作
+and we'd rather people work in small batches and
+
+156
+00:08:39,066 --> 00:08:41,299
+实现高度互动 快速迭代 ”
+be highly interactive and highly iterative
+
+157
+00:08:49,066 --> 00:08:52,666
+而对于一些人来说 这个开发者的革新走得太远
+For some, this developers revolution went too far.
+
+158
+00:08:52,900 --> 00:08:57,166
+敏捷甚至被视为是给那些不负责任的黑客心态的合理说辞
+Agile could even be seen as legitimizing an irresponsible hacker mindset
+
+159
+00:08:57,166 --> 00:09:02,999
+早期反对敏捷最重要的声音之一是 Steve Rakitin
+One of the most important voices that spoke out against agile early on was Steve Rakitin
+
+160
+00:09:03,133 --> 00:09:07,099
+他是一名软件工程师 拥有超过 40 年的行业经验
+He's a software engineer with over 40 years experience in the industry.
+
+161
+00:09:08,066 --> 00:09:09,333
+当他大学毕业时
+When he finished college
+
+162
+00:09:09,366 --> 00:09:14,199
+Rakitin 就开始建造第一个核电站数字控制系统
+Rakitin went to work building the first digital control system for nuclear power plants.
+
+163
+00:09:14,266 --> 00:09:20,066
+几十年来 他一直致力于研发电力软件和医疗设备软件
+And for decades he's kept on working on power plant software and software for medical devices
+
+164
+00:09:20,066 --> 00:09:21,733
+这些都是对安全很注重的软件
+Safety-critical software.
+
+165
+00:09:22,066 --> 00:09:22,899
+没错
+So, yeah.
+
+166
+00:09:22,933 --> 00:09:28,299
+你可以预料到 他可不会对这种手忙脚乱的开发方式感兴趣
+You can imagine that this is a guy not so interested in af ly-by-the-seat-of-your-pants-approach.
+
+167
+00:09:28,733 --> 00:09:32,566
+因此 在方法论战争的尾声 敏捷横空出世
+So, when agile came out at the tail end of the methodology wars
+
+168
+00:09:32,600 --> 00:09:35,066
+Rakitin 对此翻了个白眼
+Rakitin sort of rolled his eyes
+
+169
+00:09:36,300 --> 00:09:39,466
+就像是 “好吧 我们换种方式说
+It was like, "well, here we go again, another bunch of people
+
+170
+00:09:39,733 --> 00:09:42,699
+如同一群人围坐着喝着啤酒
+sat around drinking beer and
+
+171
+00:09:42,700 --> 00:09:46,100
+就想出了开发软件的其他办法 ”
+coming up with you know other ideas for developing software
+
+172
+00:09:46,766 --> 00:09:48,533
+顺便提一下 敏捷宣言中许多已经得到进一步发展
+Many of which, by the way
+
+173
+00:09:48,866 --> 00:09:51,799
+had already been developed and used in
+
+174
+00:09:51,800 --> 00:09:53,733
+并应用于早期的开发方法里了
+some of these earlier methods.
+
+175
+00:09:54,100 --> 00:09:56,600
+他这么想其实也没有什么错
+He wasn't wrong about giving them side eyes either
+
+176
+00:09:56,866 --> 00:10:01,466
+实际上你可以在 “雪鸟峰会” 前几十年就追溯到敏捷哲学的踪迹 20 世纪 40 年代
+You can track back agile-ish philosophies decades before the Snowbird summit
+
+177
+00:10:01,666 --> 00:10:07,699
+例如 像看板Kanban 这样的精益工作方法可以追溯到四十年代
+For example, lean full methodologies like Kanban, go all the way back to the 1940s
+
+178
+00:10:07,700 --> 00:10:12,666
+当时丰田受到超市货架存货技术的启发…
+when toyota got inspired by shelf stocking techniques
+at supermarkets..
+
+179
+00:10:12,900 --> 00:10:17,600
+他们的精益制造理念最终被用于软件开发
+Their philosophy for lean manufacturing ended up being repurposed for software development
+
+180
+00:10:18,000 --> 00:10:20,400
+不过 Rakitin 有另外一个担忧
+Rakitin had a whole other concern too
+
+181
+00:10:20,866 --> 00:10:26,466
+这篇宣言发表时我非常怀疑它
+I was very skeptical when this manifesto was published
+
+182
+00:10:26,466 --> 00:10:36,166
+因为它基本上是为了让软件工程师花更多的时间编写代码
+because it basically came across as a way to allow software engineers to spend more time writing code
+
+183
+00:10:36,266 --> 00:10:38,966
+花更少的时间搞清楚需要做什么 
+less time figuring out what needs to be done
+
+184
+00:10:39,266 --> 00:10:41,966
+同时记录文档的时间少了很多
+and a lot less time documenting anything.
+
+185
+00:10:42,600 --> 00:10:46,900
+对于 Rakitin 来说 这不仅仅是提出新的工作流程创意
+For Rakitin, this was about more than coming up with new workflow ideas
+
+186
+00:10:46,933 --> 00:10:49,466
+这也关乎到他职业生涯的清白声誉
+It was about the integrity of his profession.
+
+187
+00:10:49,666 --> 00:10:58,899
+长期以来 软件工程并未被视为正规的工程学科 
+For a long time, the software engineering was not viewed as aa legitimate engineering discipline.
+
+188
+00:10:59,000 --> 00:11:03,533
+相比于电气工程和所有其他工程学科
+like electrical engineering and all the other engineering disciplines
+
+189
+00:11:03,700 --> 00:11:15,300
+在我看来 部分原因是因为普遍缺乏软件工程师认可的公认实践
+and in my opinion part of the reason was because there was a general lack of accepted practices that software engineers used. 
+
+190
+00:11:15,400 --> 00:11:22,166
+当我们经历了 90 年代的十年 逐渐开始明晰其中的一些流程
+As we got through the decade of the nineties and we started identifying some of these processes, 
+
+191
+00:11:22,366 --> 00:11:28,999
+似乎其中一些已经在事实上被实施 而且也很合理
+it seemed like some of them were actually starting to take hold, and many of them made a lot of sense.
+
+192
+00:11:30,566 --> 00:11:33,599
+然后敏捷宣言的出现了
+Then comes along the manifesto
+
+193
+00:11:33,766 --> 00:11:38,266
+如果软件工程将成为正规的工程学科
+If software engineering is ever going to become a legitimate engineering discipline,
+
+194
+00:11:38,333 --> 00:11:39,666
+那么你就需要流程化的东西
+you need to process.
+
+195
+00:11:39,666 --> 00:11:43,066
+其他所有工程学科都有流程 
+Every other engineering discipline has processes,
+
+196
+00:11:43,066 --> 00:11:44,766
+为什么软件工程就没有？
+why not software?
+
+197
+00:11:49,533 --> 00:11:55,166
+我是 Saron Yitbarek 你正在收听的是红帽的原创播客代码英雄
+i'm Saron Yitbarek and you're listening to command line heroes, an original podcast from red hat
+
+198
+00:11:55,666 --> 00:11:58,866
+那么 如果我们把在核电站工作的人士的观点放在一边
+So, if we leave aside people working at nuclear power plants
+
+199
+00:11:58,866 --> 00:12:01,599
+转而关注更广阔的企业界
+and focus instead on the larger corporate world,
+
+200
+00:12:01,733 --> 00:12:05,399
+我们发现敏捷已经逐渐广受认可
+we find that agile has bit by bit taken over.
+
+201
+00:12:05,700 --> 00:12:08,566
+但很自然的 也会有一些公司在抵制
+But, not without a little corporate resistance naturally
+
+202
+00:12:08,666 --> 00:12:11,999
+我倾向于认为我们在采用敏捷开发的过程中
+I think the greatest resistance that we tend to see
+
+203
+00:12:12,066 --> 00:12:17,133
+受到的最大阻力来自中高级管理层
+in agile adoption comes from senior and middle management.
+
+204
+00:12:17,766 --> 00:12:20,733
+这位是 Bain＆Company 的合伙人 Darrell Rigby
+This is Darrell Rigby, a partner at Bain & Company
+
+205
+00:12:20,900 --> 00:12:24,700
+他们一直尝试在软件开发公司中推行敏捷开发
+They've been experimenting with using agileand software development companies.
+
+206
+00:12:24,700 --> 00:12:26,366
+不仅如此 还包括产品开发
+But, also product development,
+
+207
+00:12:26,366 --> 00:12:27,466
+新闻服务开发
+news service development
+
+208
+00:12:27,466 --> 00:12:29,733
+广告计划和忠诚度计划等
+advertising programs and loyalty programs.
+
+209
+00:12:29,733 --> 00:12:30,966
+不管他们要做什么
+And everywhere they go,
+
+210
+00:12:31,066 --> 00:12:34,366
+项目管理者都会面临点压力
+there's a potential for the managers to
+get a little nervous.
+
+211
+00:12:34,566 --> 00:12:40,733
+敏捷改变了他们的价值
+It changes the very notion
+of how they believe they add value
+
+212
+00:12:40,733 --> 00:12:47,799
+因为他们正在逐步退出细节上的管理或干预
+because they're moving away from micromanaging, or micro-meddling,
+
+213
+00:12:47,900 --> 00:12:52,933
+现在团队被赋予权力 对他们加以指导
+with these teams to empowering them and coaching them.
+
+214
+00:12:53,466 --> 00:12:56,733
+现在 敏捷并不能保证阻止中间轻微的干预
+Now, agile is no guarantee agains micro-meddlers.
+
+215
+00:12:56,900 --> 00:13:00,333
+我承认 我第一次看到一个敏捷管理委员会时
+I admit the first time I saw an agile management board
+
+216
+00:13:00,800 --> 00:13:03,533
+我认为这是一个永无止境的待办事项清单
+I thought it was just this never ending to-do list. 
+
+217
+00:13:03,533 --> 00:13:05,266
+我有了点压迫感
+A bit overwhelming
+
+218
+00:13:06,266 --> 00:13:10,099
+但后来当我开始真正使用敏捷产品管理工具时
+But then I started actually using an agile project management tool
+
+219
+00:13:10,200 --> 00:13:11,366
+我完全变成了它们的粉丝
+and I was blown away.
+
+220
+00:13:11,600 --> 00:13:13,466
+我是一个编码培训营的新人
+I was new out of a coating bootcamp,
+
+221
+00:13:13,466 --> 00:13:18,066
+我试图弄清楚如何确定功能的优先级并做出产品决策
+and I was trying to figure out how to prioritize featuresand make product decisions.
+
+222
+00:13:18,266 --> 00:13:19,666
+那些看起来很可怕的工具让我有了所有这些想法
+that scary-looking tool
+
+223
+00:13:19,666 --> 00:13:24,966
+然后给它们命名 顺序和结构
+forced me to organize all these ideas
+and give them names
+
+224
+00:13:25,000 --> 00:13:27,333
+从而可以帮助我更好地管理我的项目
+order, and structure. It helped me manage my project.
+
+225
+00:13:27,700 --> 00:13:29,333
+所以 我确实同意 Rigby 的观点
+So, I do take Rigby's point.
+
+226
+00:13:29,500 --> 00:13:32,666
+有些人可能会看到这些工具产生的影响并认为
+Some people might look at the effect of tools like that and think,
+
+227
+00:13:32,800 --> 00:13:35,333
+如果敏捷赋予开发人员权力 
+If agile empowers developers,
+
+228
+00:13:35,366 --> 00:13:38,066
+那么就会剥夺经理们的管理权
+then it must disempower their managers.
+
+229
+00:13:38,333 --> 00:13:40,999
+但是 它的价值比任何一个职位都要大
+But, this was larger than any one job title.
+
+230
+00:13:41,166 --> 00:13:43,466
+敏捷开发的发展势如破竹
+Agile's forward momentum was growing.
+
+231
+00:13:43,466 --> 00:13:44,733
+更重要的是
+And more importantly,
+
+232
+00:13:44,766 --> 00:13:46,399
+它正在证明自己
+agile was proving itself.
+
+233
+00:13:47,133 --> 00:13:53,066
+目前 成千上万的团队已经采用敏捷开发
+Agile has been used by tens of thousands of teams at this point.
+
+234
+00:13:53,066 --> 00:13:58,333
+因此 我们有大量数据能够说明在哪里可以采用敏捷的方式
+So, we've got a lot of great data on where agile can be used
+
+235
+00:13:58,566 --> 00:14:03,366
+答案是 无论何时你开始创新
+The answer is, any time you're thinking about doing innovation
+
+236
+00:14:03,400 --> 00:14:07,800
+相比你现在使用的方式 敏捷团队能更好实现目标
+an agile team can probably do it better than the way you're doing it today.
+
+237
+00:14:08,300 --> 00:14:13,400
+有许多更大的 知名的公司都在变革自身
+There are a lot of bigger, well known companies that have transformed to themselves. 
+
+238
+00:14:13,399 --> 00:14:16,566
+亚马逊是敏捷方法的重要用户
+Amazon is a big user of agile approaches.
+
+239
+00:14:16,866 --> 00:14:23,499
+奈飞 Facebook 和 Salesforce - 他们都是敏捷的重度用户
+ Netflix, Facebook, and Salesforce all of them heavy users of agile
+
+240
+00:14:23,833 --> 00:14:27,166
+实际上敏捷方法不仅重新定义了工作方式
+and it has really not just redefined the way they work
+
+241
+00:14:27,166 --> 00:14:29,199
+更是重新定义了行业的运作方式
+but the way the industry works
+
+242
+00:14:30,100 --> 00:14:31,966
+当 Rigby 第一次听说敏捷 时
+When Rigby first heard about agile
+
+243
+00:14:32,066 --> 00:14:33,866
+他认为这是一种奇怪的语言
+he thought it was just a weird language
+
+244
+00:14:34,066 --> 00:14:37,266
+他当时正在与许多大型零售商的 IT 部门合作
+he was working with the IT departments at a lot of big retailers
+
+245
+00:14:37,300 --> 00:14:40,966
+无意间听到他们谈论 “time boxes” “sprint”
+And he kept hearing them talk about time boxes and sprints and
+
+246
+00:14:41,133 --> 00:14:42,933
+和 “scrum master” 
+scrum masters.
+
+247
+00:14:42,933 --> 00:14:45,099
+起初 他并不懂他们在说什么
+At first, he didn't have a clue what they were talking about
+
+248
+00:14:45,366 --> 00:14:48,199
+他告诉我他实际上是试图忽略任何有关敏捷的字眼
+He told me he actually tried to ignore any mention of agile
+
+249
+00:14:48,266 --> 00:14:51,399
+就像这是他不需要学习的另一种语言
+like it was another language he didn't have to learn after all
+
+250
+00:14:51,400 --> 00:14:53,000
+毕竟 他本人不是开发人员
+he wasn't a developer himself
+
+251
+00:14:53,733 --> 00:14:55,699
+但是如今 他却成为了敏捷信徒
+Today, he's such a believer
+
+252
+00:14:55,733 --> 00:14:58,099
+把敏捷带到他的家里
+that he's literally brought agile to his home
+
+253
+00:14:58,100 --> 00:14:59,733
+带入他的教堂
+and into his church
+
+254
+00:15:00,200 --> 00:15:05,600
+我不一定每天早上都和家人坐在一起
+I do not necessarily sit down with my family every morning 
+
+255
+00:15:05,600 --> 00:15:08,800
+和他们一起参加敏捷开发式的会议
+and have a scrum meeting with them
+
+256
+00:15:08,800 --> 00:15:15,900
+但是 我已经非常擅长为我要做的事情排优先级
+But I have become very good at prioritizing the things that i'm going to do
+
+257
+00:15:24,466 --> 00:15:28,366
+十多年来 敏捷已经从边缘走向主流
+Agile has gone from fringe to mainstream in just over a decade
+
+258
+00:15:28,500 --> 00:15:31,333
+但是 企业认同还是有代价的
+But the corporate assimilation came at a cost
+
+259
+00:15:31,533 --> 00:15:33,166
+在某些情况下
+And in some cases,
+
+260
+00:15:33,166 --> 00:15:37,933
+这种同化甚至会使敏捷宣言的最初意图变得模糊
+that assimilation even met bastardizing the manifesto's original intentions.
+
+261
+00:15:39,000 --> 00:15:40,666
+Dave Thomas 让我想起了这一点
+Dave Thomas reminded me of that.
+
+262
+00:15:40,866 --> 00:15:43,866
+他说 当他和其他 16 位雪鸟会议上的伙伴第一次写下宣言时
+He says that when he and those 16 other Snowbird guys
+
+263
+00:15:43,866 --> 00:15:44,699
+first wrote it,
+
+264
+00:15:44,766 --> 00:15:46,533
+根本没有既定的指示
+there was no real prescription at all.
+
+265
+00:15:47,766 --> 00:15:53,533
+因此 即使宣言中没有告诉你如何应用这些条例
+So even though the manifesto doesn't tell you how to apply the values,
+
+266
+00:15:53,600 --> 00:15:58,333
+我猜想你已经对大概会发生什么
+I'm assuming you had some idea of what you thought would happen
+
+267
+00:15:58,366 --> 00:16:00,466
+还有人们会怎么做 有一些大概的思路了吧？
+or what people would do with it
+
+268
+00:16:00,733 --> 00:16:02,733
+老实说啊 我还真没有
+Honestly, I did not.
+
+269
+00:16:03,500 --> 00:16:07,200
+听到这里 你可能会感到惊讶 因为敏捷现在看起来很有说服力
+This might surprise you. Agile can seem so prescriptive today.
+
+270
+00:16:07,400 --> 00:16:12,566
+有书籍 认证 工具 课程和产品的整个市场
+There's a whole marketplace of books, certifications, tools, courses and products that
+
+271
+00:16:12,566 --> 00:16:15,533
+向你展示如何“实现敏捷”
+show you how to "do agile".
+
+272
+00:16:16,066 --> 00:16:20,599
+尽管有成千上万的手册和专业人士想要向你展示“唯一真理”
+But despite the thousands of manuals and professionals who want to show you the one drew way
+
+273
+00:16:20,866 --> 00:16:23,533
+Dave Thomas 表示 他们却错过了重点
+Dave Thomas says they're really missing the whole point
+
+274
+00:16:23,800 --> 00:16:25,400
+实际上它是一组价值观
+It's a set of values
+
+275
+00:16:25,766 --> 00:16:28,366
+我想这就像黄金法则
+It's like the golden rule, I guess. It's like
+
+276
+00:16:28,466 --> 00:16:32,666
+你知道 如果你要做一些邪恶恶毒的事情 你会想 “好吧
+you know, if you're about to do something evil and vicious you think, "okay,
+
+277
+00:16:32,666 --> 00:16:34,566
+如果有人这样做 我又怎么会喜欢”
+how would I like it if someone did that to me."
+
+278
+00:16:34,600 --> 00:16:38,000
+你知道吗 这种场合也适合用黄金法则
+You know? The golden rule applies. Well it's the same with this
+
+279
+00:16:38,200 --> 00:16:39,700
+好吧 敏捷宣言也是如此
+the agia manifesto.
+
+280
+00:16:40,000 --> 00:16:42,400
+它并没有告诉你该做什么 不该做什么
+It's not telling you what to do, and what not to do,
+
+281
+00:16:42,400 --> 00:16:50,333
+它只是告诉你 你做的一切是否符合这个价值观
+it's just telling you how to assess whether or not what you do is in line with that kind of way of doing things.
+
+282
+00:16:50,566 --> 00:16:55,366
+是的 我想只要回到敏捷软件开发宣言的名称
+Yep. I think that just going back to that name of manifesto for agile software development,
+
+283
+00:16:55,366 --> 00:17:00,399
+真正脱颖而出并且经久不衰的一个词
+the one word that really stands out and that has been very persistent,
+
+284
+00:17:00,400 --> 00:17:03,533
+也是人们真正关注的就是“敏捷”
+and people really latched onto is the word agile.
+
+285
+00:17:04,400 --> 00:17:09,000
+那么现在使用“敏捷”这个词又出了什么问题呢
+What is wrong with the use of the word agile today?
+
+286
+00:17:09,466 --> 00:17:12,066
+“敏捷”这个词的问题在于
+The problem with the word agile is that,
+
+287
+00:17:12,066 --> 00:17:15,999
+在我们刚开始提出的时候
+in the title that we came up with
+
+288
+00:17:16,200 --> 00:17:20,566
+它是描述软件开发的形容词
+it is an adjective that describes software development.
+
+289
+00:17:20,933 --> 00:17:26,766
+但接下来人们就产生了疑问：“我该怎么着手实施敏捷呢？”
+But what happens then is that people say, "How do I do this agile thing?"
+
+290
+00:17:28,100 --> 00:17:34,200
+突然之间 涌出了一大批咨询顾问
+Suddenly, out of the wood work springs a whole army of consultants, and consultancies
+
+291
+00:17:34,700 --> 00:17:38,100
+他们看到了 极限编程 的成功
+who look at the success of XP,
+
+292
+00:17:38,100 --> 00:17:41,400
+看到了宣言的成功 “嘿
+look at the success of the manifesto and say, "Hey,
+
+293
+00:17:41,400 --> 00:17:43,100
+那里有座金山 ”
+there's gold in them there hills."
+
+294
+00:17:44,066 --> 00:17:49,566
+然后就开始告诉人们如何“做敏捷” 
+So, they start telling people how to "do agile." 
+
+295
+00:17:52,500 --> 00:17:54,400
+这是一个问题
+that is a problem
+
+296
+00:17:54,800 --> 00:17:57,200
+因为你不能“做”敏捷
+because you can't do agile.
+
+297
+00:17:57,533 --> 00:17:59,399
+敏捷不是你要“做”的事情
+Agile's not what you do,
+
+298
+00:17:59,800 --> 00:18:01,466
+而是你如何做事情的方式
+it's how you do it.   
+
+299
+00:18:01,600 --> 00:18:08,800
+然而 有些公司会乐意卖给你敏捷相关的套装
+And yet, there are companies out there who will happily sell you agile in a box
+
+300
+00:18:09,200 --> 00:18:11,266
+我觉得这很讽刺
+That, I think, is a travesty. 
+
+301
+00:18:11,366 --> 00:18:15,799
+这里的咨询就好像是进入一家财富 1000 强企业
+The consult that go into a Fourteen 1,000 company 
+
+302
+00:18:15,866 --> 00:18:18,466
+然后帮助他们设定“敏捷”
+and help them set up "agile".
+
+303
+00:18:18,466 --> 00:18:21,133
+ 然后带走了 500 万美元 你懂吗？
+They're walking away with five million dollars you know
+
+304
+00:18:21,133 --> 00:18:22,266
+太棒了 钱真好赚
+great good for them
+
+305
+00:18:23,100 --> 00:18:25,933
+但是 现实情况是
+But, the reality is that,
+
+306
+00:18:26,366 --> 00:18:28,966
+这就像告诉要老虎如何变得敏捷一样
+that's like telling a tiger to be agile
+
+307
+00:18:28,966 --> 00:18:32,933
+说：“先走七步 然后左脚迈出来
+by saying, "take seven steps and then spring off your left foot,
+
+308
+00:18:32,933 --> 00:18:35,666
+然后再走两步 然后迈出右脚”
+and then take two more steps, and spring off your right foot."
+
+309
+00:18:35,666 --> 00:18:40,533
+嗯 实际上只有瞪羚做同样的事情 这才会是有用的
+All right well that only works if the gazelle is doing the same thing.
+
+310
+00:18:40,533 --> 00:18:43,999
+你猜怎么着？没有人告诉瞪羚这样做
+And guess what no one's told the gazelle to be agile that way
+
+311
+00:18:44,200 --> 00:18:48,766
+瞪羚基本都会跑到地平线尽头上大笑起来
+It's basically running off to the horizon laughing as it's horns off
+
+312
+00:18:48,766 --> 00:18:50,933
+因为老虎在“邯郸学步”
+because the tiger's gone the wrong way.
+
+313
+00:18:51,400 --> 00:18:54,766
+当你告诉团队如何敏捷时 会发生同样的事情 
+Same thing happens when you tell a team how to be agile.
+
+314
+00:18:56,300 --> 00:18:57,300
+如果你对他们说
+If you say to them
+
+315
+00:18:57,300 --> 00:18:59,100
+“这是你必须遵循的规则
+"Here are the rules you have to follow,
+
+316
+00:18:59,100 --> 00:19:04,466
+然后他们唯一能做的就是跟随职责
+here is the processes you have to follow," then the last thing they have is a duty
+
+317
+00:19:04,466 --> 00:19:08,099
+因为他们已被设定好该执行的程序
+because they have been boxed into a particular path.
+
+318
+00:19:08,166 --> 00:19:15,166
+管理层将根据他们服从原则或程序的程度
+ Management is going to be judging them based on how well they follow those principles, or those procedures.
+
+319
+00:19:15,200 --> 00:19:17,666
+而不是开发软件的水平来判断表现如何
+Not on how well they're developing software.
+
+320
+00:19:18,066 --> 00:19:19,733
+所以 回顾一下
+So, looking back,
+
+321
+00:19:19,733 --> 00:19:25,199
+宣言发布之前和之后的开发者的角色
+when you think about the role of the developer before the manifesto, and then now after the manifesto,
+
+322
+00:19:25,200 --> 00:19:30,666
+是如何因为你的宣言本身改变或扩展的呢
+how has the role of the developer changed, or expanded, because of what you wrote?
+
+323
+00:19:30,866 --> 00:19:35,899
+我认为大多数程序员都能理解到关键点 这值得肯定
+To their credit, I think that the majority of program was out there to get it.
+
+324
+00:19:35,966 --> 00:19:46,066
+我觉得敏捷宣言给了许多开发人员按照这种方法去做的授权
+I think that the manifesto has empowered a lot of developers to start following practices that,
+
+325
+00:19:46,166 --> 00:19:48,399
+某种程度上是他们以前就知道该如何
+to some extent, they knew they should have been doing,
+
+326
+00:19:48,400 --> 00:19:50,666
+但从来没有权利这样做
+but they never really had the authority to do.
+
+327
+00:19:51,400 --> 00:19:53,533
+像测试收集反馈
+Things like testing, for example,
+
+328
+00:19:53,666 --> 00:19:55,999
+缩短迭代周期之类的事情
+gathering feedback, short iterations
+
+329
+00:19:56,133 --> 00:20:00,299
+因此 在许多方面 工作变得更有趣 更充实
+So, in many ways, the job is more interesting and more fulfilling.
+
+330
+00:20:01,533 --> 00:20:06,999
+同时我认为 程序员也可能会感到有点害怕
+I think, also programmers are feeling a little bit more scared
+
+331
+00:20:07,600 --> 00:20:09,866
+因为现在他们有了责任
+because now they have responsibility 
+
+332
+00:20:09,866 --> 00:20:14,366
+过去 他们只是遵循命令 这个程序不起作用？
+in the old days, I was just following orders and why doesn't this program work
+
+333
+00:20:14,366 --> 00:20:15,933
+好吧 但我遵循了规范
+while I followed the spec
+
+334
+00:20:16,533 --> 00:20:19,499
+而如今 程序员肩负着责任
+Whereas nowadays, it's on your shoulders
+
+335
+00:20:20,933 --> 00:20:24,899
+所以 我觉得这个职业因敏捷宣言而有所成长
+So, I think the job has grown up a bit because of the manifesto.
+
+336
+00:20:25,533 --> 00:20:27,366
+我认为人们开始意识到
+I think people are going to realize
+
+337
+00:20:27,933 --> 00:20:32,266
+他们对自己所开发东西负有点对点的责任
+that they have an end to end responsibility for what they deliver.
+
+338
+00:20:37,666 --> 00:20:40,399
+敏捷取得了如此广泛得成功
+The success of agile has been so pervasive,
+
+339
+00:20:40,400 --> 00:20:41,733
+改变了工作流程和态度
+that its altering workflow
+
+340
+00:20:41,733 --> 00:20:44,199
+远远超出了开发者世界的范畴
+and attitudes far beyond the development world
+
+341
+00:20:44,466 --> 00:20:46,333
+当然也超越了雪鸟会议召开的小木屋
+certainly beyond the snowbird lodge
+
+342
+00:20:46,600 --> 00:20:47,633
+我们不禁要问 
+We have to ask,
+
+343
+00:20:47,633 --> 00:20:54,166
+“相比于 2001 年撰写宣言时 今天成为敏捷开发人员意味着什么？”
+"What does it even mean to be an agile developer today versus 2001 when the manifesto was written?"
+
+344
+00:20:54,400 --> 00:20:56,800
+最初的敏捷精神是否仍然存在？
+Does the original spirit of agile persist?
+
+345
+00:20:56,933 --> 00:20:59,299
+如果确实发生了变化 这是一件坏事吗？
+And if it did change, is that such a bad thing?
+
+346
+00:20:59,766 --> 00:21:03,199
+对于谷歌的多元化业务合作伙伴 Ruha Devanesan 来说
+For Ruha Devanesan, a diversity business partner at Google,
+
+347
+00:21:03,333 --> 00:21:04,833
+敏捷的思维方式
+the agile mindset 
+
+348
+00:21:04,833 --> 00:21:10,566
+ 可能已经发展到影响公平性和在工作场所中的平等性了
+might have evolved to the point where it's now influencing basic levels of fairness and workplace equality.
+
+349
+00:21:12,466 --> 00:21:14,599
+让团队具有包容性的部分原因
+Part of what makes teams inclusive
+
+350
+00:21:14,600 --> 00:21:22,333
+是他们在进行非常基础的工作时 可以评价和反思自己 
+is their ability to evaluate and reflect on how they work together on a very fundamental level
+
+351
+00:21:22,600 --> 00:21:24,733
+当大多数团队一起工作时
+And most teams, when they work together,
+
+352
+00:21:24,733 --> 00:21:26,899
+没有足够的动力停下来思考
+They don't have space to stop and think
+
+353
+00:21:27,266 --> 00:21:29,566
+他们团队宗旨
+about their team dynamics, about
+
+354
+00:21:30,133 --> 00:21:32,733
+是否每个人都在能桌上发表意见
+whether everyone's having a voice at the table,
+
+355
+00:21:33,100 --> 00:21:36,200
+关于是否有人在推动其他人
+about whether someone's steam rolling someone else. Or
+
+356
+00:21:37,300 --> 00:21:41,466
+或者是否有人在一直都保持沉默 如果他们保持沉默
+whether someone is silent the entire time. And if they are silent,
+
+357
+00:21:41,466 --> 00:21:42,799
+为什么他们保持沉默？
+why are they silent?
+
+358
+00:21:43,133 --> 00:21:45,099
+因此 在考虑包容性时
+and so when thinking about inclusion
+
+359
+00:21:45,266 --> 00:21:51,066
+我认为敏捷团队使用的一些工具在为团队创建架构
+I thought that some of the tools that agile teams use could be very useful
+
+360
+00:21:51,400 --> 00:21:56,666
+或更具包容性的框架方面非常有用
+in giving teams a structure, or a framework to be more inclusive
+
+361
+00:21:56,766 --> 00:22:00,599
+所以多样性包括性别 种族
+So diversity not just in terms of gender, and race, and ethnicity,
+
+362
+00:22:00,600 --> 00:22:02,966
+还有功能多样性
+but also functional diversity.
+
+363
+00:22:03,766 --> 00:22:07,566
+功能多样性为团队带来了复杂性
+And functional diversity introduces complexity into a team.
+
+364
+00:22:08,500 --> 00:22:10,300
+但是 我们在这里要声明他们的不同
+But, let's make a distinction here.
+
+365
+00:22:10,466 --> 00:22:13,599
+Ruha 并不是说敏捷就等于多样性
+Ruha is not saying that agile equals diversity
+
+366
+00:22:13,766 --> 00:22:17,699
+她的意思是 “敏捷加多样性等于更好的团队 ”
+She's saying, "Agile plus diversity equals better teams."
+
+367
+00:22:17,733 --> 00:22:19,999
+Ruha 的想法在她写的一篇名为
+Ruha's ideas were crystallized in an article
+
+368
+00:22:20,000 --> 00:22:23,866
+《论通过敏捷方法解锁多样性》的文章中得到了体现
+she wrote called, Can agile methodology unlocked diversity
+
+369
+00:22:23,933 --> 00:22:26,099
+我们将在演示笔记中添加一个链接 — 这可是值得一读的文章
+will throw a link in our show notes it's worth read
+
+370
+00:22:26,566 --> 00:22:28,999
+在这篇文章中 她会引导你去了解
+In it, she walks you through this idea that
+
+371
+00:22:29,066 --> 00:22:32,799
+多元化不仅仅是人力资源部门一直在谈论的模糊概念
+diversity isn't just a fuzzy concept your HR department keeps talking about.
+
+372
+00:22:32,866 --> 00:22:35,133
+这里提供了一个强有力的商业案例
+It's actually a strong business case here.
+
+373
+00:22:35,366 --> 00:22:37,599
+多样性可以与敏捷相辅相成
+Diversity can dovetail with agile.
+
+374
+00:22:37,866 --> 00:22:40,733
+这篇介绍复杂性的文章
+So, that introduction of complexity 
+
+375
+00:22:40,733 --> 00:22:47,333
+最终目的是让大家从不同的角度看待你的结果或产品
+for the end goal of having an outcome or a product that has been looked at for many angles
+
+376
+00:22:47,500 --> 00:22:50,766
+我们持有的是基本同样的观点
+That's the same fundamental point of view that we 
+take when we say
+
+377
+00:22:50,766 --> 00:22:53,966
+当我们说为团队增加多样性可以带来更好的结果
+adding diversity to a team leads to a good outcome
+
+378
+00:22:53,966 --> 00:22:56,933
+带来更多的创新和创造力时
+leads to more innovation and more creativity
+
+379
+00:22:57,133 --> 00:23:03,999
+因为当你从多个角度去看待并协作解决工作中的问题时
+because when you have multiple perspectives looking at a problem helping to do problem solving work
+
+380
+00:23:04,000 --> 00:23:07,733
+你更有可能得出一个更好的结果
+you're more likely to come out with an outcome that is more robust.
+
+381
+00:23:09,700 --> 00:23:12,366
+甚至可以对日常会议这样简单的事情
+Even something as simple as a daily stand-up,
+
+382
+00:23:12,466 --> 00:23:14,566
+团队中的每个人反馈时
+where everybody on your team gets to report
+
+383
+00:23:14,700 --> 00:23:19,066
+会让内向的人或其他不爱说话的人发表自己的见解
+is going to give voice to introverts or other people who have a hard time being heard.
+
+384
+00:23:19,166 --> 00:23:21,599
+我真正喜欢敏捷的原因是
+The thing I really like about agile is
+
+385
+00:23:21,600 --> 00:23:26,133
+有一些内置的机制来帮助团队停下来进行思考
+it has some built-in mechanisms to help teams stop and reflect.
+
+386
+00:23:26,666 --> 00:23:29,566
+这可能是因为敏捷开发是如此之快
+And that may be because agile is so quick,
+
+387
+00:23:29,566 --> 00:23:32,799
+并且有为时两周的冲刺任务 如果你没有建立这些机制
+and with two weeks sprints, if you don't build in those mechanisms
+
+388
+00:23:32,800 --> 00:23:40,466
+你可能会偏离轨道 没法再回到正轨 
+you're likely to go way off track and not have the consciousness to come back on to track
+
+389
+00:23:41,066 --> 00:23:44,466
+因为让大家都能提出工作反馈
+reflection on how we're working together
+
+390
+00:23:44,466 --> 00:23:46,099
+并借此不断改善
+how can we course correct
+
+391
+00:23:46,100 --> 00:23:50,066
+这是团队能够包容的基本表现
+is one of the fundamental ways in which teams can be inclusive
+
+392
+00:23:50,766 --> 00:23:52,566
+既然我们谈论的是包容性
+Since we're talking about inclusivity
+
+393
+00:23:52,766 --> 00:23:57,333
+现在可能是指出那些敏捷宣言的 17 位创始人的好时机
+now might be a good time to point out that those seventeen founders of the agile manifesto
+
+394
+00:23:57,566 --> 00:23:59,366
+是的…他们都是白人
+yeah ... They were all white men.
+
+395
+00:24:00,800 --> 00:24:04,500
+实际上那个房间没有多样性
+There was zero diversity in that room.
+
+396
+00:24:05,000 --> 00:24:10,133
+这是对该组织的一种非常普遍的批评
+And that is a very common criticism of the group.
+
+397
+00:24:10,200 --> 00:24:12,366
+而且我对此深表同情
+And one that I have a lot of sympathy with.
+
+398
+00:24:12,866 --> 00:24:15,566
+如果敏捷宣言创始人采用了这些敏捷原则
+if the manifesto founders use those agile principles,
+
+399
+00:24:15,566 --> 00:24:17,166
+并将其应用于他们自己的会议
+and apply it to their own meeting
+
+400
+00:24:17,366 --> 00:24:20,133
+那么他们可能在完成部分工作后 会问他们自己
+they may have gotten part way done and ask themselves 
+
+401
+00:24:20,266 --> 00:24:23,766
+“嘿 你注意到我们没有邀请任何女性参加这次会议吗？”
+"Hey, did you notice we didn't invite any women to this meeting?"
+
+402
+00:24:24,066 --> 00:24:26,933
+我在想会不会有一个有色人种会持有不同意见
+I wonder if a person of color would have a different opinion.
+
+403
+00:24:27,066 --> 00:24:31,299
+物以类聚 人以群分
+people's friends tend to be and look like they
+like they do.
+
+404
+00:24:31,300 --> 00:24:35,200
+所以 如果考虑敏捷宣言的第一个人是白人
+So, if the first person that thought about
+the agile manifesto was a white guy
+
+405
+00:24:35,366 --> 00:24:39,566
+他邀请到桌上的人也是白人也就不足为奇了
+it's not surprising that the people he invited to the table were also white guys.
+
+406
+00:24:39,900 --> 00:24:44,933
+我们有机会停下来说：“让我们退后一步
+But, we have an opportunity to stop and say, "Let's take a step back, let's expand
+
+407
+00:24:45,300 --> 00:24:49,966
+让我们扩大我们的视野 寻找我们现在拥有的关系网络之外的人
+our lens and look for people outside of the network that I currently have,
+
+408
+00:24:49,966 --> 00:24:54,966
+谁可以带来不同的视角并帮助我们更好地改进这种开发方式”
+who can bring a different perspective and help me elevate this methodology to something even better."
+
+409
+00:25:00,000 --> 00:25:04,066
+对我来说这很有道理 因为敏捷开发正是如此 … 好吧 敏捷
+It makes sense to me that because agile is so ... well, so, agile,
+
+410
+00:25:04,266 --> 00:25:06,766
+我们可以将它应用于不同的问题和行业
+we can apply it to different problems and industries,
+
+411
+00:25:06,900 --> 00:25:08,566
+敏捷的应用方面
+The application of agile,
+
+412
+00:25:08,566 --> 00:25:10,266
+以及其在现实生活中出现时候的样子
+and what it looks like in real life,  
+
+413
+00:25:10,266 --> 00:25:14,933
+是不断变化 不断扩展的 我想它正在将宣扬的内容付诸实践
+is constantly shifting, expanding. I guess it's practicing what it preaches.
+
+414
+00:25:15,000 --> 00:25:16,733
+没有最正确的答案
+There is no settled answer,
+
+415
+00:25:16,766 --> 00:25:18,266
+没有最后的终点
+no subtler end point.
+
+416
+00:25:19,066 --> 00:25:23,866
+这是我们有时会忘记的事情：硬规则是敏捷的敌人
+That's something we sometimes forget: Hard rules are the enemy of agility.
+
+417
+00:25:24,000 --> 00:25:26,666
+因此 如果一个敏捷团队告诉你
+So, if an agile team ever tells you that
+
+418
+00:25:26,766 --> 00:25:30,766
+你敏捷的一部分意味着你必须每两周开发一个新的版本
+part of being agile means you have to produce
+a new release every two weeks
+
+419
+00:25:30,800 --> 00:25:32,733
+或者你必须做什么事
+or you have to do this, or you have to do that,
+
+420
+00:25:32,966 --> 00:25:35,466
+那么 根据定义 这可不是敏捷
+then, by definition, that's not agile. 
+
+421
+00:25:36,066 --> 00:25:39,566
+你老是说“总是” 你也不再是敏捷了
+The second you say "always," you aren't being agile anymore.
+
+422
+00:25:46,900 --> 00:25:49,533
+那些在犹他州雪鸟会议碰面的 17 名男子
+Those 17 men who met in Snowbird, Utah
+
+423
+00:25:49,600 --> 00:25:53,000
+最后宣称成立敏捷联盟
+eventually dubbed themselves the Agile Alliance.
+
+424
+00:25:53,133 --> 00:25:55,066
+该联盟成为一个非营利组织
+That alliance became a nonprofit,
+
+425
+00:25:55,066 --> 00:25:58,333
+每年都举办一次会议
+and that non profit started hosting a conference every year
+
+426
+00:25:58,700 --> 00:26:00,300
+这个联盟的成长和发展
+It's grown and grown
+
+427
+00:26:00,333 --> 00:26:03,166
+催生了更多全新的理论和方法
+spawning whole new theories and methodologies
+
+428
+00:26:03,900 --> 00:26:06,800
+这正是我感觉非常有趣的东西
+and here's something I think is super interesting
+
+429
+00:26:06,966 --> 00:26:08,733
+在 2008 年的会议上
+At the 2008 conference,
+
+430
+00:26:08,900 --> 00:26:12,766
+比利时开发人员 Patrick Debois 参加了并开始引领一条道路
+Belgium developer, Patrick Debois attends and sets off down a path 
+
+431
+00:26:12,766 --> 00:26:18,133
+他发明了一种全新的软件开发实践 DevOps
+that leads him to inventing a whole new practice of software development DevOps
+
+432
+00:26:18,333 --> 00:26:24,099
+我从未想到与敏捷的一系列原则与 DevOps 和整个行业是都紧密相关
+I'd never thought that agile a set of principles and DevOps a whole industry were related
+
+433
+00:26:24,333 --> 00:26:25,699
+但是 现在我在想 
+But now I am thinking,
+
+434
+00:26:26,033 --> 00:26:31,066
+“敏捷的兴起与 DevOps 的发明之间有多少关联？
+ "How strong really is that line between the rise of agile and the invention of DevOps?
+
+435
+00:26:31,133 --> 00:26:35,933
+一个突破是否孕育了另一个突破？”我们会一起去探索
+Did the one breakthrough lead to the other organically?" We're gonna find out together
+
+436
+00:26:36,200 --> 00:26:39,066
+因为我们的下一集是正是 DevOps
+because our next episode is all DevOps
+
+437
+00:26:39,066 --> 00:26:40,599
+对！一整集的内容
+All episode long
+
+438
+00:26:41,066 --> 00:26:42,966
+会在两周内推出
+and it's dropping in two weeks
+
+439
+00:26:43,966 --> 00:26:47,199
+《代码英雄》是红帽的原创播客
+Command Line Heroes is an original podcast from Red Hat.
+
+440
+00:26:47,333 --> 00:26:49,766
+有关我们的播客和其他更多信息
+For more information about this and past episodes, 
+
+441
+00:26:49,766 --> 00:26:54,199
+请访问 Redhat.com/commandlineheroes 在那里
+go to RedHat.com/commandlineheroes Once you're there,
+
+442
+00:26:54,200 --> 00:26:56,133
+你也可以关注我们的消息订阅 
+you can also sign up for our newsletter.
+
+443
+00:26:56,500 --> 00:26:59,866
+想要免费听取最新内容
+And to get new episodes delivered automatically for free
+
+444
+00:27:00,100 --> 00:27:01,766
+请订阅我们的节目
+make sure to subscribe to the show.
+
+445
+00:27:02,000 --> 00:27:05,566
+也可以搜索 “Command Line Heroes”
+Just search for "Command Line Heroes" in
+
+446
+00:27:05,566 --> 00:27:08,133
+在 Apple Podcast Spotify  Google Play CastBox 中都有
+Apple podcasts, Spotify,  Google Play, CastBox 
+
+447
+00:27:08,133 --> 00:27:14,599
+然后点击“订阅” 你将在第一时间获得我们的内容更新
+or however you get your podcast then hit subscribe so you'll be the first to know when new episodes are available
+
+448
+00:27:15,666 --> 00:27:19,133
+我是 Saron Yitbarek 感谢收听 请坚持编程 
+I'm siranyat barack thanks for listening and keep on coden
+
