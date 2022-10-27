@@ -15,7 +15,7 @@ Episode Two: Rise of Linux®.
 
 4
 00:00:09,000 --> 00:00:14,200
-微软帝国控制着 90％ 的用桌面用户
+微软帝国控制着 90％ 的桌面用户
 The empire of Microsoft controls 90 % of desktop users.
 
 5
@@ -61,7 +61,7 @@ So, where were we?
 13
 00:00:51,000 --> 00:00:54,300
 苹果和微软互相攻伐
-Apple and Microsoft were trading blows,
+Last time, Apple and Microsoft were trading blows,
 
 14
 00:00:54,300 --> 00:00:57,300
@@ -135,7 +135,7 @@ I'm Saron Yitbarek and you're listening to Command Line Heroes, an original podc
 
 28
 00:01:58,000 --> 00:02:04,400
-每一集 我们都会给你带来“从码开始” 用技术改变科技的人 他们的故事
+每一集 我们都会给你带来“白码起家” 用技术改变科技的人 他们的故事
 In each episode, we're bringing you stories about the people who transform technology from the command line up.
 
 29
@@ -184,12 +184,12 @@ He and his team of open source programmers are starting to put out versions of L
 this OS kernel that they're duct taping together.
 
 38
-00:02:41,000 --> 00:02:43,150
+00:02:41,625 --> 00:02:43,150
 坦白地说 如果你是微软公司
 If you're Microsoft,
 
 39
-00:02:43,150 --> 00:02:46,150
+00:02:43,150 --> 00:02:47,275
 你并不会太在意 Linux 甚至不太关心开源运动
 frankly, you're not too concerned about Linux or even about open source in general,
 
@@ -231,7 +231,7 @@ Linux hasn't yet become the behemoth we know now.
 47
 00:03:16,000 --> 00:03:20,000
 这只是一个正在蔓延的 拥有病毒一般感染力的奇怪操作系统
-and the geeks and hackers of the world are falling in love with it.
+It's just a strangely viral OS that's creeping across the planet
 
 48
 00:03:20,000 --> 00:03:23,500
@@ -251,7 +251,7 @@ I mean at that time,discovering Linux was like gaining access to a secret societ
 51
 00:03:32,000 --> 00:03:35,079
 程序员与朋友们分享刻录的 Linux CD 集
-Programmers would share the Linux CD set with friends the same way other people would share mixtapes of underground music.
+Programmers would share the Linux CD set with friends
 
 52
 00:03:35,079 --> 00:03:38,000
@@ -536,7 +536,7 @@ that resistance was there, with EMACS and GNU.
 108
 00:07:19,100 --> 00:07:25,020
 斯托曼的自由软件基金会中的某些人想要使用完全命令行
-W th Stallman's free software foundation, certain folks were always begging for access to the command line,
+With Stallman's free software foundation, certain folks were always begging for access to the command line,
 
 109
 00:07:25,020 --> 00:07:29,200
@@ -821,7 +821,7 @@ I mean there was really no comparison.
 165
 00:11:18,350 --> 00:11:21,550
 如果你是一家雇佣专业人员来构建网站的商店
-there was really no comparison. If you were a shop hiring a pro to build your website,
+If you were a shop hiring a pro to build your website,
 
 166
 00:11:21,550 --> 00:11:24,000
@@ -1316,7 +1316,7 @@ simply can't compete with the thousands of open source developers working on all
 264
 00:17:17,000 --> 00:17:20,760
 很长时间以来他们都不愿意合作
-They were very loath e to do so for a long time.
+They were very loath to do so for a long time.
 
 265
 00:17:20,760 --> 00:17:26,810
@@ -1705,8 +1705,8 @@ Basically, right now,
 
 342
 00:22:44,330 --> 00:22:48,000
-基本上 到目前为止 包括微软在内 有四到五家公司
-Basically, right now, we have four or five companies, if you count Microsoft,
+包括微软在内 有四到五家公司
+we have four or five companies, if you count Microsoft,
 
 343
 00:22:48,000 --> 00:22:50,170
