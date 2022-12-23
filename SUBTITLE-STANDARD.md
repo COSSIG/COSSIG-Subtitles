@@ -32,8 +32,3 @@
 你可以使用本储存库中的 [subtitle-tools/format-subtitle.py](./subtitle-tools/format-subtitle.py) 这个脚本来将你已经制作好的字幕中的标点符号覆写成合乎本规范的样式。该脚本目前只支持 srt 格式的字幕，请**不要对原文和其他格式的字幕使用**。
 
 同样地，[subtitle-tools/cn-length-check.py](./subtitle-tools/cn-length-check.py) 可以用于每一行中文字幕的长度检查（也只适用于 srt)。注意这里的算法会将一行中文字幕中的每个半角字符算作 0.5 个字符。
-
-
-**备注**
-
-在本标准发布（2022年10月11日）之前通过审核但不符合本标准的字幕会由 @Northurland 修改至符合。贡献者无需自行修改（虽然如果你想改那自然是最好的）
