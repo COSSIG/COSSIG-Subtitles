@@ -31,12 +31,12 @@ What prize could be so valuable that they're all lining up and chomping at the b
 7
 00:00:29,000 --> 00:00:29,020
 这是一场赢家将掌握容器编排技术规则的竞赛 而且胜利者只有一个
-This is an all out race to control the orchestration of container technologys
+This is an all out race to control the orchestration of container technologies
 
 8
 00:00:29,020 --> 00:00:35,000
 这是一场赢家将掌握容器编排技术规则的竞赛 而且胜利者只有一个
-This is an all out race to control the orchestration of container technologys
+This is an all out race to control the orchestration of container technologies
 
 9
 00:00:35,475 --> 00:00:38,088
@@ -121,7 +121,7 @@ Who cares about containers anyway?
 25
 00:01:49,548 --> 00:01:52,980
 好吧 算我一个 但是实际上 一开始我也并不知道容器是什么
- Well, I do for one, but I didn't know that at first.
+Well, I do for one, but I didn't know that at first.
 
 26
 00:01:52,980 --> 00:01:58,160
@@ -185,7 +185,7 @@ It was the classic case of, "It works on my machine."
 
 38
 00:02:39,159 --> 00:02:41,440
- “可是在我的电脑上就是不行”
+“可是在我的电脑上就是不行”
 "Well, it doesn't work on mine."
 
 39
@@ -235,8 +235,8 @@ a new approach where we can use whatever set of tools we prefer
 
 48
 00:03:09,764 --> 00:03:12,740
- 并且在传递工作成果时毫无阻碍
- and still pass that work around with ease.
+并且在传递工作成果时毫无阻碍
+and still pass that work around with ease.
 
 49
 00:03:12,740 --> 00:03:15,432
@@ -246,11 +246,11 @@ Imagine there was a way to keep the work consistent
 50
 00:03:15,432 --> 00:03:19,272
 不管这些人散布在世界何地
- as it moves from development to testing and into production, 
+as it moves from development to testing and into production, 
 
 51
 00:03:19,272 --> 00:03:23,320
- 都可以让项目从开发到测试 再到生产环境 保持连贯性
+都可以让项目从开发到测试 再到生产环境 保持连贯性
 no matter how many people are working on it, or where those people are.
 
 52
@@ -275,8 +275,8 @@ She's describing the thing that makes containers so useful,
 
 56
 00:03:43,304 --> 00:03:48,100
- 事实上容器把一切打包到了一个整洁、并且可以迁移的包中
- the fact that they wrap everything up in a neat transportable bundle.
+事实上容器把一切打包到了一个整洁、并且可以迁移的包中
+the fact that they wrap everything up in a neat transportable bundle.
 
 57
 00:03:48,100 --> 00:03:52,840
@@ -290,18 +290,18 @@ So for example, you start a container.
 
 59
 00:03:57,000 --> 00:03:59,575
- 进程会被授予它自己的根目录
+进程会被授予它自己的根目录
 The process is given its own root directory,
 
 60
 00:03:59,575 --> 00:04:04,173
- 然后它认为自己在查看的是整台计算机的根目录
- and it thinks that it's looking at the whole root directory of the whole computer,
+然后它认为自己在查看的是整台计算机的根目录
+and it thinks that it's looking at the whole root directory of the whole computer,
 
 61
 00:04:04,173 --> 00:04:08,140
- 但实际上它只是在查看这个文件系统很小的一个子集
- but it's actually only looking at a tiny subset of the file system.
+但实际上它只是在查看这个文件系统很小的一个子集
+but it's actually only looking at a tiny subset of the file system.
 
 62
 00:04:09,125 --> 00:04:12,211
@@ -310,8 +310,8 @@ By wrapping up an executable with all its dependencies,
 
 63
 00:04:12,211 --> 00:04:17,260
- 容器可以在任何笔记本或者云中的虚拟机上运行
- containers can run on any laptop or in any virtual machine in the cloud.
+容器可以在任何笔记本或者云中的虚拟机上运行
+containers can run on any laptop or in any virtual machine in the cloud.
 
 64
 00:04:17,260 --> 00:04:21,880
@@ -335,7 +335,7 @@ That means developers can share application
 
 68
 00:04:35,700 --> 00:04:39,040
- 而不用担心计算机之间相互不兼容这个老问题
+而不用担心计算机之间相互不兼容这个老问题
 without worrying about the old, "Works on my machine," issue.
 
 69
@@ -355,8 +355,8 @@ That service that delivers everything you need to make a meal?
 
 72
 00:04:48,850 --> 00:04:53,040
- 包括精心按照菜谱卡片搭配好的 所有做饭需要的原料
- All nicely divided and portioned, recipe card and everything?
+包括精心按照菜谱卡片搭配好的 所有做饭需要的原料
+All nicely divided and portioned, recipe card and everything?
 
 73
 00:04:53,525 --> 00:04:58,891
@@ -365,8 +365,8 @@ Well, imagine if Blue Apron also brought you not just the pre-chopped ingredient
 
 74
 00:04:58,891 --> 00:05:02,076
- 而是一整个厨房 有煤气灶 还有你所需要的全部餐具 
- but a kitchen stove, and all your cutlery too. 
+而是一整个厨房 有煤气灶 还有你所需要的全部餐具 
+but a kitchen stove, and all your cutlery too. 
 
 75
 00:05:02,076 --> 00:05:06,580
@@ -380,8 +380,8 @@ That's a container.
 
 77
 00:05:07,964 --> 00:05:09,275
- 在我提到的那种情况下 
- In my case, 
+在我提到的那种情况下 
+In my case, 
 
 78
 00:05:09,275 --> 00:05:13,499
@@ -391,7 +391,7 @@ container technology would have made onboarding my friend Nadia a dream,
 79
 00:05:13,499 --> 00:05:15,780
 简单到像使用蓝围裙服务做一顿晚餐一样
- easy as a Blue Apron dinner.
+easy as a Blue Apron dinner.
 
 80
 00:05:18,000 --> 00:05:20,600
@@ -405,8 +405,8 @@ but that's where we have to leave the Blue Apron analogy behind
 
 82
 00:05:24,525 --> 00:05:26,160
- 让我们来看一看具体的细节
- and get to specifics.
+让我们来看一看具体的细节
+and get to specifics.
 
 83
 00:05:26,700 --> 00:05:33,762
@@ -416,7 +416,7 @@ A lot of people are under the impression that containers are some sort of lightw
 84
 00:05:33,762 --> 00:05:36,960
 轻量级的虚拟机 事实上并不是
- lightweight virtual machines, and they're really not.
+lightweight virtual machines, and they're really not.
 
 85
 00:05:36,960 --> 00:05:41,180
@@ -431,7 +431,7 @@ So a virtual machine has an entire operating system all to itself,
 87
 00:05:46,246 --> 00:05:49,254
 相比起来容器是共享操作系统的 
- whereas a container is sharing the operating system, 
+whereas a container is sharing the operating system, 
 
 88
 00:05:49,254 --> 00:05:54,220
@@ -450,7 +450,7 @@ Containers don't replace VMs.
 
 91
 00:06:02,580 --> 00:06:09,540
- 虚拟化技术仍然可以提高数据中心的效率 并且对于服务器整合非常关键
+虚拟化技术仍然可以提高数据中心的效率 并且对于服务器整合非常关键
 Virtualization is still going to increase efficiency in a data centre and it's still crucial for server consolidation.
 
 92
@@ -465,7 +465,7 @@ Think of it this way,
 
 94
 00:06:17,200 --> 00:06:24,620
- 如果我们全部依靠虚拟机的话 运行所有仿真服务器将产生大量的额外负担
+如果我们全部依靠虚拟机的话 运行所有仿真服务器将产生大量的额外负担
 if we relied on VMs entirely, running all those emulated servers, we'd be creating enormous overhead.
 
 95
@@ -475,8 +475,8 @@ A VM might be gigabytes in size,
 
 96
 00:06:26,928 --> 00:06:30,000
- 然而一个容器可能也就只有 20 MB 左右
- whereas a container could be 20 megabytes.
+然而一个容器可能也就只有 20 MB 左右
+whereas a container could be 20 megabytes.
 
 97
 00:06:30,000 --> 00:06:32,773
@@ -485,8 +485,8 @@ A VM could take several minutes to boot up.
 
 98
 00:06:32,773 --> 00:06:36,420
- 如果我尝试用它部署一个网页应用的话 这可不是一个好消息
- That's not a great pace if I'm trying to deploy web-based APPs.
+如果我尝试用它部署一个网页应用的话 这可不是一个好消息
+That's not a great pace if I'm trying to deploy web-based APPs.
 
 99
 00:06:36,420 --> 00:06:38,794
@@ -495,7 +495,7 @@ A lightweight, faster alternative to full machine virtualization has been a long
 
 100
 00:06:38,794 --> 00:06:42,800
- 人们都期盼一个轻量级的、更快速的完整机器虚拟化替代方案出现
+人们都期盼一个轻量级的、更快速的完整机器虚拟化替代方案出现
 A lightweight, faster alternative to full machine virtualization has been a long time coming.
 
 101
@@ -510,7 +510,7 @@ Developers working on the U nix V7 designed the root system call,
 
 103
 00:06:58,432 --> 00:07:02,740
- 使环境中只包括特定的程序
+使环境中只包括特定的程序
 which allowed for environments that contained only certain programs.
 
 104
@@ -535,8 +535,8 @@ We could finally run several containers using a single Linux kernel
 
 108
 00:07:21,152 --> 00:07:24,780
- 而无需使用完整的虚拟机
- and that bypassed the need for full-fledged VMs.
+而无需使用完整的虚拟机
+and that bypassed the need for full-fledged VMs.
 
 109
 00:07:24,780 --> 00:07:28,372
@@ -545,8 +545,8 @@ That means infrastructure costs start to drop.
 
 110
 00:07:29,268 --> 00:07:32,575
- 但不是每一个人都能立马看到容器技术的潜力
- Not everybody saw the potential for containers right away.
+但不是每一个人都能立马看到容器技术的潜力
+Not everybody saw the potential for containers right away.
 
 111
 00:07:33,050 --> 00:07:38,220
@@ -571,21 +571,21 @@ And slowly over time,
 115
 00:07:49,856 --> 00:07:51,726
 越来越多的人会接触到容器化的概念
- as more people are introduced to the idea 
+as more people are introduced to the idea 
 
 116
 00:07:51,726 --> 00:07:53,475
- 随着越来越多的人开始使用这项技术
+随着越来越多的人开始使用这项技术
 and as more people begin to work on it
 
 117
 00:07:53,475 --> 00:07:59,713
- 并且这些知识通过工程团队和工程组织 通过社区进行传播
- and that knowledge is disseminated through engineering teams and engineering organizations and through communities
+并且这些知识通过工程团队和工程组织 通过社区进行传播
+and that knowledge is disseminated through engineering teams and engineering organizations and through communities
 
 118
 00:07:59,713 --> 00:08:03,000
- 它们就会变得更容易获得
+它们就会变得更容易获得
 it becomes more available.
 
 119
@@ -596,7 +596,7 @@ Because of that similarity to VMs we described earlier,
 120
 00:08:06,658 --> 00:08:11,020
 Laura 认为容器的潜力被低估了
- Laura thinks the potential of containers got a bit lost.
+Laura thinks the potential of containers got a bit lost.
 
 121
 00:08:11,020 --> 00:08:18,960
@@ -610,7 +610,7 @@ if you weren't a Sys Admin or someone who had been deep in the guts of Linux,
 
 123
 00:08:23,502 --> 00:08:28,080
- 容器还是一个你刚刚了解到的全新概念
+容器还是一个你刚刚了解到的全新概念
 it was still kind of a new concept that I've had just passing familiarity with.
 
 124
@@ -620,13 +620,13 @@ So I kind of came to understand it as like,
 
 125
 00:08:32,323 --> 00:08:38,725
- 我可以去建立一个可以用完即弃的环境 
+我可以去建立一个可以用完即弃的环境 
 "Oh, this is kind of like how the pattern that I would use a virtual machine for, I can make a disposable environment
 
 126
 00:08:38,725 --> 00:08:43,000
 而且这个环境完全独立 清理之后不留痕迹
- that's totally isolated and then clean up really well after myself."
+that's totally isolated and then clean up really well after myself."
 
 127
 00:08:43,950 --> 00:08:47,700
@@ -665,8 +665,8 @@ He's enough of a veteran
 
 134
 00:09:08,450 --> 00:09:15,040
- 他在容器出现前 甚至是虚拟机出现前 就在做这方面的工作了
- that he remembers working at a time not just before containers, but pre-Virtual Machines too.
+他在容器出现前 甚至是虚拟机出现前 就在做这方面的工作了
+that he remembers working at a time not just before containers, but pre-Virtual Machines too.
 
 135
 00:09:15,715 --> 00:09:19,299
@@ -675,18 +675,18 @@ I worked at an online retailer in Dot-com 1.0
 
 136
 00:09:19,575 --> 00:09:21,987
- 我们有上千台实体机
- and we had thousands of physical machines,
+我们有上千台实体机
+and we had thousands of physical machines,
 
 137
 00:09:21,987 --> 00:09:28,579
- 我们用不同的方式 在所有这些不同的服务器上一遍又一遍地安装相同的软件
- and we would deploy the same software stack over and over on all these different servers
+我们用不同的方式 在所有这些不同的服务器上一遍又一遍地安装相同的软件
+and we would deploy the same software stack over and over on all these different servers
 
 138
 00:09:28,579 --> 00:09:31,520
- 我们尝试了所有的方法
- and we tried all different kinds of methodologies.
+我们尝试了所有的方法
+and we tried all different kinds of methodologies.
 
 139
 00:09:31,800 --> 00:09:36,874
@@ -695,18 +695,18 @@ It was really the same problem when you went from raw operating systems to virtu
 
 140
 00:09:36,874 --> 00:09:39,923
- 然后再到 Linux 容器、Solaris 容器
- and then on to Linux containers, Solaris containers,
+然后再到 Linux 容器、Solaris 容器
+and then on to Linux containers, Solaris containers,
 
 141
 00:09:39,923 --> 00:09:44,979
- 同样的问题一再出现 你仍然不得不在不同的虚拟机
- you still had to manage the configuration across all these different virtual machines, essentially,
+同样的问题一再出现 你仍然不得不在不同的虚拟机
+you still had to manage the configuration across all these different virtual machines, essentially,
 
 142
 00:09:44,979 --> 00:09:49,700
- 或者类似操作系统实例的结构体之间管理配置
- or constructs that looked like operating system instances.
+或者类似操作系统实例的结构体之间管理配置
+or constructs that looked like operating system instances.
 
 143
 00:09:50,036 --> 00:09:55,000
@@ -720,8 +720,8 @@ Like, there were all these very standard ways to deal with this now packed appli
 
 145
 00:10:00,925 --> 00:10:05,420
- 我认为容器技术的出现 从根本上改变了一切
- and I think that's fundamentally what really changed it all.
+我认为容器技术的出现 从根本上改变了一切
+and I think that's fundamentally what really changed it all.
 
 146
 00:10:05,420 --> 00:10:07,400
@@ -730,8 +730,8 @@ It just made it really easy to use
 
 147
 00:10:07,400 --> 00:10:11,300
- 而且容器还不会对系统本身造成损害 同时相比虚拟机更加小巧快捷
- and then it didn't hurt that they were smaller and faster than virtual machines as well.
+而且容器还不会对系统本身造成损害 同时相比虚拟机更加小巧快捷
+and then it didn't hurt that they were smaller and faster than virtual machines as well.
 
 148
 00:10:11,732 --> 00:10:14,698
@@ -740,8 +740,8 @@ Building on the advances made by Linux containers,
 
 149
 00:10:14,698 --> 00:10:20,000
- 这些新的开源项目和社区使得开发者们可以更好地携手合作
- these new open-source projects and communities took developers by the hand.
+这些新的开源项目和社区使得开发者们可以更好地携手合作
+these new open-source projects and communities took developers by the hand.
 
 150
 00:10:20,000 --> 00:10:23,400
@@ -760,13 +760,13 @@ Once a common container language emerged
 
 153
 00:10:33,032 --> 00:10:37,768
- 障碍就消失了 与此同时容器技术改变了我们的工作方式
- barriers fell away and container technology changed the way we worked.
+障碍就消失了 与此同时容器技术改变了我们的工作方式
+barriers fell away and container technology changed the way we worked.
 
 154
 00:10:37,768 --> 00:10:41,000
- 也改变了我们学习新技术的步伐
- It also changed the speed that we could learn about new tech.
+也改变了我们学习新技术的步伐
+It also changed the speed that we could learn about new tech.
 
 155
 00:10:41,527 --> 00:10:44,520
@@ -790,8 +790,8 @@ The developer community saw how fast and cheap and easy containers had become,
 
 159
 00:10:59,476 --> 00:11:04,000
- - 比传统操作系统更加容易
- so much easier than the static operating systems we'd used before.
+- 比传统操作系统更加容易
+so much easier than the static operating systems we'd used before.
 
 160
 00:11:04,000 --> 00:11:06,791
@@ -800,7 +800,7 @@ The rate of adoption has been pretty stunning.
 
 161
 00:11:08,639 --> 00:11:16,000
- 但是要记得：容器标准的出现仅仅是容器编排这场竞赛的热身
+但是要记得：容器标准的出现仅仅是容器编排这场竞赛的热身
 But remember: the emergence of a container standard was really just a warm up lap for the real race - orchestration.
 
 162
@@ -810,7 +810,7 @@ The horses line up,
 
 163
 00:11:17,975 --> 00:11:22,320
- 随着信号枪一声令下 它们为了这场比赛的冠军而拼尽全力
+随着信号枪一声令下 它们为了这场比赛的冠军而拼尽全力
 the starting pistol fires and they're sprinting at last for the championship.
 
 164
@@ -830,8 +830,8 @@ In the race to become the standard container orchestration engine,
 
 167
 00:11:43,261 --> 00:11:48,340
- 哪位会胜出成为管理所有容器的平台呢？
- who would deliver the platform that manages all those containers?
+哪位会胜出成为管理所有容器的平台呢？
+who would deliver the platform that manages all those containers?
 
 168
 00:11:49,000 --> 00:11:53,000
@@ -865,8 +865,8 @@ Linux had set up the Cloud Native Computing Foundation
 
 174
 00:12:08,341 --> 00:12:14,220
- 随后 CNCF 推动了谷歌开源的编排引擎 Kubernetes
- and CNCF was pushing Google's new open-sourced orchestration engine, Kubernetes.
+随后 CNCF 推动了谷歌开源的编排引擎 Kubernetes
+and CNCF was pushing Google's new open-sourced orchestration engine, Kubernetes.
 Kubernetes 即古希腊语 κυβερνήτης，意为“舵手、司机”，引申义为“引导者、统治者”。
 这也和该项目的舵轮 logo 相呼应。- 视频制作者注
 
@@ -904,7 +904,7 @@ From the very beginning in Kubernetes,
 
 181
 00:12:36,989 --> 00:12:43,000
- 谷歌就在项目的开放上做的很好 它降低了项目的贡献和参与的难度
+谷歌就在项目的开放上做的很好 它降低了项目的贡献和参与的难度
 Google was very good at opening the project up and making it easy to contribute and participate.
 
 182
@@ -914,7 +914,7 @@ There was such a strong focus on making something that would make the majority o
 
 183
 00:12:47,479 --> 00:12:52,420
- 也就是说 让大部分开发者和运维的工作能更加轻松
+也就是说 让大部分开发者和运维的工作能更加轻松
 There was such a strong focus on making something that would make the majority of developers and operators lives easier.
 
 184
@@ -929,8 +929,8 @@ was able to find a sweet spot good enough for the majority of people
 
 186
 00:13:00,879 --> 00:13:06,000
- 他们让 Kubernetes 具有足够的可扩展性 还可以解决一些极端的用例
- and extensible enough to solve some of the more extreme use cases.
+他们让 Kubernetes 具有足够的可扩展性 还可以解决一些极端的用例
+and extensible enough to solve some of the more extreme use cases.
 
 187
 00:13:07,000 --> 00:13:12,400
@@ -959,8 +959,8 @@ Linux didn't start by Linus writing the kernel and telling everybody in user spa
 
 192
 00:13:36,350 --> 00:13:41,700
- 在用户空间如何写 GCC 如何去建立 NGINX 或者 Apache
- how to write GCC or how to go build NGINX or Apache.
+在用户空间如何写 GCC 如何去建立 NGINX 或者 Apache
+how to write GCC or how to go build NGINX or Apache.
 
 193
 00:13:41,700 --> 00:13:47,550
@@ -969,13 +969,13 @@ Instead, the kernel team focused on building a very effective core operating sys
 
 194
 00:13:47,550 --> 00:13:51,710
- 并与其他诸如 GNU 项目的开源社区合作 
- and working with other open-sourced communities like the GNU project
+并与其他诸如 GNU 项目的开源社区合作 
+and working with other open-sourced communities like the GNU project
 
 195
 00:13:52,025 --> 00:13:55,940
 并且将可以在其他 Unix 系统上工作的工具引入 Linux
- to bring the tools that worked on other Unix's into Linux.
+to bring the tools that worked on other Unix's into Linux.
 
 196
 00:13:55,940 --> 00:14:03,600
@@ -989,8 +989,8 @@ But Linux as a whole is much broader than just the kernel,
 
 198
 00:14:06,300 --> 00:14:15,160
- 而且我认为这种模式的优势是 Kubernetes 取得现在成就所不可或缺的
- and I think that that pattern is something that we believe Kubernetes is well positioned to take advantage of.
+而且我认为这种模式的优势是 Kubernetes 取得现在成就所不可或缺的
+and I think that that pattern is something that we believe Kubernetes is well positioned to take advantage of.
 
 199
 00:14:15,160 --> 00:14:19,099
@@ -999,13 +999,13 @@ And so as we've built community and focused on scoping Kubernetes,
 
 200
 00:14:19,099 --> 00:14:22,648
- 我们可以试图从 Kubernetes 内核的角度来考虑它
- we've tried to think of it in terms of a core Kubernetes,
+我们可以试图从 Kubernetes 内核的角度来考虑它
+we've tried to think of it in terms of a core Kubernetes,
 
 201
 00:14:22,648 --> 00:14:28,000
- 这是分布式集群操作系统的内核
- which is about the kernel of a distributed cluster operating system.
+这是分布式集群操作系统的内核
+which is about the kernel of a distributed cluster operating system.
 
 202
 00:14:30,450 --> 00:14:35,640
@@ -1019,8 +1019,8 @@ Just like we saw in Episode Two with the rise of Linux,
 
 204
 00:14:38,900 --> 00:14:44,500
- 现如今这场关于容器的战争中 获胜者往往懂得如何借助社区力量
- the winner in today's races is often the one who knows how to rally the community.
+现如今这场关于容器的战争中 获胜者往往懂得如何借助社区力量
+the winner in today's races is often the one who knows how to rally the community.
 
 205
 00:14:44,500 --> 00:14:47,557
@@ -1030,7 +1030,7 @@ In fact, while Google may have started Kubernetes,
 206
 00:14:47,557 --> 00:14:55,000
 但目前它属于每一位开发者 并由云原生计算基金会（CNCF）管理
- now it really belongs to every developer, and it's managed by the Cloud Native Computing Foundation.
+now it really belongs to every developer, and it's managed by the Cloud Native Computing Foundation.
 
 207
 00:14:55,629 --> 00:14:59,234
@@ -1039,8 +1039,8 @@ On GitHub, Kubernetes has about 30,000 stars,
 
 208
 00:14:59,234 --> 00:15:02,660
- 而 Swarm 和 Mesos 只有数千
- while Swarm and Mesos have just a few thousand each.
+而 Swarm 和 Mesos 只有数千
+while Swarm and Mesos have just a few thousand each.
 
 209
 00:15:02,660 --> 00:15:04,300
@@ -1064,8 +1064,8 @@ How does a massive for-profit company
 
 213
 00:15:15,549 --> 00:15:18,000
- 是怎么做到如此擅长跟其他开发者合作的呢？
- end up playing so well with others?
+是怎么做到如此擅长跟其他开发者合作的呢？
+end up playing so well with others?
 
 214
 00:15:18,000 --> 00:15:21,563
@@ -1075,7 +1075,7 @@ And I found exactly the right person to answer that question.
 215
 00:15:21,563 --> 00:15:27,000
 Kelsey Hightower 他是谷歌负责容器技术支持的技术专家
- Kelsey Hightower is a technologist working at Google supporting all things container. 
+Kelsey Hightower is a technologist working at Google supporting all things container. 
 
 216
 00:15:29,840 --> 00:15:31,972
@@ -1085,22 +1085,22 @@ When you think about Google's position,
 217
 00:15:31,972 --> 00:15:35,386
 它在分布式系统领域具备丰富的经验
- they have a lot of experience doing distributive systems
+they have a lot of experience doing distributive systems
 
 218
 00:15:35,386 --> 00:15:38,494
- 还运行着分布在世界各地的许许多多的服务器 
- and running things on many, many servers all over the world,
+还运行着分布在世界各地的许许多多的服务器 
+and running things on many, many servers all over the world,
 
 219
 00:15:38,494 --> 00:15:43,150
 因此它开发的 Kubernetes 似乎有着很大的优势 
- so they seem like they were in a really good position to do Kubernetes
+so they seem like they were in a really good position to do Kubernetes
 
 220
 00:15:43,150 --> 00:15:46,000
 并且有信心一定能在这场容器竞赛中胜出
- and to win, and to do this very well.
+and to win, and to do this very well.
 
 221
 00:15:46,000 --> 00:15:53,000
@@ -1114,8 +1114,8 @@ I think when it comes to infrastructure tools, and even programming languages, r
 
 223
 00:15:57,700 --> 00:16:02,740
- 大家没有什么选择 - 你不可能用个专有工具 即使它很棒
- there's no choice. You can't really have a proprietary tool, even if it's great.
+大家没有什么选择 - 你不可能用个专有工具 即使它很棒
+there's no choice. You can't really have a proprietary tool, even if it's great.
 
 224
 00:16:03,100 --> 00:16:06,300
@@ -1135,17 +1135,17 @@ And I think the reason there is that most people will adopt technologies like in
 227
 00:16:13,225 --> 00:16:15,067
 你可能会对自己说：
- and you may checkpoint yourself and say,
+and you may checkpoint yourself and say,
 
 228
 00:16:15,067 --> 00:16:17,563
 “好吧 我们就要坚持使用这个版本四、五年
- "Well, we're gonna stick with this version for four or five years,
+"Well, we're gonna stick with this version for four or five years,
 
 229
 00:16:17,563 --> 00:16:21,840
- 也可能我们需要根据自己的一些独特需求来对其进行修改 ”
- or we need to modify it for maybe some of our own unique needs."
+也可能我们需要根据自己的一些独特需求来对其进行修改 ”
+or we need to modify it for maybe some of our own unique needs."
 
 230
 00:16:21,840 --> 00:16:25,661
@@ -1154,12 +1154,12 @@ Once you get to that point, it's gonna be really hard to convince an enterprise
 
 231
 00:16:25,661 --> 00:16:30,925
- “嘿 每台服务器使用程序的价格是 200 美元 而且你看不到源代码
- to go down the road of, "Hey, it's gonna be $200 per server, and you can't see the source code, 
+“嘿 每台服务器使用程序的价格是 200 美元 而且你看不到源代码
+to go down the road of, "Hey, it's gonna be $200 per server, and you can't see the source code, 
 
 232
 00:16:30,925 --> 00:16:32,680
- 所以有需要的话也必须等我们来修改”
+所以有需要的话也必须等我们来修改”
 so wait for us to modify it."
 
 233
@@ -1169,7 +1169,7 @@ That road is gone.
 
 234
 00:16:34,450 --> 00:16:39,000
- 所以我不确定是否真的可以在没有开源的情况下建立基础架构
+所以我不确定是否真的可以在没有开源的情况下建立基础架构
 So I don't know if you can actually do infrastructuring anymore without it being open source.
 
 235
@@ -1180,7 +1180,7 @@ And then the second part of open source would be the community that can be attac
 236
 00:16:44,120 --> 00:16:47,000
 所以我认为 Kubernetes 一开始就锁定了胜利
- which I think Kubernetes nailed out of the gate.
+which I think Kubernetes nailed out of the gate.
 
 237
 00:16:48,000 --> 00:16:50,829
@@ -1189,13 +1189,13 @@ So I wanna go back to the competition.
 
 238
 00:16:50,829 --> 00:16:53,575
- 在这里不仅仅有你提到的 Kubernetes
- Because it wasn't just Kubernetes as you mentioned yourself,
+在这里不仅仅有你提到的 Kubernetes
+Because it wasn't just Kubernetes as you mentioned yourself,
 
 239
 00:16:53,575 --> 00:16:57,000
- 还有 Docker 的 Swarm、Apache 的 Mesos…
- there was Swarm by Docker, there was Mesos by Apache ...
+还有 Docker 的 Swarm、Apache 的 Mesos…
+there was Swarm by Docker, there was Mesos by Apache ...
 
 240
 00:16:57,475 --> 00:16:59,916
@@ -1204,12 +1204,12 @@ So, I think when people talk about the battle,
 
 241
 00:16:59,916 --> 00:17:04,761
- 我不确定竞争是否发生在我们和 Mesos、Docker 使用者之间
- I don't know if the battle was really between Mesos and Docker, 
+我不确定竞争是否发生在我们和 Mesos、Docker 使用者之间
+I don't know if the battle was really between Mesos and Docker, 
 
 242
 00:17:04,761 --> 00:17:07,000
- 我认为 真正的竞争发生在争取目前没有使用容器的潜在用户身上
+我认为 真正的竞争发生在争取目前没有使用容器的潜在用户身上
 I think the battle was between people that have nothing.
 
 243
@@ -1224,13 +1224,13 @@ you're still floundering around trying to get to where you need to be,
 
 245
 00:17:14,675 --> 00:17:18,566
- 这些尚未选择编排工具和平台之人的市场
- and the market of people not using orchestration tools
+这些尚未选择编排工具和平台之人的市场
+and the market of people not using orchestration tools
 
 246
 00:17:18,566 --> 00:17:22,700
- 比起已选择了 Mesos 或 Swarm 的一方 要大得多
- is much bigger than the people that have already chosen, let's say, Mesos or Swarm.
+比起已选择了 Mesos 或 Swarm 的一方 要大得多
+is much bigger than the people that have already chosen, let's say, Mesos or Swarm.
 
 247
 00:17:23,275 --> 00:17:28,200
@@ -1244,8 +1244,8 @@ Does Mesos or Kubernetes or Docker Swarm
 
 249
 00:17:31,450 --> 00:17:35,640
- 是否会成为寻求更好解决方案的人们的首选？
- become the preferred choice for people looking to get into a better solution?
+是否会成为寻求更好解决方案的人们的首选？
+become the preferred choice for people looking to get into a better solution?
 
 250
 00:17:35,640 --> 00:17:37,156
@@ -1255,17 +1255,17 @@ That's all up for debate,
 
 251
 00:17:37,156 --> 00:17:40,268
- 但我会告诉你 像我一样 在这个领域工作的工程师来说
- but I'll tell you, people like me, the engineers working on this thing,
+但我会告诉你 像我一样 在这个领域工作的工程师来说
+but I'll tell you, people like me, the engineers working on this thing,
 
 252
 00:17:40,268 --> 00:17:43,543
- 如果你不考虑市场营销和供应商
- if you put some of the marketing aside, some of the vendors aside
+如果你不考虑市场营销和供应商
+if you put some of the marketing aside, some of the vendors aside
 
 253
 00:17:43,543 --> 00:17:48,000
- 我会使用这个短语“不同的公司 相同的团队 ”
+我会使用这个短语“不同的公司 相同的团队 ”
 the people that work on this, I use this phrase “different companies, same teams.”
 
 254
@@ -1300,13 +1300,13 @@ You almost need that kind of competition so we can all think independently,
 
 260
 00:18:09,693 --> 00:18:11,704
- 然后最棒的点子就会浮出水面
+然后最棒的点子就会浮出水面
 the best ideas surface to the top
 
 261
 00:18:11,704 --> 00:18:15,480
- 接着我们再选择采用哪种方式来正确满足用户的需要
- and we pick and choose which ones to adopt that target the users in the right way.
+接着我们再选择采用哪种方式来正确满足用户的需要
+and we pick and choose which ones to adopt that target the users in the right way.
 
 262
 00:18:16,325 --> 00:18:22,000
@@ -1330,18 +1330,18 @@ so it's really more of a platform play, open for everyone,
 
 266
 00:18:29,593 --> 00:18:31,925
- 然后用户会选择满足他们需求的那个
- and then users will choose the ones that meet their needs
+然后用户会选择满足他们需求的那个
+and then users will choose the ones that meet their needs
 
 267
 00:18:31,925 --> 00:18:35,270
- 这就是我认为 Kubernetes 在社区方面做得很好的地方
- and that's where I think Kubernetes has done a great job in terms of community,
+这就是我认为 Kubernetes 在社区方面做得很好的地方
+and that's where I think Kubernetes has done a great job in terms of community,
 
 268
 00:18:35,270 --> 00:18:38,000
- 真正开放 真正能解决实际问题
- being open, and actually solving problems.
+真正开放 真正能解决实际问题
+being open, and actually solving problems.
 
 269
 00:18:38,749 --> 00:18:40,000
@@ -1380,8 +1380,8 @@ but at the end of the day, as a developer, you really just want to kinda check y
 
 276
 00:19:12,350 --> 00:19:16,000
- 并希望你的代码可以某种方式以呈现在客户面前
- and expect that code to land in front of your customer somehow, some way.
+并希望你的代码可以某种方式以呈现在客户面前
+and expect that code to land in front of your customer somehow, some way.
 
 277
 00:19:16,000 --> 00:19:20,148
@@ -1391,7 +1391,7 @@ And I think what Kubernetes will become, and containers will become,
 278
 00:19:20,148 --> 00:19:25,600
 作为底层技术或者成为类似 Serverless 之类技术的基础平台
- they will just become the substrate or just the platform pieces for higher level things like serverless.
+they will just become the substrate or just the platform pieces for higher level things like serverless.
 
 279
 00:19:25,600 --> 00:19:28,875
@@ -1400,13 +1400,13 @@ Right? Here's my code snippet, under the covers,
 
 280
 00:19:28,875 --> 00:19:32,728
- 所有的平台都会把你的代码片段用容器包装起来
- all the platforms will take your code snippet, wrap it up in a container
+所有的平台都会把你的代码片段用容器包装起来
+all the platforms will take your code snippet, wrap it up in a container
 
 281
 00:19:32,728 --> 00:19:36,000
- 然后帮你运行 但是不需要向你公开所有这些过程
- and run it for you, but they don't need to expose all that to you.
+然后帮你运行 但是不需要向你公开所有这些过程
+and run it for you, but they don't need to expose all that to you.
 
 282
 00:19:36,000 --> 00:19:39,293
@@ -1415,18 +1415,18 @@ So in the future, I think as Kubernetes becomes common,
 
 283
 00:19:39,293 --> 00:19:44,403
- 容器的应用场景将从大大小小的供应商或个人 
- and it's going to level the playing field from big or small providers or people that want to do it themselves,
+容器的应用场景将从大大小小的供应商或个人 
+and it's going to level the playing field from big or small providers or people that want to do it themselves,
 
 284
 00:19:44,850 --> 00:19:49,734
 提升到云供应商 
- to actually be able to offer these things that only cloud providers could have done,
+to actually be able to offer these things that only cloud providers could have done,
 
 285
 00:19:49,734 --> 00:19:54,500
 因为这些事情往往需要专业知识和软件投资
- because of the expertise required or the investment in software that was required.
+because of the expertise required or the investment in software that was required.
 
 286
 00:19:54,500 --> 00:19:56,735
@@ -1435,8 +1435,8 @@ This thing will probably end up everywhere,
 
 287
 00:19:56,735 --> 00:20:00,600
- 但同时也就此隐藏起来 它会随着应用场景的扩展而渐渐隐形
- but it'll also be hidden. So it will disappear as it expands.
+但同时也就此隐藏起来 它会随着应用场景的扩展而渐渐隐形
+but it'll also be hidden. So it will disappear as it expands.
 
 288
 00:20:06,780 --> 00:20:10,320
@@ -1471,7 +1471,7 @@ What we're getting is a core Kubernetes that can extend and support new use case
 294
 00:20:52,249 --> 00:20:56,000
 这些用例包括微服务或持续集成项目
- like microservices or continuous integration projects.
+like microservices or continuous integration projects.
 
 295
 00:20:56,000 --> 00:20:57,000
@@ -1484,8 +1484,8 @@ That ecosystem will work best with a model that resembles Linux
 
 297
 00:21:02,034 --> 00:21:06,160
- 而且我认为我们正朝着这条道路迈进
- and I think we're well on our way towards that outcome.
+而且我认为我们正朝着这条道路迈进
+and I think we're well on our way towards that outcome.
 
 298
 00:21:06,160 --> 00:21:10,738
@@ -1494,7 +1494,7 @@ So this, like all good open source projects,
 
 299
 00:21:10,738 --> 00:21:15,951
- 相对于单打独斗 让每个人都能够参与进来
+相对于单打独斗 让每个人都能够参与进来
 succeeds when everybody is able to participate 
 
 300
@@ -1529,8 +1529,8 @@ So if you think back two years, you know, the container image format was a huge 
 
 306
 00:21:41,267 --> 00:21:46,600
- 然后回到六个月至一年前 容器编排就成为了下一个巨大的战场
- and then I'd say if you go back six months to a year ago, orchestration was a huge battleground.
+然后回到六个月至一年前 容器编排就成为了下一个巨大的战场
+and then I'd say if you go back six months to a year ago, orchestration was a huge battleground.
 
 307
 00:21:46,880 --> 00:21:51,936
@@ -1540,8 +1540,8 @@ And then if you look at KubeCon 2017 and the weeks leading up to it,
 
 308
 00:21:51,936 --> 00:21:56,120
- 几乎每个主要供应商都宣布支持 Kubernetes
- pretty much every major vendor has now announced support for Kubernetes.
+几乎每个主要供应商都宣布支持 Kubernetes
+pretty much every major vendor has now announced support for Kubernetes.
 
 309
 00:21:56,120 --> 00:22:00,000
@@ -1565,8 +1565,8 @@ And so Kubernetes has become the standard,
 
 313
 00:22:09,575 --> 00:22:13,180
- 其美妙之处是 现在的应用定义已经变得标准化了
- and the beauty there is that now application definitions have standardized.
+其美妙之处是 现在的应用定义已经变得标准化了
+and the beauty there is that now application definitions have standardized.
 
 314
 00:22:13,180 --> 00:22:16,806
@@ -1576,7 +1576,7 @@ So, anybody can use Kubernetes objects in these YAML files
 315
 00:22:16,806 --> 00:22:20,238
 并定义应用 这就是我们共同所追求的事情 
- and define applications, it's what we wanted for, 
+and define applications, it's what we wanted for, 
 
 316
 00:22:20,238 --> 00:22:25,000
@@ -1590,7 +1590,7 @@ Kubernetes' success seems pretty concrete,
 
 318
 00:22:29,936 --> 00:22:34,300
- 但即使竞赛尘埃落定 我们仍然面临更大的一些问题
+但即使竞赛尘埃落定 我们仍然面临更大的一些问题
 but even after that big race is finished, we're still left with some bigger questions.
 
 319
@@ -1620,8 +1620,8 @@ Through the CNCF, the community will continue to improve Kubernetes
 
 324
 00:22:54,275 --> 00:23:01,000
- 并作为它最重要的使命之一 我们将建立一套全新的容器技术
- and as per the foundation's mission, we're also going to be building a whole new set of container technologies.
+并作为它最重要的使命之一 我们将建立一套全新的容器技术
+and as per the foundation's mission, we're also going to be building a whole new set of container technologies.
 
 325
 00:23:01,570 --> 00:23:08,300
@@ -1635,8 +1635,8 @@ Just to give you a sense of how integral they've become, and how quickly,
 
 327
 00:23:12,650 --> 00:23:17,700
- 仅 Netflix 每周就运行超过一百万个容器
- Netflix alone is launching more than a million containers every week.
+仅 Netflix 每周就运行超过一百万个容器
+Netflix alone is launching more than a million containers every week.
 
 328
 00:23:17,700 --> 00:23:22,000
@@ -1655,7 +1655,7 @@ We've seen how Linux rose to dominance in the first place
 
 331
 00:23:31,621 --> 00:23:38,300
- 以及开源理念是如何改变商业、工作流程和每日使用的工具
+以及开源理念是如何改变商业、工作流程和每日使用的工具
 and how open source attitudes have changed business, workflow, and the tools we use everyday.
 
 332
@@ -1675,8 +1675,8 @@ Containers embody the best of open source
 
 335
 00:23:50,300 --> 00:23:56,400
- 开源项目自然而然也推动了容器技术的发展
- and it's no wonder open source projects have driven the development of container technology.
+开源项目自然而然也推动了容器技术的发展
+and it's no wonder open source projects have driven the development of container technology.
 
 336
 00:23:57,775 --> 00:23:59,183
@@ -1685,7 +1685,7 @@ It's a new world.
 
 337
 00:23:59,183 --> 00:24:06,000
- 我们不用再担心从不同计算机或者云间的迁移产生的隔阂
+我们不用再担心从不同计算机或者云间的迁移产生的隔阂
 And we're not gonna be worried anymore about moving from machine to machine, or, in and out of clouds.
 
 338
@@ -1710,8 +1710,8 @@ Microsoft, Alibaba, Google and Amazon are facing off
 
 342
 00:24:29,062 --> 00:24:35,000
- 随之而来的将是一场暴风骤雨
- and the friction from those four cloud vendors is heating up into one serious storm.
+随之而来的将是一场暴风骤雨
+and the friction from those four cloud vendors is heating up into one serious storm.
 
 343
 00:24:35,000 --> 00:24:42,000
@@ -1730,7 +1730,7 @@ For more information about this and past episodes,
 
 346
 00:24:50,206 --> 00:24:53,400
- 请访问 redhat.com/commandlineheroes
+请访问 redhat.com/commandlineheroes
 go to RedHat.com/CommandLineHeroes.
 
 347
@@ -1751,7 +1751,7 @@ Just search for Command Line Heroes in Apple Podcast, Spotify,
 350
 00:25:06,600 --> 00:25:08,250
 Google Play、CastBox 中搜索 “Command Line Heroes” 
- Google Play, CastBox, 
+Google Play, CastBox, 
 
 351
 00:25:08,250 --> 00:25:09,899
@@ -1760,7 +1760,7 @@ or however you get your podcasts.
 
 352
 00:25:10,250 --> 00:25:15,000
- 并点击订阅 这样你就能在第一时间知道最新剧集
+并点击订阅 这样你就能在第一时间知道最新剧集
 Then, hit subscribe, so you'll be the first to know when new episodes are available.
 
 353
