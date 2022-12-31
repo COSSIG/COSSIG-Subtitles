@@ -76,7 +76,7 @@ and signing a nondisclosure agreement.
 16
 00:00:49,175 --> 00:00:52,275
 最后 她才能去看机房
- Finally, she gets to see the machines.
+Finally, she gets to see the machines.
 
 17
 00:00:55,300 --> 00:01:00,075
@@ -260,7 +260,7 @@ somewhere, humming behind the fence.
 52
 00:02:59,700 --> 00:03:01,028
 这之所以重要 是因为
- Because here's the thing,
+Because here's the thing,
 
 53
 00:03:01,550 --> 00:03:06,110
@@ -395,7 +395,7 @@ Which obviously, for some people, if they've got private content they want to hi
 79
 00:04:48,527 --> 00:04:49,450
 这是相当可怕的隐患
- could be quite scary. 
+could be quite scary. 
 
 80
 00:04:51,175 --> 00:04:55,287
@@ -490,7 +490,7 @@ This is Brandon Butler, he's the senior editor at Network World.
 98
 00:06:20,639 --> 00:06:23,471
 多年来致力于研究云计算
- And he's been covering cloud computing for years.
+And he's been covering cloud computing for years.
 
 99
 00:06:23,750 --> 00:06:27,250
@@ -670,7 +670,7 @@ And once we get those quotes from a couple of different vendors,
 134
 00:08:52,625 --> 00:08:55,180
 就得报给管理层 他们要花时间审核
- it would go to management, and they would take time.
+it would go to management, and they would take time.
 
 135
 00:08:55,675 --> 00:08:59,275
@@ -860,12 +860,12 @@ and the big four cloud providers elbow past each other for dominance,
 172
 00:11:17,625 --> 00:11:19,625
 我们作为开发者有了新选择
- we developers have a choice.
+we developers have a choice.
 
 173
 00:11:20,125 --> 00:11:22,125
 我们是放弃一些独立性
- Do we give up some of our independence,
+Do we give up some of our independence,
 
 174
 00:11:22,125 --> 00:11:25,526
@@ -980,7 +980,7 @@ and speaks to the heart of what developers like me believe in.
 196
 00:12:49,925 --> 00:12:52,574
 那就是开源实践
- I'm talking about open source practices.
+I'm talking about open source practices.
 
 197
 00:12:52,997 --> 00:12:57,093
@@ -1010,7 +1010,7 @@ but not all public clouds have their infrastructure offered as open source.
 202
 00:13:14,793 --> 00:13:17,713
 举个例子 如果你使用亚马逊
- So for example, if you take Amazon,
+So for example, if you take Amazon,
 
 203
 00:13:17,713 --> 00:13:22,257
@@ -1145,7 +1145,7 @@ It is a cost per gigabyte, (you know,) transferred as well as stored,
 229
 00:14:46,487 --> 00:14:49,992
 以前我们直接买服务器 买来之后它就任我们处置了
- where before we had a one-time purchase and we just had it there,
+where before we had a one-time purchase and we just had it there,
 
 230
 00:14:50,225 --> 00:14:51,525
@@ -1265,7 +1265,7 @@ the best of both worlds.
 253
 00:16:14,425 --> 00:16:18,265
 我给 Bridget Kromhout 打了电话 询问她的看法
- I called up Bridget Kromhout to get her perspective.
+I called up Bridget Kromhout to get her perspective.
 
 254
 00:16:18,713 --> 00:16:22,629
@@ -1366,7 +1366,7 @@ And sometimes there's questions, too, of whether public cloud has suitability fo
 00:17:28,673 --> 00:17:33,900
 比如 如果你本来计划要用 InfiniBand 连接各个不同节点
 like if you're planning on using InfiniBand interconnects between your nodes,
- [中文维基百科] InfiniBand 是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟
+[中文维基百科] InfiniBand 是一个用于高性能计算的计算机网络通信标准，它具有极高的吞吐量和极低的延迟
 也用作服务器与存储系统之间的直接或交换互连，以及存储系统之间的互连 - 视频制作者注
 
 274
@@ -1472,7 +1472,7 @@ I feel like as developers we,
 
 294
 00:18:37,430 --> 00:18:39,556
-可能大多数人 都喜欢开源；
+可能大多数人 都喜欢开源
 I think most of us, really like open source,
 
 295
@@ -1695,7 +1695,7 @@ We want to be able to cloud hop when it suits us.
 338
 00:21:10,021 --> 00:21:12,917
 用摇滚传奇皇后乐队的名言来说
- In the immortal words of rock legend Queen,
+In the immortal words of rock legend Queen,
 
 339
 00:21:12,917 --> 00:21:14,917
@@ -1730,7 +1730,7 @@ gives a great explanation
 345
 00:21:43,411 --> 00:21:47,527
 说明了混合云是如何帮助我们保持开源精神的
- of how hybrid clouds help us maintain that open source ethos.
+of how hybrid clouds help us maintain that open source ethos.
 
 346
 00:21:48,775 --> 00:21:52,800
@@ -1944,8 +1944,8 @@ We should get more use cases."
 
 388
 00:24:22,482 --> 00:24:25,002
- OpenStack® 是一组应用
- What OpenStack is, it's a group of applications
+OpenStack® 是一组应用
+What OpenStack is, it's a group of applications
 
 389
 00:24:25,002 --> 00:24:28,545
@@ -2005,7 +2005,7 @@ that allow you to build the infrastructure that you want.
 400
 00:25:00,208 --> 00:25:02,128
 如果它不能满足你的需求
- If it can't build what you want
+If it can't build what you want
 
 401
 00:25:02,128 --> 00:25:04,376
@@ -2300,7 +2300,7 @@ and other podcast players.
 459
 00:28:49,000 --> 00:28:50,673
 然后点击订阅
- Then hit subscribe
+Then hit subscribe
 
 460
 00:28:51,000 --> 00:28:54,512
