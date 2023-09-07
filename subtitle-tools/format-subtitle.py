@@ -21,6 +21,9 @@ file_content = file_content.replace("……", "…")
 # 去除行尾的多余空格
 file_content = file_content.replace(" \n", "\n")
 
+# 去除行首的多余空格
+file_content = file_content.replace("\n ", "\n")
+
 file_out = open(file_dir, mode="w", encoding="utf-8")
 file_out.write(file_content)
 file_out.close()
