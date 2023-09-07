@@ -1,0 +1,2381 @@
+﻿1
+00:00:00,220 --> 00:00:12,480
+“你好 世界”
+Hello world.
+All those ones and zeroes flying by, all those bits...
+
+2
+00:00:12,480 --> 00:00:14,140
+“你好 世界”
+Hello world.
+
+3
+00:00:14,140 --> 00:00:16,980
+这是信号 还是噪声？
+Is it signal, or is it noise?
+
+4
+00:00:16,980 --> 00:00:19,300
+我们日日夜夜无休止地写代码
+All the work we do as developers,
+
+5
+00:00:19,300 --> 00:00:23,440
+做测试工作
+all the countless hours of coding and stressing and testing,
+
+6
+00:00:23,440 --> 00:00:26,540
+我们追求的事情只有一个
+it all comes down to that one question:
+
+7
+00:00:26,540 --> 00:00:28,540
+我们是否传递了我们的信号？
+are we getting our signal across?
+
+8
+00:00:28,540 --> 00:00:29,260
+你好
+Hello
+
+9
+00:00:29,260 --> 00:00:31,520
+或者我们的信号是不是丢失了？
+Or is our signal lost?
+
+10
+00:00:31,520 --> 00:00:32,675
+难道我们一直在制造无意义的杂音吗？
+Are we just making noise.
+
+11
+00:00:32,675 --> 00:00:34,675
+*噪音*
+
+12
+00:00:39,920 --> 00:00:44,780
+我是 Saron Yitbarek 这是代码英雄第二季
+I'm Saron Yitbarek and this is season two of Command Line Heroes,
+
+13
+00:00:44,780 --> 00:00:46,780
+来自红帽的原创播客
+an original podcast from Red Hat.
+
+14
+00:00:48,480 --> 00:00:52,120
+今天的话题将在“翻译”中挖掘
+In today's episode we're found in translation.
+
+15
+00:00:52,120 --> 00:00:54,800
+这关于编程语言的故事：
+It's all about programming languages:
+
+16
+00:00:54,800 --> 00:00:58,140
+它们是怎么来的 如何选择其中一个语言来学习
+where they came from, and how we choose which ones to learn.
+
+17
+00:00:58,140 --> 00:01:02,820
+我们将深入研究如何与机器对话
+We're doing a deep dive into the ways we talk to our machines.
+
+18
+00:01:02,820 --> 00:01:04,820
+探究这些语言是如何演化的
+How those languages are evolving.
+
+19
+00:01:04,820 --> 00:01:08,100
+以及我们如何用它们来让我们的工作变得更好
+And how we can use them to make our work sing.
+
+20
+00:01:08,220 --> 00:01:11,180
+Daisy daisy  来告诉我你的正确回答
+Daisy, daisy, give me your answer true.
+
+21
+00:01:11,180 --> 00:01:12,920
+如果你像我一样是一个开发者
+If you're a developer like me,
+
+22
+00:01:12,920 --> 00:01:19,520
+你可能也经受着去精通多种语言的压力
+you probably feel pressure to be a polyglot, to be fluent in a whole bunch of languages.
+
+23
+00:01:19,520 --> 00:01:22,120
+最起码你得会 Java 更好一些得懂 Python、
+You better know Java. Better know Python.
+
+24
+00:01:22,120 --> 00:01:24,500
+Go、JavaScript、Node
+Go、JavaScript、Node,
+
+25
+00:01:24,500 --> 00:01:27,260
+连梦话说出来都是 C++
+gotta be able to dream in C++.
+
+26
+00:01:27,260 --> 00:01:29,700
+也许为了增加可信度
+Maybe know a classic like COBOL just for credit.
+
+27
+00:01:29,700 --> 00:01:30,840
+可能你还要熟悉古典的 COBOL
+Maybe know a classic like COBOL just for credit.
+
+28
+00:01:30,840 --> 00:01:33,840
+甚至你还得学点新东西
+And you might even be worrying about a newcomer,
+
+29
+00:01:33,840 --> 00:01:36,520
+比如 Dart... 学这么多语言实在太累了
+like Dart... It's exhausting.
+
+30
+00:01:36,520 --> 00:01:38,520
+奇怪的是
+The weird thing is,
+
+31
+00:01:38,520 --> 00:01:42,580
+我们正在讨论的计算机只讲一种语言：
+the computers that we're talking to really only speak one language:
+
+32
+00:01:42,580 --> 00:01:44,580
+机器语言
+machine language.
+
+33
+00:01:45,175 --> 00:01:49,880
+以二进制形式飘过的 1 和 0
+All those ones and zeroes flying by, all those bits
+
+34
+00:01:49,880 --> 00:01:52,740
+说到底
+Every single language we learn is,
+
+35
+00:01:52,740 --> 00:01:56,800
+我们学习的每个语言都是殊途同归
+at the end of the day, just another pathway to the same place.
+
+36
+00:01:56,800 --> 00:01:58,800
+不管有多抽象
+It all gets boiled down,
+
+37
+00:01:59,075 --> 00:02:02,620
+它都是用来简化我们工作的道具
+no matter how abstracted we are when we're doing the work.
+
+38
+00:02:03,035 --> 00:02:06,760
+这就是我希望你们记住的 故事开始了
+And that's what I want you to keep in mind as our story begins,
+
+39
+00:02:06,760 --> 00:02:08,760
+从那一刻
+because we're starting with the moment,
+
+40
+00:02:08,760 --> 00:02:10,940
+那一个经典辉煌的时刻
+the completely brilliant moment,
+
+41
+00:02:10,940 --> 00:02:13,680
+一个女人说：“你知道么？
+when one woman said: "You know what?
+
+42
+00:02:13,680 --> 00:02:18,120
+我是人类 我不想用二进制来讨论思考
+I'm a human. I don't talk in bits, I don't think in bits.
+
+43
+00:02:18,120 --> 00:02:21,381
+我就想用英语去编程 ”
+I want to program using English words."
+
+44
+00:02:21,975 --> 00:02:24,475
+在今天可能看来是一个简单的概念
+Might seem like a simple concept today,
+
+45
+00:02:24,820 --> 00:02:26,360
+但曾几何时
+but once upon a time,
+
+46
+00:02:26,360 --> 00:02:33,700
+使用人类的方式与计算机对话这个主意 - 说轻点是一个笑话
+that idea, the idea you should be able to talk to a computer in your own way was a joke at best,
+
+47
+00:02:33,700 --> 00:02:36,280
+严重点就是亵渎
+sacrilege at worst.
+
+48
+00:02:37,200 --> 00:02:44,260
+代码英雄第二季 将从成就我们基础的螺丝钉展开
+Season Two of Command Line Heroes is all about the nuts and bolts that underpin everything we do.
+
+49
+00:02:44,260 --> 00:02:47,380
+这一讲的主人公 是一名女性
+And this episode's hero is a woman whose journey
+
+50
+00:02:47,380 --> 00:02:51,740
+如果你想要进一步了解信息技术的现状 你必须知道她的经历
+you need to know if you want to fully understand our reality.
+
+51
+00:02:51,740 --> 00:02:56,520
+在此给你们隆重介绍：软件界的第一夫人
+So, I give you: the first lady of software.
+
+52
+00:02:56,520 --> 00:02:58,680
+*BGM*
+
+53
+00:02:58,680 --> 00:03:01,420
+“尊敬的先生们和女士们 我非常荣幸地向你们介绍”
+Ladies and gentlemen, it's with great pleasure that I present
+
+54
+00:03:01,420 --> 00:03:03,060
+“格蕾丝·玛丽·赫柏准将”
+Commodore Grace Mary Hopper.
+
+55
+00:03:03,060 --> 00:03:04,880
+*鼓掌声*
+
+56
+00:03:04,880 --> 00:03:06,540
+谢谢
+Thank you.
+
+57
+00:03:06,540 --> 00:03:09,040
+我曾到加拿大的圭尔夫大学演讲
+So I went to Canada to speak at the University of Guelph,
+
+58
+00:03:09,040 --> 00:03:11,360
+那时候我必须在多伦多的机场办理入境手续
+and I had to go through immigration at Toronto Airport.
+
+59
+00:03:12,370 --> 00:03:14,560
+我把护照递给移民官
+And I handed my passport to the immigration officer
+
+60
+00:03:14,560 --> 00:03:17,250
+他打量了护照和我说：“你是在哪里工作的？”
+and he looked at it and looked at me and said, "What are you?"
+
+61
+00:03:17,725 --> 00:03:19,680
+然后我说 “美国海军”
+And I said, "United States Navy."
+
+62
+00:03:20,440 --> 00:03:22,560
+他再次深深的打量我一下
+He took a second real hard look at me.
+
+63
+00:03:23,180 --> 00:03:25,820
+然后他说：“你一定是海军里最老的”
+And then he said, "You must be the oldest one they've got."
+
+64
+00:03:25,820 --> 00:03:28,130
+*欢笑声*
+
+65
+00:03:28,130 --> 00:03:32,270
+她就是 1985 年担任海军少将的格蕾丝·赫柏
+That was Rear Admiral Grace Hopper in 1985.
+
+66
+00:03:32,525 --> 00:03:34,810
+在麻省理工学院发表了著名的演讲时
+She was 79-years old at the time
+
+67
+00:03:34,810 --> 00:03:37,850
+她 79 岁
+and delivering her famous lecture at M.I.T.
+
+68
+00:03:38,100 --> 00:03:41,200
+即使在那时 她也是一个传奇人物
+Even then, Grace Hopper was a legend.
+
+69
+00:03:41,200 --> 00:03:44,770
+她是独立编程语言之母
+She was the god mother of independent programming languages.
+
+70
+00:03:44,910 --> 00:03:50,400
+正是她实现了通过编译器 用人类语言替代数学符号编程这一伟大成就
+The woman who used compilers so we could use human language instead of mathematical symbols.
+
+71
+00:03:50,400 --> 00:03:53,470
+她获得了国家技术奖章
+She received the National Medal of Technology,
+
+72
+00:03:53,470 --> 00:03:56,520
+她去世后(1992 年) 被追授国家自由勋章
+and after she died, the National Medal of Freedom.
+
+73
+00:03:56,690 --> 00:03:58,520
+以上记录纯属真实
+So: not a slouch.
+
+74
+00:03:59,060 --> 00:04:01,710
+他们称她为“神奇格蕾丝”
+They called her " Amazing Grace."
+注：该绰号是一个双关，另一含义为著名基督教诗歌《奇异恩典》
+
+75
+00:04:02,530 --> 00:04:04,740
+如果有人能够被称为天生的程序员
+If anybody was born to be a computer programmer,
+
+76
+00:04:04,740 --> 00:04:05,475
+那么这个人一定是格蕾丝
+it was Grace.
+
+77
+00:04:06,040 --> 00:04:07,610
+这是 Claire Evans
+That's Claire Evans,
+
+78
+00:04:07,610 --> 00:04:11,000
+一名科技记者 及《宽带》一书的作者
+a tech journalist and the author of a book called Broad Band,
+
+79
+00:04:11,000 --> 00:04:13,000
+而这本书讲述了科技领域的女性先锋
+about pioneering women in tech.
+
+80
+00:04:13,690 --> 00:04:16,680
+Evans 描绘了早期的计算机世界
+Evans describes that early word of computers,
+
+81
+00:04:16,680 --> 00:04:19,660
+在 1940 年 当格蕾丝·赫柏还是一个年轻的女孩时
+the one Grace Hopper stepped into in the 1940s
+
+82
+00:04:19,660 --> 00:04:22,460
+她加入了美军的海军预备役部队
+when she was a young woman in the Navy Reserves
+
+83
+00:04:22,590 --> 00:04:25,380
+当时的电脑有一个小房子那么大
+and computers were the size of a small room.
+
+84
+00:04:25,680 --> 00:04:27,200
+早期的那些程序员
+All those early programmers,
+
+85
+00:04:27,200 --> 00:04:28,120
+他们就像一个圣职者
+they were like a priesthood.
+
+86
+00:04:28,120 --> 00:04:34,510
+他们是一群擅长做枯燥乏味事情的人
+They were people that were specifically good at something that was incredibly tedious,
+
+87
+00:04:34,510 --> 00:04:37,310
+因为那会儿没有编译器
+because this is before compilers,
+
+88
+00:04:37,310 --> 00:04:38,750
+没有编程语言
+before programming languages,
+
+89
+00:04:38,750 --> 00:04:41,870
+人们是确实是一个比特一个比特地对机器编程
+when people were really programming at the machine level, bit by bit.
+
+90
+00:04:42,000 --> 00:04:44,180
+想要改变这种现实
+In order to have the constitution to do that kind of thing,
+
+91
+00:04:44,180 --> 00:04:48,167
+你真的必须是一个特别的人 而格蕾丝真的就是那种人
+you really have to be a specific kind of person, and Grace really was that kind of person.
+
+92
+00:04:48,720 --> 00:04:55,800
+很快 她就意识到让人类使用机器语言 是如何地束手束脚
+Right away, she saw how crazy limiting it was for humans to be using a language meant for machines.
+
+93
+00:04:56,010 --> 00:05:01,810
+就像走路的时候 去告诉你身体的每个原子该怎么做
+It was like trying to walk down the street by telling every atom in your body what to do.
+
+94
+00:05:02,149 --> 00:05:03,400
+这是可能的吗？是
+Possible? Sure.
+
+95
+00:05:03,810 --> 00:05:05,380
+效率呢？不高
+Efficient? No.
+
+96
+00:05:05,930 --> 00:05:10,888
+在程序员的意图和计算机的行为之间一定有一条捷径
+There had to be a shortcut between a programmer's intentions and a computer's actions.
+
+97
+00:05:11,440 --> 00:05:15,630
+自从有了算盘 人类一直在将数学思维机械化
+Humans had been mechanizing mathematical thinking ever since the abacus.
+
+98
+00:05:15,630 --> 00:05:19,144
+一定有一种方法可以在计算机上再次实现这一点
+There had to be a way to do that again with computers.
+
+99
+00:05:19,690 --> 00:05:23,300
+在过去 数学家必须做出所有的步骤
+In the past, mathematicians used to have to do all this arithmetic.
+
+100
+00:05:23,300 --> 00:05:24,600
+所有这些枯燥的
+All this tedious
+
+101
+00:05:24,600 --> 00:05:28,080
+一步一步的工作都是为了得到一个有趣的答案
+step-by-step work in order to get to the really interesting solutions.
+
+102
+00:05:28,080 --> 00:05:33,680
+然后有了计算机后 就出现了让机器来尽量承担这些运算的可能性
+And then computers came along and offered the possibility of doing that arithmetic by machine,
+
+103
+00:05:33,680 --> 00:05:39,730
+这样就能让数学家去进行高层面的、更智慧的、面向系统的思考
+therefore freeing the mathematician to think lofty, intellectual, systems-oriented thoughts.
+
+104
+00:05:39,730 --> 00:05:41,730
+只不过 事实并没有如此发展
+Except for, that's not really what happened.
+
+105
+00:05:41,730 --> 00:05:45,610
+有了计算机 数学家就变成了程序员
+Ultimately, the computer came along and then the mathematician had to become a programmer.
+
+106
+00:05:45,610 --> 00:05:50,720
+他们又一次被这些枯燥无味的编程所束缚
+And then they were stuck once again doing all these bit-by-bit tedious rule-oriented,
+
+107
+00:05:50,720 --> 00:05:53,140
+做着这些一点一滴的繁琐的规则导向的小计算
+little calculations in order to write the programs.
+
+108
+00:05:53,140 --> 00:05:55,780
+因此我认为 格蕾丝的期望是
+So, I think, Grace's perspective on it was
+
+109
+00:05:55,780 --> 00:06:03,360
+她希望计算机能够辅助数学家
+she wanted to make sure that computers could assist mathematicians
+
+110
+00:06:03,500 --> 00:06:07,170
+然后数学家就可以去更进行宏大的思考 做更伟大的
+to think great thoughts and do great things
+
+111
+00:06:07,170 --> 00:06:10,260
+而不至于让他们陷入细节之中
+without bogging them down in the details.
+
+112
+00:06:10,360 --> 00:06:12,050
+*BGM*
+
+113
+00:06:12,050 --> 00:06:15,060
+格蕾丝也加入了思想家的行列
+Hopper was joining a long line of thinkers.
+
+114
+00:06:15,060 --> 00:06:19,070
+我们都知道 帕斯卡在 17 世纪发明了第一台计算器
+You've got Pascal in the 17th century with the first calculator.
+
+115
+00:06:19,070 --> 00:06:23,559
+巴贝奇在 19 世纪发明了分析机
+You've got Babbage in the 19th century with the analytical engine.
+
+116
+00:06:24,000 --> 00:06:30,350
+这些伟大的杰作是发明家们解放人类的大脑的创作
+There's this big, beautiful line of inventors who want to build things to supercharge the human brain.
+
+117
+00:06:30,660 --> 00:06:34,930
+这些发明让我们处理数据的能力空前绝后
+Things that let us process more data than we could ever manage on our own.
+
+118
+00:06:35,320 --> 00:06:38,075
+这就是格蕾丝踏入的领域
+That's the lineage Grace Hopper was stepping into
+
+119
+00:06:38,075 --> 00:06:42,420
+发明了所有人都认为不可能的东西
+ when she invented something that everybody thought was impossible.
+
+120
+00:06:42,420 --> 00:06:49,080
+我觉得格蕾丝的想法是 人们应该用自然语言与计算机沟通
+I mean, Grace's idea that people should be able to communicate with their computers using natural language,
+
+121
+00:06:49,080 --> 00:06:55,280
+这个语言必须独立于机器 因此能在不同计算机上运行
+and that language should be machine independent, therefore interoperable between different computing machines
+
+122
+00:06:55,280 --> 00:06:58,240
+这在当时是革命性的
+was revolutionary in its time.
+
+123
+00:06:58,240 --> 00:07:05,810
+早期她称这个为 “自动化编程”
+People that got behind her, this notion that she called, in the early days, "automatic programming,"
+
+124
+00:07:05,810 --> 00:07:12,330
+在程序员和计算机从业者的群体中 被认为是像“太空军校生”一样
+were considered to be like space cadets in the community of programmers and computer people.
+注：此处应当引用了 1948 年出版的科幻小说 Space Cadets。译名参考了同名的 Windows 小游戏。
+“太空军校生”一词亦被用于指代生活在天马行空幻想中的人
+
+125
+00:07:12,330 --> 00:07:16,780
+而那些迟迟不上岸的人们被看成了尼安德特人
+And the people who weren't onboard eventually became known as the Neanderthals,
+
+126
+00:07:16,780 --> 00:07:19,820
+这在当时是计算机界的一个巨大的分歧
+it was this huge rift in the computing community.
+
+127
+00:07:19,820 --> 00:07:21,610
+*BGM*
+
+128
+00:07:21,610 --> 00:07:26,750
+格蕾丝要说服她的上级跨越这个分歧并不容易
+Hopper did not have an easy time convincing her superiors to cross that rift.
+
+129
+00:07:26,750 --> 00:07:29,530
+但她认为这是她的责任 她必须尝试
+But she saw it as her duty to try.
+
+130
+00:07:30,055 --> 00:07:32,025
+“总有那么一条界线”
+There's always a line out here.
+*格蕾丝的演讲*
+
+131
+00:07:32,025 --> 00:07:35,745
+“那就是你老板此时此刻相信什么”
+That line represents what your boss will believe at that moment in time.
+
+132
+00:07:36,465 --> 00:07:38,955
+“如果你跨出这条线一步 你就拿不到拨款”
+Now, of course, if you step over it, you don't get the budget.
+
+133
+00:07:39,645 --> 00:07:42,145
+“所以 对于这条界线 你得负起两重责任”
+So you have a double responsibility to that line:
+
+134
+00:07:43,315 --> 00:07:48,825
+“在不越界的同时 你得教你老板把它不断向外挪”
+don't step over it, but also keep on educating your boss so you move the line further out,
+
+135
+00:07:49,400 --> 00:07:51,630
+“这样 下一次 你就能离未来更近一步”
+so next time you can go further into the future.
+
+136
+00:07:52,610 --> 00:07:56,500
+她推动的那个未来 就是我们的现在
+That future she pushed toward is our present.
+
+137
+00:07:56,740 --> 00:08:02,640
+几乎你我依赖的每一种语言都归功于她和她的第一个编译器
+Pretty much every language that you and I rely on owes a debt to Hopper and her first compiler.
+
+138
+00:08:02,840 --> 00:08:07,500
+因此太空军校生们活了下来 尼安德特人灭亡了
+So that's space cadets “one”, Neanderthals “zero”.
+
+139
+00:08:07,500 --> 00:08:12,590
+写代码不用数字 而是用人类风格的语言是她的观点
+The idea that we could code not with numbers, but with human-style language.
+
+140
+00:08:12,590 --> 00:08:18,040
+你敲下“执行操作 8” 或“关闭 文件 C”的精简操作
+All of a sudden you're typing "Go to Operation 8," or, "Close file C."
+
+141
+00:08:18,040 --> 00:08:20,830
+才是符合人类习惯的编程
+It was programming made human.
+
+142
+00:08:20,830 --> 00:08:26,930
+格蕾丝独特地意识到 计算机将改变世界
+Grace was uniquely aware of the fact that computing was going to be a world changing thing,
+
+143
+00:08:26,930 --> 00:08:28,930
+但是如果没有人知道如何接触并使用计算机
+but it wasn't going to be a world changing thing
+
+144
+00:08:28,930 --> 00:08:31,970
+那么它就无法改变世界
+if nobody understood how to access it or use it.
+
+145
+00:08:31,970 --> 00:08:35,544
+因此她想确保它对尽可能多的人开放
+And she wanted to make sure that it was as open to as many people as possible
+
+146
+00:08:35,544 --> 00:08:37,720
+ 尽可能多的人可以使用
+ and as accessible to as many people as possible.
+
+147
+00:08:37,720 --> 00:08:43,380
+这就需要编程在可理解性和可读性上做一些妥协
+And that required a certain level of concession to comprehensibility and readability.
+
+148
+00:08:43,380 --> 00:08:47,300
+因此 创造编程语言的最初动机是
+So ultimately the desire to create programming languages
+
+149
+00:08:47,300 --> 00:08:52,660
+使计算机变得更为便捷易用
+ came from wanting to give more points of entry to the machine
+
+150
+00:08:52,660 --> 00:08:57,610
+让它脱离这个神职 让它的开发面向大众和未来新一代
+and taking it away from this priesthood and opening it up to a greater public and a new generation.
+
+151
+00:08:59,060 --> 00:09:02,900
+我想在这里打断并强调下 Claire 的说法：
+I wanna pause here and just underline something Claire said:
+
+152
+00:09:03,210 --> 00:09:08,450
+现在我们所已知的编程语言 都来源于科技开放的愿望
+programming languages as we know them today come from a desire to open the tech up.
+
+153
+00:09:08,750 --> 00:09:14,320
+这让计算机不再是数学博士们的专属玩具 让编程开发变得更容易
+To take it away from a priesthood of math PhDs and make development accessible.
+
+154
+00:09:14,680 --> 00:09:17,340
+编译器所有工作的本质
+The spirit of the compiler that does all that work,
+
+155
+00:09:17,580 --> 00:09:21,210
+是让程序变得更好理解 更有人性
+it's motivated by a sense of empathy and understanding.
+
+156
+00:09:21,480 --> 00:09:25,200
+Claire 有一个猜测 为什么格蕾丝是做出改变的那个人
+Claire's got a theory about why Hopper was the woman to deliver that change.
+
+157
+00:09:25,200 --> 00:09:29,360
+这与她在二战期间的工作有关
+It has to do with Hopper's work during World War II.
+
+158
+00:09:29,610 --> 00:09:34,010
+她的工作是解决扫雷问题、弹道问题和海洋学问题
+She was doing mine sweeping problems, ballistics problems, oceanography problems.
+
+159
+00:09:34,160 --> 00:09:37,790
+她用很多不同的、交叉的学科
+She was applying all of these different, diverse disciplines
+
+160
+00:09:37,790 --> 00:09:41,530
+来模拟战争里的所有的暴力、混乱和现实的灾难
+representing all the violent, chaotic, messy realities of the war
+
+161
+00:09:41,530 --> 00:09:45,420
+并将他们转化成在 Mark I 计算机上运行的程序
+and translating them into programs to run on the Mark I computer.
+
+162
+00:09:45,710 --> 00:09:48,530
+她知道如何在语言之间去做翻译转换
+She knew how to do that translation between languages.
+
+163
+00:09:48,530 --> 00:09:52,640
+我的意思不是说计算机语言 是人类语言
+And I don't mean computer languages, I mean like human languages.
+
+164
+00:09:52,640 --> 00:09:57,320
+她知道如何倾听一个提出复杂问题的人的意见
+She understood how to listen to somebody who was presenting a complex problem,
+
+165
+00:09:57,500 --> 00:10:03,210
+并尝试理解问题的背景 其信息和所涉及的专业规律
+try to understand where they were coming from, what the constraints and affordances of their discipline was
+
+166
+00:10:03,210 --> 00:10:06,420
+然后将这些转为计算机可以理解的程序
+and then translate that into something that the computer could understand.
+
+167
+00:10:06,420 --> 00:10:08,320
+从这个角度看她如同早期的编译器
+In a way she was like the earliest compiler.
+
+168
+00:10:08,320 --> 00:10:10,250
+就像一个人类版本的编译器
+Like, the embodied human compiler
+
+169
+00:10:10,250 --> 00:10:14,325
+因为她知道你必须先理解人们 才能满足他们的需求
+because she understood that you had to meet people on their level.
+
+170
+00:10:16,800 --> 00:10:20,480
+编译器干的事情就是一个解释和理解
+Compiling as an act of empathy and understanding.
+
+171
+00:10:20,850 --> 00:10:24,090
+我觉得我们应该在学习新语言
+I think we can all keep that in mind when we learn new languages,
+
+172
+00:10:24,090 --> 00:10:26,975
+或想知道为什么有一些东西根本不能编译的时候牢记这个理念
+or wonder why something isn't compiling at all.
+
+173
+00:10:27,575 --> 00:10:31,620
+编译器的工作就是满足你使用生活中说的语言来编程
+The compiler's job should be to meet your language where it lives.
+
+174
+00:10:31,620 --> 00:10:35,880
+格蕾丝知道人类一旦可以学会讲编程语言
+Grace Hopper knew that once humans could learn to speak programming languages,
+
+175
+00:10:35,880 --> 00:10:40,170
+而编译器可以将我们的意图转换为机器语言
+and once compilers began translating our intentions into machine language,
+
+176
+00:10:40,170 --> 00:10:43,320
+就像为洪水打开了大门一样
+well, it was like opening the floodgates.
+
+177
+00:10:43,320 --> 00:10:47,150
+她知道如果计算机太孤立和太专门化
+She knew that computing could never develop
+
+178
+00:10:47,150 --> 00:10:52,680
+就不会发展为一个产业 从而成为改变世界的力量
+as an industry, as a world changing force if it was too siloed and too specific.
+
+179
+00:10:52,680 --> 00:10:54,900
+也就是说计算机的从业者
+And people who were its practitioners
+
+180
+00:10:54,900 --> 00:11:00,425
+将会难以和需要用计算机解决实际问题的人沟通
+ couldn't communicate with the people whose problems needed to be put on the machine, so to speak.
+
+181
+00:11:00,425 --> 00:11:05,970
+因此她真的是一个善于在不同领域间进行翻译的专家
+So she was really quite expert at that kind of human translation,
+
+182
+00:11:05,970 --> 00:11:08,260
+至少我是这么想的 这使她有独一无二的机会
+which I think, yeah, made her uniquely
+
+183
+00:11:08,260 --> 00:11:13,080
+去思考和创建编程语言
+qualified to be thinking about and creating programming languages.
+
+184
+00:11:13,080 --> 00:11:14,910
+*BGM*
+
+185
+00:11:14,910 --> 00:11:21,210
+格蕾丝对英文式数据处理语言的研究最终演变成了 COBOL
+Hopper's work on English-style data processing language eventually evolved into COBOL,
+
+186
+00:11:21,407 --> 00:11:22,750
+它在某种意味上很不错
+which is sort of perfect,
+
+187
+00:11:22,750 --> 00:11:25,940
+因为它不浮华 很直白
+because COBOL is not flashy, it's very down to business,
+
+188
+00:11:25,940 --> 00:11:27,698
+格蕾丝·赫柏也是这样的人
+and so was Grace Hopper.
+
+189
+00:11:28,120 --> 00:11:32,740
+从某种角度看 她给了我们一个很像她的语言
+In a way, she gave us a language that sounded a lot like her.
+
+190
+00:11:33,310 --> 00:11:36,210
+像格蕾丝一样 COBOL 语言也很长寿
+Also like Hopper, COBOL's got longevity.
+
+191
+00:11:36,210 --> 00:11:39,080
+它现在已经 60 多了 仍在生产环境中使用
+It's still around 60 years later.
+
+192
+00:11:39,080 --> 00:11:50,780
+*BGM*
+
+193
+00:11:50,780 --> 00:11:54,520
+格蕾丝的编译器就像一条巴别鱼
+Okay, so Grace Hopper's compilers were like babelfish,
+注：巴别鱼（Babelfish），《银河系漫游指南》中的幻想生物。
+在小说中人们将其放入耳中，使之翻译语言
+
+194
+00:11:54,520 --> 00:11:57,770
+在程序员和机器之间充当翻译
+parlaying meaning between programmers and their machines.
+
+195
+00:11:57,770 --> 00:12:02,090
+它们将抽象程度越来越高的语言翻译成机器码
+And they were translating things from higher and higher levels of abstraction.
+
+196
+00:12:02,920 --> 00:12:08,960
+然后 几十年之后 另一个重要的思潮在语言界兴起
+Then, a few decades later, we get another crucial ingredient added to the language mix.
+
+197
+00:12:08,960 --> 00:12:14,660
+想象下画面：自由软件社区在 1980 年出现
+So picture this: the free software community took off in the 1980s,
+
+198
+00:12:14,660 --> 00:12:18,740
+但是 Unix 的替代品 GNU 被开发出来后
+but when the Unix alternative, GNU, was created,
+
+199
+00:12:18,740 --> 00:12:22,250
+却没有任何自由开放的编译器随之出现
+there weren't any free and open compilers to go with it.
+
+200
+00:12:22,575 --> 00:12:27,300
+为了让 GNU 给我们提供一个真正的开源 UNIX 替代品
+In order for GNU to give us a real open-source alternative to Unix,
+
+201
+00:12:27,300 --> 00:12:31,390
+为了让编程语言在开源世界蓬勃发展
+in order for programming languages to thrive in the open-source world,
+
+202
+00:12:31,390 --> 00:12:37,540
+社区需要找来一个格蕾丝·赫柏 - 我们需要一个开源编译器
+the community would need to pull a Grace Hopper — we needed an open-source compiler.
+
+203
+00:12:37,540 --> 00:12:41,820
+这是 Langdon White 红帽的平台架构师
+Here's Langdon White, a platform architect at Red Hat
+
+204
+00:12:41,820 --> 00:12:43,820
+来讲讲他对这个事情的理解
+talking about where things stood.
+
+205
+00:12:45,260 --> 00:12:50,320
+在 80 年代 你要买一个编译器很轻松就要花上上万块钱
+In the 80s, you can still go spend ten grand pretty easily on a compiler.
+
+206
+00:12:50,520 --> 00:12:52,210
+费用是最大的问题
+The free part was a big deal.
+
+207
+00:12:52,210 --> 00:12:56,930
+我没有多余的钱去给自己买编译器
+I don't have an extra ten grand lying around to go buy myself a compiler.
+
+208
+00:12:56,930 --> 00:12:57,860
+再一个事实是
+Plus the fact that
+
+209
+00:12:57,860 --> 00:13:00,920
+我必须为所有我想要的目标平台买一个对应的编译器
+I'd have to buy myself a compiler for every platform I want to target.
+
+210
+00:13:00,920 --> 00:13:06,220
+那个时代大部分是 Unix 平台 但是细节和风格各不相同
+So, in those days it was mostly Unix, but all the different flavors.
+
+211
+00:13:06,220 --> 00:13:08,490
+因此你就不能买一个
+So you wouldn't be able to just buy one,
+
+212
+00:13:08,490 --> 00:13:13,410
+你需要为不同的架构 不同的供应商购买多个编译器
+you would also have to buy multiple for different architectures or different vendors.
+
+213
+00:13:14,170 --> 00:13:18,030
+Langdon 指出这不仅仅是成本问题
+Langdon notes that it was more than just costs at stake.
+
+214
+00:13:18,030 --> 00:13:21,260
+在一些情况下 对编程工作也带来了问题
+In some cases, it was the coding work itself.
+
+215
+00:13:21,800 --> 00:13:23,480
+大家都没有意识到
+People don't realize that
+
+216
+00:13:23,480 --> 00:13:28,290
+你如何用特定的的方式来组织你的代码是很重要的
+it matters how you structure your code in very specific ways.
+
+217
+00:13:28,290 --> 00:13:34,640
+做嵌套 for 循环或者做嵌套 while 循环之类的事情
+So doing nested for loops or doing nested while loops or that kind of thing
+
+218
+00:13:34,640 --> 00:13:38,480
+可能是可以的 这取决于编译器
+may be okay, depending on the compiler.
+
+219
+00:13:38,480 --> 00:13:40,110
+因此 大家都应该明白
+So, you know,
+
+220
+00:13:40,110 --> 00:13:43,340
+如果你不知道编译是如何优化你的代码的
+if you don't know how it's optimizing your code
+
+221
+00:13:43,340 --> 00:13:47,440
+就很难知道如何写出最优的代码
+it's very, very difficult to know how to write your code to get the most optimization.
+
+222
+00:13:49,150 --> 00:13:50,640
+必须要提的是
+Suffice to say,
+
+223
+00:13:50,640 --> 00:13:56,910
+我们需要一个免费的、可获得的、可值得信赖的编译器
+we needed a free option, an accessible option, a trustworthy option.
+
+224
+00:13:57,170 --> 00:14:01,730
+这就是 GNU C 语言编译器：GCC
+What we needed was the GNU C compiler, the GCC.
+
+225
+00:14:02,160 --> 00:14:05,760
+它横空出世在 1987 年
+That was the beast, first released in 1987,
+
+226
+00:14:05,760 --> 00:14:11,730
+它是格蕾丝·赫柏的编译器革命和自由软件运动的结合
+that merged Grace Hopper's compiler revolution with the free software movement.
+
+227
+00:14:11,730 --> 00:14:13,560
+它是使编译更标准化
+It standardized things
+
+228
+00:14:13,560 --> 00:14:16,960
+从而让所有人可以编译别人写的代码
+and let everybody compile what anybody else had written.
+
+229
+00:14:17,390 --> 00:14:21,680
+我们编程语言的丰富性要归功于它
+The richness of our languages is thanks to that moment.
+
+230
+00:14:22,510 --> 00:14:28,320
+GCC 是开放的 可以说将编程语言推向一个更高的层次
+The fact that the GCC was open sort of moved languages to a different level.
+
+231
+00:14:29,010 --> 00:14:31,540
+这是 Jupyter 项目成员 Carol Willing
+Carol Willing works at Project Jupyter,
+
+232
+00:14:31,540 --> 00:14:35,210
+她是 Python 软件基金会的前理事
+and she's the former director of the Python Software Foundation.
+
+233
+00:14:35,210 --> 00:14:37,240
+人们开始意识到
+People started realizing that
+
+234
+00:14:37,240 --> 00:14:40,980
+专有的语言会在特定时间内被服务于一个目的
+proprietary languages, while they served a purpose at the time,
+
+235
+00:14:41,540 --> 00:14:48,770
+但并不能得到开发者社区的认可和热爱
+they weren't going to gain the acceptance and adoration of the developer community.
+
+236
+00:14:48,770 --> 00:14:51,050
+因为如果你是一个开发者
+Because if I'm a developer,
+
+237
+00:14:51,050 --> 00:14:59,240
+你希望学习最常用的 以及未来最流行的东西
+I'm going to want to learn what is most commonly used and as well as what is new and on the forefront.
+
+238
+00:14:59,610 --> 00:15:04,040
+我没必要去学习一种将我绑定在一种技术上的技能
+I don't necessarily want to develop a skill that will lock me into one technology.
+
+239
+00:15:04,270 --> 00:15:07,430
+我想 Python 成功的一个原因是
+I think one of the reasons that Python was so successful is
+
+240
+00:15:07,430 --> 00:15:10,520
+因为它是开源的 它有非常简洁的语法
+it was open source, it had a very clean syntax.
+
+241
+00:15:10,990 --> 00:15:18,590
+它的特点就是允许人们用常见的方法 快速高效地解决问题
+What it was doing is it was allowing people in a common way to solve problems quickly, efficiently.
+
+242
+00:15:18,590 --> 00:15:20,770
+也允许大家合作解决问题
+And to also allow people to collaborate.
+
+243
+00:15:20,850 --> 00:15:25,850
+这就是好的程序和代码库的标志：
+And I think those are the signs of good programs and good libraries is:
+
+244
+00:15:25,850 --> 00:15:30,480
+如果你可以用最小的工作量完成你的工作
+if you can get your work done with a minimum amount of headache
+
+245
+00:15:30,670 --> 00:15:32,650
+并且与他人分享
+and you can share it with others.
+
+246
+00:15:32,650 --> 00:15:34,450
+这是确实很棒的事情
+I think that's golden.
+
+247
+00:15:35,380 --> 00:15:36,420
+这么多年过去了
+Over the years,
+
+248
+00:15:36,420 --> 00:15:41,620
+GCC 逐渐的支持了 Java、C++、Ada 和 Fortran 语言
+the GCC evolved to support Java, C++, Ada, Fortran,
+
+249
+00:15:41,620 --> 00:15:42,520
+我还可以继续说说它的进步
+I could go on.
+
+250
+00:15:43,210 --> 00:15:48,250
+通过像 GCC 这样的通用底层接口
+By having a common underlying interface like the GCC,
+
+251
+00:15:48,250 --> 00:15:56,740
+人们可以根据自己的特殊需求来定制语言
+it lets people take languages and then customize them to their particular needs.
+
+252
+00:15:56,740 --> 00:15:58,640
+例如 在 Python 的世界里
+For example, in the Python world,
+
+253
+00:15:58,640 --> 00:16:03,620
+有大量的库 甚至具体到科学计算领域
+there's many different libraries and even specifically in the scientific Python world,
+
+254
+00:16:03,620 --> 00:16:05,660
+我们有 numpy
+we've got things like numpy,
+
+255
+00:16:05,660 --> 00:16:08,230
+还有 scikit-image、scikit-learn 这样的东西
+and scikit-image, scikit-learn.
+
+256
+00:16:08,230 --> 00:16:15,200
+每个库都是为一个特定目的而工作
+And each of those had sort of a more specific task that they are known for.
+
+257
+00:16:15,530 --> 00:16:22,420
+因此 我们也看到了生物信息学和自然语言处理之类的东西
+So, we've also seen things like bioinformatics and natural language processing.
+
+258
+00:16:22,420 --> 00:16:28,810
+而人们可以在一个共同的基础上 做出很多不同的事情
+And so people are able to do many different things working off a common base.
+
+259
+00:16:28,810 --> 00:16:33,460
+而且可以把它们放到编程语言或库里
+But then putting elements into their languages or libraries
+
+260
+00:16:33,460 --> 00:16:40,740
+使他们能够在他们特定的行业或领域中优化问题的解决
+that allow them to optimize problem solving in their particular industry or area.
+
+261
+00:16:42,680 --> 00:16:49,720
+因此 这就是编译器技术一头撞进开源运动的结果吧？
+So, this is what happens when compiler technology runs headfirst into the open source movement, right?
+
+262
+00:16:50,260 --> 00:16:53,190
+随着时间的推移 这种碰撞
+Over time, the collision creates a big bang
+
+263
+00:16:53,190 --> 00:16:56,260
+爆炸般地创造了各种新的、被社区支持的语言
+of new community-supported languages
+
+264
+00:16:56,260 --> 00:16:58,260
+大家都可以学习和完善它
+that anybody can learn and build with.
+
+265
+00:16:58,640 --> 00:17:02,730
+现在有成百上千的编程语言存活着
+There are hundreds and hundreds of those languages being used today.
+
+266
+00:17:03,530 --> 00:17:08,060
+随着开源软件越来越流行和被广泛接受
+As open source became more popular and more accepted,
+
+267
+00:17:08,060 --> 00:17:11,260
+我们看到了编程语言的大量激增
+what we've seen is a proliferation of languages.
+
+268
+00:17:11,260 --> 00:17:15,720
+现在有大量围绕着手机技术的编程语言
+There are a number of languages around cell phone technology and mobile.
+
+269
+00:17:15,950 --> 00:17:21,040
+不同的编程语言也让游戏开发更加简单快速便捷
+Different languages that help make game development more straightforward.
+
+270
+00:17:21,310 --> 00:17:23,240
+泛用的的语言
+All purpose languages,
+
+271
+00:17:23,240 --> 00:17:24,580
+如 Python 和 Ruby
+like Python and Ruby
+
+272
+00:17:24,580 --> 00:17:31,340
+它们算是现代网页开发和交付网页应用和网站的基础
+that were sort of foundational for the web development and delivery of web applications and websites.
+
+273
+00:17:31,340 --> 00:17:34,360
+*BGM*
+
+274
+00:17:34,360 --> 00:17:35,680
+这个队伍还会继续壮大
+The list goes on.
+
+275
+00:17:36,030 --> 00:17:41,050
+是的 我们建造的这个巴别塔在未来会更加拥挤
+And, yeah, that Tower of Babel we're building is just going to get more packed in the future.
+
+276
+00:17:41,610 --> 00:17:46,010
+但是你可以把它当作一个聚宝盆 一个语言的盛宴
+But look, you can also see it as a cornucopia, a language feast.
+
+277
+00:17:46,100 --> 00:17:49,900
+下面我们将会帮你们梳理这个盛宴
+And we're going to help you sort through that feast — next.
+
+278
+00:17:49,900 --> 00:17:53,450
+*BGM*
+
+279
+00:17:55,080 --> 00:17:58,760
+现在我们已经知道编程语言爆发的原因了
+Okay, so I know where the language flood came from.
+
+280
+00:17:59,010 --> 00:18:01,130
+但是这些对我们有什么具体的意义？
+But how do we make sense of it all?
+
+281
+00:18:01,420 --> 00:18:04,580
+我们如何选择对我们重要的语言呢？
+How do we pick out languages that matter to us?
+
+282
+00:18:04,580 --> 00:18:06,070
+*BGM*
+
+283
+00:18:06,070 --> 00:18:08,970
+这是个大问题 因此我们找了一些人帮忙：
+It's a big question, so I brought in some help:
+
+284
+00:18:09,500 --> 00:18:12,230
+Clive Thompson 是最好的作家之一
+Clive Thompson's one of the best writers out there
+
+285
+00:18:12,230 --> 00:18:14,230
+他能让科技世界变得更有意义
+for making sense of the tech world.
+
+286
+00:18:14,640 --> 00:18:16,230
+他是《连线》的专栏记者
+He's a columnist at Wired,
+
+287
+00:18:16,530 --> 00:18:19,250
+《纽约时报》杂志的特约撰稿人
+a contributing writer at the New York Times Magazine,
+
+288
+00:18:19,510 --> 00:18:23,950
+他现在正在写一本关于计算机程序员心理学的书
+and he's working on a book now about the psychology of computer programmers.
+
+289
+00:18:24,250 --> 00:18:28,330
+当我们挑选我们想要学习的编程语言时
+Which is perfect, because we need to know what's going on in our brains
+
+290
+00:18:28,330 --> 00:18:30,660
+我们需要知道我们到底想要什么
+when we choose which ones to learn.
+
+291
+00:18:31,210 --> 00:18:33,680
+这是我和 Clive 反复讨论得出的结论
+Here's me and Clive hashing it all out.
+
+292
+00:18:33,680 --> 00:18:35,460
+*BGM*
+
+293
+00:18:35,460 --> 00:18:38,190
+当我作为一个开发新人第一次入手的时候
+When I was first starting out as a new developer,
+
+294
+00:18:38,190 --> 00:18:41,070
+我就说：“让我选一个最好的编程语言
+I just said, "Lemme find the best one,
+
+295
+00:18:41,070 --> 00:18:43,990
+然后掌握并熟练运用它 不就完事了么 ”
+I'm going to get really good at it. And then I'll be done."
+
+296
+00:18:44,260 --> 00:18:45,990
+不过事情不会这样简单
+But it's not quite that simple.
+
+297
+00:18:46,110 --> 00:18:48,850
+否则为什么有那么多的编程语言呢？
+Why are there so many programming languages?
+
+298
+00:18:49,370 --> 00:18:52,990
+每个语言都有那么点它的特长
+Each language has sort of a bias of things that it's good at.
+
+299
+00:18:53,370 --> 00:18:54,570
+因此通常来说
+So, typically,
+
+300
+00:18:54,790 --> 00:18:57,070
+有人创造一个新语言是因为
+the reason that someone creates a new language is
+
+301
+00:18:57,070 --> 00:19:01,380
+现有的语言满足不了他们的需求
+there's something they want to do that existing languages aren't good for.
+
+302
+00:19:01,380 --> 00:19:03,060
+JavaScript 就是一个典型的例子
+JavaScript is a good example of that.
+
+303
+00:19:03,060 --> 00:19:03,970
+网景公司Netscape
+Netscape
+
+304
+00:19:03,970 --> 00:19:07,180
+曾经在 90 年代中开发了一款浏览器
+had created a browser back in the mid '90s
+
+305
+00:19:07,400 --> 00:19:10,880
+所有的网站管理员想做一些更具交互性的事情
+and all these web masters wanted to do something a little more interactive.
+
+306
+00:19:10,880 --> 00:19:13,500
+他们希望有一种方法
+They wanted there to be a way
+
+307
+00:19:13,500 --> 00:19:16,120
+使其可以在网站上运行一些脚本
+to have a bit of scripting inside their website.
+
+308
+00:19:16,370 --> 00:19:18,640
+当然这些需求都提给了网景
+And so these demands were coming to Netscape.
+
+309
+00:19:18,640 --> 00:19:21,310
+然后他们说：“好吧 现在我们没有可以做到这一点的办法
+And they were like, "Alright, we need, there's nothing out there that can do this,
+
+310
+00:19:21,310 --> 00:19:24,460
+我们需要一个可以集成到我们浏览器的脚本语言 ”
+we need a scripting language that we build inside our browser."
+
+311
+00:19:24,900 --> 00:19:27,160
+于是他们雇佣了 Brendan Eich
+And so they hired Brendan Eich,
+
+312
+00:19:27,310 --> 00:19:29,590
+一个被认为很资深的家伙
+who was considered a senior guy.
+
+313
+00:19:29,590 --> 00:19:32,160
+他当时 32 岁 其他人 21 岁的样子
+He was like 32, and everyone else was like 21.
+
+314
+00:19:32,160 --> 00:19:32,810
+*Saron Yitbarek的笑声*
+
+315
+00:19:32,810 --> 00:19:34,670
+这在开发者圈里就很资深了
+That's senior in developer world.
+
+316
+00:19:34,770 --> 00:19:38,770
+他们给他 10 天时间开发 JavaScript
+And they gave him ten days to make JavaScript.
+
+317
+00:19:39,210 --> 00:19:42,330
+因此他真的就 10 天没有睡觉
+So he literally just didn't sleep for ten days
+
+318
+00:19:42,540 --> 00:19:45,420
+然后疯狂地捣鼓出一个脚本语言
+and he frantically cranked out a scripting language.
+
+319
+00:19:45,420 --> 00:19:48,140
+它看起来有点挫 有点糟
+And it was kind of ungainly and kind of a mess.
+
+320
+00:19:48,350 --> 00:19:49,210
+但是可以运行
+But it worked.
+
+321
+00:19:49,210 --> 00:19:51,780
+它允许人们做一些简单的事情
+And it allowed people to do very simple things,
+
+322
+00:19:51,780 --> 00:19:54,200
+它还有按钮 对话框 弹框和其他东西
+it had buttons and dialogs and popups and whatnots.
+
+323
+00:19:54,470 --> 00:19:57,390
+这就是造一个编程语言的例子
+And so that's an example of a language that came,
+
+324
+00:19:57,390 --> 00:20:01,010
+用来做在当时没有办法完成的事情
+was created to do something that wasn't really possible at that point in time.
+
+325
+00:20:01,210 --> 00:20:02,850
+是不是很有意思
+That's fascinating.
+
+326
+00:20:03,120 --> 00:20:05,370
+这就是为什么存在这么多编程语言
+So that's why so many languages exist,
+
+327
+00:20:05,370 --> 00:20:10,300
+人们不断进取 去做别人做不到的事
+is that people keep on finding a reason to do something that no one else can do.
+
+328
+00:20:10,660 --> 00:20:16,420
+这也是为什么我对开发者和编程语言之间的关系很感兴趣
+So what is so interesting to me about the relationship between developers and our programming languages
+
+329
+00:20:16,420 --> 00:20:21,920
+我们对这些工具有很深的感情
+is we have such a strong attachment to these tools,
+
+330
+00:20:21,920 --> 00:20:22,580
+为什么呢？
+why is that?
+
+331
+00:20:22,580 --> 00:20:23,610
+有几个原因
+There's a couple reasons why.
+
+332
+00:20:23,610 --> 00:20:28,090
+一个是有时你学习你的第一个编程语言完全是一场意外
+One is that sometimes it's literally just an accident of what was the first language that you learned.
+
+333
+00:20:28,380 --> 00:20:30,370
+有点像你的初恋
+And it's kind of like your first love.
+
+334
+00:20:30,370 --> 00:20:34,820
+我觉得不同性格的人 也会匹配不同类型的编程语言
+And I think it's also like different personalities work with different types of languages.
+
+335
+00:20:34,820 --> 00:20:38,460
+例如 Facebook 是用 PHP 设计的
+Like, you look at Facebook, and it was designed using PHP.
+
+336
+00:20:38,460 --> 00:20:41,130
+PHP 是有点像毛球
+And PHP is kind of a hairball of a language.
+
+337
+00:20:41,130 --> 00:20:43,660
+它很不规则
+It's very irregular.
+
+338
+00:20:43,910 --> 00:20:46,300
+它的成长断断续续
+And it sort of grew in these fits and starts.
+
+339
+00:20:46,300 --> 00:20:49,170
+Facebook 也有点这种感觉
+And that's sort of the way Facebook feels, too.
+
+340
+00:20:49,170 --> 00:20:51,170
+与此相反
+In comparison,
+
+341
+00:20:51,170 --> 00:20:52,780
+来自谷歌的伙计决定：
+the guys at Google decided,
+
+342
+00:20:52,780 --> 00:20:55,150
+“我们想要一个超高性能的语言
+"We want a super high performance language,
+
+343
+00:20:55,150 --> 00:20:59,410
+因为在谷歌我们的东西都高速运行着
+because Google, at Google we're all about things running really fast,
+
+344
+00:20:59,410 --> 00:21:02,750
+维护着万亿级的用户吞吐 ”
+and things, sustaining trillions of users at once."
+
+345
+00:21:02,750 --> 00:21:04,750
+因此他们决定开发一个 Go 语言
+And so they decide to make Go,
+
+346
+00:21:04,750 --> 00:21:08,690
+Go 非常适合高性能计算
+and Go is a really terrific language for that sort of high-performance computing.
+
+347
+00:21:08,690 --> 00:21:10,690
+让我们深入一点
+Let's go a little bit deeper.
+
+348
+00:21:11,100 --> 00:21:16,080
+作为一个开发者 我有自己的个性
+Is it that I, as a developer, with my specific personality,
+
+349
+00:21:16,080 --> 00:21:20,170
+我是不是对一部分编程语言有天然的喜欢呢？
+am going to be naturally attracted to certain languages?
+
+350
+00:21:20,170 --> 00:21:24,360
+或者我工作用的编程语言可能会影响我的个性？
+Or that the language I work in might influence my personality?
+
+351
+00:21:25,400 --> 00:21:27,290
+两者肯定都存在
+Well, definitely both.
+
+352
+00:21:27,290 --> 00:21:35,030
+但我确实认为当你遇到你喜欢的编程语言的时候
+But I do think that there is a really strong resonance
+
+353
+00:21:35,030 --> 00:21:37,950
+有一种强烈的共鸣感
+that people find when they hit a language that they like.
+
+354
+00:21:38,080 --> 00:21:42,640
+你上计算机课程时学习了必修语言：
+You go to a computer science curriculum and you sort of learn what you have to learn:
+
+355
+00:21:42,640 --> 00:21:44,300
+他们都教 Java
+they're all teaching Java.
+
+356
+00:21:44,300 --> 00:21:45,790
+有时会多教一门 JavaScript 或 Python
+Sometimes more JavaScript or Python.
+
+357
+00:21:45,790 --> 00:21:47,380
+问题是你被强制要求
+But the point is, you're forced to learn it,
+
+358
+00:21:47,380 --> 00:21:47,800
+所以你学了它
+so you learn it.
+
+359
+00:21:47,800 --> 00:21:49,800
+但当你有选择余地时会怎么样呢？
+But what do people do when they have the choice?
+
+360
+00:21:49,800 --> 00:21:51,770
+这就是你真正看到
+And this is where you really see how
+
+361
+00:21:51,770 --> 00:21:57,310
+一个人的那种情感或心理风格是如何倾向于一门语言的地方
+the sort of emotional or psychological style of someone gravitates towards a language,
+
+362
+00:21:57,310 --> 00:22:00,030
+因为我和一个人谈过
+because I talked to one guy
+
+363
+00:22:00,490 --> 00:22:03,840
+他试着学了一堆 JavaScript
+who tried learning JavaScript a bunch.
+
+364
+00:22:03,840 --> 00:22:06,860
+这是个看起来有点丑的语言
+And it was just sort of, it's kind of an ugly language to look at.
+
+365
+00:22:06,860 --> 00:22:09,410
+它简直是花括号的噩梦
+It's got the curly bracket nightmare going on.
+
+366
+00:22:09,410 --> 00:22:13,420
+所以他试了又试 试了又试 失败了又失败
+And so he tried and failed and tried and failed and tried and failed.
+
+367
+00:22:13,420 --> 00:22:16,660
+直到有一天他看到朋友在用 Python
+And then one day he saw a friend working in Python.
+
+368
+00:22:16,770 --> 00:22:19,780
+在他看起来 这是多么的纯净和美妙的语言
+And it just looked so clean and beautiful to him.
+
+369
+00:22:19,780 --> 00:22:20,760
+因为他是个作家
+He was kind of a writer,
+
+370
+00:22:20,820 --> 00:22:24,130
+而 Python 被认为是一个适合作家的编程语言
+and it's often regarded as a writerly type of a language,
+
+371
+00:22:24,130 --> 00:22:27,950
+缩进使一切都易于阅读
+because the indentation makes everything easy to read.
+
+372
+00:22:28,220 --> 00:22:29,460
+它和他一拍即合
+And it just clicked with him,
+
+373
+00:22:29,460 --> 00:22:32,830
+主要在于 Python 的工作方式和外观
+because there was just something about the way that Python worked and looked,
+
+374
+00:22:33,040 --> 00:22:36,700
+漂亮的排版打动了他
+it's beautiful sparseness, that hit him.
+
+375
+00:22:36,700 --> 00:22:39,490
+*BGM*
+
+376
+00:22:39,490 --> 00:22:43,210
+和 Clive 的交流让我意识到
+So, talking with Clive I realized
+
+377
+00:22:43,500 --> 00:22:46,130
+有一些编程语言是硬塞给我们的
+there are languages that are thrust upon us.
+
+378
+00:22:46,620 --> 00:22:48,820
+我说的是那些古老的编程语言
+I'm talking about those ancient languages
+
+379
+00:22:49,000 --> 00:22:52,760
+它们在基础设施中无处不在 简直像拉丁语那样
+that are just baked into everything we work with — the code Latin.
+
+380
+00:22:53,530 --> 00:22:55,660
+其实我们也有很多选择
+But there're also languages we choose,
+
+381
+00:22:55,950 --> 00:22:58,380
+去选择适合我们个性的编程语言
+the languages that fit our personalities.
+
+382
+00:22:58,850 --> 00:23:01,900
+如果你想知道最新的东西有哪些
+And if you want to know what's new and shaking things up,
+
+383
+00:23:02,160 --> 00:23:05,310
+你去问问开发者们周末在用什么就知道了
+you want to ask a developer what they use on the weekend.
+
+384
+00:23:05,530 --> 00:23:07,310
+下面是我们对话的更多内容：
+Here's more of our conversation:
+
+385
+00:23:08,640 --> 00:23:11,930
+当我问人们：“你闲暇的时候做什么？”
+So when I ask people: "What are you doing in your spare time?"
+
+386
+00:23:12,020 --> 00:23:13,160
+回答肯定是些稀奇古怪的东西
+It'll be all this weird stuff.
+
+387
+00:23:13,160 --> 00:23:16,730
+我想实际上其中一个好的
+I think it's actually one of the things that sort of, you know, nice and
+
+388
+00:23:16,730 --> 00:23:18,670
+最值得称颂的开发者的特点
+laudatory about developer behavior
+
+389
+00:23:18,670 --> 00:23:22,370
+就是他们是富有好奇心
+is that they tend to be very curious people.
+
+390
+00:23:22,480 --> 00:23:24,500
+我知道有人会说
+I know people that decided,
+
+391
+00:23:24,500 --> 00:23:26,350
+“我要学习 Erlang了 就是为了好玩 ”
+"I'm going to learn Erlang, just for the hell of it."
+
+392
+00:23:26,350 --> 00:23:31,070
+我尝试想象人们在周末开发这些项目
+I'm trying to imagine these projects that people are working on on the weekends.
+
+393
+00:23:31,070 --> 00:23:34,350
+项目不是最重要的
+And it's almost like the project is secondary.
+
+394
+00:23:34,350 --> 00:23:36,740
+他们在学习工具
+It's like the learning of the tool,
+
+395
+00:23:36,740 --> 00:23:38,860
+编程语言才是重要的事情
+the language, is more important.
+
+396
+00:23:38,860 --> 00:23:40,260
+这才是他们真的想要的状态
+That's really what they're there for.
+
+397
+00:23:40,260 --> 00:23:41,210
+确切的说
+Exactly.
+
+398
+00:23:41,210 --> 00:23:45,380
+你将看到为什么大家不停的
+This, is sort of why you'll see people just constantly re-iterating over and over again
+
+399
+00:23:45,380 --> 00:23:47,170
+重复迭代开发这些日历和待办事项
+these calendaring and to-do list things
+
+400
+00:23:47,170 --> 00:23:48,520
+因为这是一个快速的学习方法
+because it's a very quick way,
+
+401
+00:23:48,600 --> 00:23:50,160
+但需要指出的是
+just to figure out, yeah,
+
+402
+00:23:50,160 --> 00:23:52,520
+编程语言做了什么以及如何工作
+what does this language do and how does it work
+
+403
+00:23:52,520 --> 00:23:54,170
+都与我们没关系
+and it almost doesn't matter what I'm building,
+
+404
+00:23:54,170 --> 00:23:55,550
+我只需要尽可能的构建我的东西
+so long as I'm building something.
+
+405
+00:23:55,670 --> 00:24:00,160
+他们想知道用那样的编程语言思考是什么感觉
+They want to know what it feels like to think in that language.
+
+406
+00:24:00,280 --> 00:24:06,690
+是不是会感觉很轻松、刺激、游刃有余？
+Is it going to be, is it going to feel easy, and thrilling and fluent
+
+407
+00:24:06,690 --> 00:24:09,310
+我目前的使用的语言没这个感觉
+that I'm not experiencing with the current languages?
+
+408
+00:24:09,310 --> 00:24:12,660
+是不是入门之后一切事情都变得简单了？
+Is it going to open up doors to make things easier to do?
+
+409
+00:24:12,940 --> 00:24:17,760
+很有可能你遇到一个新语言后会非常兴奋
+So there's a possibility space that occurs when you encounter a new language that can be really exciting.
+
+410
+00:24:17,760 --> 00:24:18,940
+想起来都很兴奋
+Imaginatively exciting.
+
+411
+00:24:18,940 --> 00:24:20,730
+我是一个 Ruby 从业者
+So I'm a Ruby,
+
+412
+00:24:20,730 --> 00:24:22,670
+作为 Ruby on Rails 开发者我非常自豪
+a very proud Ruby on Rails developer,
+
+413
+00:24:22,670 --> 00:24:24,990
+我想大概是两年前
+I think it was about two years ago
+
+414
+00:24:24,990 --> 00:24:28,960
+另一个非常著名的 Ruby 开发者
+that another pretty well known Ruby developer,
+
+415
+00:24:28,960 --> 00:24:31,610
+Justin Serrals 做了一个非常好的演讲
+Justin Serrals, did this really great talk
+
+416
+00:24:31,610 --> 00:24:40,820
+倡导编程语言从实用角度出发 没有必要那么性感
+advocating for this idea that a language doesn't need to be sexy to be used.
+
+417
+00:24:40,820 --> 00:24:44,340
+他的观点是
+And his thesis, his whole point was that
+
+418
+00:24:44,340 --> 00:24:46,420
+Ruby 之所以是一个令人兴奋的编程语言的原因在于它很新
+Ruby was really exciting because it was new.
+
+419
+00:24:46,420 --> 00:24:48,810
+而且差不多几年前都已经得到印证了
+And it kind of got to a point about a couple years ago
+
+420
+00:24:48,810 --> 00:24:51,650
+它已经不需要更新什么了
+where it just didn't need any more things.
+
+421
+00:24:51,650 --> 00:24:54,400
+它已经是一个稳定、成熟的编程语言了
+It was done. It was a stable language, it was a mature language
+
+422
+00:24:54,400 --> 00:24:56,960
+不过因为它的成熟
+and, as a result of it being mature,
+
+423
+00:24:57,250 --> 00:24:59,640
+开发者对它也就不那么兴奋
+it's not as exciting for developers.
+
+424
+00:24:59,640 --> 00:25:05,820
+我们逐步把目光转移到新的花样来了
+It's not this new toy to play, and so we kind of slowly moved away from it on to the next shiny thing.
+
+425
+00:25:05,820 --> 00:25:07,550
+从某个意义上说
+So, in a sense,
+
+426
+00:25:07,550 --> 00:25:11,750
+很有可能我们的好奇心会扼杀了一个编程语言
+it's almost our own curiosity that might kill a language,
+
+427
+00:25:11,750 --> 00:25:14,050
+或者让它变得庸俗
+or make it a little more stale,
+
+428
+00:25:14,050 --> 00:25:16,940
+而这与编程语言本身的好坏没有关系
+independent of whether the language is actually good or bad.
+
+429
+00:25:17,460 --> 00:25:19,200
+我认为这是完全正确的
+I think that's absolutely true.
+
+430
+00:25:19,200 --> 00:25:27,470
+事实上 开发者这个极具好奇心和自学欲望的特点的坏处是
+In fact, the downside of this deep curiosity and desire to self-educate that you see amongst developers
+
+431
+00:25:27,730 --> 00:25:31,570
+会让他们不断地寻找新鲜事物
+is that they're constantly trying to find the new shiny thing.
+
+432
+00:25:31,680 --> 00:25:34,740
+并用这种语言
+And use that language to replicate things
+
+433
+00:25:34,740 --> 00:25:37,490
+去复制其他语言已经基本做得很好的东西
+that are already basically done pretty well by other languages.
+
+434
+00:25:37,490 --> 00:25:38,720
+就是这样
+So that's that.
+是的
+Right.
+
+435
+00:25:38,720 --> 00:25:41,300
+好奇心有好处 同时也是一个陷阱
+Curiosity is a benefit and a trap.
+
+436
+00:25:41,620 --> 00:25:43,910
+是的 说的很好
+Yeah, beautifully put.
+
+437
+00:25:43,910 --> 00:25:49,500
+*BGM*
+
+438
+00:25:49,500 --> 00:25:52,700
+有时我们的好奇心可能是一个陷阱
+Sometimes our curiosity may be a trap.
+
+439
+00:25:53,210 --> 00:25:56,730
+但是它也是编程语言进步的动力
+But it's also the thing that fuels the evolution of languages.
+
+440
+00:25:57,220 --> 00:26:00,430
+开发每个新编程语言的时候他们会说
+Every new language is created because someone said,
+
+441
+00:26:00,890 --> 00:26:01,600
+“有没有别的可能？”
+"What if?"
+
+442
+00:26:02,140 --> 00:26:03,120
+它们出现的原因在于
+They come about
+
+443
+00:26:03,120 --> 00:26:05,990
+开发人员想要做不一样的事情
+because that developer wanted to do something different.
+
+444
+00:26:06,290 --> 00:26:08,530
+我们想要全新的表达方式
+They wanted a whole new way of saying it.
+
+445
+00:26:09,275 --> 00:26:10,555
+我向你们承诺一些事情
+And I'll promise you something.
+
+446
+00:26:10,980 --> 00:26:13,940
+我想格蕾丝·赫柏想在这儿最后讲两句
+I think Grace Hopper deserves a last word here.
+
+447
+00:26:14,250 --> 00:26:15,940
+在未来 12 个月里
+Just during the next 12 months,
+
+448
+00:26:16,520 --> 00:26:19,570
+你们谁要是说我们一直都是这么做的
+any one of you says that we've always done it that way,
+
+449
+00:26:19,570 --> 00:26:22,510
+我会瞬间在你旁边出现
+I will instantly materialize beside you
+
+450
+00:26:22,510 --> 00:26:24,510
+然后我 24 小时围绕着你
+and I will haunt for 24-hours.
+
+451
+00:26:24,510 --> 00:26:27,360
+我倒是要看看我能不能引起你的注意
+And see if I can get you to take another look.
+
+452
+00:26:27,360 --> 00:26:29,360
+我们不能再相信那句话
+We can no longer afford that phrase,
+
+453
+00:26:29,360 --> 00:26:31,360
+这是很危险的
+it's a dangerous one.
+
+454
+00:26:31,360 --> 00:26:33,870
+*鼓掌声&BGM*
+
+455
+00:26:33,870 --> 00:26:37,620
+格蕾丝的故事和第一款编译器提醒我们
+The story of Grace Hopper and the first compiler reminds us that
+
+456
+00:26:37,620 --> 00:26:40,140
+只要能可以找到表达方法
+that there's always a better way to do something
+
+457
+00:26:40,490 --> 00:26:42,510
+我们总有更好的办法做事情
+if we can just find the words.
+
+458
+00:26:42,940 --> 00:26:46,540
+不管编程语言有多抽象
+And, no matter how abstract those languages become,
+
+459
+00:26:46,870 --> 00:26:51,380
+不管我们在机器的 1 和 0 高位还是低位浮动
+whether we're floating high or low over the ones and zeroes of machine language,
+
+460
+00:26:51,380 --> 00:26:54,030
+我们都需要确保它是一个明智选择
+we need to make sure it's a smart choice.
+
+461
+00:26:54,500 --> 00:26:55,790
+我们选择一个语言
+We choose the language,
+
+462
+00:26:55,920 --> 00:27:01,310
+乃至于创造一门语言 是让它帮助我们的想法更容易表达出来
+or maybe even build the language that helps our intentions come closer to reality.
+
+463
+00:27:01,310 --> 00:27:03,180
+*BGM*
+
+464
+00:27:03,440 --> 00:27:06,280
+如果你想更深一步学习编程语言和和编译器
+If you want to learn more about languages and compilers,
+
+465
+00:27:06,420 --> 00:27:08,010
+你不会很孤独
+you are not alone.
+
+466
+00:27:08,010 --> 00:27:12,590
+我们收集了一些很有用的文档帮你深入学习
+We pulled together some super useful material to help you dive deeper.
+
+467
+00:27:12,590 --> 00:27:14,870
+敬请在我们节目下面留言
+And it's all waiting for you in our show notes.
+
+468
+00:27:14,870 --> 00:27:19,960
+请查看 redhat.com/commandlineheroes
+Check it out at redhat.com/commandlineheroes.
+
+469
+00:27:20,360 --> 00:27:26,130
+下一期节目 我们将关注开源贡献者的艰辛之路
+Next episode, we're tracking the complicated path toward making open-source contributions.
+
+470
+00:27:26,380 --> 00:27:28,770
+那些维护者的真实奋斗生活是什么样的？
+What are the real life struggles of maintainers?
+
+471
+00:27:28,950 --> 00:27:32,060
+我们如何提出第一个拉取请求？
+How do we make that very first pull request?
+
+472
+00:27:32,060 --> 00:27:35,130
+我们将带你们简单认识开源贡献
+We're taking you through Contributing 101.
+
+473
+00:27:35,130 --> 00:27:39,650
+*BGM*
+
+474
+00:27:39,650 --> 00:27:42,990
+代码英雄是红帽的原创播客
+Command Line Heroes is an original podcast from Red Hat.
+
+475
+00:27:43,370 --> 00:27:46,860
+你可以在苹果播客、谷歌播客
+Listen for free on Apple Podcasts, Google Podcasts,
+
+476
+00:27:46,860 --> 00:27:48,580
+以及其他可能的地方免费收听这个节目
+or wherever you do your thing.
+
+477
+00:27:48,750 --> 00:27:50,010
+我是 Saron Yitbarek
+I'm Saron Yitbarek,
+
+478
+00:27:50,010 --> 00:27:52,460
+坚持编程 下期再见
+until next time keep on coding.
+
