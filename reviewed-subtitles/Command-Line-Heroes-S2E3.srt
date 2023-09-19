@@ -1,0 +1,2020 @@
+﻿1
+00:00:03,140 --> 00:00:08,100
+When I started out doing software development, I was mostly just making little
+在我刚开始做软件开发的时候 我基本上只做些让自己开心的小项目
+
+2
+00:00:08,100 --> 00:00:12,660
+projects that amused me, little apps, little command-line tools, and stuff like that.
+像小应用程序 命令行小工具之类的
+
+3
+00:00:12,660 --> 00:00:15,400
+I just really didn't know that it was so easy to contribute
+我只是真的不知道作出贡献那么容易
+
+4
+00:00:15,400 --> 00:00:18,300
+and that you don't need to have solved P=NP,
+而且你不需要解决 P = NP 那样的难题
+
+5
+00:00:18,300 --> 00:00:20,660
+your input can still be valuable.
+你的投入依然可以是很有价值的
+
+6
+00:00:20,720 --> 00:00:24,920
+Local communities made me confident enough to contribute.
+本地社区使我有了足够的信心去做出贡献
+
+7
+00:00:28,160 --> 00:00:32,820
+When I was a total newbie to programming, I teamed up with my friend Dan
+当我还完全是个编程新手的时候 我和我的朋友 Dan 一起
+
+8
+00:00:32,820 --> 00:00:36,540
+to make my very first open source pull request (PR)
+发起了我的第一个开源拉取请求（PR）
+
+9
+00:00:36,540 --> 00:00:40,400
+which would also make it my very first open source contribution
+这也是我的第一次开源贡献
+
+10
+00:00:41,860 --> 00:00:46,920
+I'd heard so much about contributing to open source, about how amazing it was,
+我听过很多为开源做贡献的故事 说它有多么神奇
+
+11
+00:00:47,320 --> 00:00:52,100
+but also how completely terrifying. I was very aware,
+又有多么可怕 我很清楚
+
+12
+00:00:52,300 --> 00:00:57,060
+not all communities are kind and not all maintainers are nice.
+并非所有社区都和善 也不是所有维护者都很友好
+
+13
+00:00:57,060 --> 00:01:00,480
+The project itself was a pretty good one for a first timer.
+那个项目本身对新手来说相当不错
+
+14
+00:01:00,480 --> 00:01:02,820
+We were just adding a JavaScript library,
+我们只是添加了一个 JavaScript 库
+
+15
+00:01:02,820 --> 00:01:06,300
+something to let people get a digital walkthrough of the website.
+让人们可以在线预览网站
+
+16
+00:01:06,480 --> 00:01:10,540
+Just a nice well–scoped project. Self–contained.
+这是一个很好的适用范围很广 自成体系的项目
+
+17
+00:01:10,540 --> 00:01:13,520
+Bonus, if the thing didn't work,
+而且如果这玩意儿不起作用
+
+18
+00:01:13,520 --> 00:01:17,660
+I was almost positive it wouldn't burn down the whole site.
+我基本上确信它不会毁掉整个网站
+
+19
+00:01:18,060 --> 00:01:22,920
+Yet, I was crazy nervous about this pull request.
+然而 我对这个 PR 非常紧张
+
+20
+00:01:22,920 --> 00:01:25,320
+Dan and I read the docs for the library,
+我和 Dan 阅读了这个库的文档
+
+21
+00:01:25,320 --> 00:01:26,840
+plugged away at our code.
+埋头于写我们的代码
+
+22
+00:01:26,840 --> 00:01:32,040
+I still remember when we were finally done, we just looked at each other
+我仍记得当我们最终完成的时候 只是互相看着彼此
+
+23
+00:01:32,040 --> 00:01:34,040
+like, "That's it?"
+好像在说：“就这样吗？”
+
+24
+00:01:34,040 --> 00:01:37,420
+We made our PR, it was reviewed, got merged,
+我们发起了 PR 它被审查 然后合并
+
+25
+00:01:37,420 --> 00:01:39,980
+and I guess I was surprised by how,
+我想我至今还是对这一切感到惊讶
+
+26
+00:01:39,980 --> 00:01:43,480
+I don't know, how mechanical it all was.
+这一切 都这么机械化么？
+
+27
+00:01:43,480 --> 00:01:48,960
+It wasn't some big mystery or magical thing that only they could do.
+这并不是什么只有他们才能做到的 也不是什么神秘或神奇的事情
+
+28
+00:01:48,960 --> 00:01:52,640
+I realized, I really could contribute, too.
+我意识到我确实也可以对开源作出贡献
+
+29
+00:01:52,640 --> 00:01:56,320
+That's a bit of knowledge we're passing on in this episode;
+这是我们在这一集中想要传递的一点知识
+
+30
+00:01:56,320 --> 00:01:59,940
+making a contribution to open source isn't magic.
+为开源做出贡献并不神奇
+
+31
+00:01:59,940 --> 00:02:01,980
+It doesn't have to be terrifying.
+它也不一定可怕
+
+32
+00:02:01,980 --> 00:02:04,720
+We're going to walk through this together.
+我们将带你一起走过这个过程
+
+33
+00:02:04,720 --> 00:02:09,720
+It was just such a groundbreaking realization
+这是一个突破性的认识
+
+34
+00:02:09,720 --> 00:02:14,240
+that this is actually totally open, I can just do this.
+这些项目实际上是完全开放的 我也可以做出贡献
+
+35
+00:02:14,820 --> 00:02:18,740
+In that opener, you heard from command line heroes,
+在这一场的开场白中 你会听到像你一样的代码英雄
+
+36
+00:02:18,740 --> 00:02:24,480
+just like you, who push through that same terror to join the ranks of open source.
+在加入开源行列时 经历着同样的恐惧
+
+37
+00:02:24,740 --> 00:02:29,220
+They were Nolan Lawson, Lindsey Tulloch, and Kanika Muraka,
+他们分别是 Nolan Lawson、 Lindsey Tulloch、 Kanika Muraka
+
+38
+00:02:29,220 --> 00:02:30,960
+all heroes.
+这些是今天来做客的代码英雄
+
+39
+00:02:34,060 --> 00:02:38,600
+You're listening to Command Line Heroes, an original podcast from Red Hat.
+你正在收听的是红帽公司的原创播客节目《代码英雄》
+
+40
+00:02:38,600 --> 00:02:40,780
+I'm your host, Saron Yitbarek.
+我是主持人 Saron Yitbarek
+
+41
+00:02:47,260 --> 00:02:50,880
+This is a story about two command line heroes
+这是一个关于两个代码英雄的故事
+
+42
+00:02:50,880 --> 00:02:55,220
+just trying to make something better in the big open source world.
+他们只是想在广阔的开源世界中 做出更好的东西
+
+43
+00:02:55,520 --> 00:02:59,780
+One of them is a contributor, the other's a maintainer.
+他们其中一个人是贡献者 另一个人是维护者
+
+44
+00:02:59,780 --> 00:03:01,900
+Neither of them are real people,
+他们都不是真实存在的人物
+
+45
+00:03:01,960 --> 00:03:05,400
+instead these two fictional characters
+而是两个虚构人物
+
+46
+00:03:05,400 --> 00:03:10,840
+represent all the contributors and all the maintainers that shared their stories with us.
+用来代表所有的贡献者和维护者 他们和我们分享了他们的故事
+
+47
+00:03:10,860 --> 00:03:14,780
+Hopefully, you'll see some of yourself in their journey, too.
+希望你也可以在他们的历程中看到一些你自己的影子
+
+48
+00:03:16,280 --> 00:03:19,380
+First meet our friend, the contributor.
+首先来见一见我们的朋友 - 贡献者
+
+49
+00:03:25,880 --> 00:03:29,600
+She's a bit of a newbie, just like we all were once upon a time.
+她是个新手 就像曾经的我们那样
+
+50
+00:03:29,600 --> 00:03:34,320
+She's not sure about what the basic workflow is, but she sees a need
+她不确定基本的工作流是什么 但是她看到了一个需求
+
+51
+00:03:34,320 --> 00:03:36,860
+and she thinks she can add a feature that would help.
+并且认为她可以添加一个功能来提供帮助
+
+52
+00:03:37,360 --> 00:03:41,620
+Our imaginary contributor is keen to make that fix, but how?
+我们这个虚构的贡献者很想提交代码 但是该怎么做呢
+
+53
+00:03:44,440 --> 00:03:47,260
+You're always growing new skills and you don't have to have
+你一直在成长 学习新技能 而且你不一定
+
+54
+00:03:47,260 --> 00:03:51,880
+taken apart a computer as a child to know how to code as an adult.
+需要在孩提时代拆过电脑 才有资格在成年后学写代码
+
+55
+00:03:52,280 --> 00:03:54,320
+That's Corinne Warnshuis,
+这位是 Corinne Warnshuis
+
+56
+00:03:54,320 --> 00:03:58,600
+the executive director of an awesome organization called Girl Develop It.
+一个名叫“Girl Develop It” 的很棒的组织的执行董事
+
+57
+00:03:58,720 --> 00:04:03,180
+It's designed to help women who maybe don't feel super comfortable
+该组织的目的是帮助那些可能不太敢提问的
+
+58
+00:04:03,180 --> 00:04:07,200
+asking questions or might not feel entirely welcome at meetups.
+或在聚会中觉得自己不太受欢迎的女性
+
+59
+00:04:07,420 --> 00:04:12,740
+Girl Develop It realized that making contributions isn't the same for everybody;
+Girl Develop It 意识到做出贡献的难度并不是对所有人而言都是一样的
+
+60
+00:04:12,740 --> 00:04:17,120
+culture matters. Part of our job as a community
+这是社会造成的问题 作为社区 我们的一部分职责
+
+61
+00:04:17,120 --> 00:04:21,380
+is to build a little empathy and healthy diversity into the process.
+就是要让世界多一点同情心 以及包容健康多元文化
+
+62
+00:04:21,380 --> 00:04:25,760
+There are many barriers to entry as we see them,
+在我们看来 加入开源的壁垒有很多
+
+63
+00:04:25,760 --> 00:04:30,260
+but we like to call them "no good reasons."
+但我们喜欢称它们为“没有充分的理由”
+
+64
+00:04:30,260 --> 00:04:34,200
+There are three no good reasons that keep women specifically out of technology.
+有三个这样的壁垒将女性专门排斥在技术之外
+
+65
+00:04:34,200 --> 00:04:40,480
+They are: stereotypes, they're the accessibility, and the environment.
+它们是：刻板印象、可及性和环境
+
+66
+00:04:40,480 --> 00:04:46,000
+It's worth remembering here promoting diversity doesn't just make good ethical sense,
+值得记住的是 促进多元化不仅具有良好的道德意义
+
+67
+00:04:46,000 --> 00:04:48,000
+it makes good business sense, too.
+同时也有商业意义
+
+68
+00:04:48,000 --> 00:04:50,980
+Technology as an industry has probably the greatest potential
+作为一个行业 技术可能拥有着
+
+69
+00:04:50,980 --> 00:04:53,840
+to make the most change in the world today.
+最大的潜力 能给当今世界带来最大的变化
+
+70
+00:04:53,900 --> 00:04:59,380
+You really want to have people from all backgrounds, from all perspectives
+你确确实实希望 来自各行各业的人们都为
+
+71
+00:04:59,380 --> 00:05:05,060
+contributing to the tools and services and things that are going to shape the world.
+塑造世界的工具 服务和其他事物做出贡献
+
+72
+00:05:05,060 --> 00:05:10,520
+I think it's really important that people from all backgrounds are creating software and
+我认为来自各种背景的人们一起开发软件
+
+73
+00:05:10,520 --> 00:05:13,200
+contributing to open source projects.
+并为开源项目做出贡献真的非常重要
+
+74
+00:05:13,500 --> 00:05:18,540
+The fact is, we didn't all start with the same advantages or experiences.
+事实是 我们并非一开始就拥有同样的优势和经验
+
+75
+00:05:18,540 --> 00:05:22,920
+The next great coder might not look like a Silicon Valley cliché.
+下一代的伟大开发者可能看上去并不像硅谷的程序员
+
+76
+00:05:22,920 --> 00:05:29,460
+In–person instruction has been historically incredibly expensive and inaccessible for people.
+面对面指导对人们而言 历来是非常昂贵而又难以获取的
+
+77
+00:05:29,460 --> 00:05:35,620
+Again, I think from 2014 to today, that has improved.
+再者 我认为从 2014 年至今 情况有所改善
+
+78
+00:05:35,620 --> 00:05:39,240
+I think groups other than Girl Develop It like
+我认为除了 Girl Develop It 之外的组织
+
+79
+00:05:39,240 --> 00:05:41,740
+Outreachy, like CodeNewbie,
+（比如 Outreachy 和 CodeNewbie ）
+
+80
+00:05:41,740 --> 00:05:45,040
+are doing that by providing
+正通过提供安全的网络或空间
+
+81
+00:05:45,040 --> 00:05:48,800
+a safety net or a space to ask questions and get more comfortable.
+来提出问题并获得更多的舒适感来做到这一点
+
+82
+00:05:48,800 --> 00:05:56,200
+Having a safe, welcoming testing ground for some of those ideas and some of those questions
+为这些想法和问题提供一个安全而友好的测试平台
+
+83
+00:05:56,200 --> 00:05:58,320
+is a good place to start.
+是一个不错的起点
+
+84
+00:06:02,220 --> 00:06:06,380
+Speaking of newbies, back to that contributor we were tracking.
+说到新手 回到我们正在追踪的那个贡献者
+
+85
+00:06:06,380 --> 00:06:08,960
+When you're not from a mainstream background,
+倘若你不是来自主流背景时
+
+86
+00:06:08,960 --> 00:06:12,040
+that first commit can carry a lot of weight.
+那么第一次提交可能会压力非常大
+
+87
+00:06:12,120 --> 00:06:14,780
+It can feel like you have to prove yourself.
+感觉就好像你必须得证明你自己
+
+88
+00:06:14,780 --> 00:06:18,460
+Once we get those barriers to entry low enough,
+不过一旦我们将加入的壁垒降得足够低
+
+89
+00:06:18,460 --> 00:06:23,060
+what do we actually need to think about as we prepare to contribute?
+我们在准备做出贡献时 实际需要考虑的是什么呢
+
+90
+00:06:23,060 --> 00:06:25,780
+It's cool to get excited about certain projects,
+对某些项目感到兴奋这事很酷
+
+91
+00:06:25,780 --> 00:06:29,620
+but what is the use case that you're trying to solve?
+但你想要解决的用例是什么呢
+
+92
+00:06:30,880 --> 00:06:35,180
+Vincent Batts works at Red Hat, mostly on container architecture.
+Vincent Batts 在红帽主要从事容器架构方面的工作
+
+93
+00:06:35,180 --> 00:06:40,660
+He encourages new contributors to try and be intentional about the work.
+他鼓励新的贡献者尝试并有针对性地开展工作
+
+94
+00:06:40,660 --> 00:06:45,560
+Find that niche where you and the project make sense together.
+找到对你和项目都有意义的利益基础
+
+95
+00:06:45,560 --> 00:06:50,940
+I think a project to contribute to usually comes out of
+我认为一个可让人持续贡献的项目
+
+96
+00:06:51,420 --> 00:06:53,860
+a reciprocal relationship.
+通常来自于互惠关系
+
+97
+00:06:53,880 --> 00:06:56,460
+It satisfied a need for you, and along the way you found a way
+它满足了你的一个需求 而且在这个过程中你又发现了
+
+98
+00:06:56,460 --> 00:06:58,540
+to satisfy a need for it, and it becomes a relationship,
+满足它的需求的方式 即使它是一个由人构成的社区
+
+99
+00:06:59,140 --> 00:07:01,060
+even if it is a community of people.
+它也已经成为了一种共生体系
+
+100
+00:07:01,500 --> 00:07:02,520
+For example:
+比方说：
+
+101
+00:07:02,520 --> 00:07:07,900
+I ended up standing up a Slackware Linux box out of a recommendation by a friend.
+因为朋友的推荐 我最终弄了一台 Slackware Linux 机器
+
+102
+00:07:08,120 --> 00:07:12,940
+It was suitable enough for me to do what I was trying to do that I ended up helping them
+它非常适合我想做的事情 最后我帮着
+
+103
+00:07:12,980 --> 00:07:18,120
+get it packaged for the mainstream Slackware Linux community.
+将其打包到了主流 Slackware Linux 社区
+
+104
+00:07:18,660 --> 00:07:21,800
+And ended up becoming a maintainer and contributor on that project,
+并最终成为了这个项目的贡献者和维护者
+
+105
+00:07:22,020 --> 00:07:27,420
+not because I sought out to be a contributor to that Slackware Linux community,
+这并不是因为我想成为 Slackware Linux 社区的贡献者
+
+106
+00:07:27,720 --> 00:07:29,900
+but it most well suited
+而是因为这是最适合我的一个项目
+
+107
+00:07:29,900 --> 00:07:32,480
+the other project, the use case that I was actually trying to solve.
+它的用例正好是我一直致力于解决的事情
+
+108
+00:07:32,880 --> 00:07:38,320
+I think that happens a lot for a lot of folks. They seek to write a database because
+我想很多人都会遇到这种情况 他们因自己量身定制的用例
+
+109
+00:07:38,320 --> 00:07:43,740
+of their tailored use case, and they find that it works well in Golang,
+而编写一个数据库软件 他们发现用 Golang 编写很合适
+
+110
+00:07:43,740 --> 00:07:47,080
+and they wrote such a high–performance database that they were able to contribute back
+因此他们写了这样一个高性能的数据库 所以他们能够
+
+111
+00:07:47,460 --> 00:07:51,240
+fixes or improvements to Golang to help their database run faster.
+对 Golang 做出修复或优化方面的贡献 以帮助他们的数据库运行得更快
+
+112
+00:07:53,500 --> 00:07:59,640
+ou can find your little niche and let a certain amount of organic growth take place.
+你可以找到你自己的小众领域 并开始自然发展
+
+113
+00:07:59,980 --> 00:08:03,780
+The key point is, start somewhere.
+关键在于 从某处开始去做
+
+114
+00:08:03,780 --> 00:08:08,420
+You don't have to wait for a degree or for absolute confidence.
+你不必等待有了学位或绝对的自信才开始
+
+115
+00:08:08,420 --> 00:08:10,660
+If you need direct experience
+如果你需要直接
+
+116
+00:08:10,660 --> 00:08:13,420
+writing code or writing docs, or even
+编写代码或文档的经历
+
+117
+00:08:13,420 --> 00:08:17,080
+being a system administrator for a back-end database web server
+或是成为一个后端数据库、Web 服务器的系统管理员
+
+118
+00:08:17,080 --> 00:08:23,560
+most of these communities are volunteer based.
+那么好消息是 大部分社区都是由志愿者构成的
+
+119
+00:08:23,560 --> 00:08:26,840
+You go out to some project like Debian, Fedora, or whatever,
+你可以参与诸如 Debian、Fedora 或其他一些类似的项目
+
+120
+00:08:26,840 --> 00:08:30,900
+and those communities have docs pages that are set up.
+这些社区都建立起了文档页面
+
+121
+00:08:30,900 --> 00:08:33,780
+Those have to run on a web server somewhere and somebody,
+那些项目必须在某处的 Web 服务器上运行
+
+122
+00:08:33,780 --> 00:08:36,820
+even a community member that's not being paid
+一些人 甚至是一个没有薪酬的社区成员
+
+123
+00:08:36,820 --> 00:08:42,725
+to check if the web server's down or something went wrong, is gaining experience.
+负责去检查 Web 服务器是否停机或出了什么问题 这也算是积累经验
+
+124
+00:08:43,745 --> 00:08:48,800
+Vincent stresses that point about the egalitarian nature of open source.
+Vincent 强调了开源的平等主义本质
+
+125
+00:08:48,800 --> 00:08:53,320
+Wherever you're coming from, you really can start contributing, if you want to.
+无论你来自哪里 只要你愿意 都可以真正开始做出贡献
+
+126
+00:08:53,320 --> 00:08:56,820
+You can make a name for yourself, if that's what you want to do.
+如果你想的话 你可以为自己扬名立万
+
+127
+00:08:56,820 --> 00:09:01,180
+Once it's merged, then your name is attached to something.
+一旦它被合并 你的名字就会附在某个项目上
+
+128
+00:09:01,180 --> 00:09:05,060
+You're publicly representable that you have made
+你可以公开表示你在某个地方做出了改进
+
+129
+00:09:05,060 --> 00:09:07,160
+an improvement somewhere,
+你可以公开表示你在某个地方做出了改进
+
+130
+00:09:07,520 --> 00:09:11,440
+which is incredibly meaningful.
+这是相当有意义的事情
+
+131
+00:09:11,440 --> 00:09:15,240
+I've worked with folks that were television repairmen and teachers,
+我曾与那些不是从事日常技术工作的
+
+132
+00:09:15,540 --> 00:09:19,600
+not in a technical day–to–day job, that were
+电视修理工和教师共事过
+
+133
+00:09:19,600 --> 00:09:23,540
+very well represented. They contributed a lot in the community.
+他们很有代表性 他们也在社区上做出了很多贡献
+
+134
+00:09:23,540 --> 00:09:26,460
+On the flip side of that, I've worked with developers that
+另一方面 我也曾和一些开发者合作过
+
+135
+00:09:26,480 --> 00:09:33,060
+sometimes have had 30 years of development experience, but they had never
+他们有的能有 30 年开发经验
+
+136
+00:09:33,400 --> 00:09:37,060
+publicly contributed code like that.
+但他们从来没有像那样公开贡献过代码
+
+137
+00:09:40,320 --> 00:09:44,980
+How's our contributor doing by the way? Well, she found her niche.
+对了 我们的贡献者怎么样了？嗯 她找到了她的定位
+
+138
+00:09:44,980 --> 00:09:50,360
+She conquered her fears and she's finally made her first pull request.
+她克服了她的恐惧 并最终发起了她的第一个 PR
+
+139
+00:09:50,520 --> 00:09:52,420
+Now she can sit back
+现在她可以休息一下
+
+140
+00:09:52,420 --> 00:09:56,220
+and be terrified while she waits for the maintainer to respond.
+并战战兢兢地等待维护者作出回复
+
+141
+00:09:56,300 --> 00:10:03,080
+Contributing upstream is kind of like going on stage for the talent show for the first time;
+向上游做贡献有点像第一次上台做才艺表演
+
+142
+00:10:03,080 --> 00:10:06,520
+you get nervous, and you go out there and your palms get sweaty. You do a thing
+你会感到紧张 走上舞台后手心冒汗 你做了一件事
+
+143
+00:10:08,520 --> 00:10:12,400
+and then it's like an achievement. You are
+然后它好像就变成了你的成就
+
+144
+00:10:13,320 --> 00:10:17,060
+profoundly changed, you never will be the same.
+你将被彻底改变 跟过去不再一样
+
+145
+00:10:17,680 --> 00:10:20,000
+Profoundly changed? Maybe.
+彻底改变？或许吧
+
+146
+00:10:20,540 --> 00:10:24,960
+There are in fact four possible responses from a maintainer;
+事实上 维护者有四种可能的回应：
+
+147
+00:10:25,440 --> 00:10:27,460
+silence, that's a fun one,
+沉默 - 这很“有趣”
+
+148
+00:10:27,500 --> 00:10:30,820
+or possibly outright rejection,
+也可能是完全拒绝
+
+149
+00:10:30,820 --> 00:10:32,140
+or outright acceptance.
+或是直接接受
+
+150
+00:10:32,760 --> 00:10:34,860
+Or the squishy middle ground,
+或是柔和的中间立场
+
+151
+00:10:34,860 --> 00:10:36,580
+a request for change.
+要求修改
+
+152
+00:10:37,380 --> 00:10:39,080
+A couple days after her PR,
+提交 PR 的几天后
+
+153
+00:10:39,080 --> 00:10:43,180
+our imaginary contributor finally gets a ping back from the maintainer.
+我们虚构的贡献者终于收到了来自维护者的回复
+
+154
+00:10:43,180 --> 00:10:46,520
+Lo and behold, it's a request for change.
+跪迎结果吧 是要求修改
+
+155
+00:10:46,800 --> 00:10:50,600
+Being new, she takes that as a miniature disaster.
+作为一个新手 她将这视为一场小型灾难
+
+156
+00:10:50,600 --> 00:10:54,960
+She doesn't know yet how request for change is really an accomplishment.
+她还不知道要求修改是个实际上是成功的一步
+
+157
+00:10:54,960 --> 00:11:00,020
+She even gets a flash of anger at the clipped tone the maintainer is using.
+她甚至还对维护者的简略语气感到一点气愤
+
+158
+00:11:00,300 --> 00:11:04,080
+It sort of sounds like he doesn't have time for her. There's a wall up,
+听上去就像维护者没空搭理她一样 这里存在着一堵墙
+
+159
+00:11:04,080 --> 00:11:10,240
+and that new contributor has got no idea what's happening on the other side.
+新的贡献者不知道墙的另一边正在发生什么
+
+160
+00:11:12,520 --> 00:11:13,980
+Meet a maintainer.
+我们来认识一位维护者
+
+161
+00:11:16,540 --> 00:11:19,920
+The project he's maintaining isn't his full time job;
+他正在维护的项目并不是他的全职工作
+
+162
+00:11:19,920 --> 00:11:25,260
+it's a weekend project and he stays up till the wee hours lots of nights
+这是一个周末项目 他时常熬到深夜
+
+163
+00:11:25,260 --> 00:11:30,600
+prioritizing issues, and reminding folks to update docs when they make pull requests,
+给工单排优先级 并且提醒人们发起 PR 时更新文档
+
+164
+00:11:30,600 --> 00:11:33,700
+and you get the idea. He's got a full plate.
+然后你就明白了 他相当忙碌
+
+165
+00:11:33,700 --> 00:11:38,500
+Sometimes he even experiences a little maintenance burnout.
+有时甚至出现了一些维护倦怠
+
+166
+00:11:43,000 --> 00:11:45,800
+A real life maintainer, Nolan Lawson,
+一位现实生活中的维护者 Nolan Lawson
+
+167
+00:11:45,800 --> 00:11:50,960
+wrote a pretty amazing post that got a lot of traction recently about burnout.
+写了一篇很棒的有关倦怠的文章 最近引起了很多关注
+
+168
+00:11:50,960 --> 00:11:55,280
+I think part of that blog post was kind of a cry for help, honestly.
+老实说 我认为那篇博文有一部分实在寻求帮助
+
+169
+00:11:55,280 --> 00:11:59,220
+It was me expressing that I had stumbled into this open source thing.
+这是我表达我自己偶然发现了这个开源的项目
+
+170
+00:11:59,220 --> 00:12:02,400
+It was really fun at first, and now it wasn't so fun. I wasn't sure
+起初我觉得它确实很有趣 但现在却感觉没那么有趣了
+
+171
+00:12:02,400 --> 00:12:04,460
+what I should do to recover.
+我不确定该如何恢复兴致
+
+172
+00:12:04,920 --> 00:12:08,540
+Nolan's got a day job, but like most maintainers
+Nolan 有一份日常工作 但和大多数维护者一样
+
+173
+00:12:08,540 --> 00:12:13,280
+he was putting in tons of after hours work on his open source project
+他在开源项目中投入了大量的休息时间
+
+174
+00:12:13,280 --> 00:12:17,580
+because the guy honestly cares. Ironically,
+因为这家伙真的很在意这个项目 讽刺的是
+
+175
+00:12:17,580 --> 00:12:23,200
+part of his pain was coming from the fact that he knows the contributors honestly care, too.
+他的部分痛苦来自于 他清楚贡献者也同样很在意这个项目
+
+176
+00:12:23,200 --> 00:12:27,080
+What really burned me out more than anything was actually just the flood of well–meaning folks.
+真正使我精疲力竭的实际上只是如潮水般涌来的好心人
+
+177
+00:12:27,080 --> 00:12:28,500
+You want to help them; you really, really do.
+你真的想帮他们 真的真的很想
+
+178
+00:12:28,500 --> 00:12:29,575
+All they're doing is asking a question,
+他们所做的只是问一个问题
+
+179
+00:12:29,575 --> 00:12:33,240
+all they're doing is - they found a legitimate bug in your project that's blocking them,
+他们所做的就是 - 他们在你项目中发现了阻碍他们的 bug
+
+180
+00:12:33,240 --> 00:12:34,520
+or all they're doing is - they
+或者他们所做的只是
+
+181
+00:12:34,520 --> 00:12:40,280
+actually bothered to download the code and figure out how it builds and to contribute
+他们真的费心去下载代码并弄清楚它是如何构建的
+
+182
+00:12:40,280 --> 00:12:43,680
+a bug fix. They just want you to review their code that they've contributed.
+并提供 bug 修复 他们只是希望你审查他们贡献的代码
+
+183
+00:12:45,440 --> 00:12:50,600
+Maintainers like Nolan are constantly reviewing a library of PRs,
+像 Nolan 这样的维护者正不断地审查 PR 库
+
+184
+00:12:50,600 --> 00:12:53,920
+figuring out how commits will play into things.
+弄清每个提交将如何发挥作用
+
+185
+00:12:53,920 --> 00:12:57,640
+They're pushing contributors to do the best work possible,
+他们促使贡献者尽可能做到最好
+
+186
+00:12:57,640 --> 00:12:59,980
+to conform to the house constraints,
+遵守内部限制
+
+187
+00:12:59,980 --> 00:13:05,060
+to contribute in ways that are most meaningful to the larger goals of the project.
+为了能让项目达到更高的水准 用最有意义的方式做出贡献
+
+188
+00:13:05,960 --> 00:13:08,780
+Here is my point, chances are
+我的观点是 有可能
+
+189
+00:13:08,780 --> 00:13:13,260
+those maintainers are not the jerks a new contributor might worry about.
+和新贡献者想得不同 维护人员可能并非混蛋
+
+190
+00:13:13,260 --> 00:13:17,060
+They're working their butts off trying to get to everything.
+他们正努力地想去做到一切
+
+191
+00:13:17,060 --> 00:13:20,120
+They even take the time, lots of maintainers do,
+他们甚至会花时间（很多维护者都这样）
+
+192
+00:13:20,120 --> 00:13:24,400
+to label some things as reserved for first–timers only
+标注一些东西保留给新手
+
+193
+00:13:24,400 --> 00:13:28,620
+so newbies have a chance to take a swing. At the end of the day though,
+以便新手有机会施展自己 但到最后
+
+194
+00:13:28,620 --> 00:13:33,080
+the scope of all the PRs and commits gets overwhelming.
+PR 和提交总是非常的多
+
+195
+00:13:33,080 --> 00:13:37,180
+How do we make sure that doesn't happen?
+我们要如何确保这种情况不会发生呢
+
+196
+00:13:37,520 --> 00:13:41,380
+How do we create environments for maintainers that make sense?
+我们该如何为维护者创造合理的环境呢
+
+197
+00:13:41,380 --> 00:13:47,040
+One solution is an open source project with a strong community like Fedora.
+一种解决方案是 - 拥有像 Fedora 项目一样强大的社区
+
+198
+00:13:47,040 --> 00:13:49,651
+The Fedora project leader Matthew Miller
+Fedora 项目负责人 Mattew Miller
+
+199
+00:13:49,651 --> 00:13:54,180
+explains what attracts maintainers and contributors to the project.
+解释了项目吸引维护者和贡献者的地方
+
+200
+00:13:54,880 --> 00:13:57,560
+A lot of Fedora is not development,
+Fedora 项目中许多不光是开发
+
+201
+00:13:57,560 --> 00:13:59,840
+it's all the things that go around development.
+还有开发过程中所相关的一切
+
+202
+00:13:59,840 --> 00:14:05,700
+That's actually true with IT in general, CS (computer science) in general. Open source
+总体来说 IT、 CS（计算机科学）事实上都是如此
+
+203
+00:14:05,700 --> 00:14:10,800
+maybe doesn't have enough of it, the sort of support roles around open source.
+开源可能并没有足够的这类支持性的角色
+
+204
+00:14:11,360 --> 00:14:14,240
+What does that support actually look like?
+这种支持实际上看起来是怎样的呢
+
+205
+00:14:14,580 --> 00:14:18,240
+One of the paid roles we have for example is the Fedora program manager
+我们拿来举例的带薪职位之一是 Fedora 项目经理
+
+206
+00:14:18,240 --> 00:14:20,240
+who helps keep the schedule on track,
+他帮着让计划按部就班进行
+
+207
+00:14:20,260 --> 00:14:23,540
+and bugs people about making sure the paperwork is done.
+并且监管着人们来保证文书工作完成
+
+208
+00:14:23,540 --> 00:14:25,540
+Having somebody paid to do it
+让人有酬劳地来做这份工作
+
+209
+00:14:25,640 --> 00:14:28,700
+actually helps keep the bureaucracy down because they can put
+事实上可以帮着减少官僚主义 因为他们可以
+
+210
+00:14:28,700 --> 00:14:30,640
+the time in to make it a human thing
+把时间花在使项目成为人看懂的事情
+
+211
+00:14:30,640 --> 00:14:33,760
+rather than something that is just a bunch of paper shuffling.
+而不只是一堆杂乱的文件
+
+212
+00:14:33,760 --> 00:14:36,940
+I think having corporate involvement like that gives
+我认为 像这样的企业
+
+213
+00:14:36,940 --> 00:14:38,800
+stability to some of the roles
+参与某些角色
+
+214
+00:14:38,800 --> 00:14:42,180
+that you can't guarantee with volunteers.
+可以赋予你无法用志愿者保证的稳定性
+
+215
+00:14:42,880 --> 00:14:46,920
+It sort of reminds me of those work spaces freelancers use
+这有点让我想起了自由职业者使用的共享工作空间
+
+216
+00:14:46,920 --> 00:14:51,200
+There's a shared reception area, shared wifi, and shared coffee.
+那里有一个共享的接待区 共享的 WiFi 和共享的咖啡
+
+217
+00:14:51,200 --> 00:14:55,340
+The manager's handling it, and you're free to do your own thing.
+有一个人在管理它 然后你就可以自由地做你自己的事情
+
+218
+00:14:55,577 --> 00:14:58,220
+Matthew told us about another Fedora fix.
+Matthew 告诉了我们 Fedora 采取的另一种策略
+
+219
+00:14:58,480 --> 00:15:01,140
+They save you from feeling like everything will collapse
+他们让你想在项目中途停下来休息一下时
+
+220
+00:15:01,140 --> 00:15:03,080
+if you take a break from your project.
+可以很自然 而不是感觉一切都崩溃了
+
+221
+00:15:04,080 --> 00:15:09,580
+One of the things we've looked at is making natural endings to leadership roles,
+我们研究的一个问题是确保领袖角色的漂亮退场
+
+222
+00:15:09,580 --> 00:15:14,020
+where you say you sign up for something, it's not necessarily a lifetime commitment.
+所谓的职位并不一定是终身的委任
+
+223
+00:15:14,020 --> 00:15:15,260
+You can re–sign up,
+你可以重新申请担任角色
+
+224
+00:15:15,260 --> 00:15:17,260
+you're not kicked out after a year.
+并且不会在一年任期后结束后 看起来像被踢出去似的
+
+225
+00:15:17,260 --> 00:15:19,940
+If after six months you want to move on,
+如果六个月后你想离开
+
+226
+00:15:19,940 --> 00:15:22,940
+you can gracefully go on without feeling like you're letting people down.
+你可以优雅地这样做 而不必觉得这会让人失望
+
+227
+00:15:22,940 --> 00:15:26,320
+We've tried to work on making sure people have a clear exit.
+我们已在努力确保人们可以没有障碍地退出
+
+228
+00:15:27,040 --> 00:15:31,460
+Matthew figures that finding ways to support that open source community
+Matthew 认为 找到支持该开源社区的方法
+
+229
+00:15:31,460 --> 00:15:34,340
+without being heavy–handed is the key.
+而又不至于重蹈覆辙才是关键
+
+230
+00:15:34,760 --> 00:15:39,180
+It's almost like a family rather than something like a workplace or something like that.
+社区几乎就像一个家庭 而不是工作场所之类的东西
+
+231
+00:15:39,180 --> 00:15:40,680
+It's meaningful to contribute to
+在这里做出贡献很有意义
+
+232
+00:15:40,680 --> 00:15:44,100
+because you're working on this not just for yourself, or not just for some
+因为你不仅只在为自己或是某些
+
+233
+00:15:44,100 --> 00:15:49,600
+paycheck or an end product, but because the people you're working on it with are your friends and
+薪酬或终端产品工作 而且由于共事的是你的朋友
+
+234
+00:15:49,600 --> 00:15:55,693
+t's something that you're working on together to make something that's bigger than this individual effort.
+你们一起工作能做出比单人作品更伟大的东西
+
+235
+00:15:56,420 --> 00:15:59,000
+Whether it's thanks to Fedora or something else,
+无论是 Fedora 还是其他社区
+
+236
+00:15:59,440 --> 00:16:03,160
+a world where open source contributions are sustainable,
+它们都造就了一个开源贡献得以持续的世界
+
+237
+00:16:03,160 --> 00:16:05,280
+now that's a world worth fighting for.
+这个世界还值得努力让它继续变好
+
+238
+00:16:10,160 --> 00:16:12,360
+Meanwhile, back at her desk,
+同时 让我们回到办公桌旁
+
+239
+00:16:12,760 --> 00:16:17,660
+that new contributor we were following just finished the changes the maintainer asked for.
+我们关注的那个贡献者刚完成了维护者要求的修改
+
+240
+00:16:18,020 --> 00:16:23,660
+She doesn't realize it yet, but she's about to have her first pull request accepted.
+她还没意识到 但她即将拥有第一个被接受的 PR
+
+241
+00:16:24,320 --> 00:16:26,900
+It's easy to lose sight of those early steps
+当我们谈论诸如倦怠之类的长期工作的问题时
+
+242
+00:16:26,900 --> 00:16:30,060
+when we talk about long–term issues like burnout.
+很容易忽视那些早期问题
+
+243
+00:16:30,340 --> 00:16:36,040
+Every day, there are new contributors all over the world joining the party.
+每天都有很多新的贡献者加入进来
+
+244
+00:16:36,400 --> 00:16:40,220
+That's really why we need to build a sustainable humane place
+这实际上就是为什么我们需要构建可持续的社区
+
+245
+00:16:40,220 --> 00:16:43,380
+where all this open source magic can happen.
+为所有这些开源魔术提供场地
+
+246
+00:16:48,400 --> 00:16:54,720
+In the end, our contributor and our maintainer work together to nudge things forward.
+最终 我们的贡献者和维护者共同努力 推动事情向前发展
+
+247
+00:16:55,320 --> 00:16:57,940
+There's one last piece of the story—
+故事的最后一句话是
+
+248
+00:16:57,940 --> 00:17:03,120
+remember that all that back and forthing depends on development platforms
+记住所有的交流都依赖于
+
+249
+00:17:03,120 --> 00:17:05,160
+like GitHub and GitLab,
+GitHub 和 GitLab 之类的开发平台
+
+250
+00:17:05,160 --> 00:17:07,900
+places where we can all come together.
+这些平台使得我们可以聚集到一起
+
+251
+00:17:08,980 --> 00:17:14,400
+I wanted to dive deep into how those communities make our work possible.
+我想深入探讨一下这些社区是如何使我们的工作成为可能的
+
+252
+00:17:14,400 --> 00:17:17,320
+I got chatting with Shannon Crabill about it.
+我和 Shannon Crabill 谈过这个问题
+
+253
+00:17:17,320 --> 00:17:19,680
+Shannon's an email developer by day,
+Shannon 白天是个电子邮件开发者
+
+254
+00:17:19,680 --> 00:17:22,800
+but by night she's learning front–end development.
+但到了晚上 她正在学习前端开发
+
+255
+00:17:23,300 --> 00:17:27,840
+She's also someone who knows first–hand about the value of community.
+她也是一个对社区价值有第一手了解的人
+
+256
+00:17:27,840 --> 00:17:32,780
+Last year she participated in a month–long celebration of open source
+去年她参加了一个长达一个月的
+
+257
+00:17:32,780 --> 00:17:35,000
+called Hacktoberfest,
+名为 Hacktoberfest 的开源活动
+
+258
+00:17:35,000 --> 00:17:38,640
+an initiative to get more people to contribute to open source.
+该活动旨在让更多的人为开源做出贡献
+
+259
+00:17:38,640 --> 00:17:43,360
+At the time, Shannon was very much an open source newbie.
+当时 Shannon 完全是一个开源新手
+
+260
+00:17:44,040 --> 00:17:47,700
+Thinking back to that point in October,
+回想起十月那时候
+
+261
+00:17:48,560 --> 00:17:55,060
+I felt like I wasn't finding much to work on and there's probably other beginners or maybe even more beginners
+我感觉我没有太多工作要做 而且可能还有更多的新手
+
+262
+00:17:55,060 --> 00:17:59,040
+who were also not finding things to work on. Maybe if I put something out there that's
+没找到需要做的东西 如果我提出一些
+
+263
+00:17:59,040 --> 00:18:03,140
+elatively easy, they'll have some place to try and learn,
+相对容易的待办事项 他们就可以找到用于尝试和学习的突破口
+
+264
+00:18:03,140 --> 00:18:04,940
+and get used to Git and GitHub.
+并且开始习惯使用 Git 和 GitHub
+
+265
+00:18:04,980 --> 00:18:07,640
+I think the hardest part is getting used to the motions of
+我认为最困难的部分 在于习惯工作流程
+
+266
+00:18:07,640 --> 00:18:12,240
+just how it works and practicing. How do I push repo? How do I share a project?
+并付诸实践 如何推送存储库？如何分享项目？
+
+267
+00:18:12,240 --> 00:18:14,500
+How do I do pull requests and that sort of thing.
+如何处理 PR 和相关的东西？
+
+268
+00:18:14,500 --> 00:18:18,140
+I got people to contribute,
+我帮助人们对开源做出了贡献
+
+269
+00:18:18,140 --> 00:18:20,680
+which was surprising, but also really awesome.
+这事令人惊讶 感觉也确实很棒
+
+270
+00:18:20,680 --> 00:18:23,880
+Was that scary at all? I feel like
+真的很恐怖吗？我觉得
+
+271
+00:18:23,880 --> 00:18:25,600
+if you're new,
+如果你是个新手
+
+272
+00:18:25,600 --> 00:18:28,920
+you're putting yourself out there despite even having the repo, period.
+尽管你拥有存储库 也要走出自己的小世界 把自己放在社区里
+
+273
+00:18:28,980 --> 00:18:33,700
+Now you have people actually contributing and you have to
+现在 维护者所在的社区里出现了正在作出贡献的人
+
+274
+00:18:33,940 --> 00:18:38,580
+talk to them, and review their code, and have opinions.
+你必须和他们交谈 审查他们的代码并发表意见
+
+275
+00:18:38,580 --> 00:18:40,580
+That sounds like that can be a little intimidating.
+这听上去是有点吓人
+
+276
+00:18:40,940 --> 00:18:43,700
+I think the initial reactions were like,
+我认为最初的反应是
+
+277
+00:18:43,700 --> 00:18:45,065
+"Oh my God, this is so cool",
+“哦 我的天哪 这太酷了”
+
+278
+00:18:45,065 --> 00:18:48,100
+and also, "Holy crap, what have I gotten myself into?"
+还有 “天哪 我让自己陷入了什么境地？”
+
+279
+00:18:48,100 --> 00:18:50,440
+I realized I had
+我意识到
+
+280
+00:18:50,440 --> 00:18:53,877
+merged my own code into my own code,
+我只合并过自己的代码
+
+281
+00:18:53,877 --> 00:18:57,220
+I merged my own pull requests and pushed to the
+合并过自己的 PR 并将其推送到自己的站点上
+
+282
+00:18:57,220 --> 00:19:00,860
+site and everything like that. I had not done anyone else's. I think I hadn't done
+以及其他所有只关于自己的事情 我从没处理过别人的东西
+
+283
+00:19:00,860 --> 00:19:04,200
+a pull request, merging it before then,
+我认为我之前尚未完成过真正意味上的合并 PR
+
+284
+00:19:04,200 --> 00:19:05,580
+so I had to figure that out.
+所以我不得不把这弄清楚
+
+285
+00:19:05,580 --> 00:19:06,775
+Merge complex in general
+总的来说 将复杂的东西简单地合并起来
+
+286
+00:19:06,775 --> 00:19:08,840
+is something that I still struggle with a little bit.
+仍然是我要努力熟练解决的问题
+
+287
+00:19:08,920 --> 00:19:13,000
+It was this whirlwind of feelings,
+体验很复杂 像一阵旋风那样
+
+288
+00:19:13,000 --> 00:19:15,440
+"This is cool. I don't know how to go about this."
+“这很酷 但我不知道该怎么做”
+
+289
+00:19:15,440 --> 00:19:18,600
+Everyone was really friendly, and I just tried to stay very friendly and honest,
+每个人都很友好 并且我也努力保持非常友好和真诚
+
+290
+00:19:18,640 --> 00:19:21,400
+even if it was just, "Hey, I'm overwhelmed.
+即使只是 “嘿 我有点不知所措
+
+291
+00:19:21,400 --> 00:19:24,460
+I see everyone's pull request. I won't get to them tonight, but I'll get to them tomorrow."
+我看到了每个人提交的 PR 虽然今晚我不会找他们 但我明天会的
+
+292
+00:19:24,460 --> 00:19:26,180
+People seemed to respond well to that.
+人们对这种情况似乎反应良好
+
+293
+00:19:26,180 --> 00:19:30,720
+Yes. One thing that I've always wondered when you are
+是的 我一直想知道的是
+
+294
+00:19:30,720 --> 00:19:36,700
+maintaining a project—especially as a newer developer—is
+当你维护一个项目时 尤其是作为一个新的开发者时
+
+295
+00:19:36,700 --> 00:19:41,120
+does it mean that you have to be the smartest person on the repo?
+是不是这意味着你必须是整个存储库贡献者中最聪明的人
+
+296
+00:19:41,120 --> 00:19:47,500
+You're essentially grading, you're judging and reviewing other people's code.
+你实际上在评估、评判并审查其他人的代码
+
+297
+00:19:47,500 --> 00:19:53,200
+Have you had a situation where you didn't know as much as the person making a pull request?
+你是否遇到过 自己懂的东西不如提交 PR 的人那么多的情况
+
+298
+00:19:53,200 --> 00:19:54,580
+How did you deal with that?
+你是如何处理的
+
+299
+00:19:54,580 --> 00:19:56,760
+That's a really good one.
+好问题 我认为
+
+300
+00:19:56,760 --> 00:20:01,143
+I could see thinking that, "Oh, I need to be the smartest, best developer ever,"
+“噢 我需要成为有史以来最聪明最好的开发者”
+
+301
+00:20:01,143 --> 00:20:02,720
+would maybe be a hindrance.
+这样的想法会成为障碍
+
+302
+00:20:02,860 --> 00:20:05,820
+I think I was lucky that I didn't think that
+我觉得自己很幸运 当我
+
+303
+00:20:05,820 --> 00:20:08,660
+when I went into this, so I was able to go into it like,
+进入这个领域的时候 我没有这样想 所以我能
+
+304
+00:20:08,660 --> 00:20:11,500
+"Let's just go for it, see what happens."
+像这样说 “让我们先开始 并且期待未来会发生什么吧”
+
+305
+00:20:11,500 --> 00:20:16,580
+You don't need to be senior developer, 20 years experience.
+你无需成为一个有 20 年经验的高级开发人员
+
+306
+00:20:16,580 --> 00:20:18,940
+You just need to have an idea and just
+你只需要有一个好点子
+
+307
+00:20:18,940 --> 00:20:22,200
+know how to use the software, and just be willing to learn if you don't know.
+知道如何使用相应软件 然后愿意去学习自己不知道的东西
+
+308
+00:20:22,200 --> 00:20:26,940
+There were definitely one or two pull requests that added some really cool features to my project that
+肯定有一两个 PR 为我的项目添加了一些很酷的功能
+
+309
+00:20:26,940 --> 00:20:29,180
+to be honest, if it broke, I don't really know how to fix it.
+说实话 如果它们崩溃了 我真不知道该如何修复
+
+310
+00:20:29,180 --> 00:20:31,700
+I can look at the code and be like, "Yeah, it's broken."
+我可能会看着代码然后想道 “是的 它崩溃了”
+
+311
+00:20:31,700 --> 00:20:34,460
+To be able to build that from scratch, I wouldn't know how.
+我不知道该怎么做才能从头构建它们
+
+312
+00:20:34,460 --> 00:20:37,180
+I think that's the cool thing about it. If it was just
+我认为这就是它酷的地方 如果只有
+
+313
+00:20:37,200 --> 00:20:39,940
+me contributing, I might have done some neat stuff
+我一个人在做贡献 我或许也能做出些不错的成果
+
+314
+00:20:39,940 --> 00:20:41,712
+but not as cool as what other people are bringing
+但没法像其他拥有丰富经验的人所作出的贡献一样
+
+315
+00:20:41,712 --> 00:20:43,800
+their experiences to the table with to do.
+将项目变得那么酷
+
+316
+00:20:45,300 --> 00:20:47,920
+As a maintainer, what are some
+作为一个维护者
+
+317
+00:20:48,209 --> 00:20:52,260
+lessons that you've learned along the way to make the project more
+在使项目更易于访问 更加友好
+
+318
+00:20:52,260 --> 00:20:55,540
+accessible, more friendly, easier to contribute to?
+更加易于贡献的过程中 你学到了些什么呢
+
+319
+00:20:55,540 --> 00:20:58,300
+Sure. The one thing that I think was really helpful,
+哦 确实有件我认为很有帮助
+
+320
+00:20:58,300 --> 00:21:00,300
+and I wish I had done this initially,
+并且我希望我一开始就做的事
+
+321
+00:21:00,540 --> 00:21:03,680
+is to set up templates wherever possible
+那就是尽可能的建立模板
+
+322
+00:21:03,680 --> 00:21:07,700
+and documentation, documentation, documentation.
+以及文档、文档、文档
+
+323
+00:21:07,700 --> 00:21:11,500
+I definitely added a lot to my README file as I went,
+我的确在我的 README 文件里加了很多东西
+
+324
+00:21:11,500 --> 00:21:15,540
+and I think just having a README file to start is a really big step.
+并且我认为在项目开始时有一个 README 文件确实是很重要的一步
+
+325
+00:21:16,120 --> 00:21:17,840
+Just even links to,
+这件事情意味着
+
+326
+00:21:17,840 --> 00:21:22,060
+"Hey, check out our guidelines for contributing."
+你对其他人大声说 “嘿 请查看我们的贡献指南”
+
+327
+00:21:22,060 --> 00:21:24,440
+I think I made a pull request template,
+我认为我制作了一个 PR 模板
+
+328
+00:21:24,440 --> 00:21:27,940
+I made issue templates, "Click here to see current issues,"
+一个议题模板 “单击这里查看当前议题”
+
+329
+00:21:27,940 --> 00:21:31,280
+so people aren't submitting the same things multiple times.
+这样人们才不会多次提交同样的内容
+
+330
+00:21:31,280 --> 00:21:34,160
+Making it as easy as possible, or as user friendly as possible,
+我认为让项目尽可能简单 或尽可能对用户友好
+
+331
+00:21:34,160 --> 00:21:37,860
+I think is a big step you can do as a maintainer.
+这是你作为维护者需要迈出的一大步
+
+332
+00:21:37,860 --> 00:21:38,580
+Absolutely.
+绝对是这样
+
+333
+00:21:38,580 --> 00:21:43,280
+READMEs, I see them all the time, I hear about how important they are;
+我经常看到 README 文件 经常听说他们有多么多么重要
+
+334
+00:21:43,280 --> 00:21:45,620
+I feel like it's also
+我觉得在
+
+335
+00:21:45,975 --> 00:21:48,540
+there's so much you can do in a README. At the end of the day,
+README 文件里还可以做很多事情 归根结底
+
+336
+00:21:48,540 --> 00:21:52,360
+it's kind of a blank document that tells people to read it.
+它就像是一个空白文档 告诉别人去阅读它
+
+337
+00:21:52,860 --> 00:21:56,540
+What do you do in that document? How do you structure it
+你应该在文档里写什么呢 你该如何构建它
+
+338
+00:21:56,540 --> 00:22:00,500
+to make it really connect with people who are looking to contribute?
+来使得它真正与希望做出贡献的人产生关联呢
+
+339
+00:22:00,640 --> 00:22:06,660
+I think in my README I had a lot gifs in there.
+我在我的 README 文件里放了很多 gif
+
+340
+00:22:07,020 --> 00:22:13,300
+What I was starting to hear was that Shannon had quickly learned how important the relationships are.
+我一开始就知道 Shannon 已经认识到了合作关系的重要性
+
+341
+00:22:13,300 --> 00:22:16,120
+She knew straight away that the work was going
+她早就知道 如果有人被邀请来协作
+
+342
+00:22:16,120 --> 00:22:18,120
+to shine if people were invested,
+这项目就会变得耀眼
+
+343
+00:22:18,220 --> 00:22:20,240
+and even having a good time.
+大家也会因此度过美好的时光
+
+344
+00:22:20,240 --> 00:22:23,980
+...There's people doing great things with open source projects,
+...有人用开源项目作出很棒的事情
+
+345
+00:22:23,980 --> 00:22:26,040
+I also think it can be fun and
+我也认为这很有趣 而且
+
+346
+00:22:26,040 --> 00:22:29,140
+a fun project to say, "Hey, I made these cool bats
+有个有意思的项目 “嘿 我制作了这些很酷的蝙蝠
+
+347
+00:22:29,140 --> 00:22:32,600
+that randomly generate on this page every time you click."
+每次你单击页面的时候 它们都会随机生成
+
+348
+00:22:32,700 --> 00:22:36,200
+I also love that there's so many different types of things that people
+我也喜欢人们做不同的事情
+
+349
+00:22:36,200 --> 00:22:39,380
+can do. If you're really into the artistic cool stuff,
+如果你真的很喜欢艺术性的东西
+
+350
+00:22:39,380 --> 00:22:42,160
+you can do the bat generation feature.
+你可以做蝙蝠生成功能
+
+351
+00:22:42,160 --> 00:22:45,520
+If you want to clean up, you can do that, too.
+如果你想让项目变得整洁 你也可以做
+
+352
+00:22:45,520 --> 00:22:48,220
+If you're like, "I'm going to stick to the documentation, I'm going to
+如果你想说 “我会坚持贡献文档 我将
+
+353
+00:22:48,240 --> 00:22:52,900
+spend my time to make this room, this place, a little bit cleaner
+花时间为其他的贡献者们打造更干净
+
+354
+00:22:52,900 --> 00:22:56,660
+for all my other contributors," then there's the option to do that, too.
+更舒适的环境” 那你也可以选择做这个
+
+355
+00:22:56,680 --> 00:23:01,700
+Yeah. I tried to make it clear that whatever you want to contribute is
+是的 我已经说得很清楚了 无论你想贡献的是什么
+
+356
+00:23:01,700 --> 00:23:06,080
+fine with me. If you catch a spelling error and you want to fix that, great.
+都没有问题 如果你发现了一个拼写错误并且想要纠正它很好
+
+357
+00:23:06,080 --> 00:23:08,560
+If you notice a link is broken and you want to fix that, great.
+如果你发现某个链接损坏并且想要修复它 也很好
+
+358
+00:23:08,560 --> 00:23:11,579
+If you just want to help comment this code so it's easier to read and understand,
+如果你只是想帮着注释这份代码 使得它更易于阅读和理解
+
+359
+00:23:11,579 --> 00:23:12,280
+that would be really helpful.
+那也将很有帮助
+
+360
+00:23:12,280 --> 00:23:16,860
+I think it's really awesome that you had such a positive experience with the community,
+我认为 你在社区中获得了积极的反馈真的很棒
+
+361
+00:23:16,860 --> 00:23:20,780
+because I've heard lots of stories where that really wasn't the case.
+因为我听说过很多并不是这样美好的故事
+
+362
+00:23:20,780 --> 00:23:25,460
+People weren't very nice online, and weren't very welcoming and kind,
+人们在网络上并不十分友好 也不太热情善良
+
+363
+00:23:25,460 --> 00:23:28,560
+especially to newbies who we tend to ask
+尤其是对我们这一些 可能
+
+364
+00:23:28,920 --> 00:23:32,680
+some more simpler questions than are expected.
+问出比他们想象中更简单问题的新手
+
+365
+00:23:32,680 --> 00:23:37,800
+What do you think helped make your community a
+你认为 是什么使得你的社区
+
+366
+00:23:37,860 --> 00:23:41,500
+nicer place compared to what some other communities are like?
+比起其他社区更加友好呢
+
+367
+00:23:41,500 --> 00:23:44,800
+Just the fact that it was a very casual thing.
+只是因为在我们社区 贡献是一件很随意的事
+
+368
+00:23:44,800 --> 00:23:48,360
+If you want to contribute, you can, cool. If you don't, that's also cool.
+如果你想做出贡献 你可以 这很酷 如果你不想 那也很酷
+
+369
+00:23:48,360 --> 00:23:54,260
+I definitely had the thought that open source was this big scary thing,
+我理解有人认为开源是一件令人恐惧的大事
+
+370
+00:23:54,260 --> 00:23:56,480
+you need to have all this experience and know
+你需要具备所有这些经验
+
+371
+00:23:56,480 --> 00:23:58,240
+all these complicated languages, or
+并且了解所有这些复杂的语言
+
+372
+00:23:58,240 --> 00:24:02,412
+back–end and front–end and everything in between to be able to contribute to.
+或是前后端以及其他的一切 才能够做出贡献
+
+373
+00:24:02,412 --> 00:24:03,781
+Absolutely.
+确实
+
+374
+00:24:04,206 --> 00:24:07,380
+How has doing Hacktoberfest,
+参与 Hacktoberfest
+
+375
+00:24:07,380 --> 00:24:09,960
+how's that changed your idea of open source now?
+是怎样改变了你现在对开源的想法
+
+376
+00:24:10,920 --> 00:24:13,440
+It's definitely changed it for the better. Like I said, I had
+它肯定对我造成了积极的影响 就像我说的
+
+377
+00:24:13,440 --> 00:24:15,580
+a great experience and I hope everyone that
+我有过很棒的经历 而且我希望
+
+378
+00:24:15,680 --> 00:24:19,640
+was involved with my project in some way or another had a good experience, too.
+每一个以某种方式参与我项目的人也能有很好的经历
+
+379
+00:24:19,640 --> 00:24:24,000
+It's definitely given me the push to want
+这毫无疑问促使我想去
+
+380
+00:24:24,000 --> 00:24:28,200
+to try things like that more often, even if they don't go anywhere.
+尝试更多类似的事情 即使它们没有进一步的发展
+
+381
+00:24:28,200 --> 00:24:30,200
+It seems more attainable now.
+现在这看起来这些项目更加平易近人了
+
+382
+00:24:32,400 --> 00:24:34,413
+Music to my ears.
+真是个好消息
+
+383
+00:24:40,280 --> 00:24:41,500
+Here's something;
+这儿有个信息
+
+384
+00:24:41,500 --> 00:24:44,920
+thousands of people from hundreds of companies,
+来自数百家公司的数千人
+
+385
+00:24:44,920 --> 00:24:49,460
+and some from no company at all, contribute to the Linux kernel.
+以及一些根本没在公司工作的人 为 Linux 内核做出过贡献
+
+386
+00:24:49,820 --> 00:24:53,980
+That means Linux, which basically runs the internet,
+这意味着 在互联网中不可或缺的 Linux
+
+387
+00:24:53,980 --> 00:24:58,020
+is maintained by a whole army of everyday heroes.
+是由一群日常英雄在维护的
+
+388
+00:25:03,320 --> 00:25:07,420
+If you're feeling eager to make your first contribution to open source,
+如果你渴望为开源作出第一次贡献
+
+389
+00:25:07,420 --> 00:25:10,380
+maybe you want to learn more about the Fedora community,
+或许你会想了解有关 Fedora 社区的更多信息
+
+390
+00:25:10,380 --> 00:25:13,740
+we've got a ton of materials waiting to help you out.
+我们有大量的资料正等着来帮助你
+
+391
+00:25:13,740 --> 00:25:18,180
+Check out redhat.com/commandlineheroes for more.
+请查阅 redhat.com/commandlineheroes 以获得更多信息
+
+392
+00:25:20,320 --> 00:25:21,380
+Quick reminder,
+快速提醒一下
+
+393
+00:25:21,380 --> 00:25:27,140
+this season we're building our very own open source Command Line Heroes game.
+这一季我们将构建我们自己的开源《代码英雄》游戏
+
+394
+00:25:27,140 --> 00:25:31,940
+You are invited to contribute in whatever makes sense for you.
+欢迎你以对你来说合适的方式来做出贡献
+
+395
+00:25:31,940 --> 00:25:33,749
+Get the deets on how to be a part of it;
+快来了解如何成为其中一员吧
+
+396
+00:25:33,749 --> 00:25:35,840
+we would love for you to build this game with us
+我们希望你可以通过 redhat.com/commandlineheroes
+
+397
+00:25:35,840 --> 00:25:40,100
+over at redhat.com/commandlineheroes.
+和我们一起开发这款游戏
+
+398
+00:25:42,180 --> 00:25:48,140
+Next episode, we're all about the ruthless Darwinian process of errors
+下一集 我们将讨论 错误如何经历残酷的达尔文式优胜劣汰
+
+399
+00:25:48,140 --> 00:25:51,400
+and the beauty of failure in open source development—
+以及开源开发中失败的美丽之处
+
+400
+00:25:51,400 --> 00:25:55,380
+how it haunts us, guides us, and makes us better.
+它如何困扰我们 指导我们 并使我们变得更好
+
+401
+00:25:57,260 --> 00:26:00,860
+Command Line Heroes is an original podcast from Red Hat.
+《代码英雄》是红帽的原创播客
+
+402
+00:26:00,860 --> 00:26:04,539
+Listen for free on Apple Podcast, Google Podcast,
+你可以在 Apple Podcast、 Google Podcast
+
+403
+00:26:04,539 --> 00:26:06,400
+or wherever you do your thing.
+或是其他你喜欢的途径免费收听
+
+404
+00:26:06,400 --> 00:26:10,420
+I'm Saron Yitbarek, until next time, keep on coding.
+我是 Saron Yitbarek 坚持编程 下期再见
+
