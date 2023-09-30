@@ -1,0 +1,2629 @@
+﻿1
+00:00:00,360 --> 00:00:05,080
+如果你没有听过这个笑话  - 两个工程师在编译他们的代码
+Stop me if you've heard this one.
+Two engineers are compiling their code.
+
+2
+00:00:05,080 --> 00:00:09,840
+新手举手喊道：“哇 我的代码编译好了！”
+The newcomer raises his hands and shouts, "Woo, my code compiled!"
+
+3
+00:00:10,060 --> 00:00:12,840
+老手则会眯着眼睛喃喃道：
+The veteran narrows her eyes and mutters,
+
+4
+00:00:12,840 --> 00:00:15,560
+“唔 我的代码居然编译好了”
+"Hm. My code compiled."
+
+5
+00:00:15,560 --> 00:00:18,560
+*BGM~*
+
+6
+00:00:18,560 --> 00:00:21,000
+如果你已经做过一段时间编程
+If you've been in the coding game a little while,
+
+7
+00:00:21,000 --> 00:00:22,160
+当你开始思考失败这件事
+something changes
+
+8
+00:00:22,160 --> 00:00:24,080
+看法可能就会有所不同
+when you think about failure.
+
+9
+00:00:24,080 --> 00:00:27,080
+那些过去无法解决的问题
+Things that used to look like impossible problems
+
+10
+00:00:27,080 --> 00:00:31,400
+如今开始看起来像一个更大的解决方案中的一个正常组成部分
+begin to look like healthy parts of a larger solution.
+
+11
+00:00:31,640 --> 00:00:33,740
+那些你曾经称之为“失败”的东西
+The stuff you used to call “failure",
+
+12
+00:00:33,740 --> 00:00:36,740
+现在看起来像是变相的成功
+begins to look like success in disguise.
+
+13
+00:00:36,740 --> 00:00:39,740
+你开始希望你的代码无法通过编译
+You expect your code to not compile.
+
+14
+00:00:39,740 --> 00:00:43,520
+你希望可以一路摆弄和实验它们
+You expect to play and experiment all along the way,
+
+15
+00:00:43,520 --> 00:00:46,340
+调试和修订和重构这些代码
+fiddling, revising, refactoring.
+
+16
+00:00:47,040 --> 00:00:51,160
+你正在收听的是红帽公司的原创播客节目《代码英雄》
+I'm Saron Yitbarek, and this is Command Line Heroes,
+
+17
+00:00:51,160 --> 00:00:53,360
+我是主持人 Saron Yitbarek
+an original podcast from Red Hat.
+
+18
+00:00:53,360 --> 00:00:59,980
+*BGM~*
+
+19
+00:01:01,780 --> 00:01:05,580
+老实说 那句“<ruby>快速失败<rt>fail fast</rt></ruby>”的口号
+That whole "fail fast" mantra, let's be honest,
+
+20
+00:01:05,580 --> 00:01:10,260
+经常被用来作为通往成功的捷径
+it often gets used as a way to try and shortcut things towards success.
+
+21
+00:01:10,600 --> 00:01:11,740
+但是
+But what if,
+
+22
+00:01:11,740 --> 00:01:15,260
+如果我们不是告诉彼此加快速度并快速失败
+instead of telling each other to hurry up and fail fast,
+
+23
+00:01:15,260 --> 00:01:19,180
+而是鼓励彼此更好地失败呢？
+we encourage each other to actually fail better.
+
+24
+00:01:20,660 --> 00:01:23,700
+《代码英雄》的第二季
+Season Two of Command Line Heroes
+
+25
+00:01:23,700 --> 00:01:27,320
+将介绍的是开发工作中真实的体验：
+is all about the lived experience of working in development,
+
+26
+00:01:27,320 --> 00:01:29,160
+"当我们生活在代码中
+what it really feels like
+
+27
+00:01:29,160 --> 00:01:30,960
+到底感觉如何？
+and how it really pans out
+
+28
+00:01:30,960 --> 00:01:33,300
+又是如何变化的？"
+when we're living on the command line.
+
+29
+00:01:33,300 --> 00:01:38,200
+这也是为什么我们要用一整集的时间来讨论失败
+And that's why we're devoting a whole episode to dealing with failure,
+
+30
+00:01:38,200 --> 00:01:41,520
+因为正是这些失败时刻促使我们适应它
+because it's those moments that push us to adapt.
+
+31
+00:01:41,520 --> 00:01:43,120
+我们称之为“失败”的东西
+The stuff we call failure,
+
+32
+00:01:43,120 --> 00:01:44,780
+是进化的心跳
+it's the heartbeat of evolution,
+
+33
+00:01:45,020 --> 00:01:48,580
+而开源开发者正在拥抱这种进化
+and open source developers are embracing that evolution.
+
+34
+00:01:49,000 --> 00:01:53,440
+当然 这说起来容易做起来难
+Of course, that's a lot easier said than done.
+
+35
+00:01:54,840 --> 00:01:59,460
+*BGM~*
+
+36
+00:01:59,460 --> 00:02:01,360
+想象一下
+Imagine this:
+
+37
+00:02:01,360 --> 00:02:06,020
+如果一首全新的莎士比亚的十四行诗被发现了
+a brand-new sonnet from the man himself, Shakespeare, gets discovered.
+
+38
+00:02:06,380 --> 00:02:08,820
+网络上会兴起一阵热潮
+There's a huge rush of interest online.
+
+39
+00:02:08,820 --> 00:02:10,440
+每个人都想去搜索它
+Everybody's googling.
+
+40
+00:02:10,440 --> 00:02:11,500
+但这时
+But then!
+
+41
+00:02:11,500 --> 00:02:15,280
+有个小小的设计缺陷导致了所谓的
+This one little design flaw leads to something called,
+
+42
+00:02:15,280 --> 00:02:17,700
+“文件描述符耗尽”
+"file descriptor exhaustion."
+
+43
+00:02:17,700 --> 00:02:21,000
+这会造成一连串的失败
+That creates a cascading failure.
+
+44
+00:02:21,000 --> 00:02:26,680
+突然之间 这所有的流量都在越来越少的服务器之间流动
+Suddenly, you've got all that traffic moving across fewer and fewer servers.
+
+45
+00:02:26,680 --> 00:02:30,340
+很快 在 Google 上的“莎士比亚”搜索崩溃了
+Pretty soon, Google's Shakespeare search has crashed,
+
+46
+00:02:30,340 --> 00:02:33,340
+并崩溃了一个多小时
+and it stays crashed for over an hour.
+
+
+
+47
+00:02:33,660 --> 00:02:38,160
+现在 你丢掉了 12 亿次搜索查询
+Now you've lost 1.2 billion search queries.
+
+48
+00:02:38,160 --> 00:02:41,160
+这是一场莎士比亚式的悲剧
+It's a tragedy of Shakespearean proportions,
+
+49
+00:02:41,160 --> 00:02:42,260
+所有的一切
+all playing out
+
+50
+00:02:42,260 --> 00:02:46,020
+在网站可靠性工程师（SRE）四处补救的同时上演
+while site reliability engineers are scrambling to catch up.
+
+51
+00:02:46,020 --> 00:02:50,320
+*莎士比亚的诗：还有你吗 布鲁特？*
+*Et tu, Brute? *
+
+52
+00:02:50,320 --> 00:02:54,040
+*那就倒下吧 凯撒！*
+*Then fall, Caesar.*
+
+53
+00:02:54,040 --> 00:02:55,740
+不好意思 我打断一下
+Okay, hate to break it to you.
+
+54
+00:02:55,740 --> 00:02:58,140
+但上面说的这个莎士比亚事件其实并不存在
+The Shakespearean incident isn't real.
+
+55
+00:02:58,140 --> 00:02:58,920
+事实上
+In fact,
+
+56
+00:02:58,920 --> 00:03:01,640
+这是一本书《SRE：Google 运维解密》中
+it's part of a series of disastrous scenarios
+
+57
+00:03:01,640 --> 00:03:04,860
+一系列灾难性场景的一部分
+in a book called, Site Reliability Engineering.
+
+58
+00:03:04,860 --> 00:03:07,740
+从这本书中学到的重要的一课就是
+And one of the big lessons from that book is that
+
+59
+00:03:07,740 --> 00:03:10,960
+你必须超越灾难本身
+you've got to look beyond the disaster itself.
+
+60
+00:03:11,540 --> 00:03:13,100
+这就是我的意思
+Here's what I mean.
+
+61
+00:03:13,100 --> 00:03:14,490
+在这个莎士比亚的例子中
+In the Shakespeare case,
+
+62
+00:03:14,490 --> 00:03:17,390
+当流量被集火到一个被牺牲的单独集群时
+the query of death gets resolved
+
+63
+00:03:17,390 --> 00:03:22,740
+这个死亡查询问题就解决了
+when that laser beam of traffic gets pushed onto a single, sacrificial cluster.
+
+64
+00:03:23,020 --> 00:03:26,660
+这为团队赢得了扩充容量的足够时间
+That buys the team enough time to add more capacity.
+
+65
+00:03:26,660 --> 00:03:28,260
+但你不能就此止步
+But you can't stop there.
+
+66
+00:03:28,500 --> 00:03:30,160
+尽管这个问题很糟糕
+As bad as that issue was,
+
+67
+00:03:30,160 --> 00:03:33,160
+但解决它并不是真正的重点所在
+resolving it isn't where the real focus should be.
+
+68
+00:03:33,360 --> 00:03:36,160
+因为失败不一定以痛苦告终
+Because failure doesn't have to end in suffering,
+
+69
+00:03:36,250 --> 00:03:38,520
+失败也可以引导你的学习
+failure can lead to learning.
+
+
+
+70
+00:03:38,520 --> 00:03:40,560
+嗨 我是 Jennifer Petoff
+
+Hi. I'm Jennifer Petoff.
+
+71
+00:03:40,880 --> 00:03:42,700
+Jennifer 在谷歌工作
+Jennifer works over at Google.
+
+72
+00:03:42,700 --> 00:03:50,640
+她是 SRE（<ruby>站点可靠性工程<rt>site reliability engineering</rt></ruby>）团队的高级项目经理
+She's a senior program manager for their SRE (site reliability engineering) team and leads Google's global SRE education program,
+
+73
+00:03:50,820 --> 00:03:56,860
+她也是这本描述了莎士比亚场景的书的作者之一
+and she's also one of the authors of that book,
+
+74
+00:03:57,300 --> 00:03:58,180
+对于 Jennifer 来说
+For Jennifer,
+
+75
+00:03:58,180 --> 00:04:02,030
+钻研这样的灾难才能使事情变得更好
+digging into disasters like that is how things get better.
+
+76
+00:04:02,560 --> 00:04:07,820
+但前提是你需要有一个拥抱错误和意外的文化
+But only if you have a culture where mistakes and surprises are embraced.
+
+77
+00:04:08,300 --> 00:04:11,020
+所以 让我们再拿莎士比亚举例子
+So take the Shakespeare snafu again.
+
+78
+00:04:11,540 --> 00:04:13,710
+有一个直接的办法
+There is a straightforward solution.
+
+79
+00:04:14,190 --> 00:04:17,560
+减少负载可以让你免于这种连锁故障
+Load shedding can save you from that cascading failure.
+
+80
+00:04:17,930 --> 00:04:21,650
+但 真正的工作将在一切恢复正常之后开始
+But the real work starts after things are back to normal.
+
+81
+00:04:22,060 --> 00:04:24,310
+重点在于事后分析报告
+The real work is in the post-mortem.
+
+82
+00:04:25,140 --> 00:04:27,310
+事件解决后
+After the incident is resolved,
+
+83
+00:04:27,310 --> 00:04:28,890
+我们会创建一个事后分析报告
+a post-mortem would be created.
+
+84
+00:04:29,170 --> 00:04:30,310
+谷歌的每一个事件
+Every incident at Google
+
+85
+00:04:30,310 --> 00:04:33,872
+都需要有一个事后分析和相应的行动项目
+is required to have a post-mortem and corresponding action items
+
+86
+00:04:33,870 --> 00:04:35,024
+以防止将来再次出现问题
+to prevent,
+
+87
+00:04:35,020 --> 00:04:41,824
+以及更有效地检测和缓解未来出现类似事件或这类问题的可能
+but also to more effectively detect and mitigate similar incidents or whole classes of issues in the future.
+
+88
+00:04:42,400 --> 00:04:44,820
+这是一个关键的区别
+That's a key distinction right there.
+
+89
+00:04:44,820 --> 00:04:47,312
+不仅仅是解决这个特定事件
+Not just solving for this particular incident,
+
+90
+00:04:47,310 --> 00:04:51,376
+而是看到这个事件告诉你的一系列问题
+but seeing what the incident tells you about a class of issues.
+
+91
+00:04:51,680 --> 00:04:53,968
+真正有效的事后分析
+Post-mortems, really effective ones,
+
+92
+00:04:53,970 --> 00:04:56,680
+不只是告诉你昨天哪里出现了问题
+don't just tell you what went wrong yesterday.
+
+93
+00:04:56,900 --> 00:05:00,056
+而是让你对今天所做的工作
+They give you insights about the work you're doing today,
+
+94
+00:05:00,060 --> 00:05:02,304
+以及对未来的计划有深刻的见解
+and about what you're planning for the future.
+
+95
+00:05:02,736 --> 00:05:04,696
+这种更广泛的思想
+That broader kind of thinking
+
+96
+00:05:04,700 --> 00:05:09,008
+灌输了对所有这些事故和失败的尊重
+instills a respect for all those accidents and failures,
+
+97
+00:05:09,010 --> 00:05:12,344
+使它们成为日常工作生活中至关重要的一部分
+makes them a vital part of everyday work life.
+
+98
+00:05:12,568 --> 00:05:13,040
+所以
+So,
+
+99
+00:05:13,040 --> 00:05:15,056
+一个真正好的事后分析
+a really good post–mortem addresses
+
+100
+00:05:15,060 --> 00:05:17,528
+不仅仅要解决手头的单个问题
+more than just the single issue at hand,
+
+101
+00:05:17,530 --> 00:05:19,656
+它还解决了整个问题
+it addresses the whole class of issues.
+
+102
+00:05:19,864 --> 00:05:23,160
+事后分析的重点是什么地方作对了
+And the post-mortems focus on what went well,
+
+103
+00:05:23,160 --> 00:05:24,336
+什么地方做错了
+what went wrong,
+
+104
+00:05:24,340 --> 00:05:25,456
+在何处幸运的解决了问题
+where we got lucky,
+
+105
+00:05:25,460 --> 00:05:27,616
+以及可以采取哪些优先行动
+and what prioritized action we can take
+
+106
+00:05:27,620 --> 00:05:28,992
+来确保这种情况不会再次发生
+to make sure this doesn't happen again.
+
+107
+00:05:28,990 --> 00:05:30,416
+如果你不采取行动
+If you don't take action,
+
+108
+00:05:30,420 --> 00:05:32,680
+历史必将重演
+history is destined to repeat itself.
+
+109
+00:05:32,824 --> 00:05:33,704
+在谷歌
+At Google,
+
+110
+00:05:33,700 --> 00:05:37,112
+人们关注的是<ruby>无责任的事后分析<rt>blameless post-mortems</rt></ruby>
+
+
+111
+00:05:37,336 --> 00:05:38,832
+这就造成了根本的不同
+and that makes all the difference.
+
+112
+00:05:39,216 --> 00:05:41,830
+如果出了问题而没有人要责怪
+If nobody's to blame when something goes wrong,
+
+113
+00:05:42,072 --> 00:05:45,568
+那么每个人都可以诚实地挖掘错误
+then everybody can dig into errors in an honest way
+
+114
+00:05:45,736 --> 00:05:47,384
+真正地从错误中吸取教训
+and really learn from them
+
+115
+00:05:47,380 --> 00:05:49,944
+而不必掩盖任何线索 也不必争吵
+without covering tracks, or arguing.
+
+116
+00:05:50,168 --> 00:05:51,872
+这些无责任的事后分析
+Those blameless post-mortems
+
+117
+00:05:51,870 --> 00:05:54,704
+已经成为谷歌文化的一个重要组成部分
+have become a key part of the culture at Google,
+
+118
+00:05:55,144 --> 00:05:59,416
+其结果是一个不必害怕失败的工作场所
+and the result is a workplace where failure isn't something to be afraid of.
+
+119
+00:05:59,808 --> 00:06:01,120
+这是一种正常情况
+It's normalized.
+
+120
+00:06:01,448 --> 00:06:02,880
+谷歌如何看待失败？
+How does Google look at failure?
+
+121
+00:06:03,096 --> 00:06:06,112
+100% 的在线时间是一个不可能的目标
+100% of time is an impossible goal,
+
+122
+00:06:06,110 --> 00:06:07,432
+如果你认为这是可以实现的
+like, you're kidding yourself
+
+123
+00:06:07,430 --> 00:06:09,320
+那就是在自欺欺人
+if you think that's achievable.
+
+124
+00:06:09,472 --> 00:06:09,824
+所以
+So
+
+125
+00:06:09,820 --> 00:06:12,504
+失败会发生只是时间和方式的问题
+failure's going to happen, it's just a matter of when and how.
+
+126
+00:06:12,688 --> 00:06:14,312
+在谷歌 失败是值得庆祝的
+Failure is celebrated at Google,
+
+127
+00:06:14,310 --> 00:06:15,984
+因为我们可以从中吸取教训
+so it's something we can learn from,
+
+128
+00:06:15,984 --> 00:06:18,980
+而事后分析也会在团队中广泛分享
+and post-mortems are shared widely among teams
+
+129
+00:06:18,980 --> 00:06:23,016
+以确保学到的东西可以广泛使用
+to make sure that the things that are learned are widely available.
+
+130
+00:06:23,184 --> 00:06:24,410
+错误是不可避免的
+Failure is inevitable,
+
+131
+00:06:24,410 --> 00:06:26,602
+但你永远不想以同样的方式失败两次
+but you never want to fail the same way twice.
+
+132
+00:06:26,602 --> 00:06:29,600
+犯错是人之常情
+To err is human, but to err repeatedly
+
+133
+00:06:29,600 --> 00:06:33,130
+但反复犯错是可以避免的
+is something that would be better avoided.
+
+134
+00:06:33,130 --> 00:06:34,698
+*BGN*
+
+135
+00:06:34,700 --> 00:06:35,989
+听到 Jennifer 讨论失败的方式
+It's so interesting
+
+136
+00:06:35,990 --> 00:06:38,661
+这真是太有趣了
+hearing the way Jennifer talks about failures,
+
+137
+00:06:38,938 --> 00:06:42,949
+因为就像她在犯那些错误一样
+because it's like she's leaning into those mistakes.
+
+138
+00:06:43,376 --> 00:06:44,805
+比如 当事情出错的时候
+Like, when things go wrong,
+
+139
+00:06:44,810 --> 00:06:49,381
+这意味着你已经走到了一个可以挖掘价值的地方
+it means you've arrived at a place you can actually mine for value.
+
+140
+00:06:50,224 --> 00:06:52,997
+你会现场处理这种情况
+You deal with the situation in real time,
+
+141
+00:06:53,000 --> 00:06:57,296
+但事后花时间把发生的事情写出来
+but then afterwards taking time to write up what happened
+
+142
+00:06:57,300 --> 00:06:58,709
+让别人可以从中学习
+so that others can learn from that.
+
+143
+00:06:59,060 --> 00:07:01,008
+发生任何事件时
+With any incidents,
+
+144
+00:07:01,010 --> 00:07:03,130
+你都需要付出代价
+you pay the price when it happens,
+
+145
+00:07:03,130 --> 00:07:06,240
+如果你不写出事后分析
+and you're not re–collecting some of that cost
+
+146
+00:07:06,240 --> 00:07:08,021
+并真正从这个经验中吸取教训
+if you don't write up a post–mortem
+
+147
+00:07:08,020 --> 00:07:10,005
+你就不会重新收回解决问题所花费的成本
+and actually learn from that experience,
+
+148
+00:07:10,293 --> 00:07:11,978
+在我看来 这是至关重要的一课
+and I think that's a critical lesson.
+
+149
+00:07:12,282 --> 00:07:16,389
+在谷歌 我们坚信无责任文化
+We believe very strongly here at Google in a blameless culture.
+
+150
+00:07:16,390 --> 00:07:18,954
+你不会因为指责别人而获得任何好处
+You don't gain anything by pointing fingers at people,
+
+151
+00:07:18,950 --> 00:07:23,050
+那只会让人们去掩盖失败
+and that just then sends people to cover up failure,
+
+152
+00:07:23,050 --> 00:07:25,242
+而失败 总是会发生
+which is going to happen, regardless.
+
+153
+00:07:27,136 --> 00:07:28,570
+这里非常重要的一点是
+It's so important here
+
+154
+00:07:28,570 --> 00:07:31,178
+要记住 Jennifer 之前说过的一些话
+to remember something Jennifer said earlier,
+
+155
+00:07:31,578 --> 00:07:34,180
+没有错误的工作是一种幻想
+that error-free work is a fantasy.
+
+156
+00:07:34,576 --> 00:07:36,666
+总会有出错的地方
+There will always be things that go wrong.
+
+157
+00:07:37,205 --> 00:07:40,000
+归根结底这是思想的转变
+What it comes down to is a shift in thinking.
+
+158
+00:07:40,586 --> 00:07:42,298
+我们可以抛弃那种
+We can put away that idea
+
+159
+00:07:42,300 --> 00:07:45,002
+认为只有一个单一的、可确定的最终目标
+that there's a single, definable end goal,
+
+160
+00:07:45,290 --> 00:07:48,608
+即一切最终都会按照我们想象的方式发展的想法
+where everything will finally go the way we imagined.
+
+161
+00:07:49,306 --> 00:07:52,858
+我们没有人试图达到这一目标
+There is no single there that we're trying to get to,
+
+162
+00:07:53,317 --> 00:07:54,362
+事实证明
+and it turns out,
+
+163
+00:07:54,602 --> 00:07:58,058
+这是非常强大和积极的东西
+that's a hugely powerful and positive thing.
+
+164
+00:07:58,060 --> 00:08:05,525
+*BGM*
+
+165
+00:08:05,530 --> 00:08:08,848
+谷歌拥抱失败的做法很有意义
+Google's push for embracing failure makes a lot of sense.
+
+166
+00:08:09,013 --> 00:08:10,128
+超级实用
+Super practical.
+
+167
+00:08:10,864 --> 00:08:11,840
+但我想知道
+But I wanted to know,
+
+168
+00:08:12,037 --> 00:08:13,472
+这只是口头上的么？
+is this just lip-service?
+
+169
+00:08:13,888 --> 00:08:18,816
+我们是否有一些具体的让事情变得更好的失败例子
+Do we have some concrete examples of failure actually making things better,
+
+170
+00:08:19,157 --> 00:08:21,893
+或者这只是一种当我们进行第 200 次编译时
+or is it all just a way to make ourselves feel better
+
+171
+00:08:21,890 --> 00:08:24,336
+让我们感觉更好的一种方法
+when we're hitting compile for the 200th time?
+
+172
+00:08:26,069 --> 00:08:27,024
+事实证明
+Turns out,
+
+173
+00:08:27,184 --> 00:08:28,997
+有人可以回答这个问题
+there's someone who can answer that.
+
+174
+00:08:29,194 --> 00:08:30,661
+我的名字叫 Jessica Rudder
+My name is Jessica Rudder.
+
+175
+00:08:30,660 --> 00:08:32,794
+我是 Github 的软件工程师
+I'm a software engineer at GitHub.
+
+176
+00:08:33,061 --> 00:08:36,437
+Jessica 在 Github 经历过失败
+Jessica has seen her share of failure over at GitHub.
+
+177
+00:08:36,661 --> 00:08:38,394
+从某种意义上说
+It's a failure arena,
+
+178
+00:08:38,496 --> 00:08:39,349
+这是一个失败的舞台
+in one sense,
+
+179
+00:08:39,872 --> 00:08:41,210
+在这一过程中
+and along the way,
+
+180
+00:08:41,274 --> 00:08:47,594
+她收集了一些关于失败是通往巨大成功的故事
+she's collected some stories about times when failure was the doorway to massive success.
+
+181
+00:08:47,856 --> 00:08:48,709
+比如这个：
+Like this one:
+
+
+
+182
+00:08:48,794 --> 00:08:50,288
+*BGM*
+
+183
+00:08:50,290 --> 00:08:52,762
+90 年代有个游戏开发公司
+So there was a game development company
+
+184
+00:08:52,760 --> 00:08:55,525
+正在开发一款全新的游戏
+that was working on a brand-new game in the '90s.
+
+185
+00:08:55,664 --> 00:08:57,589
+从本质上说 这是一款赛车游戏
+Essentially, it was a racing game,
+
+186
+00:08:57,834 --> 00:09:00,586
+但他们的转折之处在于
+but their twist on it was that
+
+187
+00:09:00,590 --> 00:09:02,234
+将其改为街头赛车
+it was going to be street racing.
+
+188
+00:09:02,490 --> 00:09:05,322
+所以当赛车手在街道上飙车时
+So as the racers are racing through the streets,
+
+189
+00:09:05,434 --> 00:09:07,216
+他们不仅是在互相飙车
+they're not only racing each other,
+
+190
+00:09:07,220 --> 00:09:12,314
+而且他们也是与在追赶他们的警车（非玩家角色）赛车
+but they're also NPCs (non-player characters) that are cop cars that are chasing them down.
+
+191
+00:09:12,554 --> 00:09:14,202
+如果一辆警车抓住了你
+And if a cop car catches you,
+
+192
+00:09:14,490 --> 00:09:16,122
+它会让你靠边停车
+it's supposed to pull you over
+
+193
+00:09:16,120 --> 00:09:17,312
+然后你就输掉了比赛
+and then you lose the race.
+
+194
+00:09:17,310 --> 00:09:20,005
+然后他们把这些代码衔接起来
+So they get this code all wired up,
+
+195
+00:09:20,362 --> 00:09:22,896
+然后开始运行
+and they start running it,
+
+196
+00:09:22,944 --> 00:09:24,688
+他们发现
+and what they discovered is that
+
+197
+00:09:24,690 --> 00:09:27,498
+他们完全调校错了算法：
+they completely calibrated the algorithm wrong,
+
+198
+00:09:27,500 --> 00:09:31,637
+警车只是尖叫着从侧街冲出来
+and instead of the cop cars chasing the players' vehicles,
+
+199
+00:09:31,898 --> 00:09:34,522
+直接撞向玩家的车
+they would just come screaming out of side streets
+
+200
+00:09:34,520 --> 00:09:36,298
+而不是追赶玩家的车
+and slam right into them.
+
+201
+00:09:36,300 --> 00:09:37,221
+*翻车声*
+
+202
+00:09:37,220 --> 00:09:39,642
+所以这里简直是一团糟
+So it was just a total mess.
+
+203
+00:09:40,960 --> 00:09:43,850
+他们想 不要惊慌
+And instead of freaking out,
+
+204
+00:09:44,042 --> 00:09:47,029
+让我们继续前进 看看人们如何看待它的
+they thought, let's go ahead and see how people like it,
+
+205
+00:09:47,030 --> 00:09:49,552
+这样我们就知道该怎么调整算法了
+and that way we know what to tweak about the algorithm.
+
+206
+00:09:49,930 --> 00:09:52,293
+所以他们把它交给了游戏测试人员
+So they sent it over to the play testers,
+
+207
+00:09:52,290 --> 00:09:55,045
+他们发现游戏测试人员
+and what they found was that the play testers
+
+208
+00:09:55,050 --> 00:09:57,461
+在逃离警察
+had way more fun
+
+209
+00:09:57,460 --> 00:10:03,978
+并试图躲避被这些流氓暴力警车抓捕的过程中
+running away from the cops and trying to dodge being captured by these rogue, violent cop cars
+
+210
+00:10:03,978 --> 00:10:06,980
+获得了更多乐趣
+than they ever had with just the racing game itself.
+
+211
+00:10:07,434 --> 00:10:09,980
+而事实上 它是如此的有趣
+And it was so much fun, in fact,
+
+212
+00:10:10,314 --> 00:10:16,245
+以至于开发团队改变了他们为游戏打造的整个理念
+that the development team shifted the entire concept that they were building the game around.
+
+
+
+213
+00:10:17,189 --> 00:10:19,250
+你能猜出这是怎么回事吗？
+Can you guess where this is goin
+
+214
+00:10:21,269 --> 00:10:24,074
+所以我们才有了《<ruby>侠盗猎车手<rt>Grand Theft Auto</rt></ruby>》
+And that's how we ended up with Grand Theft Auto.
+
+215
+00:10:24,336 --> 00:10:30,506
+我的意思是 它确实是有史以来最畅销的电子游戏
+I mean, it's literally the best-selling video game franchise of all time,
+
+216
+00:10:30,672 --> 00:10:32,320
+它能存在的全部原因都是
+and the whole reason it exists is
+
+217
+00:10:32,320 --> 00:10:34,629
+因为当时他们没有使用正确的算法时所导致的失误
+because when they failed to get the algorithm right,
+
+218
+00:10:35,066 --> 00:10:36,048
+他们想 好吧
+they thought, well,
+
+219
+00:10:36,050 --> 00:10:37,237
+让我们来试试
+let's try it out.
+
+220
+00:10:37,240 --> 00:10:38,261
+看看我们得到了什么
+Let's see what we've got,
+
+221
+00:10:38,260 --> 00:10:39,696
+看看我们能从中学到什么
+and let's see what we can learn from it.
+
+222
+00:10:40,000 --> 00:10:41,050
+*Epic Music*
+
+223
+00:10:41,050 --> 00:10:42,458
+很神奇吧？
+Sort of amazing, right?
+
+224
+00:10:42,880 --> 00:10:44,090
+但这里有个技巧
+But here's the trick.
+
+225
+00:10:44,592 --> 00:10:49,194
+《侠盗猎车手》团队在遭遇失败时必须保持宽容
+The Grand Theft Auto team had to stay receptive when they were hit with a failure.
+
+226
+00:10:49,509 --> 00:10:51,504
+他们必须保持好奇心
+They had to stay curious.
+
+227
+00:10:51,882 --> 00:10:55,088
+所以 如果这些开发者没有开放的思想
+So if those developers hadn't been open–minded about it,
+
+228
+00:10:55,090 --> 00:10:58,469
+并决定从这个错误中去学到什么
+and decided to see what they could learn from this mistake,
+
+229
+00:10:58,842 --> 00:11:00,890
+我们将永远不会有《侠盗猎车手》
+we would never have had Grand Theft Auto.
+
+230
+00:11:01,296 --> 00:11:05,626
+我们只能玩一些无聊的、普通的街头赛车游戏了
+We would have had some boring, run–of–the–mill street race game.
+
+231
+00:11:07,637 --> 00:11:09,584
+让我们再就游戏主题讨论一分钟
+Sticking with the game theme for a minute,
+
+232
+00:11:09,797 --> 00:11:13,264
+类似的事情也发生在《<ruby>寂静岭<rt>Silent Hill</rt></ruby>》的制作过程中
+something similar happened when Silent Hill was being produced.
+
+233
+00:11:13,260 --> 00:11:17,498
+这是一款3A级大作
+This was a huge, triple-A game—big-time production.
+
+234
+00:11:17,749 --> 00:11:20,500
+但他们遇到了严重的弹出问题
+But they had serious problems with pop-up.
+
+235
+00:11:20,770 --> 00:11:24,000
+局部景观的处理速度不够快
+Parts of the landscape weren't being processed fast enough,
+
+236
+00:11:24,282 --> 00:11:25,509
+因此突然之间
+so all of a sudden
+
+237
+00:11:25,510 --> 00:11:25,690
+*口哨声*
+
+238
+00:11:25,690 --> 00:11:29,104
+你会突然发现一堵墙或一条小路突然冒出来
+you get a wall or a bit of road popping up out of nowhere.
+
+239
+00:11:29,498 --> 00:11:31,834
+这是一个破坏性的问题
+This was a deal-breaker problem,
+
+240
+00:11:31,936 --> 00:11:34,016
+而且他们的开发已经到非常后期
+and they were late in their development cycle.
+
+241
+00:11:34,474 --> 00:11:35,472
+他们是怎么做的？
+So what do they do?
+
+242
+00:11:35,648 --> 00:11:37,114
+完全放弃游戏
+Scrap the game entirely?
+
+243
+00:11:37,312 --> 00:11:38,485
+举手投降？
+Throw their hands up?
+
+244
+00:11:38,853 --> 00:11:41,296
+还是将错就错？
+Or embrace the problem itself?
+
+245
+00:11:42,304 --> 00:11:47,285
+他们所做的就是让这个世界充满了非常浓郁、诡异的雾气
+What they did was fill the world with a very dense, eerie fog.
+
+246
+00:11:47,605 --> 00:11:49,152
+因为事实证明
+Because fog, as it turns out,
+
+247
+00:11:49,150 --> 00:11:51,872
+雾对处理器来说非常容易渲染
+is really easy for the processors to render
+
+248
+00:11:51,870 --> 00:11:54,362
+而且不会有任何延迟
+and not get any kind of delays.
+
+249
+00:11:54,986 --> 00:11:56,197
+而且另外
+But additionally,
+
+250
+00:11:56,496 --> 00:12:00,666
+雾使你看不到远处的东西
+fog prevents you from seeing things at a distance,
+
+251
+00:12:01,002 --> 00:12:04,389
+所以在现实中 那些建筑物仍然会突然出现
+so in reality, those buildings are still popping in,
+
+252
+00:12:04,661 --> 00:12:08,112
+但由于雾遮挡了你的视线 你看不到它们
+but you can't see it anymore because the fog is blocking your view.
+
+253
+00:12:08,256 --> 00:12:09,696
+所以当它们进入视野时
+So when they do come into view,
+
+254
+00:12:09,700 --> 00:12:10,736
+它们已经被渲染了
+they're already rendered,
+
+255
+00:12:10,740 --> 00:12:14,032
+看起来它们是从雾中出来的
+and it looks like they're coming out of the fog, instead.
+
+256
+00:12:14,933 --> 00:12:17,285
+雾是变得如此受欢迎
+The fog became so well-loved
+
+257
+00:12:17,290 --> 00:12:21,152
+它基本上被认为是《寂静岭》系列中的一个特点
+that it's basically considered another character in the Silent Hill franchise.
+
+258
+00:12:21,573 --> 00:12:23,877
+它限制了玩家的视野
+It makes the game play way scarier
+
+259
+00:12:23,880 --> 00:12:25,840
+使游戏变得更加恐怖
+by limiting the player's vision.
+
+260
+00:12:26,138 --> 00:12:31,818
+甚至当处理器的速度快到不需要再掩盖那些弹出的时候
+And even when the processors got so fast that they didn't need to cover up those pop-ups anymore,
+
+261
+00:12:31,936 --> 00:12:32,949
+他们也保留了雾气
+they kept the fog.
+
+262
+00:12:33,834 --> 00:12:35,950
+你无法在没有雾的情况下玩《寂静岭》
+You cannot have a Silent Hill game without fog.
+
+263
+00:12:36,192 --> 00:12:39,200
+而这些雾最初所做的一切都是在掩盖一个错误
+And all that fog was doing initially was covering up a mistake.
+
+264
+00:12:40,277 --> 00:12:41,269
+我喜欢这个故事！
+I love it!
+
+265
+00:12:41,413 --> 00:12:45,018
+他们拥抱失败而不是逃避失败
+They saved a major development by embracing their failure
+
+266
+00:12:45,146 --> 00:12:46,384
+从而挽救了一个重大的发展
+instead of running from it.
+
+267
+00:12:46,810 --> 00:12:51,973
+这条关于不怕失败的原则也适用于个人的小事
+And that rule about not fearing failure applies to little, individual things, too,
+
+268
+00:12:52,085 --> 00:12:53,749
+而不仅仅是全公司的决策
+not just company-wide decisions.
+
+269
+00:12:54,197 --> 00:12:59,354
+从容面对失败是我们一点一点地变得更好的方法
+Looking failure calmly in the face is how we get better, bit by bit.
+
+270
+00:13:01,072 --> 00:13:04,672
+很多时候人们脑子里想的太多了
+A lot of times people get too much into their own head
+
+271
+00:13:04,670 --> 00:13:07,797
+他们认为失败意味着我不擅长某样东西
+and they think a failure means I'm bad at x.
+
+272
+00:13:08,016 --> 00:13:11,077
+并不是代码坏了我还不知道如何修复它
+It's not, oh, this code is broken and I don't know how to fix it,
+
+273
+00:13:11,080 --> 00:13:13,840
+而是“我不知道如何编写 JavaScript”
+yet. It's, “I don't know how to write JavaScript.”
+
+274
+00:13:14,042 --> 00:13:17,589
+而且 你永远不会通过说
+And you are never going to learn what you need to learn by saying,
+
+275
+00:13:17,590 --> 00:13:19,360
+“我不知道如何编写 JavaScript”来学习所需的知识
+“I don't know how to write JavaScript.”
+
+276
+00:13:19,792 --> 00:13:21,365
+但是如果你能确定
+But if you can identify,
+
+277
+00:13:21,370 --> 00:13:25,610
+“哦 我不知道如何在 JavaScript 中实现这个循环”
+oh, I don't know how to make this loop work in JavaScript,
+
+278
+00:13:25,960 --> 00:13:29,072
+那么你可以通过 Google 找到答案
+then you have something that you can Google,
+
+279
+00:13:29,070 --> 00:13:30,682
+而且效果很好
+and it just works perfect.
+
+280
+00:13:30,680 --> 00:13:32,592
+我是说 你仍然需要努力
+I mean, you're still going to struggle,
+
+281
+00:13:32,590 --> 00:13:34,517
+但你遇到的麻烦会少的多
+but you're going to struggle a whole lot less.
+
+282
+00:13:34,520 --> 00:13:36,784
+*BGM*
+
+283
+00:13:36,780 --> 00:13:40,501
+因此 无论你是新开发人员还是大型工作室的负责人
+So our mistakes nudge us toward bigger things, those experiments,
+
+284
+00:13:40,500 --> 00:13:44,757
+我们的错误将我们推向更大的领域
+those fails, those heroic attempts,
+
+285
+00:13:44,760 --> 00:13:46,869
+那些实验、失败、英勇的尝试
+they make up most of the journey,
+
+286
+00:13:46,870 --> 00:13:50,986
+它们占据了旅程的大部分
+whether you're a new developer or the head of a major studio.
+
+287
+00:13:51,466 --> 00:13:54,368
+在我所熟悉和喜爱的开源社区里
+And nowhere is that more true than
+
+288
+00:13:54,370 --> 00:13:58,389
+这是最真实的情况了
+in the open source communities I've come to know and love.
+
+289
+00:13:58,720 --> 00:14:01,994
+失败在开源中可能是一件美好的事情
+Failure can be a beautiful thing in open source,
+
+290
+00:14:02,128 --> 00:14:04,890
+这就是我们接下来的故事
+and that's where our story goes next.
+
+291
+00:14:04,890 --> 00:14:14,192
+*BGM*
+
+292
+00:14:14,190 --> 00:14:18,261
+我们在前面看到了失败是如何带来惊喜
+We saw earlier how failing well can lead to happy surprises,
+
+293
+00:14:18,260 --> 00:14:20,890
+- 那些我们甚至不知道自己想尝试的事情
+things we didn't even know we wanted to try.
+
+294
+00:14:21,248 --> 00:14:22,330
+在最好的情况下
+And at its best,
+
+295
+00:14:22,528 --> 00:14:25,330
+开源开发文化正好符合这一点
+open source development culture hits that mark.
+
+296
+00:14:25,685 --> 00:14:27,024
+它让失败变得正常
+It makes failure okay.
+
+297
+00:14:27,733 --> 00:14:32,624
+为了理解这种愿意失败的想法是如何被引入开源开发的
+To understand how that willingness to fail gets baked into open source development,
+
+298
+00:14:32,880 --> 00:14:34,981
+我和 Jen Krieger 聊了聊
+I got chatting with Jen Krieger.
+
+299
+00:14:35,397 --> 00:14:37,669
+她是 Red Hat 的首席敏捷架构师
+She's Red Hat's chief agile architect.
+
+300
+00:14:38,208 --> 00:14:41,221
+我们讨论了对开源失败的态度
+We talked about attitudes toward failure in open source,
+
+301
+00:14:41,488 --> 00:14:44,220
+以及这些态度是如何塑造无限可能的
+and how those attitudes shape what's possible.
+
+302
+00:14:44,570 --> 00:14:45,333
+请听：
+Take a listen:
+
+303
+00:14:46,816 --> 00:14:49,978
+我想谈谈这个口号
+I want to touch on this mantra,
+
+304
+00:14:49,980 --> 00:14:52,277
+我觉得这也许是一个很好的表达方式
+I feel is probably a good way to put it.
+
+305
+00:14:52,280 --> 00:14:54,949
+“<ruby>快速失败 打破现状<rt>fail fast and break things</rt></ruby>”
+The "fail fast and break things,"
+
+306
+00:14:55,253 --> 00:15:01,552
+这几乎是为我们社区所设计的一个巨大的召集口号
+which is a big rally cry, almost, I feel like, for our community.
+
+307
+00:15:01,550 --> 00:15:03,493
+你怎么看？
+What are your thoughts on that?
+
+308
+00:15:03,946 --> 00:15:05,904
+我对此有很多想法
+
+I have a lot of thoughts on that.
+
+309
+00:15:05,900 --> 00:15:06,826
+我也觉得你会有
+I thought you might.
+
+310
+00:15:06,830 --> 00:15:10,005
+快速失败 在失败中前进
+Fail fast, fail forward, fail quickly
+
+311
+00:15:10,314 --> 00:15:11,600
+所有这些都是一个意思
+—all those things.
+
+312
+00:15:11,600 --> 00:15:15,077
+所以 在我刚刚参加工作的时候
+So to put that into context, in the early days of my career,
+
+313
+00:15:15,080 --> 00:15:19,994
+我在一家没有失败空间的公司工作
+I worked in a company where there was no room for failure.
+
+314
+00:15:19,990 --> 00:15:22,229
+如果你做错了什么事情
+If you did something wrong,
+
+315
+00:15:22,230 --> 00:15:24,528
+你就可以准备辞职了
+you brought down the one application.
+
+316
+00:15:24,530 --> 00:15:26,597
+任何人都不能做错事
+There was really no way,
+
+317
+00:15:26,933 --> 00:15:30,357
+没有任何空间、途径允许你犯错
+no room, really, for anybody to do anything wrong.
+
+318
+00:15:30,768 --> 00:15:35,610
+这令人们困扰
+And that just really wraps people around the axle,
+
+319
+00:15:35,610 --> 00:15:39,738
+你绝对没有失败的余地
+that idea that you have absolutely no room for failure,
+
+320
+00:15:40,037 --> 00:15:44,016
+导致我们几乎陷入一场文化运动
+led us into almost like a cultural movement,
+
+321
+00:15:44,020 --> 00:15:49,258
+愿意的话 这会催生出一个很棒词  - 敏捷
+if you would, that then spawned into that wonderful word, agile,
+
+322
+00:15:49,260 --> 00:15:50,917
+以及催生出另一个很棒的词  - DevOps
+into the wonderful word, DevOps.
+
+323
+00:15:51,114 --> 00:15:52,997
+当我看到这些词的时候
+When I look at those words,
+
+324
+00:15:53,413 --> 00:15:55,024
+我看到的是
+all I'm seeing is that
+
+325
+00:15:55,020 --> 00:15:59,914
+我们只是要求团队做一系列非常小的实验
+we're simply asking teams to do a series of very small experiments
+
+326
+00:16:00,080 --> 00:16:01,557
+帮助他们修正方向
+that help them course-correct.
+
+
+
+327
+00:16:01,978 --> 00:16:02,832
+这是个
+It's about,
+
+328
+00:16:02,830 --> 00:16:04,224
+哦 你已经做出了选择
+oh, you've made a choice,
+
+329
+00:16:04,220 --> 00:16:05,861
+而这实际上是一件积极的事情
+and that's actually a positive thing.
+
+330
+00:16:05,860 --> 00:16:08,218
+你可能会做一个冒险的决定
+You might take a risky decision,
+
+331
+00:16:08,220 --> 00:16:10,821
+然后你赢了 因为你做出了正确的决定
+and then you win, because you've made the right decision.
+
+332
+00:16:11,498 --> 00:16:14,325
+或者反之 就是你做了错误的决定
+Or the other side, which is, you've made the wrong decision
+
+333
+00:16:14,330 --> 00:16:17,861
+然后你明白了 那不是正确的方向
+and you understand now that that wasn't the right direction to go in.
+
+334
+00:16:17,860 --> 00:16:18,981
+是的 这是有道理的
+Yeah, that makes sense.
+
+335
+00:16:19,114 --> 00:16:20,720
+所以 当你
+So when you think about
+
+336
+00:16:21,136 --> 00:16:25,317
+“快速失败 打破现状”当成这个运动的时候
+"fail fast and break things" as being this movement,
+
+337
+00:16:25,320 --> 00:16:28,938
+感觉在如何失败
+it feels like there's still some structure,
+
+338
+00:16:28,940 --> 00:16:32,672
+如何以正确的方式失败上还是有一些方式
+some best practices in how to fail,
+
+339
+00:16:32,670 --> 00:16:35,237
+有一些最佳的实践的
+how to do that the right way.
+
+340
+00:16:35,240 --> 00:16:38,512
+那么 如何以一种正确的方式失败
+What are some of the best practices
+
+341
+00:16:38,510 --> 00:16:43,834
+有哪些最佳实践和原则呢？
+and the principles around failing in a way that is good in the end?
+
+342
+00:16:44,005 --> 00:16:45,626
+我总是喜欢告诉工程师
+I always like to tell engineers
+
+343
+00:16:45,630 --> 00:16:49,962
+他们需要尽早和尽可能多地破坏构建
+that they need to break the build as early and as often as possible.
+
+344
+00:16:49,960 --> 00:16:54,986
+并且他们意识到他们已经破坏了构建
+If they're breaking their build
+
+345
+00:16:54,990 --> 00:16:58,096
+他们在当下还有机会真正修复它
+they have the opportunity in the moment to actually fix it.
+
+346
+00:16:58,100 --> 00:17:01,333
+而这一切都围绕着“<ruby>反馈循环<rt>feedback loops</rt></ruby>”这个概念
+And it's all wrapped around that concept of feedback loops,
+
+347
+00:17:01,330 --> 00:17:07,690
+确保你在工作中得到的反馈循环尽可能小
+and ensuring that the feedback loops that you're getting on the work that you're doing are as small as possible.
+
+348
+00:17:07,968 --> 00:17:09,717
+所以在开源开发中
+And so in open source development,
+
+349
+00:17:09,720 --> 00:17:11,274
+我提交了一个补丁
+I submit a patch,
+
+350
+00:17:11,270 --> 00:17:14,122
+然后有人说 “出于这九个原因 我不会接受你的补丁”
+and somebody says, “I'm not going to accept your patch for these nine reasons,”
+
+351
+00:17:14,120 --> 00:17:16,650
+或者“我认为你的补丁很棒 继续吧”
+or “I think your patch is great, move forward.”
+
+352
+00:17:16,874 --> 00:17:18,757
+或者 你提交了一个补丁
+Or, you might be submitting a patch
+
+353
+00:17:18,760 --> 00:17:21,216
+但是机器人告诉你它失败了
+and having a bot tell you that it's failed
+
+354
+00:17:21,220 --> 00:17:23,328
+因为它没有正确构建
+because it hasn't built properly.
+
+355
+00:17:23,330 --> 00:17:25,440
+有各种不同类型的反馈
+There's all sorts of different types of feedback.
+
+
+
+356
+00:17:25,797 --> 00:17:27,408
+然后在开源开发中
+And then in open source development,
+
+357
+00:17:27,410 --> 00:17:29,082
+你可能会遇到更长的反馈循环
+you might also have longer feedback loops
+
+358
+00:17:29,082 --> 00:17:32,080
+你可能会说 “我想设计这个新功能
+where you say, “I want to design this new functionality,
+
+359
+00:17:32,080 --> 00:17:35,477
+但我不确定所有的规则应该是什么
+but I'm not entirely sure what all the rules should be.
+
+360
+00:17:35,480 --> 00:17:37,002
+有人能帮我设计吗？”
+Can somebody help me design that?”
+
+361
+00:17:37,000 --> 00:17:38,800
+因此 你进入了一个漫长的过程
+And so you go into this long process
+
+362
+00:17:38,800 --> 00:17:41,136
+在这个过程中 你要进行长时间和详细的对话
+where you're having long and detailed conversations
+
+363
+00:17:41,140 --> 00:17:44,650
+而人们参与进来 提出最好的想法
+where folks are participating and coming up with the best idea.
+
+364
+00:17:45,264 --> 00:17:49,632
+所以有各种各样的反馈循环可以帮助你完成这个
+And so there's all sorts of different feedback loops that can help you accomplish that.
+
+365
+00:17:50,064 --> 00:17:54,106
+Jennifer 认为 每个公司的反馈循环看起来都不一样
+Jen figures those feedback loops can look different for every company.
+
+366
+00:17:54,432 --> 00:17:55,450
+它们是可定制的
+They're customizable,
+
+367
+00:17:55,584 --> 00:17:58,773
+人们可以使它们以 100 种不同的方式工作
+and people can make them work in 100 different ways.
+
+368
+00:17:59,173 --> 00:18:03,226
+但重点是 她甚至没有把它们称为失败或错误
+But the point is, she's not even calling them failures or mistakes.
+
+369
+00:18:03,461 --> 00:18:05,344
+她只是称它们为“反馈循环”
+She's just calling them, "feedback loops."
+
+370
+00:18:05,685 --> 00:18:07,200
+这是一个有机系统
+It's an organic system.
+
+371
+00:18:07,530 --> 00:18:10,693
+这是一种思考整个过程的健康方式
+Such a healthy way of thinking about the whole process.
+
+372
+00:18:11,306 --> 00:18:12,250
+与此同时
+Meanwhile,
+
+373
+00:18:12,250 --> 00:18:17,413
+对这些小毛病的另外一种态度却产生了完全相反的效果
+there's one attitude toward those little glitches that has the exact opposite effect.
+
+374
+00:18:18,368 --> 00:18:23,328
+有些组织所做的事情是完全错误的
+There are things that organizations do that are just flat-out the wrong thing to do.
+
+375
+00:18:23,330 --> 00:18:24,101
+嗯是啊
+Mm-hmm (affirmative).
+
+376
+00:18:24,266 --> 00:18:29,082
+让你的领导团队（或者 在一个很高的层面上 比如组织）认为
+Having your leadership team, or, at a very high level, the organization thinking that
+
+377
+00:18:29,445 --> 00:18:31,802
+羞辱做错事情的人
+shaming people for doing something wrong
+
+378
+00:18:31,800 --> 00:18:36,336
+或者在绩效结果方面灌输恐惧
+or instilling fear in relation to performance results;
+
+379
+00:18:36,340 --> 00:18:37,232
+就像是
+and that looks like,
+
+380
+00:18:37,338 --> 00:18:40,122
+“如果你工作做得不好 就拿不到奖金”
+“If you don't do a good job, you won't get a bonus,”
+
+381
+00:18:40,120 --> 00:18:44,352
+或者“如果你工作做得不好 我会把你列入绩效计划 “
+or “If you don't do a good job, I'm going to put you on a performance plan.”
+
+382
+00:18:44,350 --> 00:18:47,925
+这些都是会产生敌意的事情
+Those are the types of things that create hostility.
+
+
+
+383
+00:18:48,144 --> 00:18:53,189
+她描述的是一个不正确的失败
+What she's describing there is a failure fail.
+
+384
+00:18:53,621 --> 00:18:56,917
+不能接受失败就是失败
+A failure to embrace what failure can be.
+
+385
+00:18:57,450 --> 00:19:00,773
+她也在呼应 Jennifer Petoff 的态度 对吧？
+And she's echoing Jennifer Petoff's attitude too, right?
+
+386
+00:19:01,253 --> 00:19:05,514
+就是我们在这集开头提到的那个无责任的事后分析？
+That idea about blame-free post-mortems we heard about at the top of the episode?
+
+
+
+387
+00:19:06,197 --> 00:19:08,480
+是的 这很有趣
+Yeah, that's interesting.
+
+388
+00:19:08,480 --> 00:19:14,432
+就好像如果我们在如何一起工作上要求更严格一点
+It's like if we are a little bit more strict around how we work together,
+
+389
+00:19:14,430 --> 00:19:17,696
+或者只是更用心 更有目的性的在一起工作
+or maybe just more mindful, more purposeful in how we work together,
+
+390
+00:19:18,026 --> 00:19:22,906
+我们几乎就会被迫在失败中表现得更好
+we will be almost forced to be better at our own failure.
+
+391
+00:19:22,910 --> 00:19:23,445
+是的
+Yes.
+
+392
+00:19:23,648 --> 00:19:26,490
+有一些公司已经学会了这一点
+And there's companies out there that have learned this already,
+
+393
+00:19:26,490 --> 00:19:28,965
+而且他们很久以前就学会了
+and they've learned it a long time ago,
+
+394
+00:19:28,970 --> 00:19:32,368
+丰田就是一个很好的例子
+and Toyota is a perfect example of a company that
+
+395
+00:19:32,842 --> 00:19:36,688
+它接受了这种不断学习和改进的理念
+embraces this concept of continuous learning and improvement in a way that
+
+396
+00:19:36,690 --> 00:19:39,274
+这是我在其他公司很少看到的
+I rarely see at companies.
+
+397
+00:19:39,270 --> 00:19:41,690
+就是这样一种想法
+There is just this idea that
+
+398
+00:19:42,213 --> 00:19:46,533
+何人在任何时候都可以指出某些东西不能正常工作
+anyone at any point can point out something that isn't working properly.
+
+399
+00:19:46,757 --> 00:19:49,882
+不管他们是谁 在公司的哪个级别
+It doesn't matter who they are, what level of the company they're in.
+
+400
+00:19:50,378 --> 00:19:53,696
+在他们的文化中 认为这是对的
+It's just understood in their culture that that's okay.
+
+401
+00:19:54,192 --> 00:19:57,088
+这种持续学习和改进的环境
+And that environment of continuous learning and improvement,
+
+402
+00:19:57,090 --> 00:19:59,050
+我想说 是一种领先的实践
+I would say, would be one of those leading practices,
+
+403
+00:19:59,050 --> 00:20:01,770
+这是我希望公司能够做到的事情
+the things that I would expect a company to do
+
+404
+00:20:02,090 --> 00:20:05,642
+能够适应失败并允许它发生
+to be able to accommodate failure and to allow it to occur.
+
+405
+00:20:05,640 --> 00:20:06,954
+嗯 没错
+Mm-hmm (affirmative). Yeah.
+
+406
+00:20:06,950 --> 00:20:10,661
+如果你问的是为什么事情进展不顺利
+If you're asking questions about why things aren't going well,
+
+407
+00:20:10,820 --> 00:20:18,218
+而不是指责或试图隐藏事情 或责怪别人
+instead of pointing fingers or trying to hide things,
+
+408
+00:20:18,346 --> 00:20:20,741
+这就会造成完全不同的情况
+it creates an entirely different situation.
+
+409
+00:20:21,077 --> 00:20:22,917
+那就是改变对话方式
+Changes the conversation.
+
+410
+00:20:23,285 --> 00:20:28,778
+这很有趣 因为你之前提到过
+And it's interesting because you mentioned earlier how the break things
+
+411
+00:20:28,780 --> 00:20:31,840
+“快速失败 打破现状”这句话是这种文化
+"fail fast and break things" mantra was this culture,
+
+412
+00:20:31,840 --> 00:20:35,301
+这种对过去做事方式的反击
+this kind of push-back against the way things used to be done.
+
+413
+00:20:35,525 --> 00:20:38,458
+但这听起来似乎是一种口头禅
+But it sounds like that mantra
+
+414
+00:20:38,460 --> 00:20:45,765
+也许也创造了一种在公司内部、技术团队内部的不同的团队工作方式
+has also created maybe a different way that teams work within a company, within a tech team.
+
+415
+00:20:46,037 --> 00:20:48,197
+再给我讲讲这个问题
+Tell me a little bit more about that.
+
+416
+00:20:48,200 --> 00:20:51,493
+它是如何改变了开发人员看待自己角色的方式
+How has it changed the way developers see their roles
+
+417
+00:20:51,493 --> 00:20:54,490
+以及他们与公司其他人互动的方式?
+and how they interact with other people in the company.
+
+
+
+418
+00:20:55,170 --> 00:21:00,917
+我早期和工程师一起工作的时候差不多是这样的
+My early days of working with engineers pretty much looked like,
+
+419
+00:21:01,669 --> 00:21:04,346
+工程师们都坐在一个小区域
+the engineers all sat in a small area.
+
+420
+00:21:04,350 --> 00:21:05,872
+他们互相交谈
+They all talked to one another.
+
+421
+00:21:05,872 --> 00:21:08,870
+他们从未真正与任何商业人士进行过交流
+They never really interacted with any of the business people.
+
+422
+00:21:09,584 --> 00:21:12,789
+他们从来没有真正理解他们的任何需求
+They never really understood any of their incoming requirements,
+
+423
+00:21:13,136 --> 00:21:19,264
+我们花了很多时间真正专注于成功所需的东西
+and we spent an awful lot of time really focused on what they needed to be successful,
+
+424
+00:21:19,260 --> 00:21:23,173
+而不一定是企业实际完成工作所需的东西
+and not necessarily what the business needed to actually get their work done.
+
+425
+00:21:23,170 --> 00:21:25,237
+所以 它更像是
+So it was much more of a,
+
+426
+00:21:25,240 --> 00:21:26,160
+*Saron Yitbarek的赞同*
+
+427
+00:21:26,160 --> 00:21:30,586
+“我是一个工程师 我需要什么才能编写这个功能片段？”
+“I'm an engineer, what do I need in order to code this piece of functionality?”
+
+428
+00:21:30,789 --> 00:21:34,965
+我观察到 今天在几乎每一个和我一起工作的团队中
+What I observe today in pretty much every team that I work with,
+
+429
+00:21:35,210 --> 00:21:38,640
+对话方式已经发生了巨大的变化
+the conversation has shifted significantly to not,
+
+430
+00:21:38,848 --> 00:21:42,160
+“作为工程师我需要什么才能完成工作”
+“What do I need as an engineer to get my job done,”
+
+431
+00:21:42,528 --> 00:21:45,461
+变成了“客户是谁 或者用户需要什么
+but “What does the customer, or what does the user need
+
+432
+00:21:45,460 --> 00:21:48,858
+才能真正感觉到这我做的这块功能
+to actually feel like this piece of functionality that I'm making
+
+433
+00:21:48,992 --> 00:21:51,194
+对他们来说是成功的？
+is going to be successful for them?
+
+434
+00:21:51,190 --> 00:21:53,056
+他们如何使用产品？
+How are they using the product?
+
+435
+00:21:53,056 --> 00:21:56,060
+我该怎样做才能让他们更轻松？”
+What can I do to make it easier for them?”
+
+436
+00:21:56,060 --> 00:21:58,565
+很多这样的对话已经改变了
+A lot of those conversations have changed,
+
+437
+00:21:58,570 --> 00:22:02,538
+我认为这就是为什么如今公司
+and I think that's why companies are doing better today
+
+438
+00:22:02,540 --> 00:22:04,890
+在提供有意义的技术方面做得更好的原因
+on delivering technology that makes sense.
+
+439
+00:22:05,136 --> 00:22:08,800
+我还想说的是 我们发布的速度越快
+I will also say that the faster we get at releasing,
+
+440
+00:22:09,242 --> 00:22:15,904
+们就越容易知道我们的假设和决定是否真正实现了
+the easier it is for us to know whether or not our assumptions and our decisions are actually coming true.
+
+441
+00:22:15,900 --> 00:22:18,581
+所以 如果我们对用户可能想要什么做了假设
+So, if we make an assumption about what a user might want,
+
+442
+00:22:18,666 --> 00:22:20,117
+在此之前 我们需要等待
+before, we were having to wait,
+
+443
+00:22:20,120 --> 00:22:24,752
+比如 一年到两年才能确定这是不是真的
+like, a year to two years to really find out whether or not that was actually true.
+
+444
+00:22:24,750 --> 00:22:25,248
+*Saron Yitbarek的赞同*
+
+445
+00:22:25,250 --> 00:22:26,458
+而现在
+Now,
+
+446
+00:22:26,460 --> 00:22:29,754
+如果你看看亚马逊或奈飞的模式
+if you look at the model of an Amazon or Netflix,
+
+447
+00:22:29,750 --> 00:22:36,074
+你会发现 他们每天会发布数百次假设的客户需求
+they're releasing their assumptions about what their customers want, like, hundreds of times a day.
+
+448
+00:22:36,070 --> 00:22:41,376
+他们从使用他们的应用程序的人们那里得到的反馈
+And the response they get from folks using their applications
+
+449
+00:22:41,797 --> 00:22:45,968
+会告诉他们他们是否在做用户需要他们做的事情
+will tell them whether or not they're doing what it is the users need them to be doing.
+
+450
+00:22:46,336 --> 00:22:50,048
+是的 这听起来需要更多的合作
+Yeah, and it sounds like it requires more cooperation,
+
+451
+00:22:50,050 --> 00:22:53,418
+因为即使是你之前提出的关于
+because even the piece of advice you gave earlier about
+
+452
+00:22:53,420 --> 00:22:56,128
+构建、破坏构建、经常破坏它的建议
+build, break the build, break it often.
+
+453
+00:22:56,266 --> 00:23:03,978
+这就需要工程团队或开发人员与 DevOps 保持步调一致
+That kind of requires the engineering team or the developers to be more in step with DevOps, right,
+
+454
+00:23:03,980 --> 00:23:06,074
+以便他们能够破坏它
+in order for them to break it,
+
+455
+00:23:06,070 --> 00:23:11,269
+并了解尽早发布并经常发布是什么样子的
+and to see what that looks like to do those releases early and to do them often.
+
+456
+00:23:11,270 --> 00:23:15,269
+听起来这需要双方更多的合作
+It sounds like it requires more cooperation between the two.
+
+457
+00:23:15,674 --> 00:23:18,650
+是的 对于拥有敏捷教练这个头衔的人来说
+Yeah, and it's always amusing to somebody who has that title,
+
+458
+00:23:18,650 --> 00:23:21,914
+或者以我作为首席敏捷架构师看来 总是很有趣
+agile coach, or in my case, chief agile architect,
+
+459
+00:23:21,910 --> 00:23:28,474
+因为《敏捷宣言》的初衷是让人们从不同的角度来考虑这些事情
+because the original intent of the Agile Manifesto is to get folks to think about those things differently.
+
+460
+00:23:29,780 --> 00:23:32,538
+我们通过开发和帮助别人开发
+We are uncovering better ways of developing software
+
+461
+00:23:32,540 --> 00:23:35,184
+来发现更好的开发软件的方法
+by doing it and helping others do it.
+
+462
+00:23:35,546 --> 00:23:40,506
+它确实是敏捷所要做的的核心、根本和基础
+It is really the core, heart, and foundation of what agile is supposed to do.
+
+463
+00:23:40,736 --> 00:23:45,072
+因此 如果你将 10 年 15 年以上的时间
+And so, if you fast forward the 10, 15+ years
+
+464
+00:23:45,070 --> 00:23:46,784
+快速推进到 DevOps 的到来
+to the arrival of DevOps
+
+465
+00:23:47,088 --> 00:23:52,250
+并坚持我们需要持续进行集成和部署
+and the insistence that we have continuous integration and deployment.
+
+466
+00:23:52,368 --> 00:23:53,776
+我们有监控
+We have monitoring,
+
+467
+00:23:53,780 --> 00:23:56,421
+我们开始以不同的方式思考如何将代码扔出墙外
+we start thinking differently about throwing code over the wall.
+
+468
+00:23:56,420 --> 00:24:03,530
+所有这些东西都是我们最初开始讨论敏捷时应该想到的
+All that stuff is really what we were supposed to be thinking back when we originally started talking about agile.
+
+469
+00:24:03,530 --> 00:24:04,992
+嗯 绝对是的
+Mm-hmm (affirmative).
+
+470
+00:24:05,562 --> 00:24:10,597
+所以 不管人们如何实践这种失败的理念
+Absolutely. So regardless of how people implement this idea of failure,
+
+471
+00:24:10,600 --> 00:24:14,853
+我认为我们都可以接受失败
+I think that we can both agree that the acceptance of failure,
+
+472
+00:24:14,850 --> 00:24:17,685
+将失败规范化只是过程的一部分
+the normalizing of failure is just a part of the process,
+
+473
+00:24:17,690 --> 00:24:19,973
+是我们需要做的事情
+something that we need to do,
+
+474
+00:24:19,970 --> 00:24:22,197
+是我们可以管理的事情
+something that happens that we can manage,
+
+475
+00:24:22,200 --> 00:24:24,773
+是我们可以用“正确的方式”做的事情
+that we can maybe do the "right way,"
+
+476
+00:24:24,770 --> 00:24:28,453
+这是一件好事 它对开源有好处
+is a good thing. It has done some good for open source.
+
+477
+00:24:28,602 --> 00:24:33,066
+跟我说说这个新运动的好处
+Tell me about some of the benefits of having this new movement,
+
+478
+00:24:33,070 --> 00:24:36,378
+这种接受失败是过程的一部分的新文化的一些好处
+this new culture of accepting failure as part of the process.
+
+479
+00:24:36,618 --> 00:24:39,120
+看着这个过程发生是一件美妙的事情
+It's a beautiful thing to watch that process happen.
+
+480
+00:24:39,349 --> 00:24:45,237
+对一个人来说 从一个他们害怕可能发生事情的环境
+For somebody to go from being really in a situation where they're fearful of what might happen,
+
+481
+00:24:45,240 --> 00:24:52,005
+到一个他们可以尝试实验、尝试成长、尝试找出正确答案的环境
+to a place in which they can try to experiment and try to grow, and try to figure out what might be the right answer.
+
+482
+00:24:52,010 --> 00:24:54,725
+真的很高兴 就像它们已经盛开花朵
+It's really great to see. It's like they blossom.
+
+483
+00:24:54,730 --> 00:24:56,298
+他们的士气提高了
+Their morale improves,
+
+484
+00:24:56,300 --> 00:25:00,394
+他们真正意识到他们可以拥有的是什么
+they actually realize that they can own what it is that they are.
+
+485
+00:25:00,390 --> 00:25:01,957
+他们可以自己做决定
+They can make decisions for themselves,
+
+486
+00:25:01,960 --> 00:25:04,672
+而不必等待别人为他们做决定
+they don't have to wait for somebody to make the decision for them.
+
+487
+00:25:05,781 --> 00:25:07,670
+失败即自由
+Failure as freedom.
+
+488
+00:25:07,802 --> 00:25:08,864
+啊 我喜欢!
+Ah, I love it!
+
+489
+00:25:09,253 --> 00:25:12,229
+Jen Krieger 是红帽公司的首席敏捷架构师
+Jen Krieger is Red Hat's chief agile architect.
+
+
+
+490
+00:25:12,997 --> 00:25:17,840
+*BGM*
+
+491
+00:25:18,272 --> 00:25:24,234
+并不是所有的开源项目
+Not all open source projects reach the fame and success of big ones,
+
+492
+00:25:24,234 --> 00:25:27,230
+都像 Rails、Django 或 Kubernetes 那样声名鹊起
+like Rails or Django, or Kubernetes.
+
+493
+00:25:27,230 --> 00:25:29,002
+事实上 大多数都没有
+In fact, most don't.
+
+494
+00:25:29,328 --> 00:25:33,002
+大多数都是只有一个贡献者的小项目
+Most are smaller projects with just a single contributor.
+
+495
+00:25:33,114 --> 00:25:38,304
+解决一小群开发人员面临的小问题的小众项目
+Niche projects that solve little problems that a small group of developers face,
+
+496
+00:25:38,496 --> 00:25:40,272
+或者它们已经被抛弃
+or they've been abandoned
+
+497
+00:25:40,270 --> 00:25:42,389
+很久没有人碰了
+and haven't been touched in ages.
+
+498
+00:25:42,816 --> 00:25:44,885
+但它们仍然有价值
+But they still have value.
+
+499
+00:25:45,578 --> 00:25:49,509
+事实上 很多这样的项目仍然非常有用
+In fact, a lot of those projects are still hugely useful,
+
+500
+00:25:49,510 --> 00:25:54,341
+可以被回收、升级 被其他项目蚕食
+getting recycled, upcycled, cannibalized by other projects.
+
+501
+00:25:54,853 --> 00:25:57,098
+而另一些人通过他们的错误启发我们
+And others simply inspire us,
+
+502
+00:25:57,322 --> 00:26:00,848
+教导我们
+teach us by their very instructive wrongness.
+
+503
+00:26:01,354 --> 00:26:04,597
+因为在一个健康的、开放的舞台上
+Because failure, in a healthy, open source arena,
+
+504
+00:26:04,880 --> 00:26:07,018
+失败会带给你比胜利更好的东西
+gives you something better than a win.
+
+505
+00:26:07,392 --> 00:26:09,013
+它给了你洞察力
+It gives you insight.
+
+506
+00:26:09,984 --> 00:26:11,290
+尽管有那些死胡同
+And here's something else.
+
+507
+00:26:11,290 --> 00:26:13,125
+尽管有各种冒险的尝试和惊呼
+Despite all those dead ends,
+
+508
+00:26:13,130 --> 00:26:20,730
+但开源项目的数量每年都在翻倍
+the number of open source projects is doubling about every year, despite all the risky attempts and Hail Marys;
+
+509
+00:26:20,912 --> 00:26:23,730
+我们的社区正在繁荣
+our community is thriving,
+
+510
+00:26:23,730 --> 00:26:24,778
+事实证明
+and it turns out,
+
+511
+00:26:24,780 --> 00:26:27,269
+尽管因失败我们没有繁荣
+we're not thriving despite our failures,
+
+512
+00:26:27,472 --> 00:26:29,338
+但因失败我们正在繁荣
+we're thriving because of them.
+
+513
+00:26:30,933 --> 00:26:32,074
+下一集预告
+Next episode,
+
+514
+00:26:32,074 --> 00:26:35,070
+DevOps 世界中的安全性如何变化
+how security changes in a DevOps world.
+
+515
+00:26:35,338 --> 00:26:40,432
+持续部署意味着安全正在渗透到开发的每个阶段
+Constant deployment means security's working its way into every stage of development,
+
+516
+00:26:40,725 --> 00:26:42,869
+这正在改变我们的工作方式
+and that is changing the way we work.
+
+517
+00:26:43,370 --> 00:26:46,826
+同时 如果你想了解更多关于开源文化的知识
+Meantime, if you want to learn more about open source culture
+
+518
+00:26:46,954 --> 00:26:49,749
+以及我们如何改变围绕失败的文化
+and how we can all change the culture around failing,
+
+519
+00:26:50,042 --> 00:26:56,496
+请访问 redhat.com/commandlineheroes  免费资源等着你
+check out the free resources waiting for you at redhat.com/commandlineheroes.
+
+520
+00:26:58,453 --> 00:27:01,909
+《代码英雄》是红帽的原创播客
+Command Line Heroes is an original podcast from Red Hat.
+
+521
+00:27:02,218 --> 00:27:05,744
+你可以在 Apple Podcast、Google Podcast
+Listen for free on Apple Podcast, Google Podcast,
+
+522
+00:27:05,740 --> 00:27:07,680
+或是其他你喜欢的途径免费收听
+or wherever you do your thing.
+
+523
+00:27:07,680 --> 00:27:09,109
+我是 Saron Yitbarek
+I'm Saron Yitbarek.
+
+524
+00:27:09,109 --> 00:27:12,110
+坚持编程 下期再见
+Until next time, keep on coding.
+
