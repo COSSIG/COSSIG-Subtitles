@@ -15,6 +15,8 @@ file_content = file_content.replace("；", " ")
 
 file_content = file_content.replace("——\n", " \n")
 file_content = file_content.replace(" —— ", " - ")
+file_content = file_content.replace("—\n", " \n")
+file_content = file_content.replace("—", " - ")
 
 file_content = file_content.replace("……", "…")
 
