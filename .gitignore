@@ -1,1 +1,17 @@
+## Auto-generated files and directories
+
+# Mac file system auto generated files
 .DS_Store
+
+# Python virtual environment
+/venv/
+
+# Jetbrains IDE project files
+/.idea/
+
+
+## Subtitle files and subtitle project files in the /subtitle-tools folder - 
+# These entries are for the convenience of subtitle tools development
+/subtitle-tools/*.atpj
+/subtitle-tools/*.srt
+/subtitle-tools/*.ass
