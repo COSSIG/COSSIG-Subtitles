@@ -1,0 +1,2081 @@
+﻿1
+00:00:01,050 --> 00:00:03,176
+1991 年 6 月 26 日
+On June the 26th, 1991,
+
+2
+00:00:03,176 --> 00:00:05,950
+在华盛顿特区 马里兰州和西弗吉尼亚州的大部分地区
+Washington DC, much of Maryland and West Virginia,
+
+3
+00:00:06,078 --> 00:00:11,975
+我祖国的许多地区都因公共电话网络的大规模故障而瘫痪了
+major portions of my home state were paralyzed by massive failure in the public telephone network.
+
+4
+00:00:11,975 --> 00:00:17,175
+然而 随着技术变得越来越复杂 网络系统越来越相互依存
+And yet, as technology becomes more sophisticated and network systems more interdependent,
+
+5
+00:00:17,175 --> 00:00:19,751
+反复发生故障的可能性也会增加
+the likelihood of recurrent failures increases.
+
+6
+00:00:19,751 --> 00:00:22,675
+这种状况的发生 是之前就警告过的
+It's not as though there wasn't warning that this would happen.
+
+7
+00:00:23,725 --> 00:00:25,675
+在 20 世纪 90 年代初
+In the early 1990s,
+
+8
+00:00:25,675 --> 00:00:31,357
+有 1200 万美国人遭受了大规模的电话网络故障
+12 million Americans were hit with massive phone network failures.
+
+9
+00:00:31,357 --> 00:00:33,054
+人们不能给医院打电话
+People couldn't call the hospital.
+
+10
+00:00:33,250 --> 00:00:35,250
+企业不能给客户打电话
+Businesses couldn't call customers.
+
+11
+00:00:35,375 --> 00:00:37,938
+父母不能打电话给托儿所
+Parents couldn't call their daycares.
+
+12
+00:00:37,938 --> 00:00:42,946
+对于一个基础设施严重依赖于万物互联的计算机系统的国家来说
+It was chaos and it was also a serious wake-up call,
+
+13
+00:00:42,946 --> 00:00:46,847
+对于一个基础设施严重依赖于万物互联的计算机系统的国家来说
+a wake-up call for a country whose infrastructure relied heavily
+
+14
+00:00:46,847 --> 00:00:50,300
+这是一场混乱 也是一声警钟
+on the computer systems that networked everything.
+
+15
+00:00:50,625 --> 00:00:54,275
+这些计算机网络变得越来越大
+Those computer networks were growing larger and larger,
+
+16
+00:00:54,851 --> 00:00:56,851
+然后当它们出现故障时
+and then when they failed,
+
+17
+00:00:58,214 --> 00:01:00,466
+故障的后果就会极为严重
+yeah, they failed big time.
+
+18
+00:01:01,362 --> 00:01:04,617
+电脑故障会导致电话系统崩溃
+A computer failure caused that phone system crash.
+
+19
+00:01:04,617 --> 00:01:12,850
+在今天 代码中的一行小错误的后果比以往时候都要严重
+This tiny one line bug in the code, and today the consequences of little bugs like that are higher than ever.
+
+20
+00:01:15,333 --> 00:01:16,475
+我是 Saron Yitbarek
+I'm Saron Yitbarek
+
+21
+00:01:16,475 --> 00:01:20,469
+这里是是红帽公司的原创播客节目《代码英雄》
+and this is Command Line Heroes, an original podcast from Red Hat.
+
+22
+00:01:23,898 --> 00:01:28,458
+因此 软件安全性和可靠性比以往任何时候都重要
+So software security and reliability matter more than ever.
+
+23
+00:01:28,842 --> 00:01:34,223
+传统的瀑布式开发方法中 安全性只是一个附加流程而已
+The old waterfall approach to development, where security was just tacked onto the end of things,
+
+24
+00:01:34,543 --> 00:01:36,314
+这样的方式已经不再适用
+that doesn't cut it anymore.
+
+25
+00:01:36,531 --> 00:01:38,772
+我们生活在一个 DevOps 的世界里
+We're living in a DevOps world
+
+26
+00:01:38,772 --> 00:01:42,813
+一切都变得更快、更敏捷、扩展性更强
+where everything is faster, more agile, and scalable
+
+27
+00:01:42,813 --> 00:01:47,396
+这在电话网络崩溃时是人们无法想象的
+in ways they couldn't even imagine back when that phone network crashed.
+
+28
+00:01:47,844 --> 00:01:53,958
+这意味着我们的安全和可靠性标准必须不断改进 以应对这些挑战
+That means our security and reliability standards have to evolve to meet those challenges.
+
+29
+00:01:55,706 --> 00:02:00,906
+在本集中 我们将研究如何将安全工作集成到 DevOps 中
+In this episode, we're going to figure out how to integrate security into DevOps,
+
+30
+00:02:01,162 --> 00:02:07,539
+我们还将探索提升运营可靠性和弹性的新方法
+and we're also exploring new approaches to building reliability and resilience into operations.
+
+31
+00:02:09,025 --> 00:02:14,721
+在介绍了所有这些之后 我们还有很多东西可以讨论
+Even after covering all that, we know there's so much more we could talk about
+
+32
+00:02:15,041 --> 00:02:17,394
+因为在 DevSecOps 的世界里
+because in a DevSecOps world,
+
+33
+00:02:17,394 --> 00:02:22,132
+不管对于开发人员 还是运营人员 现状都在快速变化
+things are changing fast for both the developers and operations.
+
+34
+00:02:22,400 --> 00:02:25,925
+从不同的立场上来看 这些变化的意义也随之改变
+These changes mean different things depending on where you're standing,
+
+35
+00:02:25,925 --> 00:02:27,150
+但这是我们的看法
+but this is our take.
+
+36
+00:02:27,150 --> 00:02:28,875
+我们也很想听到你们的观点
+We'd love to hear yours too -
+
+37
+00:02:28,875 --> 00:02:33,230
+如果你认为我们错过了什么 不要害羞 - 在网上联系我们
+so don't be shy if you think we've missed something - hit us up online.
+
+38
+00:02:34,125 --> 00:02:38,976
+好了 让我们开始探索这个全新的领域吧
+All right, let's dig in and start exploring this brand new territory.
+
+39
+00:02:43,567 --> 00:02:47,487
+事情就是这样 想让安全性和可靠性跟上时代的步伐
+Here's the thing, getting security and reliability up to speed,
+
+40
+00:02:47,487 --> 00:02:49,879
+并为 DevOps 世界做好准备
+getting it ready for a DevOps world,
+
+41
+00:02:50,071 --> 00:02:54,123
+我们就必须对工作方式进行一些关键的调整
+means we have to make a couple of key adjustments to the way we work.
+
+42
+00:02:54,763 --> 00:02:58,235
+第一 我们必须拥抱自动化
+Number one, we have to embrace automation.
+
+43
+00:02:58,491 --> 00:03:02,825
+我是说 想想如果要人为实行两步验证 对后勤的负担会多么庞大
+I mean, think about the logistics of say two-factor authentication.
+
+44
+00:03:03,145 --> 00:03:06,489
+想想那些难以想象的艰巨任务吧
+Think of the impossibly huge task that poses.
+
+45
+00:03:06,832 --> 00:03:11,221
+很显然 你不能仅仅通过增加员工来解决问题
+It's pretty obvious you're not going to solve things by just adding more staff,
+
+46
+00:03:11,605 --> 00:03:14,373
+所以第一点就是拥抱自动化
+so that's number one, embracing automation.
+
+47
+00:03:14,757 --> 00:03:18,799
+然后 第二点 这个可能不是那么明显
+And then, number two, and this one's maybe less obvious,
+
+48
+00:03:19,247 --> 00:03:24,103
+那就是真正地去改变文化 使安全从业者不再受人回避
+it's really changing the culture so security isn't a boogeyman anymore.
+
+49
+00:03:24,295 --> 00:03:27,731
+稍后我将解释我所说的改变文化的含义
+I'm going to explain what I mean by changing the culture later on,
+
+50
+00:03:27,987 --> 00:03:31,395
+但是 让我们分别解释这两点
+but let's tackle these two steps one at a time.
+
+51
+00:03:32,739 --> 00:03:35,123
+首先 拥抱自动化
+First up, embracing automation.
+
+52
+00:03:41,877 --> 00:03:49,957
+以前 应用程序的部署在每次发布之前 都需要人为的安全审查
+Once upon a time app deployment involved a human-driven security review before every single release,
+
+53
+00:03:50,432 --> 00:03:54,416
+而你多半也注意到了 - 人为审查可能会有亿点慢
+and I don't know if you've noticed, but humans, they can be a little slow.
+
+54
+00:03:54,864 --> 00:03:57,350
+因此 如果要将安全工作整合进 DevOps
+That's why automation is such a key part
+
+55
+00:03:57,350 --> 00:03:59,792
+自动化必然是其中不可或缺的一环
+of building security into DevOps.
+
+56
+00:04:00,240 --> 00:04:04,352
+以 Verizon 最近的数据泄露报告为例
+Take, for example, this recent data breach report from Verizon.
+
+57
+00:04:04,672 --> 00:04:11,776
+他们发现 81% 的黑客入侵涉及密码被盗或者弱密码
+They found that 81% of all hacking–related breaches involve stolen or weak passwords,
+
+58
+00:04:12,125 --> 00:04:15,360
+从表面上看 这是一个非常简单的问题
+and that's on the face of it such a simple problem.
+
+59
+00:04:15,744 --> 00:04:19,152
+但问题的规模却很大
+But it's a simple problem at a huge scale.
+
+60
+00:04:19,536 --> 00:04:20,937
+就像我之前说的
+Like I mentioned before,
+
+61
+00:04:20,937 --> 00:04:25,376
+你不能靠增加人手解决 3000 万个密码问题 对吧？
+you're not going to staff your way out of 30 million password issues, right?
+
+62
+00:04:26,016 --> 00:04:30,896
+问题在于解决大规模问题
+The hurdle is addressing that problem of scale, the huge size of it,
+
+63
+00:04:31,216 --> 00:04:36,559
+而每次的答案都是一样的 那就是自动化 自动化
+and the answer is the same every time. It's automation, automation.
+
+64
+00:04:36,751 --> 00:04:40,799
+如果你总等着人参与进来 那么服务的规模就不会扩大
+If you wait for a human being to get involved, it's not going to scale.
+
+65
+00:04:41,161 --> 00:04:45,120
+Vincent Danen 是红帽公司产品安全部门的主管
+Vincent Danen is the director of product security at Red Hat
+
+66
+00:04:45,248 --> 00:04:52,441
+在过去的 20 年里 他见证了 DevOps 的快速发展
+and over the 20 years he's been at this, he's watched as DevOps created a faster and faster environment.
+
+67
+00:04:52,825 --> 00:04:55,375
+安全团队不得不努力追赶
+Security teams have had to race to keep up.
+
+68
+00:04:55,887 --> 00:04:59,597
+刚开始的时候 每个月都有漏洞
+When I started, it was a vulnerability per month
+
+69
+00:04:59,597 --> 00:05:03,026
+后来变成了隔周一次 然后是每周都有
+and then it started becoming every other week and then every week,
+
+70
+00:05:03,026 --> 00:05:07,753
+现在 每天都能找到几百个漏洞
+and now we're into the, you know, literally finding hundreds of these things every day.
+
+71
+00:05:08,521 --> 00:05:11,229
+有趣的是 正如 Vincent 所说
+What's interesting here is that Vincent says
+
+72
+00:05:11,229 --> 00:05:16,998
+随着安全团队的进步 漏洞会越来越多 而不是越来越少
+there are actually more vulnerabilities showing up as security teams evolve, not less.
+
+73
+00:05:17,225 --> 00:05:21,927
+我们永远不会说 哦 我们现在安全了 我们做完了 我们的工作结束了
+We'll never get to the point where we say, oh, we're secure now, we're done. Our job is over.
+
+74
+00:05:21,927 --> 00:05:25,982
+安全工作会一直存在 就像呼吸一样 这是必须要有的
+It'll always be there. It's just something that has to be as normal as breathing now.
+
+75
+00:05:27,390 --> 00:05:35,150
+事实证明 对于安全性和可靠性团队来说 细节的问题变得越来越重要
+It turns out what counts as an issue for security and reliability teams is becoming more and more nuanced.
+
+76
+00:05:35,534 --> 00:05:38,100
+只要我们还在寻找这些漏洞 我们就会发现更多
+As we're looking for these things, we're finding more
+
+77
+00:05:38,420 --> 00:05:42,446
+而且这个趋势还将继续 因为你会发现新的漏洞类型
+and this trend is going to continue as you find new classes of vulnerabilities
+
+78
+00:05:42,446 --> 00:05:45,245
+以及以前不受重视的因素
+and things we maybe didn't think were important or
+
+79
+00:05:45,245 --> 00:05:47,717
+甚至是在此前未知的因素
+didn't even know they existed before.
+
+80
+00:05:48,020 --> 00:05:52,444
+我们发现漏洞的速度更快了 它们的数量也变得更多
+We're finding out about these things much faster and there's more of them.
+
+81
+00:05:52,636 --> 00:05:54,845
+因此工作的规模爆炸性增长
+And so the scale kind of explodes.
+
+82
+00:05:55,165 --> 00:05:59,136
+新知识、软件的体量、消费者的数量
+It's knowledge. It's volume of software. It's number of consumers.
+
+83
+00:05:59,136 --> 00:06:05,850
+都促进了安全领域的进步以及漏洞的增加
+All of these things contribute to the growth of security in this area and the vulnerabilities that we're finding.
+
+84
+00:06:06,400 --> 00:06:09,650
+一旦你将安全视为一个不断发展的问题
+Once you see security as an evolving issue
+
+85
+00:06:09,650 --> 00:06:13,425
+而不是随着时间的推移而 “得到解决”的问题
+rather than one that gets "solved" over time,
+
+86
+00:06:13,809 --> 00:06:17,650
+那么自动化的理由就会变得更加充分
+the case for automation, well, it gets even stronger.
+
+87
+00:06:17,970 --> 00:06:19,775
+嗯 我认为有了自动化
+Well, I think with automation
+
+88
+00:06:19,775 --> 00:06:25,942
+你可以很快将新的流程集成到你的开发流水线中
+you can integrate this stuff into your development pipelines in a way that is very fast, for one.
+
+89
+00:06:26,070 --> 00:06:29,060
+其二 你不需要人类来做这些工作 对吧？
+For two, you don't require human beings to do this effort, right?
+
+90
+00:06:29,060 --> 00:06:30,518
+计算机不需要睡觉
+Computers don't need to sleep,
+
+91
+00:06:30,518 --> 00:06:35,926
+所以你可以在处理器允许的情况下以最快速度审查代码
+so you can churn through code as fast as your processors will allow
+
+92
+00:06:35,926 --> 00:06:42,279
+而不是人为查看某些可能相当冗长乏味的内容
+rather than waiting for a human to pour through some maybe rather tedious lines of code
+
+93
+00:06:42,279 --> 00:06:43,981
+来查找漏洞
+to go looking for vulnerabilities.
+
+94
+00:06:44,225 --> 00:06:46,062
+通过模式匹配和启发式方法
+And then with pattern-matching and heuristics,
+
+95
+00:06:46,062 --> 00:06:51,300
+在开始编写代码的时候 你就可以知道代码中那些地方是易受攻击的
+you can actually determine what's vulnerable even at the time of writing the code to begin with.
+
+96
+00:06:51,300 --> 00:06:54,836
+如果在你编写代码的时候
+So if you have, like, a plug-in, you know,
+
+97
+00:06:54,836 --> 00:06:57,780
+在你的 IDE 或者工具中有一个插件
+for your IDE or your tool that you're using to write your code,
+
+98
+00:06:57,780 --> 00:07:01,125
+它能告诉你 嘿 这看起来有点可疑
+it can tell you as you're writing it, like, hey, maybe this looks a little fishy,
+
+99
+00:07:01,125 --> 00:07:03,750
+或者你刚刚引入了一个漏洞
+or you've just introduced a vulnerability
+
+100
+00:07:03,750 --> 00:07:06,838
+在你提交代码之前你都可以纠正这些疑点或者漏洞
+and you can correct these things before you even commit the code.
+
+101
+00:07:08,000 --> 00:07:11,779
+写代码时就能做安全检查 这是一大红利
+Security on the move. That's a huge bonus.
+
+102
+00:07:12,350 --> 00:07:17,050
+每一天 甚至每一小时 都会有新的开发任务被完成
+There's just so much that's coming out every, every day, every hour even.
+
+103
+00:07:17,250 --> 00:07:20,058
+通过持续集成和持续部署
+With continuous integration and continuous delivery,
+
+104
+00:07:20,058 --> 00:07:22,700
+你写了代码 10 分钟后它就被部署了
+you write code and it's deployed 10 minutes later.
+
+105
+00:07:22,828 --> 00:07:30,900
+因此 在代码被推送之前自动进行验证是很有必要的
+so it's really critical to get that validation of that code automatically prior to it being pushed out.
+
+106
+00:07:32,225 --> 00:07:36,401
+我们可以使用各种各样的工具来完成这个任务
+A whole breadth of tools are available so we can actually get this done,
+
+107
+00:07:37,025 --> 00:07:43,265
+不管是静态代码分析 还是 IDE 的插件 或者别的什么选项
+whether it's static code analysis or plug-ins for your IDE or a whole bunch of other options.
+
+108
+00:07:43,265 --> 00:07:46,561
+我们将在 redhat.com/commandlineheroes 上
+We'll share some of our favorites in the show notes for this episode
+
+109
+00:07:46,561 --> 00:07:50,897
+分享一些我们最喜欢的工具
+over at redhat.com/commandlineheroes.
+
+110
+00:07:53,025 --> 00:07:57,585
+一旦我们有了这些工具 它们将帮助我们把安全放在首位
+Once we've got those tools in place, they help keep security top of mind.
+
+111
+00:07:57,585 --> 00:08:03,233
+结果就是 DevOps 被重新定义为 DevSecOps
+The result, DevOps gets re-imagined as DevSecOps.
+
+112
+00:08:03,617 --> 00:08:06,375
+安全被纳入到流程中
+Security gets baked into the process.
+
+113
+00:08:07,987 --> 00:08:12,611
+就像开发人员和运维人员结合的方式一样
+In the same way that developers and operations kind of combined,
+
+114
+00:08:12,611 --> 00:08:16,041
+你将这两个领域合成到了一个领域
+you took those two disciplines to generate one.
+
+115
+00:08:16,041 --> 00:08:17,157
+现在 你有了 DevOps
+Now you have DevOps,
+
+116
+00:08:17,157 --> 00:08:22,800
+并将安全这第三个组件与开发和运维集成到一起
+and taking that third component of security and integrating that in with development and operations,
+
+117
+00:08:22,800 --> 00:08:24,525
+我认为这非常重要
+I think is really important because
+
+118
+00:08:25,417 --> 00:08:30,560
+如果出事后才考虑安全性 安全工作会变得极为被动 极为昂贵
+having security as the afterthought is what makes security so reactive, so expensive,
+
+119
+00:08:30,560 --> 00:08:33,696
+也可能损害消费者的利益
+so damaging or potentially damaging to consumers.
+
+120
+00:08:33,824 --> 00:08:36,117
+如果你一开始就把安全代入其中
+And when you plug that in right at the beginning,
+
+121
+00:08:36,437 --> 00:08:41,829
+完成开发任务之后 从头到尾进行安全检查 背后就是运维的工作
+you have development being done, securities in there from start to finish and the operations work.
+
+122
+00:08:44,325 --> 00:08:47,150
+当然 就像我们在这一集的开头提到的
+Of course, like we mentioned at the top of the episode,
+
+123
+00:08:47,150 --> 00:08:52,798
+自动化只是图景的一半 而 Vincent 也明白这一点
+automation is really just one half of a bigger pie and Vincent gets that.
+
+124
+00:08:53,630 --> 00:08:54,825
+自动化之外还有其他部分
+It's not just one piece.
+
+125
+00:08:54,825 --> 00:09:00,566
+不能仅仅在你的 CI/CD 流水线中随便引入一个工具就期望一切都变好
+You can't just, you know, throw a tool in your CI/CD pipeline and expect everything to be okay.
+CI/CD：指“持续集成、持续交付、持续部署”
+是一种工业化的软件开发流程 通过大量的自动化 让服务能被快速更改、快速上线
+
+126
+00:09:00,566 --> 00:09:08,366
+为了达到我们希望看到的最终有益结果
+There's a whole gamut of different techniques and technologies and behaviors
+
+127
+00:09:08,366 --> 00:09:14,190
+需要使用各种技术和行为
+that are required to produce those ultimate beneficial results that we want to see.
+
+128
+00:09:14,894 --> 00:09:17,215
+自动化确实让我们做到了一半
+Automation does get us partway there,
+
+129
+00:09:17,215 --> 00:09:21,583
+但我们必须记住另一部分 - 稍微模糊一点的那一部分
+but we've got to remember the other piece - that slightly fuzzier piece.
+
+130
+00:09:22,025 --> 00:09:24,921
+跟我一起说：那就是文化部分
+Say it with me, the culture piece,
+
+131
+00:09:25,305 --> 00:09:28,083
+让开发者和运维人员都一起参与进来
+getting developers and ops both on board
+
+132
+00:09:28,083 --> 00:09:30,889
+这样这些问题就不再是可怕的问题
+so that these issues aren't boogeyman anymore.
+
+133
+00:09:33,075 --> 00:09:35,315
+我们必须改变文化
+We have to change a culture
+
+134
+00:09:35,635 --> 00:09:40,259
+而有些人正在以一种最不痛苦的方式来做到这一点：
+and some folks are learning to do that in the least painful way possible,
+
+135
+00:09:40,500 --> 00:09:41,375
+通过游戏
+with games.
+
+136
+00:09:44,300 --> 00:09:47,628
+现在让我们来看看运维的那一面
+Let's take a swing over to the op side of things now.
+
+137
+00:09:48,175 --> 00:09:52,107
+如今建立庞大的基础设施很容易
+It's so easy to stand up huge infrastructure these days,
+
+138
+00:09:52,619 --> 00:09:55,498
+但这并不意味着我们应该做粗制滥造的工作
+but that doesn't mean we should be doing shoddy work.
+
+139
+00:09:55,725 --> 00:10:00,080
+我们仍然应该努力改进我们的系统 确保可靠性
+We should still be hammering on our systems, ensuring reliability,
+
+140
+00:10:00,080 --> 00:10:03,024
+未雨绸缪
+figuring out how to prepare for the unexpected.
+
+141
+00:10:03,575 --> 00:10:06,983
+这就是 Jesse Robbins 正在努力实现的
+That's the mindset Jesse Robbins is working to bring about.
+
+142
+00:10:08,071 --> 00:10:11,671
+如今 Jesse 是 Orion Labs 的 CEO
+Today Jesse is the CEO of Orion Labs,
+
+143
+00:10:11,671 --> 00:10:17,447
+但在此之前 他在亚马逊是著名的“灾难大师”
+but before that he was known as the master of disaster over at Amazon.
+
+144
+00:10:17,900 --> 00:10:21,250
+在那里 Jesse 发挥他的才智
+During his time there, Jesse was pretty much a wizard
+
+145
+00:10:21,250 --> 00:10:24,508
+让大家对问题至少有了了解
+at getting everybody at least aware of these issues.
+
+146
+00:10:24,900 --> 00:10:24,950
+他通过一个叫做 “游戏日” 的活动来做到这一点
+
+147
+00:10:24,950 --> 00:10:27,654
+他通过一个叫做 “游戏日” 的活动来做到这一点
+And he did it with something called Game Day.
+
+148
+00:10:27,910 --> 00:10:33,110
+这些活动有时会让成千上万的员工参与故障演练
+These can involve thousands of employees running through disaster scenario drills,
+
+149
+00:10:33,430 --> 00:10:35,829
+通过灾难演练来习惯系统失灵的状况
+getting used to the idea of things breaking
+
+150
+00:10:35,829 --> 00:10:38,700
+并了解其发生的原因和方式
+and getting intimate with the why and the how.
+
+151
+00:10:39,475 --> 00:10:41,707
+下面是 Jesse 和我的讨论
+Here's Jesse and me talking it over,
+
+152
+00:10:41,707 --> 00:10:47,403
+话题是提升运营可靠性和弹性的方式
+looking especially at how reliability and resilience get built into the operation side.
+
+153
+00:10:48,475 --> 00:10:53,006
+大家都知道你做了很多非常酷的事情
+Okay, so you are known for many things, and one of those things is
+
+154
+00:10:53,006 --> 00:10:55,582
+其中之一就是你在亚马逊做的活动 - “游戏日”
+the exercise "Game Day",
+
+155
+00:10:55,582 --> 00:10:56,032
+那是什么?
+what you did at Amazon. What is that, what's Game Day?
+Yeah
+
+156
+00:10:56,032 --> 00:10:58,414
+那是什么?
+what you did at Amazon. What is that, what's Game Day?
+
+157
+00:10:58,817 --> 00:11:02,289
+“游戏日” 是我创建的一个项目
+So Game Day was a program that I created
+
+158
+00:11:02,289 --> 00:11:09,275
+它通过大规模破坏来测试最脆弱系统的运行情况
+to test the operational readiness of the most vulnerable systems
+
+159
+00:11:09,275 --> 00:11:11,581
+它通过大规模破坏来测试最脆弱系统的运行情况
+by breaking things at massive scale.
+
+160
+00:11:11,581 --> 00:11:17,597
+如果你是 Netflix 的 “混沌猴子” 的粉丝
+So if you're a fan of what's called Chaos Monkey Now by the Netflix people and others,
+
+161
+00:11:17,597 --> 00:11:21,837
+“游戏日” 则是我创造的这一项目的后继者
+Game Day was the name for my program that definitely proceeded all of that.
+
+162
+00:11:22,006 --> 00:11:27,777
+实际上 它非常专注于建立一种卓越的运营文化
+It was really heavily focused on building a culture of operational excellence,
+
+163
+00:11:27,777 --> 00:11:33,409
+建立大规模测试系统的能力
+building the capability to test systems at massive scale when they're breaking,
+
+164
+00:11:33,670 --> 00:11:36,950
+当系统崩溃时 能了解它们是如何崩溃的以改进它们
+learn how they break to improve them.
+
+165
+00:11:36,950 --> 00:11:39,416
+然后还要建立一种文化
+And then also to build a culture
+
+166
+00:11:39,416 --> 00:11:46,000
+能够对事件做出反应并恢复
+that is capable of responding to and recovering from incidents in situations.
+
+167
+00:11:46,000 --> 00:11:48,350
+它是按照事故指挥系统来设计的
+And it was all modeled and is all modeled
+
+168
+00:11:48,350 --> 00:11:50,487
+它是按照事故指挥系统来设计的
+after the incident command system,
+
+169
+00:11:50,487 --> 00:11:55,375
+这是世界各地的消防部门用来处理各种规模事故的系统
+which is what the fire departments use around the world for dealing with incidents of any size.
+
+170
+00:11:55,375 --> 00:11:58,082
+它的诞生源于…
+It was sort of born from ...
+
+171
+00:11:58,210 --> 00:12:03,714
+Jesse 早在 2005 年就经过训练成为一名消防员
+Crazy side note, Jesse trained to be a firefighter back in 2005.
+
+172
+00:12:04,034 --> 00:12:07,297
+在那儿 他了解了这个事故指挥系统
+And that's where he learned this incident command system
+
+173
+00:12:07,297 --> 00:12:09,426
+最终激发了 “游戏日” 的灵感
+that ended up inspiring Game Day.
+
+174
+00:12:09,903 --> 00:12:14,124
+因此 所有做这些故障演练的开发人员
+So all the developers doing these disaster scenarios out there,
+
+175
+00:12:14,316 --> 00:12:19,580
+都要感谢 Jesse 对消防和应急管理的激情
+you've got Jesse's passion for firefighting and emergency management to thank for that.
+
+176
+00:12:19,836 --> 00:12:21,475
+好了 回到我们的谈话
+Okay, back to our chat.
+
+177
+00:12:21,875 --> 00:12:25,857
+评估系统弹性时 应着眼于其整体的图景
+Resilience is the ability of a system,
+
+178
+00:12:25,857 --> 00:12:31,301
+系统中包括人员 以及这些人为应对变化而作的准备
+and that includes people and the things that those people build to adapt to change,
+
+179
+00:12:31,301 --> 00:12:33,541
+弹性是系统整体应对失败和干扰的能力
+to respond to failures and disturbances.
+
+180
+00:12:33,733 --> 00:12:36,693
+而建立这种弹性的最佳方法之一
+And one of the best ways to build that
+
+181
+00:12:36,693 --> 00:12:40,455
+即 建立一种文化 使人们能够对逆境做出反应
+to build a culture that can respond to those types of environments
+
+182
+00:12:40,455 --> 00:12:42,261
+并真正理解这些环境如何运作的方法
+and really understands how those work
+
+183
+00:12:42,439 --> 00:12:44,525
+就是提供人员培训演习
+is to provide people training exercises.
+
+184
+00:12:44,525 --> 00:12:49,341
+这些演习可以很简单
+And those exercises can be as simple as something like,
+
+185
+00:12:49,661 --> 00:12:51,551
+比如重启服务器
+you know, rebooting a server
+
+186
+00:12:51,551 --> 00:12:55,925
+也可以很复杂 比如关闭整个数据中心
+or as complicated as a injecting massive scale faults
+
+187
+00:12:55,925 --> 00:12:58,450
+以此造成大规模故障等等
+by turning off entire datacenters
+
+188
+00:12:58,450 --> 00:13:00,064
+以及在两者之间的各种可能性
+and kind of everything in between.
+
+189
+00:13:00,525 --> 00:13:04,950
+所以 “游戏日” 首先是一个过程
+And so what a Game Day is is first of all a process
+
+190
+00:13:04,950 --> 00:13:09,665
+在这个过程中 你通过让整个组织聚集在一起
+where you prepare for something by getting an entire organization together
+
+191
+00:13:09,665 --> 00:13:12,225
+讨论系统如何发生故障
+and kind of talking about how systems fail
+
+192
+00:13:12,225 --> 00:13:16,977
+并思考人类对故障发生的预期
+and thinking about what human beings know about how they expect failure to happen.
+
+193
+00:13:17,425 --> 00:13:19,933
+而这个演习本身
+And that exercise by itself
+
+194
+00:13:19,933 --> 00:13:23,955
+常常是 “游戏日” 开始时最有价值的部分之一
+is often one of the most valuable parts of kind of the beginning of a Game Day.
+
+195
+00:13:24,339 --> 00:13:27,107
+但是 当你实际对系统做了破坏后
+But then you actually run an exercise where you break something.
+
+196
+00:13:27,107 --> 00:13:29,107
+这种破坏可大可小
+It could be something big, it could be something small.
+
+197
+00:13:29,411 --> 00:13:31,168
+也有可能经常发生
+It could be something that breaks all the time.
+
+198
+00:13:31,168 --> 00:13:32,678
+当你这样做的时候
+And when you do that,
+
+199
+00:13:32,678 --> 00:13:37,075
+你就可以看到每个人是如何反应的
+you're able to study how everyone responds where things can move to.
+
+200
+00:13:37,331 --> 00:13:39,920
+你看到系统崩溃了
+You can see the system breaking
+
+201
+00:13:39,920 --> 00:13:42,850
+可能是崩溃了也没关系的组件
+and that might be something that is safe to break,
+
+202
+00:13:42,850 --> 00:13:44,890
+可能是一个被充分理解的组件
+a well-understood component
+
+203
+00:13:44,890 --> 00:13:49,562
+也可能这次崩溃暴露了一个潜在的缺陷
+or it might be something that exposes what we call a latent defect.
+
+204
+00:13:49,562 --> 00:13:56,088
+这些问题隐藏在软件、技术或者大规模的系统中
+Those are those problems hiding in software or in technology or in a system at scale
+
+205
+00:13:56,088 --> 00:13:58,200
+只有当你遇到极端或者意外事件时
+that we only can find out about
+
+206
+00:13:58,200 --> 00:14:01,044
+我们才能发现
+when you have an extreme or an unexpected event.
+
+207
+00:14:01,475 --> 00:14:06,799
+“游戏日” 的目的是为了训练员工并且建立系统
+It's really designed to train people and to build systems that
+
+208
+00:14:06,799 --> 00:14:10,463
+并让你了解它们如何在压力下工作
+you understand how they're going to work under stress and under strain.
+
+209
+00:14:11,679 --> 00:14:13,892
+所以当我听到 “游戏日” 的时候 我就会想
+And so when I hear Game Day, it makes me think,
+
+210
+00:14:13,892 --> 00:14:19,220
+“这是对某个特定事件的回应吗?
+“Was this a response to something very specific that happened, that inspired it?
+
+211
+00:14:19,220 --> 00:14:20,116
+它是从哪儿来的?”
+Where'd it come from?”
+
+212
+00:14:20,244 --> 00:14:23,612
+“游戏日” 刚开始的一段时间内
+So Game Day started during a period of time
+
+213
+00:14:23,612 --> 00:14:27,664
+因为我知道自己的角色
+where I knew because of my role and because of my unique background
+
+214
+00:14:27,664 --> 00:14:30,028
+以及作为消防员和应急管理人员的背景
+as a firefighter and emergency manager,
+
+215
+00:14:30,412 --> 00:14:33,692
+因此 我知道
+that it was important to change the cultural approach
+
+216
+00:14:33,692 --> 00:14:39,404
+将文化从注重预防失败的观念转变为拥抱失败非常重要
+from focusing on the idea of preventing failure to instead embracing failure,
+
+217
+00:14:39,404 --> 00:14:40,879
+接受失败发生
+accepting that failure happens.
+
+218
+00:14:41,263 --> 00:14:44,407
+促使我这样做的部分原因是我自己的经历
+And part of what inspired that was both my own experience,
+
+219
+00:14:44,407 --> 00:14:46,242
+你知道 了解系统
+you know, understanding systems,
+
+220
+00:14:46,434 --> 00:14:51,225
+比如建筑是如何倒塌的 市政基础设施是如何崩溃的
+how like buildings fail and how civic infrastructure fails,
+
+221
+00:14:51,225 --> 00:14:52,978
+以及灾难是如何发生的
+and how disasters happened,
+
+222
+00:14:52,978 --> 00:14:54,684
+以及灾难给人们的压力
+and the strain that that puts on people.
+
+223
+00:14:54,940 --> 00:14:59,001
+如果环顾我所在工作场所的复杂性和运营规模
+And saying, well, if we look at the complexity and operational scale
+
+224
+00:14:59,001 --> 00:15:02,100
+如果环顾我所在工作场所的复杂性和运营规模
+that we have at the place of employment that I was at,
+
+225
+00:15:02,420 --> 00:15:05,609
+就会知道 如果想要真的打造出
+the only way that we're really going to build and change
+
+226
+00:15:05,609 --> 00:15:09,226
+一个高可靠性、持续在线的环境
+and become a high-reliability, always-on environment,
+
+227
+00:15:09,354 --> 00:15:12,890
+唯一的办法就是采用消防服务的模式
+is truly to embrace the fire service approach.
+
+228
+00:15:12,890 --> 00:15:15,925
+我们知道失败会发生
+Where we know that failures will happen.
+
+229
+00:15:15,925 --> 00:15:18,512
+不存在灾害是否发生的问题 只存在时间问题
+It's not a question of if, it's a question of when.
+
+230
+00:15:18,704 --> 00:15:21,775
+就像我之前的消防队长说的
+And then as my old fire chief would say,
+
+231
+00:15:21,775 --> 00:15:25,375
+不是你选择时机 而是时机选择你
+you don't choose the moment, the moment chooses you.
+
+232
+00:15:25,375 --> 00:15:28,015
+你能做的唯一选择就是 在它发生前尽量做足准备
+You only choose how prepared you are when it does.
+
+233
+00:15:28,015 --> 00:15:28,975
+哦 这句话不错
+Oh, that's a good one.
+
+234
+00:15:29,525 --> 00:15:32,675
+所以当你第一次开始举行 “游戏日”
+So when you first started doing the Game Days
+
+235
+00:15:32,675 --> 00:15:36,645
+并思考如何为灾难场景做准备时
+and thinking about how to be prepared for disaster scenarios,
+
+236
+00:15:36,963 --> 00:15:40,225
+每个人都同意了吗？你得到任何反对意见了吗？
+was everyone on board with this or did you get any pushback?
+
+237
+00:15:40,225 --> 00:15:41,822
+所有人都认为我疯了
+Everyone thought I was crazy.
+
+238
+00:15:41,822 --> 00:15:44,400
+因此 肯定有人反对
+So definitely there were people that resisted it.
+
+239
+00:15:44,400 --> 00:15:50,816
+有趣的是 有一种非常简单的方法可以克服这种抵制
+And it's interesting because there was a really simple way of overcoming that resistance,
+
+240
+00:15:50,816 --> 00:15:53,799
+首先 创造出所谓的“冠军”
+which is first creating what I call champions.
+
+241
+00:15:53,799 --> 00:15:55,726
+你要教会一小群人
+You want to teach people, a small group,
+
+242
+00:15:55,726 --> 00:15:58,565
+如何以非常安全的方式工作
+how to work in a way that is very safe
+
+243
+00:15:58,775 --> 00:16:01,625
+让他们经历一些考验
+and then you want to give them some exposure
+
+244
+00:16:01,625 --> 00:16:04,851
+然后你就能给出一些可信的指标
+and then you want to use a set of metrics where you're able to say,
+
+245
+00:16:04,851 --> 00:16:09,125
+你就能说 看 我们用服务中断的时间来说事
+look, let's just measure how many minutes of outage there is,
+
+246
+00:16:09,125 --> 00:16:14,197
+我的团队经过了这种培训 这样操作之后停机时间是多少分钟
+how many minutes of downtime my team has that has this training and operates this way.
+
+247
+00:16:14,965 --> 00:16:17,292
+用这个指标和 比方说 你的团队比较
+Versus, I don't know, your team,
+
+248
+00:16:17,292 --> 00:16:19,837
+而你的团队没有经过这种训练
+who does not have that
+
+249
+00:16:19,837 --> 00:16:25,101
+并且似乎认为这种培训和练习没有价值 或者不重要
+and who seems to think that doing this type of training and exercises isn't valuable or isn't important.
+
+250
+00:16:25,485 --> 00:16:27,500
+你一旦这么做之后
+And once you do that kind of thing,
+
+251
+00:16:27,500 --> 00:16:30,797
+所谓的“显著事件”总有一天会发生
+you basically end up with what I call a compelling event.
+
+252
+00:16:31,148 --> 00:16:33,725
+经常会有断电之类的事
+So, often there'll be an outage or some other thing
+
+253
+00:16:33,725 --> 00:16:37,107
+让组织突然意识到
+where the organization suddenly and starkly realizes,
+
+254
+00:16:37,491 --> 00:16:41,859
+哦 我的天哪 我们不能再像以前那样做事了
+oh my goodness, we can't keep doing things the way that we've been doing them before.
+
+255
+00:16:41,859 --> 00:16:44,525
+这就是说服怀疑论者的方法
+And that becomes the method you use to overcome the skeptics.
+
+256
+00:16:44,525 --> 00:16:49,213
+你一方面展示数据和性能数据
+You use a combination of data and performance information on the one hand,
+
+257
+00:16:49,533 --> 00:16:55,100
+再结合指标 讲故事
+coupled with metrics, and then great storytelling,
+
+258
+00:16:55,100 --> 00:16:59,276
+然后等待一个“大的” 或者说严重故障发生
+and then you wait for the big one or the scary incident that happens
+
+259
+00:16:59,404 --> 00:17:00,475
+然后 你就可以说
+and you say, you know,
+
+260
+00:17:00,475 --> 00:17:02,440
+如果我们要在 web 规模或者互联网规模上运维
+the whole organization needs this ability
+
+261
+00:17:02,440 --> 00:17:05,976
+整个组织都需要这种应变能力
+if we're going to operate at web scale or internet scale.
+
+262
+00:17:05,976 --> 00:17:07,256
+*发出赞同的声音*
+Mm-hmm (affirmative).
+
+263
+00:17:07,832 --> 00:17:11,975
+所以我喜欢这个活动的原因是 它不只是停留在亚马逊内部
+So what I love about this is that it didn't just stay within Amazon.
+
+264
+00:17:11,975 --> 00:17:14,375
+相反 它在传播 很多其他公司也在这么做
+It spread. A lot of other companies are doing it.
+
+265
+00:17:14,375 --> 00:17:19,200
+很多人最终接受了“为故障做好准备”的相关知识和工作方式
+A lot of people have ended up embracing this knowledge and this process
+
+266
+00:17:19,200 --> 00:17:20,846
+很多人最终接受了“为故障做好准备”的相关知识和工作方式
+to, you know, to be prepared.
+
+267
+00:17:21,230 --> 00:17:22,885
+那下一步是要做什么？
+What is next?
+
+268
+00:17:22,885 --> 00:17:27,200
+我们如何将从 “游戏日” 中学到的知识
+How do we continue carrying on the knowledge from Game Day
+
+269
+00:17:27,200 --> 00:17:30,096
+继续运用到未来的项目和公司中？
+into future projects and future companies?
+
+270
+00:17:30,480 --> 00:17:34,320
+我喜欢把它称为趋同进化
+I like to talk about it as convergent evolution.
+
+271
+00:17:34,320 --> 00:17:37,700
+每个在 web 上运行的大型组织
+So every large organization that operates on the web
+
+272
+00:17:37,700 --> 00:17:42,725
+现在都采用了我提倡的事件管理基础的一个版本
+has now adopted a version of both the incident management foundation
+
+273
+00:17:42,725 --> 00:17:44,875
+现在都采用了我提倡的事件管理基础的一个版本
+that I certainly advocated for
+
+274
+00:17:44,875 --> 00:17:48,425
+并创立了他们自己的 “游戏日” 测试
+and has created their own Game Day testing.
+
+275
+00:17:48,425 --> 00:17:51,833
+比如 Netflix 将其称为 “混沌猴子”
+You know, Netflix calls it the Chaos Monkey.
+
+276
+00:17:52,089 --> 00:17:55,497
+谷歌也有他们的 Dirt 计划
+And Google has their Dirt program.
+
+277
+00:17:56,775 --> 00:18:00,439
+那么你对未来的 “游戏日” 有什么寄望呢？
+So what are your hopes and dreams for Game Day in the future?
+
+278
+00:18:00,695 --> 00:18:03,125
+首先 让我高兴的是
+What I am excited about first of all
+
+279
+00:18:03,125 --> 00:18:06,085
+我们可以看到人们思维方式的转变
+is that we are seeing this evolution now
+
+280
+00:18:06,085 --> 00:18:10,693
+他们抛弃了系统之间彼此孤立的狭隘观点
+from a thinking of silos and thinking of systems as being disconnected to.
+
+281
+00:18:10,925 --> 00:18:15,485
+转而认为系统之间互相连接 依存于彼此
+Systems being fundamentally interconnected, interdependent
+
+282
+00:18:15,485 --> 00:18:19,300
+而这些系统都是由世界各地的聪明人创造和维护的
+and built and run by smart people around the world
+
+283
+00:18:19,300 --> 00:18:21,261
+是由他们创造的 宏伟的大型工程
+that are trying to do great and big things.
+
+284
+00:18:21,925 --> 00:18:28,140
+几年前 当我刚参加工作时 对运维工作毫不关心
+Years ago when I got my start, caring about operations was a backwater.
+
+285
+00:18:28,140 --> 00:18:29,875
+我觉得那非常无趣
+It was not an interesting place.
+
+286
+00:18:29,875 --> 00:18:34,175
+然后 突然地 我们发现自己能够传播这样一种理念
+And suddenly we found ourselves being able to propagate the idea
+
+287
+00:18:34,175 --> 00:18:37,975
+开发人员和运营人员应当团结协作
+that developers and operations people working together
+
+288
+00:18:37,975 --> 00:18:43,879
+因为这是在万物互联的世界中 创造并应用有用的技术的唯一方式
+are the only way that meaningful technology gets built and run in a connected world.
+
+289
+00:18:44,199 --> 00:18:46,525
+所以 我对未来的希望是
+And so my hope for the future is
+
+290
+00:18:46,525 --> 00:18:50,325
+首先 看到越来越多的人接受这些想法 并学习它们
+number one, we're seeing more and more people embracing these ideas
+
+291
+00:18:50,325 --> 00:18:51,300
+首先 看到越来越多的人接受这些想法 并学习它们
+and learning about them.
+
+292
+00:18:51,300 --> 00:18:54,836
+了解当你建造了人们依赖的东西时
+Understanding that when you build something that people depend on,
+
+293
+00:18:54,836 --> 00:18:56,730
+你有义务确保
+you have an obligation to make sure
+
+294
+00:18:57,225 --> 00:19:01,201
+它是可信赖的、可用的、可靠的
+that it's reliable, it's usable, it's dependable,
+
+295
+00:19:01,201 --> 00:19:05,441
+它是人们可以作为日常生活的一部分来使用的东西
+it's something that people can use as part of their daily lives.
+
+296
+00:19:05,441 --> 00:19:08,625
+而且我们也看到了一种新的学科的诞生
+But also we're seeing a new discipline emerge.
+
+297
+00:19:08,625 --> 00:19:09,950
+人们在对它展开研究
+It's being studied, you know,
+
+298
+00:19:09,950 --> 00:19:13,325
+也有博士正基于这个撰写博士学位论文
+there's PhD theses being written on it.
+
+299
+00:19:13,325 --> 00:19:15,750
+有人为它不断添砖加瓦
+It's being built out constantly.
+
+300
+00:19:15,750 --> 00:19:16,275
+有人为它不断添砖加瓦
+It's being built out constantly.
+That's awesome.
+这真是太棒了
+
+301
+00:19:16,275 --> 00:19:16,400
+也有人写这方面的书
+There's books being written,
+That's awesome.
+这真是太棒了
+
+302
+00:19:16,400 --> 00:19:17,625
+也有人写这方面的书
+There's books being written,
+
+303
+00:19:17,625 --> 00:19:20,175
+这个课题极受关注
+there's all these new resources that aren't, you know,
+
+304
+00:19:20,175 --> 00:19:24,175
+远不是少数人在会议上夸夸其谈“理想世界”的状况
+just a couple of people talking at a conference about how they think the world should work.
+
+305
+00:19:24,623 --> 00:19:27,519
+所以我的冀望是
+And so my sort of inspirational hope is
+
+306
+00:19:27,519 --> 00:19:32,750
+首先 你要明白 如果你正在创造软件和技术
+one, understand that if you're building software and technology that people use,
+
+307
+00:19:32,750 --> 00:19:36,926
+那你就会成为社会基础设施的一部分
+you're really becoming part of the civic infrastructure.
+
+308
+00:19:36,926 --> 00:19:42,075
+所以作为一名消防员 我所努力贡献的一系列技能
+And so the set of skills that I've tried to contribute as a firefighter
+
+309
+00:19:42,075 --> 00:19:46,706
+以及现如今涌现的、将这门学科进一步发展的诸多技能和技术
+to technology and the skills that are now emerging that are taking that so much farther
+
+310
+00:19:46,706 --> 00:19:52,175
+它们会成为建造人们日常生活所依赖的东西的基础的一部分
+are part of the foundation for building things that people depend on everyday.
+
+311
+00:19:52,943 --> 00:19:54,943
+很好 这个结尾真不错
+Very nice. Oh, that's a great way to end.
+
+312
+00:19:54,943 --> 00:19:57,115
+Jesse 谢谢你抽出时间来
+Thank you so much Jesse for your time.
+
+313
+00:19:57,550 --> 00:19:58,125
+谢谢
+Yeah, thank you.
+
+314
+00:20:02,575 --> 00:20:07,263
+在 Jesse 看来 像 “游戏日” 或者 “混沌猴子” 这样的演习
+In Jesse's vision, exercises like Game Day or Chaos Monkey
+
+315
+00:20:07,263 --> 00:20:10,543
+不仅是我们不断发展的科技文化的重要组成部分
+are a crucial part of our tech culture growing up,
+
+316
+00:20:10,991 --> 00:20:13,503
+它们对于整个社会也至关重要
+but they are also crucial for society at large.
+
+317
+00:20:13,887 --> 00:20:17,807
+我很喜欢他对此的重视 因为他是对的
+And I love that he's putting the stakes that high because he's right.
+
+318
+00:20:18,075 --> 00:20:20,715
+我们的世界与我们的造物息息相关
+Our world depends on the work we do.
+
+319
+00:20:20,971 --> 00:20:23,070
+早在 90 年代 当电话网络开始崩溃时
+That much was obvious back in the 90s
+
+320
+00:20:23,070 --> 00:20:25,550
+这一点就很明显了
+when telephone networks started crashing.
+
+321
+00:20:25,950 --> 00:20:28,725
+我们认知中的现代生活几乎陷于停顿
+Modern life as we know it almost ground to a halt.
+
+322
+00:20:30,375 --> 00:20:32,759
+责任随创造而来
+And there's a duty that goes along with that.
+
+323
+00:20:33,143 --> 00:20:36,359
+我们有责任关心安全和可靠性
+A duty to care about security and reliability,
+
+324
+00:20:36,807 --> 00:20:39,939
+关心我们造物的应变能力
+about the resilience of the things we build.
+
+325
+00:20:42,200 --> 00:20:45,440
+当然 当谈到在 DevOps 中集成安全工作时
+Of course, when it comes to building security into DevOps,
+
+326
+00:20:45,440 --> 00:20:47,440
+我们才刚刚开始
+we're just getting started.
+
+327
+00:20:47,800 --> 00:20:53,128
+安全 作为一个产业 还在刚刚起步的阶段
+Security is one of those... it's so in its infancy, as an industry.
+
+328
+00:20:53,704 --> 00:20:55,379
+这是 Josh Bressers
+That's Josh Bressers.
+
+329
+00:20:55,379 --> 00:20:57,179
+他是数据搜索软件公司 Elastic 的产品安全主管
+He's the head of product security
+
+330
+00:20:57,179 --> 00:21:00,330
+他是数据搜索软件公司 Elastic 的产品安全主管
+at a data search software startup called Elastic.
+
+331
+00:21:00,714 --> 00:21:06,106
+对 Josh 来说 尽管计算机行业已经成长了半个世纪左右
+For Josh, even though the computer industry's been maturing for a half-century or so,
+
+332
+00:21:06,425 --> 00:21:09,200
+我们在这里讨论的安全问题
+the kind of security we've been talking about here
+
+333
+00:21:09,200 --> 00:21:11,538
+却让人觉得它是刚刚才出现的
+feels like it just came into its own.
+
+334
+00:21:11,730 --> 00:21:15,300
+实际上 我会说 作为一个专业
+Practically speaking, as what I would say maybe a profession,
+
+335
+00:21:15,300 --> 00:21:18,900
+安全仍然是非常新的东西 有很多事情我们还不是很了解
+security is still very new and there's a lot of things we don't understand.
+
+336
+00:21:19,156 --> 00:21:21,220
+但我们确实明白
+Here's what we do understand though,
+
+337
+00:21:21,350 --> 00:21:22,932
+在 DevSecOps 的世界中
+in a DevSecOps world,
+
+338
+00:21:22,932 --> 00:21:28,388
+有许多大好机会 可以供人畅想安全工作的可能性
+there are some pretty sweet opportunities to get creative about what security can achieve.
+
+339
+00:21:28,775 --> 00:21:30,325
+我最近和一些人讨论了一个概念
+I was recently talking to somebody
+
+340
+00:21:30,325 --> 00:21:34,584
+他们通过观察用户行为
+about a concept where they're using user behavior
+
+341
+00:21:34,904 --> 00:21:38,648
+来决定用户是否应该能够访问系统
+to decide if a user should be able to access the system.
+
+342
+00:21:38,776 --> 00:21:40,943
+每个人都有特定的行为方式
+Everybody has certain behaviors,
+
+343
+00:21:41,391 --> 00:21:43,167
+比如他们来自哪里
+be it where they're coming from,
+
+344
+00:21:43,615 --> 00:21:45,300
+他们访问系统的时间
+time of day they're accessing a system,
+
+345
+00:21:45,300 --> 00:21:46,463
+他们打字的方式
+the way they type,
+
+346
+00:21:47,075 --> 00:21:48,446
+他们移动鼠标的方式
+the way they move their mouse.
+
+347
+00:21:48,925 --> 00:21:51,272
+我认为他们很有潜力
+And so they're actually one of those places that I think
+
+348
+00:21:51,272 --> 00:21:56,150
+如果做法得当 这种思路可以极为有效
+could have some very powerful results if we can do it right,
+
+349
+00:21:56,150 --> 00:21:58,134
+也就是“注意用户在做什么”的这种思路
+where we can pay attention to what someone's doing.
+
+350
+00:21:58,134 --> 00:22:01,210
+比方说 我表现得很奇怪
+And then let's say I'm acting weird
+
+351
+00:22:01,210 --> 00:22:03,300
+因为我刚刚扭伤了手臂
+and you know, I'm weird because I just sprained my wrist.
+
+352
+00:22:03,300 --> 00:22:05,400
+但系统的另一端并不知情
+But you know, the other end doesn't know that.
+
+353
+00:22:05,400 --> 00:22:07,658
+因此 它可能会说 这种行为就有些奇怪
+And so it might say, all right, something's weird,
+
+354
+00:22:07,658 --> 00:22:10,490
+它就会说 希望你使用双因子认证登录
+we want you to log in with your two-factor auth
+
+355
+00:22:10,490 --> 00:22:13,075
+并且还会给你发条短信之类的
+and we're going to also send you a text message or something.
+
+356
+00:22:13,075 --> 00:22:17,507
+对吧？这就不只是用户名和密码了 它变成了更有趣的东西
+Right? And so we've just gone from essentially username and password to something more interesting.
+
+357
+00:22:18,147 --> 00:22:24,200
+所以我认为 用新的和独特的方式来看待这些问题将是关键
+And so I think looking at a lot of these problems in new and unique ways is really going to be key.
+
+358
+00:22:24,400 --> 00:22:26,400
+在很多情况下 我们只是还没想到
+And in many instances, we're just not there yet.
+
+359
+00:22:27,330 --> 00:22:31,122
+实现这一目标需要我们所描述的两大步骤
+Getting there requires those two big steps we've been describing.
+
+360
+00:22:31,400 --> 00:22:35,225
+第一步 就是自动化 这很重要 因为…
+Step one, it's that automation, so crucial because ...
+
+361
+00:22:35,475 --> 00:22:38,499
+人类很不擅长重复地做同一件事
+Humans are terrible at doing the same thing over and over again.
+
+362
+00:22:38,625 --> 00:22:42,545
+说得对 然后 我们有了第二步 就是文化
+Fair. And then we've got step two, the culture,
+
+363
+00:22:42,929 --> 00:22:46,273
+我们所有人都该对安全性和可靠性负起责任
+all of us having a stake in security and reliability,
+
+364
+00:22:46,273 --> 00:22:48,762
+无论我们的职称是什么
+no matter what our job title might say.
+
+365
+00:22:49,530 --> 00:22:51,675
+当大多数人想到安全团队时
+When most people think of the security team,
+
+366
+00:22:51,675 --> 00:22:53,950
+他们不会认为那是一群快乐的好好先生 对吧?
+they don't think of happy nice people, right?
+
+367
+00:22:54,175 --> 00:22:58,671
+一般印象中 这些人都很可怕 脾气暴躁 令人讨厌
+It's generally speaking terrible, grumpy, annoying people,
+
+368
+00:22:58,671 --> 00:23:00,975
+如果他们出现了 就会毁了你的一天
+who if they show up, they're going to ruin your day.
+
+369
+00:23:02,127 --> 00:23:05,151
+没有人想要这样 对吧?
+And nobody wants that, right?
+
+370
+00:23:10,500 --> 00:23:13,908
+但我认为我们可以克服这种偏见 我们也必须克服它
+But I think we can get over that bias because we have to,
+
+371
+00:23:14,292 --> 00:23:18,468
+你得这么想 - 每天都有更多的安全威胁发生
+think of it this way - more security threats happen every day
+
+372
+00:23:18,852 --> 00:23:23,412
+而且 IT 基础设施每天都在变得规模更大、功能更强
+and every day IT infrastructure is growing larger and more powerful.
+
+373
+00:23:23,925 --> 00:23:25,725
+把这两个事实放在一起
+Put those two truths together
+
+374
+00:23:25,725 --> 00:23:28,734
+如果安全受到轻视 其后果将是灾难性的
+and you better live in a world where security gets embraced.
+
+375
+00:23:28,975 --> 00:23:30,975
+我们需要一个非常 DevSecOps 的世界
+A very DevSecOps world
+
+376
+00:23:30,975 --> 00:23:35,455
+在这个世界里 开发人员和运营人员都在提升系统的安全性
+where developers and operations are upping their security games,
+
+377
+00:23:35,775 --> 00:23:37,632
+提高它们的可靠性
+upping their reliability games.
+
+378
+00:23:38,050 --> 00:23:39,999
+我所谈论的未来是
+What I'm talking about is a future
+
+379
+00:23:39,999 --> 00:23:43,407
+一个自动化被整合到开发和运维的每个阶段的未来
+where automation is integrated into every stage
+
+380
+00:23:43,599 --> 00:23:47,750
+一个所有人都更具全局意识的未来
+and everybody's attitudes toward these issues become more holistic.
+
+381
+00:23:48,198 --> 00:23:51,350
+这就是我们确保未来系统安全的方法
+That's how we're going to keep tomorrow's systems safe.
+
+382
+00:23:51,670 --> 00:23:53,550
+这是我们确保电话能拨通
+That's how we're going to keep the phones ringing,
+
+383
+00:23:53,550 --> 00:23:54,748
+电灯能点亮
+the lights on,
+
+384
+00:23:54,748 --> 00:23:57,900
+让现代生活的方方面面都健康、可靠的方法
+all of modern life healthy and strong.
+
+385
+00:24:02,150 --> 00:24:06,310
+如果你查阅《福布斯》全球前 2000 公司的名单
+If you pull up Forbes’ list of the global 2000 organizations,
+
+386
+00:24:06,630 --> 00:24:09,050
+也就是排名最靠前的 2000 家上市公司
+that's the top 2000 public companies,
+
+387
+00:24:09,306 --> 00:24:13,546
+你会发现其中整整四分之一的公司都采用了 DevOps
+it turns out a full quarter of them have embraced DevOps.
+
+388
+00:24:13,975 --> 00:24:17,895
+集成式敏捷开发正在成为主流的工作方式
+Integrated agile workplaces are becoming the rule of the land.
+“集成敏捷”（Integrated Agile）是敏捷开发的一个变体
+这一变体试图通过在敏捷开发和传统的瀑布开发之间寻找平衡 来克服两者的缺点
+
+389
+00:24:18,407 --> 00:24:22,039
+用不了几年 DevSecOps 的思考方式
+And in a few years thinking in terms of DevSecOps
+
+390
+00:24:22,039 --> 00:24:24,311
+可能会成为技术从业者的第二天性
+might become second nature.
+
+391
+00:24:25,225 --> 00:24:27,801
+我们希望尽可能快
+We want to go as fast as possible,
+
+392
+00:24:28,377 --> 00:24:30,775
+但想在长距离比赛中提高速度
+but the long game is actually faster
+
+393
+00:24:30,775 --> 00:24:34,567
+正需要团队中的所有成员都同心协力
+when every part of the team is in the race together.
+
+394
+00:24:40,175 --> 00:24:44,711
+下一集 我们将面临数据的大爆炸
+Next episode, we're getting hit by the data explosion.
+
+395
+00:24:44,711 --> 00:24:47,500
+人类已经进入了“泽字节”时代
+Humans have entered the Zettabyte era.
+泽字节 = Zettabyte = ZB 是用于表示数据量的单位
+1ZB 为 1*10^9 TB
+
+396
+00:24:47,500 --> 00:24:52,188
+到 2020 年 我们将在服务器上存储大约 40 泽字节的数据
+By 2020, we'll be storing about 40 zettabytes of information
+
+397
+00:24:52,188 --> 00:24:55,400
+而这些服务器大部分甚至现在还不存在
+on servers that mostly don't even exist yet.
+原播客发布于 2018 年
+
+398
+00:24:55,900 --> 00:24:59,564
+但是我们该如何让这些数据有用呢？
+But how are we supposed to make all that data useful?
+
+399
+00:24:59,884 --> 00:25:04,225
+我们如何使用高性能计算和开源项目
+How do we use high-performance computing and open source projects
+
+400
+00:25:04,225 --> 00:25:06,975
+让数据为我们所用呢
+to get our data working for us?
+
+401
+00:25:07,103 --> 00:25:11,791
+我们会在《代码英雄》第二季第 6 集中找到答案
+We find out in episode 6 of Command Line Heroes.
+
+402
+00:25:13,550 --> 00:25:14,913
+提醒一下
+And a reminder,
+
+403
+00:25:14,913 --> 00:25:19,409
+我们整季都在致力于《代码英雄》游戏的开发
+all season long we're working on Command Line Heroes: The Game.
+
+404
+00:25:19,650 --> 00:25:22,175
+这是我们自己的开源项目
+It's our very own open source project
+
+405
+00:25:22,175 --> 00:25:24,815
+我们很高兴能见证它的诞生
+and we've loved watching it all come together,
+
+406
+00:25:24,815 --> 00:25:27,075
+但是我们需要你来帮助我们完成
+but we need you to help us finish.
+
+407
+00:25:27,325 --> 00:25:30,733
+如果你点击 redhat.com/commandlineheroes
+If you hit up redhat.com/commandlineheroes,
+
+408
+00:25:30,733 --> 00:25:32,633
+你就能看到该如何贡献
+you can discover how to contribute.
+
+409
+00:25:32,950 --> 00:25:37,318
+也可以深入了解我们在这期节目中讨论过的任何内容
+And you can also dive deeper into anything we've talked about in this episode.
+
+410
+00:25:39,575 --> 00:25:43,047
+《代码英雄》是红帽原创播客
+Command Line Heroes is an original podcast from Red Hat.
+
+411
+00:25:43,375 --> 00:25:46,783
+你可以在 Apple Podcast、Google Podcast
+Listen for free on Apple Podcasts, Google Podcasts,
+
+412
+00:25:46,783 --> 00:25:48,450
+或是其他你喜欢的途径免费收听
+or wherever you do your thing.
+
+413
+00:25:48,834 --> 00:25:50,215
+我是 Saron Yitbarek
+I'm Saron Yitbarek.
+
+414
+00:25:50,215 --> 00:25:52,534
+坚持编程 下期再见
+Until next time, keep on coding.
+
