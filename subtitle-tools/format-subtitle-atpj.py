@@ -1,3 +1,9 @@
+# !!!注意!!!
+# 本脚本仅用于减少打轴人员工作量，本脚本不能代替人为审查。
+# 请务必在运行脚本后人工查看字幕。
+
+# 测试时使用的软件版本：Arctime Pro 4.1
+# 如果工程文件的构成方式在之后版本中发生改变，本脚本将可能不再兼容
 import urllib.parse as urlparse
 import json
 
@@ -26,6 +32,7 @@ def read_project_file(file_dir: str):  # returns: string
 # get ["BLOCKS"], get ["text"], replace ["text"], rewrite ["BLOCKS"], write file
 # will go for unoptimised solution first
 
+
 def format_text(subtitle_blocks: list[dict]):  # returns: list[dict] (["BLOCKS"])
     for block_index in range(len(subtitle_blocks)):
         block = subtitle_blocks[block_index]
@@ -45,6 +52,13 @@ def format_text(subtitle_blocks: list[dict]):  # returns: list[dict] (["BLOCKS"]
 
         # Replacing dashes and likes
         # the next part is dumb and I know it is dumb and I will do it in a more clever way but not today
+
+        # ATTENTION: the code will not be able to recognise words such as "avant-garde" that contain dashes themselves
+        # in predictable future,
+        # and may mis-replace dashes in such words.
+        # Manual check is MANDATORY.
+
+        # KNOWN ISSUE: you end up with " - - " if there is something like "——" in text
         replaceable_dash_styles = [" —— ", " ——", "—— ", " — ", " —", "— ", "—"]
         for style in replaceable_dash_styles:
             text_unquoted = text_unquoted.replace(style, "——")
