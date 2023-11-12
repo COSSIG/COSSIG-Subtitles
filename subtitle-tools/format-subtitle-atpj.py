@@ -41,59 +41,62 @@ def format_text(subtitle_blocks: list[dict]):  # returns: list[dict] (["BLOCKS"]
         text_quoted = block["text"].replace("+", " ")
         text_unquoted = urlparse.unquote(text_quoted)
 
-        # replace unwanted punctuations.
-        # Do not move this block of logic to behind the spaces processing
-        # or you may still end with extra spaces at the beginning or the end of a sentence,
-        # considering that
-        text_unquoted = text_unquoted.replace("，", " ")
-        text_unquoted = text_unquoted.replace("。", " ")
-        text_unquoted = text_unquoted.replace("；", " ")
-        text_unquoted = text_unquoted.replace("……", "…")
+        # "If" clause: in case of an empty subtitle block.
+        if len(text_quoted) > 0:
 
-        # Replacing dashes and likes
-        # the next part is dumb and I know it is dumb and I will do it in a more clever way but not today
+            # replace unwanted punctuations.
+            # Do not move this block of logic to behind the spaces processing
+            # or you may still end with extra spaces at the beginning or the end of a sentence,
+            # considering that
+            text_unquoted = text_unquoted.replace("，", " ")
+            text_unquoted = text_unquoted.replace("。", " ")
+            text_unquoted = text_unquoted.replace("；", " ")
+            text_unquoted = text_unquoted.replace("……", "…")
 
-        # ATTENTION: the code will not be able to recognise words such as "avant-garde" that contain dashes themselves
-        # in predictable future,
-        # and may mis-replace dashes in such words.
-        # Manual check is MANDATORY.
+            # Replacing dashes and likes
+            # the next part is dumb and I know it is dumb and I will do it in a more clever way but not today
 
-        # KNOWN ISSUE: you end up with " - - " if there is something like "——" in text
-        replaceable_dash_styles = [" —— ", " ——", "—— ", " — ", " —", "— ", "—"]
-        for style in replaceable_dash_styles:
-            text_unquoted = text_unquoted.replace(style, "——")
+            # ATTENTION: the code will not be able to recognise words such as "avant-garde" that contain dashes themselves
+            # in predictable future,
+            # and may mis-replace dashes in such words.
+            # Manual check is MANDATORY.
 
-        #TODO: some actual stuff to see if spaces are properly attached to a "-"
-        # and deal with mis-attached spaces
-        text_unquoted = text_unquoted.replace("——", " - ")
+            # KNOWN ISSUE: you end up with " - - " if there is something like "——" in text
+            replaceable_dash_styles = [" —— ", " ——", "—— ", " — ", " —", "— ", "—"]
+            for style in replaceable_dash_styles:
+                text_unquoted = text_unquoted.replace(style, "——")
 
-        # remove extra spaces at the beginning or the end of each sentence
-        while text_unquoted[0] == " " or text_unquoted[-1] == " ":
-            if text_unquoted[0] == " ":
-                text_unquoted = text_unquoted[1:]
-            else:
-                text_unquoted = text_unquoted[:-1]
+            #TODO: some actual stuff to see if spaces are properly attached to a "-"
+            # and deal with mis-attached spaces
+            text_unquoted = text_unquoted.replace("——", " - ")
 
-        # deal with duplicated spaces
-        while "  " in text_unquoted:
-            text_unquoted = text_unquoted.replace("  ", " ")
+            # remove extra spaces at the beginning or the end of each sentence
+            while text_unquoted[0] == " " or text_unquoted[-1] == " ":
+                if text_unquoted[0] == " ":
+                    text_unquoted = text_unquoted[1:]
+                else:
+                    text_unquoted = text_unquoted[:-1]
 
-        # You don't simply quote() the text again, as arctime uses "+" and the urllib.parse.quote() function will
-        # replace pluses ("+"s) and spaces (" "s) with hex codes as well
+            # deal with duplicated spaces
+            while "  " in text_unquoted:
+                text_unquoted = text_unquoted.replace("  ", " ")
 
-        text_unquoted_lst = text_unquoted.split()
-        text_quoted_lst = []
+            # You don't simply quote() the text again, as arctime uses "+" and the urllib.parse.quote() function will
+            # replace pluses ("+"s) and spaces (" "s) with hex codes as well
 
-        # I am sure that there is a better way to do this
-        for word in text_unquoted_lst:
-            text_quoted_lst.append(urlparse.quote(word))
+            text_unquoted_lst = text_unquoted.split()
+            text_quoted_lst = []
 
-        text_quoted = "+".join(text_quoted_lst)
+            # I am sure that there is a better way to do this
+            for word in text_unquoted_lst:
+                text_quoted_lst.append(urlparse.quote(word))
 
-        # do the following reassign properly?
-        # text not properly replaced??
-        block["text"] = text_quoted
-        subtitle_blocks[block_index] = block
+            text_quoted = "+".join(text_quoted_lst)
+
+            # do the following reassign properly?
+            # text not properly replaced??
+            block["text"] = text_quoted
+            subtitle_blocks[block_index] = block
 
     return subtitle_blocks
 
