@@ -1,0 +1,2388 @@
+﻿1
+00:00:02,980 --> 00:00:04,970
+如果你把从人类历史早期
+If you take all human data
+
+2
+00:00:04,970 --> 00:00:08,010
+到 2003 年创造的所有数据计算在内
+created from the dawn of time to 2003
+
+3
+00:00:08,620 --> 00:00:11,470
+你将得到大约 500 万 GB 的数据
+you'd get about five million gigabytes of data
+
+4
+00:00:12,300 --> 00:00:15,370
+我们昨天创造了多少 GB 数据
+How many gigabytes of data did we create yesterday
+
+5
+00:00:15,370 --> 00:00:17,370
+哦 天哪
+Oh gosh
+
+6
+00:00:17,370 --> 00:00:20,060
+10 万
+100,000
+
+7
+00:00:20,060 --> 00:00:23,260
+可能是 500 万 GB 数据
+Like five million gigabytes
+
+8
+00:00:23,260 --> 00:00:23,280
+How many gigabytes of data did we create yesterday
+
+9
+00:00:23,280 --> 00:00:26,700
+我们在昨天一天之内创造了多少 GB 的数据
+How many gigabytes of data did we create yesterday
+
+10
+00:00:26,700 --> 00:00:26,720
+我们在昨天一天之内创造了多少 GB 的数据
+in one day? 10 million gigabytes?
+
+11
+00:00:26,720 --> 00:00:31,440
+一千万 GB？
+in one day? 10 million gigabytes?
+
+12
+00:00:31,440 --> 00:00:34,280
+我不太知道 可能是
+I would say, I don't know, like
+
+13
+00:00:34,280 --> 00:00:36,820
+200 万 GB 数据
+two million maybe
+
+14
+00:00:36,820 --> 00:00:39,250
+也许一天就有 100 万 GB 数据
+Maybe a million gigabytes in a day
+
+15
+00:00:39,250 --> 00:00:43,000
+答案是 超过 25 亿 GB 数据
+Answer? More than 2.5 billion
+
+16
+00:00:43,000 --> 00:00:43,760
+答案是 超过 25 亿 GB 数据
+Answer? More than 2.5 billion
+哇哦
+Oh wow. Wow.
+
+17
+00:00:43,760 --> 00:00:44,400
+25 亿? 对的 25 亿
+2.5 billion? Billion!
+哇哦
+Oh wow. Wow.
+
+18
+00:00:44,400 --> 00:00:44,592
+25 亿? 对的 25 亿
+2.5 billion? Billion!
+
+19
+00:00:44,592 --> 00:00:46,592
+25 亿? 对的 25 亿
+2.5 billion? Billion!
+所以 我们已经打破了世界纪录
+So, we already beat the world record
+
+20
+00:00:46,592 --> 00:00:46,750
+25 亿? 对的 25 亿
+2.5 billion? Billion!
+
+21
+00:00:46,750 --> 00:00:47,105
+25 亿? 对的 25 亿
+2.5 billion? Billion!
+那可真是很多个 G 啊 
+That's a lot of gigabytes
+
+22
+00:00:47,105 --> 00:00:48,233
+那可真是很多个 G 啊 
+That's a lot of gigabytes
+
+23
+00:00:48,233 --> 00:00:50,080
+我都不敢相信那有这么多的数据
+That's a lot of data right there. I don't believe it.
+
+24
+00:00:52,140 --> 00:00:55,700
+在 2016 年 我们的年度在线数据流量
+In 2016, our annual data traffic online
+
+25
+00:00:55,700 --> 00:00:58,930
+首次超过了 1ZB
+passed one zetabyte for the first time
+
+26
+00:00:58,930 --> 00:01:01,620
+一个 ZB 是 1000^7 字节
+That's one sextillion bytes
+
+27
+00:01:01,620 --> 00:01:04,380
+好 记住这个数字了吗
+if it helps. Okay, got that number in your head?
+
+28
+00:01:04,380 --> 00:01:06,130
+现在把它乘以 3
+Now triple it
+
+29
+00:01:06,130 --> 00:01:09,710
+因为那是我们将在 2021 年拥有的数据量
+because that's how much data we'll have by 2021
+
+30
+00:01:09,710 --> 00:01:13,790
+我知道 大脑不是以 ZB 为单位进行思考的
+I know, the brain wasn't made to think in zetabytes
+
+31
+00:01:13,790 --> 00:01:17,200
+但请你至少暂时记住这个数
+but just hold onto this one little fact for a second
+
+32
+00:01:17,200 --> 00:01:20,820
+我们的 IP 流量将在五年内翻三番
+Our IP traffic will triple in five years
+注：这里的 IP 指 TCP/IP 中的 IP，而非知识产权和品牌相关的概念
+
+33
+00:01:20,820 --> 00:01:24,440
+这是数据的洪流 而我们正处于其中
+It's a data flood and we're in the middle of it
+
+34
+00:01:24,440 --> 00:01:26,410
+在刚过去的一分钟里
+That last minute that went by
+
+35
+00:01:26,410 --> 00:01:30,330
+人们发出了 1600 万条短信
+people sent 16 million text messages
+
+36
+00:01:30,330 --> 00:01:33,640
+与此同时 在我说出这句话的时间里
+and in the time it took me to say that sentence
+
+37
+00:01:33,640 --> 00:01:37,310
+谷歌处理了 20 万条搜索
+Google processed 200,000 searches
+
+38
+00:01:37,790 --> 00:01:40,730
+如果我们能在数据洪流来临时
+Hidden inside that data flood are patterns
+*这部分的语序在翻译时遭到了调整，因此中文和英文文本无法一句句对应。
+
+39
+00:01:40,730 --> 00:01:42,830
+做好准备 站稳脚跟
+answers, and secrets
+*这部分的语序在翻译时遭到了调整，因此中文和英文文本无法一句句对应。
+
+40
+00:01:42,830 --> 00:01:45,520
+那么隐藏在其中的模式、答案和秘密可以 
+that can massively improve our lives
+*这部分的语序在翻译时遭到了调整，因此中文和英文文本无法一句句对应。
+
+41
+00:01:45,520 --> 00:01:48,090
+那么隐藏在其中的模式、答案和秘密可以 
+if we can just keep ourselves standing upright
+*这部分的语序在翻译时遭到了调整，因此中文和英文文本无法一句句对应。
+
+42
+00:01:48,090 --> 00:01:48,440
+*这部分的语序在翻译时遭到了调整，因此中文和英文文本无法一句句对应。
+
+43
+00:01:48,440 --> 00:01:50,050
+极大地改善我们的生活
+when the flood comes in
+*这部分的语序在翻译时遭到了调整，因此中文和英文文本无法一句句对应。
+
+44
+00:01:59,630 --> 00:02:03,050
+我是 Saron Yitbarek 这里是《代码英雄》
+I'm Saron Yitbarek and this is Command Line Heroes
+
+45
+00:02:03,050 --> 00:02:05,170
+一款红帽公司原创的播客节目
+an original podcast from Red Hat
+
+46
+00:02:06,800 --> 00:02:09,240
+浪潮近在眼前
+The tidal waves are on the horizon
+
+47
+00:02:09,980 --> 00:02:13,880
+这里是第二季第六集 数据大爆炸
+This is episode 6 of season 2, the data flood
+
+48
+00:02:16,690 --> 00:02:21,130
+我们如何处理如此大量的数据
+So, how do we handle such enormous amounts of data
+
+49
+00:02:21,810 --> 00:02:24,770
+采集到这些数据后 我们如何利用它们
+How will we make use of that data once it's captured
+
+50
+00:02:25,440 --> 00:02:29,340
+大数据将为我们解决一些最复杂的问题
+Big data is going to solve some of our most complicated problems
+
+51
+00:02:29,640 --> 00:02:32,190
+如何管理交通 如何种植粮食
+How we manage traffic, how we grow food
+
+52
+00:02:32,190 --> 00:02:34,730
+如何向需要的人提供物资
+How we deliver supplies to those in need
+
+53
+00:02:35,770 --> 00:02:39,180
+但这一切的前提是 我们必须弄清楚该怎么使用这些数据
+But only once we figure out how to work with all that data
+
+54
+00:02:39,180 --> 00:02:42,370
+以及该怎么在短得不能再短的时间内完成对它们的处理
+how to process it, and at breakneck speed
+
+55
+00:02:42,960 --> 00:02:44,810
+通过获取更多的数据
+By having more data
+
+56
+00:02:44,810 --> 00:02:48,650
+我们可以深入到这些子群体
+we can drill down into these sub-groups
+
+57
+00:02:48,650 --> 00:02:50,810
+这些细节 而这是
+these particulars, and these details
+
+58
+00:02:50,810 --> 00:02:52,510
+我们以前从来没有过的方式
+in ways that we never could before
+
+59
+00:02:53,550 --> 00:02:56,750
+Kenneth Cukier 是《经济学人》的高级编辑
+Kenneth Cukier is a senior editor at The Economist
+
+60
+00:02:56,750 --> 00:03:00,560
+他也是科技播客《Babbage》的主持人
+and he's also the Saron Yitbarek of their tech podcast called Babbage
+
+61
+00:03:00,930 --> 00:03:03,770
+这并不是说我们以前无法收集数据 我们可以
+It's not to say that we couldn't collect the data before. We could
+
+62
+00:03:03,770 --> 00:03:05,300
+但这真的 真的很昂贵
+it just was really, really expensive
+
+63
+00:03:05,780 --> 00:03:08,770
+真正的革命性突破是 我们使数据搜集
+The real revolution is that we can collect this data
+
+64
+00:03:09,100 --> 00:03:11,790
+变得十分容易 现在收集数据的成本极低
+very easily. It's very inexpensive
+
+65
+00:03:11,790 --> 00:03:14,660
+而且处理起来也超级简单
+and the processing is super simple
+
+66
+00:03:15,210 --> 00:03:16,650
+因为都是由电脑完成的
+because it's all done by a computer
+
+67
+00:03:16,650 --> 00:03:20,040
+这已经成为我们这个时代的巨大革命
+This has become the huge revolution of our era
+
+68
+00:03:20,440 --> 00:03:22,610
+它可能是现代生活
+and it is probably the most defining
+
+69
+00:03:23,050 --> 00:03:24,890
+最显著的特征
+aspect of modern life
+
+70
+00:03:25,130 --> 00:03:29,480
+在未来几十年甚至下个世纪都会如此
+and will be for the next several decades, if not the next century
+
+71
+00:03:29,870 --> 00:03:32,130
+这也是大数据如此重要的原因
+That's why big data's such a big deal
+
+72
+00:03:32,740 --> 00:03:36,820
+历史可以提醒我们 这种变化是翻天覆地的
+A little history can remind us how radical that change has been
+
+73
+00:03:37,370 --> 00:03:39,930
+想想看 4000 年前
+Think about it, 4,000 years ago
+
+74
+00:03:39,930 --> 00:03:44,370
+我们把所有的数据都刻在了干泥板上
+we were scratching all our data into dried slabs of mud
+
+75
+00:03:46,240 --> 00:03:48,400
+这些泥板很重
+These clay disks were heavy
+
+76
+00:03:48,400 --> 00:03:51,380
+泥板被烤干后 刻在其中的数据
+The data that is imprinted in them once they're baked
+
+77
+00:03:51,380 --> 00:03:54,840
+就无法更改 从古至今
+can't be changed. All of these features
+
+78
+00:03:54,840 --> 00:03:57,580
+信息处理
+of how information was
+
+79
+00:03:58,020 --> 00:04:02,170
+存储 传输 创建的方式
+processed, stored, transferred, created
+
+80
+00:04:02,170 --> 00:04:03,980
+都发生了变化 对吗
+has changed, right
+
+81
+00:04:03,980 --> 00:04:07,720
+时代巨变 大约在 1450 年
+Changed big time. Around the year 1450
+
+82
+00:04:07,720 --> 00:04:10,480
+印刷机的发明
+you get the first information revolution
+
+83
+00:04:10,480 --> 00:04:12,660
+带来了第一次信息革命
+with the invention of the printing press
+
+84
+00:04:13,140 --> 00:04:16,000
+今天 我们也迎来了一场革命
+And today, we have our own revolution
+
+85
+00:04:16,000 --> 00:04:17,400
+现在的存储介质很轻巧
+It's lightweight
+
+86
+00:04:17,400 --> 00:04:19,980
+信息的修改变得极度简单 借助现有的处理器
+It can be changed super simply because we can just use
+
+87
+00:04:19,980 --> 00:04:23,580
+我们只需要使用删除键就能修改我们所拥有的信息实例
+the delete key and change the instantiation of the information that we have
+
+88
+00:04:23,860 --> 00:04:27,180
+无论那是储存在磁带上
+in whether it's the magnetic tape or in the transition of the electronic
+
+89
+00:04:27,180 --> 00:04:29,690
+还是晶体管的变化里
+transistors and the processors that we have
+
+90
+00:04:30,700 --> 00:04:32,580
+我们可以以光速传输数据
+We can transport it at the speed of light
+
+91
+00:04:32,740 --> 00:04:34,890
+不用携带什么泥板
+unlike say a clay disk that you have to carry
+
+92
+00:04:36,940 --> 00:04:40,170
+在 15 世纪 借助印刷机 大量的数据得以传播
+The printing press levelled up our understanding of things
+
+93
+00:04:40,170 --> 00:04:45,090
+这些知识提升了人们对事物的认识 并促成了启蒙运动
+with the 15th-century flood of data that ushered in the enlightenment
+
+94
+00:04:45,500 --> 00:04:48,890
+今天 大数据可以再次提升我们的知识水平
+Today, big data can level us up again
+
+95
+00:04:49,410 --> 00:04:54,000
+但我们必须要想办法充分利用这些数据
+But only if we figure out how to take advantage of all that data
+
+96
+00:04:54,690 --> 00:04:57,530
+唯有修好大坝 备好轮机
+Only if we build the dams and the turbines
+
+97
+00:04:57,530 --> 00:04:59,530
+才能让浪潮为人所用
+that will put the flood to work
+
+98
+00:04:59,840 --> 00:05:02,340
+当下 人们远没有做到
+There is a huge gap between what is possible
+
+99
+00:05:02,340 --> 00:05:05,660
+对数据的充分利用
+and what companies and individuals and organizations are doing
+
+100
+00:05:05,980 --> 00:05:08,690
+这一点非常重要 因为我们已经看到
+That's really important because we could already see
+
+101
+00:05:08,690 --> 00:05:11,870
+数据中存在这种潜在的价值
+that there's this latent value in the data
+
+102
+00:05:12,480 --> 00:05:15,870
+而收集 存储和处理数据的成本
+and that the cost of collecting, storing, and processing the data
+
+103
+00:05:16,170 --> 00:05:18,980
+在近百年来 乃至于近十年来
+has really dropped down considerably to where it was
+
+104
+00:05:19,240 --> 00:05:21,740
+已经显著地降低了
+of course, a hundred years ago but even just ten years ago
+
+105
+00:05:21,740 --> 00:05:26,440
+这很振奋人心 但问题是 我们在文化上
+That's really exciting. But the problem is that, culturally
+
+106
+00:05:26,570 --> 00:05:28,530
+在我们的组织流程上
+and in our organizational processes
+
+107
+00:05:28,680 --> 00:05:32,140
+甚至我们的 CFO 和 CIO 们拨给
+and even in the budgets that our CFOs and our CIOs
+
+108
+00:05:32,140 --> 00:05:35,020
+相关方面的预算中 并不重视这种价值
+allot to data, we're not there yet
+
+109
+00:05:35,500 --> 00:05:37,770
+想着这种事肯定让人极度沮丧
+Super frustrating when you think about it
+
+110
+00:05:37,770 --> 00:05:41,790
+启蒙运动在敲门 却无人应答
+Enlightenment knocking at the door and nobody's answering
+
+111
+00:05:42,440 --> 00:05:44,540
+然而 我们不回答的部分原因是
+Part of the reason we're not answering though
+
+112
+00:05:44,540 --> 00:05:47,720
+门后到底是谁
+is that, well, who's actually behind the door
+
+113
+00:05:48,270 --> 00:05:50,190
+这些数据能带来什么
+What's all this data gonna deliver
+
+114
+00:05:50,890 --> 00:05:53,400
+Kenneth 认为 某些公司不采用大数据
+Kenneth figures the newness of big data
+
+115
+00:05:53,400 --> 00:05:56,350
+乃是因为它太过于新奇
+keeps some companies from taking that leap
+
+116
+00:05:56,350 --> 00:05:59,330
+一旦你收集了大量数据后 你能拿它干什么
+What is the value of the data once you collect a lot of it
+
+117
+00:05:59,930 --> 00:06:02,090
+我就直说吧
+The most honest answer is
+
+118
+00:06:02,090 --> 00:06:05,250
+只有傻子才会以为自己知道
+if you think you know, you're a fool
+
+119
+00:06:05,250 --> 00:06:08,200
+你绝对无法设想你今天
+Because you can never identify today
+
+120
+00:06:08,200 --> 00:06:12,240
+收集到的数据明天能拿来做什么用
+all the ways with which we're going to put the data to uses tomorrow
+
+121
+00:06:12,240 --> 00:06:14,660
+重点在于要把数据攥在手里
+The most important thing is to have the data
+
+122
+00:06:14,660 --> 00:06:17,920
+并以开放的思想对待所有可以使用的方式
+and to have an open mind in all the ways that it can be used
+
+123
+00:06:18,700 --> 00:06:21,610
+如果我们按照 Kenneth 说的那样 以正确的方式对待大数据
+What Kenneth's envisioning if we get big data right
+
+124
+00:06:21,950 --> 00:06:26,740
+我们将会发现一切的全新可能性
+is a wholesale transformation of our attitudes towards what's possible
+
+125
+00:06:27,290 --> 00:06:30,490
+等待我们的将是一个人人 - 而不只是数据科学家
+A world where everybody, not just data scientists
+
+126
+00:06:30,490 --> 00:06:33,370
+都能洞察趋势、分析细节的世界
+can see the potential and gain insight
+
+127
+00:06:33,660 --> 00:06:36,020
+如果我们能意识到 这个世界是
+By understanding that the world is one
+
+128
+00:06:36,020 --> 00:06:38,420
+可以通过收集经验证据
+in which we can collect empirical evidence about it
+
+129
+00:06:38,690 --> 00:06:41,940
+来理解、改变和改善的
+in order to understand it, and in order to change it, and improve it
+
+130
+00:06:41,940 --> 00:06:45,390
+并且可以用一种自动化的方式进行改善
+and that improvements can happen in an automated fashion
+
+131
+00:06:45,770 --> 00:06:48,050
+我们将会得到看待它的全新角度
+we will see the world in a different way
+
+132
+00:06:48,050 --> 00:06:51,280
+我个人认为 现如今 在世界各地
+and I think that's the really interesting change that's happening now
+
+133
+00:06:51,280 --> 00:06:55,710
+上至政策制定者 、下至星巴克咖啡师
+culturally or psychologically around the world where
+
+134
+00:06:55,710 --> 00:07:00,670
+都在经历这种引人深思的文化上或心理上的变化
+policy makers and business people and Starbucks baristas
+
+135
+00:07:00,670 --> 00:07:04,700
+各行各业的人都有点数据基因
+Everyone in all walks of life sort of have the data gene
+
+136
+00:07:04,700 --> 00:07:08,600
+就像是被感染了似的 现在
+They got it. They've sort of gotten the inoculation and now
+
+137
+00:07:08,600 --> 00:07:13,580
+无论他们专注于什么方面 他们都以大数据的方式思考
+everywhere they look, they think in a data mindset
+
+138
+00:07:15,410 --> 00:07:17,850
+Kenneth Cukier 给我们讲了一个简短的故事来展现
+Kenneth Cukier told us a quick story to illustrate
+
+139
+00:07:17,850 --> 00:07:20,830
+这种新数据思维方式的力量
+the power of that new data mindset
+
+140
+00:07:21,880 --> 00:07:26,300
+微软的一些研究人员开始着手研究胰腺癌问题
+Some researchers at Microsoft began thinking about pancreatic cancer
+
+141
+00:07:27,140 --> 00:07:30,580
+人们发现胰腺癌往往为时已晚
+People often find out about pancreatic cancer too late
+
+142
+00:07:30,890 --> 00:07:33,090
+早期发现可以挽救生命
+and early detection could save lives
+
+143
+00:07:33,540 --> 00:07:35,600
+因此 研究人员开始询问这些患者
+So, the researchers began asking
+
+144
+00:07:35,950 --> 00:07:40,540
+在开始搜索有关胰腺癌的信息之前几个月
+before these patients start searching for information on pancreatic cancer
+
+145
+00:07:40,540 --> 00:07:44,090
+他们搜索了什么
+what were they searching for in the previous few months
+
+146
+00:07:44,090 --> 00:07:48,330
+而早在发现前数年 他们又搜索了什么 研究人员开始
+And in the previous years. They began looking for clues
+
+147
+00:07:48,330 --> 00:07:51,220
+寻找埋藏在所有
+buried inside all that search data
+
+148
+00:07:51,220 --> 00:07:53,520
+搜索数据中的线索和模式
+They began looking for patterns
+
+149
+00:07:54,060 --> 00:07:59,730
+他们有了重大发现 通过分析患者在最终开始搜索“胰腺癌”
+They struck pay dirt. They saw that they can identify patterns in the search terms
+
+150
+00:07:59,730 --> 00:08:03,230
+之前的这段时间中所搜索的关键词 他们识别出了一套规律
+leading up to the moment where people started searching for pancreatic cancer
+
+151
+00:08:03,230 --> 00:08:08,590
+可以非常准确地预测搜索者是否患有胰腺癌
+that predicted very accurately that people had pancreatic cancer
+
+152
+00:08:09,240 --> 00:08:12,830
+在这里，我们能学到一点：想象力与
+The lesson here is that by using their imagination in terms of
+
+153
+00:08:12,830 --> 00:08:16,370
+数据中潜在规律的结合 是可以挽救生命的
+the latent knowledge inside of data, they can save lives
+
+154
+00:08:16,370 --> 00:08:19,550
+他们现在所要做的就是找到一种方法
+All they need now to do is to find a way to instrument
+
+155
+00:08:19,550 --> 00:08:21,690
+通过方法来解释这一发现
+through policy this finding
+
+156
+00:08:21,690 --> 00:08:24,510
+这样当人们在搜索这些术语时
+so that when people are searching for these terms
+
+157
+00:08:24,510 --> 00:08:26,830
+他们可以以一种微妙的方式干预 说
+they can intervene in a subtle way to say
+
+158
+00:08:26,830 --> 00:08:29,320
+“你可能要去诊所检查一下”
+You might wanna go to a healthcare clinic and get this checked out
+
+159
+00:08:29,320 --> 00:08:33,200
+像这样使用数据 就能救人于水火之中
+If they start doing that, people's lives will be saved
+
+160
+00:08:37,250 --> 00:08:41,770
+研究人员偶然发现的是一种新的癌症筛查方式
+What the researchers stumbled upon is a new form of cancer screening
+
+161
+00:08:42,130 --> 00:08:45,840
+通过这种方法 患者可以提前一个月得知自己可能患癌
+a process that could alert patients month earlier
+
+162
+00:08:47,020 --> 00:08:52,370
+利用数据不仅仅是一个利润或效率最大化的问题
+ Making use of data isn't just a question of maximizing profits or efficiency
+
+163
+00:08:52,370 --> 00:08:54,450
+它的意义远不止于此
+It's about so much more than that
+
+164
+00:08:54,960 --> 00:09:00,460
+对于人类而言 这些数据中确确实实存在着大量的潜在利好
+Hiding in all that data are real, enormous positives for humankind
+
+165
+00:09:00,460 --> 00:09:04,360
+抗拒使用大数据可能只是自欺欺人
+If we don't use that data, we could be cheating ourselves
+
+166
+00:09:04,360 --> 00:09:07,320
+接下来 我们要关注的是
+It's that epic struggle to put data to work
+
+167
+00:09:07,320 --> 00:09:09,480
+这场将数据投入工作的持久战
+that we're focusing on next
+
+168
+00:09:18,110 --> 00:09:21,180
+哈佛医学院的波士顿儿童医院
+Boston Children's Hospital at Harvard Medical School
+
+169
+00:09:21,180 --> 00:09:25,390
+去年完成了 26000 多台手术
+performed more than 26,000 surgeries last year
+
+170
+00:09:26,080 --> 00:09:27,560
+进行约 25 万人次的
+Kids walk through their doors
+
+171
+00:09:27,560 --> 00:09:31,070
+儿童放射检查
+for about a quarter million radiological exams
+
+172
+00:09:31,500 --> 00:09:33,610
+医护人员的表现令人称道
+The staff is doing incredible work
+
+173
+00:09:34,090 --> 00:09:37,300
+但有一个巨大的障碍挡在他们面前
+but there's a huge roadblock standing in their way
+
+174
+00:09:37,300 --> 00:09:40,290
+在医院的环境中 尤其是
+A lot of the problems that we have in a hospital environment
+
+175
+00:09:40,290 --> 00:09:44,450
+作为医生 我们经常会遇到难以获取数据的问题
+especially as a physician, is how to get access to the data
+
+176
+00:09:45,090 --> 00:09:47,070
+这位是 Ellen Grant 医生
+That's Dr. Ellen Grant
+
+177
+00:09:47,070 --> 00:09:51,080
+她是波士顿儿童医院的儿科神经放射科医生
+She's a pediatric neuroradiologist at Boston Children's
+
+178
+00:09:51,080 --> 00:09:55,850
+她在诊疗时依靠访问数据和分析医学图像
+and she depends on accessing data and analyzing medical images
+
+179
+00:09:55,850 --> 00:09:59,950
+如果没有专门设置的环境
+It's not simple to get access into
+
+180
+00:09:59,950 --> 00:10:02,660
+想要对 PACS 存档里存储的图像进行
+say a PACS archive where the images are stored
+
+181
+00:10:02,660 --> 00:10:07,170
+额外的数据分析绝非易事
+to do additional data analysis unless you set up an environment and that's
+
+182
+00:10:07,170 --> 00:10:11,010
+当你在一个只提供了普通的医院电脑的读片室里时
+not easy to do when you're in a reading room where there are just
+
+183
+00:10:11,010 --> 00:10:14,110
+要做到这一点并不容易
+standard hospital PCs provided
+
+184
+00:10:14,110 --> 00:10:17,250
+获取数据实际上是有障碍的
+There's a barrier to actually get to the data
+
+185
+00:10:17,250 --> 00:10:20,430
+其实许多医院都会大量抛弃数据
+Hospitals actually dump a lot of their data
+
+186
+00:10:20,430 --> 00:10:22,290
+因为存储它们的成本实在过于高昂
+because they can't afford to store it
+
+187
+00:10:22,800 --> 00:10:25,180
+这部分数据就像这样丢失了
+So, that data's just lost
+
+188
+00:10:25,880 --> 00:10:29,940
+像 Grant 这样的放射科医生可能是第一批
+Radiologists like Dr. Grant may have been the first group of doctors
+
+189
+00:10:29,940 --> 00:10:33,160
+因为数据实在太多而感到沮丧的医务人员
+to feel the frustration of data overload
+
+190
+00:10:33,160 --> 00:10:37,700
+当医院走向数字化后 他们开始创造大量的数据
+When they went digital, they began creating enormous amounts of data
+
+191
+00:10:37,700 --> 00:10:40,930
+很快 这个量就大到无法处理了
+and that quickly became impossible to handle
+
+192
+00:10:40,930 --> 00:10:43,310
+我 作为一名临床医生 在读片室里的时候
+I, as a clinician, in the reading room
+
+193
+00:10:43,310 --> 00:10:49,210
+希望能将所有复杂的分析工作在研究环境中做完
+wanted to be able to do all the fancy analysis that could be done in a research environment
+
+194
+00:10:49,210 --> 00:10:54,040
+但我无法随便就从 PACS 中拿出来图像
+But there's no way to easily get images off of the PACS
+
+195
+00:10:54,040 --> 00:10:56,970
+拿到一些可以进行分析的地方
+and get them to some place where the analysis could be done
+
+196
+00:10:56,970 --> 00:10:58,970
+再拿回到我手里
+and get them back into my hands
+
+197
+00:10:59,420 --> 00:11:04,500
+顺便说一句 PACS 就是医院存储其图像的数据仓库
+PACS by the way are what hospitals call the data banks that store their images
+
+198
+00:11:04,500 --> 00:11:06,694
+Grant 医生知道有一些工具
+Dr. Grant knew there were tools
+
+199
+00:11:06,694 --> 00:11:09,640
+可以让这些保存图像的 PACS 发挥更大的功能
+ that could make those PACS of images more functional
+
+200
+00:11:10,140 --> 00:11:11,820
+但成本太高
+but costs were prohibitive
+
+201
+00:11:12,200 --> 00:11:17,661
+随着机器学习和 AI 时代的到来
+As we're entering into this era of machine learning and AI,  
+
+202
+00:11:17,661 --> 00:11:19,410
+数据的生产量将会日渐加大
+there's more of that gonna happen
+
+203
+00:11:19,410 --> 00:11:22,990
+我们会需要更多计算资源来进行这类
+that we need these larger computational resources to really start to do
+
+204
+00:11:22,990 --> 00:11:25,810
+大规模的数据库分析
+the large database analysis we wanna do
+
+205
+00:11:27,630 --> 00:11:29,400
+数据已经堆积如山了
+The data's been piling up
+
+206
+00:11:29,940 --> 00:11:31,700
+但处理能力却没有相称的增长
+but not so much the processing
+
+207
+00:11:32,210 --> 00:11:35,460
+在这一前提下 对数据的彻底处理将变得遥不可及
+On premise data processing would be out of reach
+
+208
+00:11:35,460 --> 00:11:38,880
+而复杂 昂贵的超级计算机
+And elaborate, expensive supercomputers
+
+209
+00:11:38,880 --> 00:11:40,880
+并不是医院的选择
+aren't an option for hospitals
+
+210
+00:11:40,880 --> 00:11:43,960
+Grant 医生深感沮丧
+Dr. Grant became deeply frustrated
+
+211
+00:11:43,960 --> 00:11:47,290
+我们能不能想出一个更好的办法 让我把数据拿到这里来
+Can't we figure out a better way for me to just get data over here
+
+212
+00:11:47,290 --> 00:11:49,400
+分析一下 然后放回去 这样我就可以
+analyze it, get it back so I can do it
+
+213
+00:11:49,400 --> 00:11:52,700
+在会诊的时候 一边解释临床图像 一边把分析做完
+at the console where I'm interpreting clinical images
+
+214
+00:11:52,700 --> 00:11:54,480
+因为我希望可以在会诊上展示数据
+cause I wanna have that data
+
+215
+00:11:54,480 --> 00:11:57,550
+在此同时进行快速分析 我可不想在
+there and analyzed there quickly, I don't wanna have to
+
+216
+00:11:57,550 --> 00:12:02,510
+在不同的电脑之间挪来挪去 记住所有的代码
+move to different computers and memorize all this line code
+
+217
+00:12:02,510 --> 00:12:05,160
+这不是我的工作 我的工作是
+when that's not my job. My job is
+
+218
+00:12:05,160 --> 00:12:08,380
+理解非常复杂的医学疾病 并把
+trying to understand very complex medical diseases and
+
+219
+00:12:08,380 --> 00:12:10,960
+相关的事实真相记在脑子里 我想
+keep all those facts in my head. So I wanted to
+
+220
+00:12:10,960 --> 00:12:15,380
+我想专注于我的技术领域 在此同时
+keep my focus on where my skill set was but exploit
+
+221
+00:12:15,380 --> 00:12:20,400
+利用计算机领域的新兴技术 而不必过于深入钻研
+what is emerging in the computational side without having to dive that deep into it
+
+222
+00:12:21,710 --> 00:12:24,990
+Grant 和世界各地的放射科医生们需要的是一种方法
+What Dr. Grant and radiologists around the world
+
+223
+00:12:24,990 --> 00:12:30,050
+只要点击图像就能运行详细分析
+needed was a way to click on imagery run detailed analysis
+
+224
+00:12:31,040 --> 00:12:33,060
+并让这一切都发生在云端
+and have it all happen on the cloud
+
+225
+00:12:33,060 --> 00:12:36,370
+这样医院就不必建立自己的服务器场地
+so the hospital didn't have to build their own server farm
+
+226
+00:12:36,370 --> 00:12:40,040
+也不必把医务人员变成程序员
+and didn't have to turn the medical staff into programmers
+
+227
+00:12:40,040 --> 00:12:44,720
+他们需要一种方法来使他们的数据尽可能地拯救生命
+They needed a way to make their data save all the lives it could
+
+228
+00:12:45,460 --> 00:12:48,110
+这正是 Grant 医生
+and so, that's exactly what Dr. Grant
+
+229
+00:12:48,110 --> 00:12:51,810
+和几位代码英雄决定去做的事
+and a few command line heroes decided to build
+
+230
+00:12:54,890 --> 00:12:57,770
+Grant 在波士顿儿童医院的团队
+Dr. Grant's team at Boston Children's Hospital
+
+231
+00:12:57,770 --> 00:13:01,150
+正在与红帽和马萨诸塞州开放云（MOC）合作
+worked with Red Hat and the Massachusetts Open Cloud (MOC)
+
+232
+00:13:01,150 --> 00:13:03,150
+关于 MOC 的更多内容稍后再说
+More on the MOC a little later
+
+233
+00:13:03,660 --> 00:13:06,273
+首先 我们需要请出 Rudolph Pienaar
+First though, here's Rudolph Pienaar
+
+234
+00:13:06,273 --> 00:13:08,570
+他是医院的一名生物化学工程师
+a biomedical engineer at the hospital
+
+235
+00:13:08,570 --> 00:13:10,570
+来描述一下他们的解决方案
+describing their solution
+
+236
+00:13:11,140 --> 00:13:14,890
+它是一个开源的、基于容器的成像平台
+It's an open source, container-based imaging platform
+
+237
+00:13:14,890 --> 00:13:16,880
+它完全是在云端运行的
+It's all run on the cloud, too
+
+238
+00:13:16,880 --> 00:13:20,930
+所以你不受医院本身计算能力的限制
+So you're not limited by the computing power at the hospital itself
+
+239
+00:13:20,930 --> 00:13:23,900
+他们称这一作品为 ChRIS
+They call their creation ChRIS
+
+240
+00:13:23,900 --> 00:13:28,960
+ChRIS 有一个后台数据库 其实就是一个 Django Python 机器
+There's a backend database that's a Django Python machine really
+
+241
+00:13:28,960 --> 00:13:31,070
+它可以跟踪用户
+and that keeps track of users
+
+242
+00:13:31,070 --> 00:13:34,530
+并跟踪这些用户使用过的数据以及分析结果
+It keeps track of the data they've processed. It keeps track of results
+
+243
+00:13:35,040 --> 00:13:38,810
+围绕这个数据库  有大量的服务群
+Then there are a whole bunch of constellation of services around this database
+
+244
+00:13:38,810 --> 00:13:42,620
+这些服务都是作为独立的实例存在于容器中
+that all exist as their own instances in containers
+
+245
+00:13:42,900 --> 00:13:46,760
+它们处理与医院资源的通信
+These deal with communicating with hospital resources like databases
+
+246
+00:13:46,760 --> 00:13:48,500
+比如与医院数据库的通信
+They deal with, you know
+
+247
+00:13:48,500 --> 00:13:51,540
+这些服务从资源中提取复杂的数据
+the intricacies of pulling data from these resources and then
+
+248
+00:13:51,540 --> 00:13:56,100
+将其推送给云端的 或者另一个实验室的
+pushing them out to other services that exist on a cloud
+
+249
+00:13:56,100 --> 00:13:58,780
+或者别的什么地方的其他服务处理
+or another lab or whatever it might be
+
+250
+00:13:59,090 --> 00:14:02,050
+在计算数据的地方
+On the place where data is computed
+
+251
+00:14:02,050 --> 00:14:04,360
+有 Kubernetes 之类的编排服务
+there's all these services like Kubernetes
+
+252
+00:14:04,360 --> 00:14:09,200
+以及你需要使用的分析程序
+the schedule, the actual analysis of the data that you want to be doing
+
+253
+00:14:09,200 --> 00:14:11,200
+数据处理结束之后 结果就会被发送回来
+Then, pulling it back again
+
+254
+00:14:11,730 --> 00:14:14,360
+对于 Grant 医生来说 ChRIS 成像平台
+For Dr. Grant, the ChRIS imaging platform
+
+255
+00:14:14,360 --> 00:14:16,820
+是一种让数据活起来的方法
+is a way to make data come to life
+
+256
+00:14:16,820 --> 00:14:21,370
+更重要的是 这种数据处理方式能让她成为更好的医生
+More than that, it's a way for data to make her a better doctor
+
+257
+00:14:21,370 --> 00:14:24,670
+优秀的医生之所以优秀 是因为
+What makes a person a good physician is the
+
+258
+00:14:24,670 --> 00:14:27,820
+他们在一生中积累了丰富的从业经验
+experience they've had over a lifetime of practicing
+
+259
+00:14:28,110 --> 00:14:30,980
+如果我们能把这一点融入到
+But if I can kind of embody that into the
+
+260
+00:14:30,980 --> 00:14:34,030
+数据分析中 以此来获得更多的信息
+data analysis and access more of that information
+
+261
+00:14:34,280 --> 00:14:37,160
+我们就能知道得更多 
+ we just all know more and can
+
+262
+00:14:37,160 --> 00:14:40,330
+并更有效地整合这些经验 例如 
+combine the information better. So for example
+
+263
+00:14:40,330 --> 00:14:43,040
+我对特定病患的特定受伤方式的认识
+I have a perception of what a certain
+
+264
+00:14:43,040 --> 00:14:47,340
+我对特定病患的特定受伤方式的认识
+pattern of injury looks like in a certain patient population
+
+265
+00:14:47,340 --> 00:14:52,220
+取决于我的从医经验和对这些经验的整体理解
+ built on my Gestalt understanding from the memories that I have
+
+266
+00:14:52,220 --> 00:14:54,930
+现在 我可以根据真实数据
+I can now actually create probability maps
+
+267
+00:14:54,930 --> 00:14:57,200
+创建受伤症状分布的概率图
+of their distributions and
+
+268
+00:14:57,200 --> 00:14:59,740
+并将其公之于众
+inform everybody based on real data
+
+269
+00:14:59,740 --> 00:15:04,430
+我也可以寻找有相似模式的患者
+or I can look for similar patients who had similar patterns
+
+270
+00:15:04,430 --> 00:15:07,390
+并告诉他们在接受治疗时 什么对他们最有效
+and say what works best with them when they were treated
+
+271
+00:15:07,390 --> 00:15:10,000
+以便更接近精准医疗
+to try to get closer to precision medicine
+
+272
+00:15:10,000 --> 00:15:12,160
+整合大量的数据
+Integrating the large amount of data
+
+273
+00:15:12,160 --> 00:15:17,900
+尝试探索我们过去的知 并尽你所能
+and trying to exploit our past knowledge and to best inform how to
+
+274
+00:15:17,900 --> 00:15:20,320
+点明治疗病人的最佳方式
+treat any individual the best you can
+
+275
+00:15:20,780 --> 00:15:24,180
+这对被送到医院的孩子意味着什么
+What does that mean for the children that are brought to the hospital
+
+276
+00:15:24,180 --> 00:15:26,960
+Grant 医生说 ChRIS 平台
+Dr. Grant says the ChRIS platform
+
+277
+00:15:26,960 --> 00:15:31,480
+能提供更有针对性的诊断和更个性化的护理
+delivers more targeted diagnoses and more individualized care
+
+278
+00:15:31,480 --> 00:15:33,840
+如果我们拥有更复杂的数据库
+If we have more complex databases
+
+279
+00:15:33,840 --> 00:15:36,290
+我们就能更好地理解信息之间繁杂的相互作用
+we can understand complex interactions better
+
+280
+00:15:36,290 --> 00:15:39,050
+因此就能更好地指导每个患者
+and hopefully guide individual patients better
+
+281
+00:15:39,050 --> 00:15:43,470
+我认为 ChRIS 就像是我
+I think of ChRIS basically as my
+
+282
+00:15:43,470 --> 00:15:46,290
+进入超级大脑的接口
+portal into multiple accessory lobes
+
+283
+00:15:46,290 --> 00:15:50,350
+它能让我比平时更聪明
+so I can be a lot smarter than I can on my own
+
+284
+00:15:50,350 --> 00:15:53,650
+因为我不能一次把所有数据保存在我的大脑中
+‘cause I cannot keep all this data in my brain at one time
+
+285
+00:15:56,480 --> 00:15:58,250
+当赌注如此沉重时
+When the stakes are this high
+
+286
+00:15:58,250 --> 00:16:01,470
+我们要突破人类大脑的极限
+we wanna push past the limits of the human brain
+
+287
+00:16:01,470 --> 00:16:03,720
+这位是 Máirín Duffy
+Here's Máirín Duffy
+
+288
+00:16:03,720 --> 00:16:07,540
+她是红帽团队中的设计师 她让 ChRIS 成为现实
+She's a designer on the Red Hat team that makes ChRIS happen
+
+289
+00:16:07,540 --> 00:16:11,930
+而根据个人经验 她知道这件事其中的风险
+and she knows from personal experience what's at stake
+
+290
+00:16:14,980 --> 00:16:16,380
+我父亲中风了
+My father had a stroke
+
+291
+00:16:16,380 --> 00:16:23,790
+所以我一直作为病人家属等待医疗技术诊断
+so I've been there sort of in the patient's family side of waiting for medical technology
+
+292
+00:16:23,790 --> 00:16:25,860
+因为当一个人中风
+‘cause when someone has a stroke
+
+293
+00:16:26,370 --> 00:16:29,380
+并被送到医院之后 医务人员必须弄清楚是哪种类型的中风
+they bring you in the hospital and they have to figure out what type of stroke it is
+
+294
+00:16:29,380 --> 00:16:31,290
+根据中风类型 有不同的治疗方法
+Based on the type, there's different treatments
+
+295
+00:16:31,290 --> 00:16:34,040
+如果使用了错误的治疗方案 就可能发生极其糟糕的事
+If you give the wrong treatment, then really bad things can happen
+
+296
+00:16:34,750 --> 00:16:37,790
+所以 在这种情况下 你能越快地把病人送来做核磁共振
+So, the faster you can get the patient in for an MRI
+
+297
+00:16:37,790 --> 00:16:40,640
+就能越快地得到治疗方案
+the faster you can interpret the results in that situation
+
+298
+00:16:40,640 --> 00:16:43,250
+速度越快就有可能挽救他们的生命
+The faster you can potentially save their life
+
+299
+00:16:43,250 --> 00:16:45,740
+想想看 仅仅是
+Just think about just the fact of
+
+300
+00:16:45,740 --> 00:16:48,830
+把图像处理从云端推送出来
+getting that image processing pushed out of the cloud
+
+301
+00:16:49,410 --> 00:16:51,760
+并行化处理 就能让它快很多
+parallelized, make it so much faster
+
+302
+00:16:51,760 --> 00:16:54,740
+这样就能将这个过程从几小时 几天 缩短到几分钟
+So instead of being hours or days, it's minutes
+
+303
+00:16:55,610 --> 00:16:59,160
+医学可能正迎来一个新的拐点
+Medicine may be arriving at a new inflection point
+
+304
+00:16:59,160 --> 00:17:03,310
+一个不是由药理学驱动 而是由计算机科学驱动的拐点
+One not driven by pharmacology, but by computer science
+
+305
+00:17:03,700 --> 00:17:07,560
+另外 想想像 ChRIS 这种东西的拓展性
+Also, think about the scalability of something like ChRIS
+
+306
+00:17:07,560 --> 00:17:11,390
+发展中国家的医生也可以受益于
+You could have doctors in developing countries benefiting
+
+307
+00:17:11,390 --> 00:17:15,240
+波士顿儿童医院的专业知识和数据集
+from the expertise and data sets at Boston Children's Hospital
+
+308
+00:17:15,800 --> 00:17:20,020
+任何有手机服务的人都可以通过网络访问
+Anybody with cell service could access web-based computing and data
+
+309
+00:17:20,020 --> 00:17:22,190
+能够拯救生命的数据和计算结果
+that might save lives
+
+310
+00:17:23,850 --> 00:17:25,320
+除了医学
+Besides medicine
+
+311
+00:17:25,320 --> 00:17:29,440
+很多其他领域也可能出现类似的拐点
+lots of other fields could be witnessing a similar inflection point
+
+312
+00:17:29,850 --> 00:17:34,540
+但前提是 人们得知道如何从自己的数据中找到隐藏信息
+But only if they figure out how to make their data collections sing
+
+313
+00:17:34,975 --> 00:17:40,060
+为了做到这一点 他们需要探索一个全新的计算领域
+To do that, they need to discover a whole new territory of computing
+
+314
+00:17:46,700 --> 00:17:50,890
+世界各地的人们都在学习如何利用数据
+All around the world, we're learning to make use of our data
+
+315
+00:17:50,890 --> 00:17:54,270
+就像在波士顿儿童医院一样
+Diverting those data floods towards our own goals
+
+316
+00:17:54,270 --> 00:17:56,270
+将数据洪流导向目标
+like at Boston Children's Hospital
+
+317
+00:17:56,270 --> 00:17:59,930
+换句话说 我们在处理这些数据
+In other words, we're processing that data
+
+318
+00:18:00,920 --> 00:18:02,280
+但我们之所以能做到这一点
+But we can only do that
+
+319
+00:18:02,280 --> 00:18:07,960
+是因为新一代的云计算使之成为可能
+because a new generation of cloud-based computing makes the processing possible 
+
+320
+00:18:11,180 --> 00:18:12,980
+对于像 ChRIS 这样的平台来说
+For platforms like ChRIS
+
+321
+00:18:12,980 --> 00:18:16,120
+一个关键因素是
+a key ingredient is that cloud-based computing
+
+322
+00:18:16,120 --> 00:18:18,450
+基于云计算的新型存储方式
+is a new kind of storage
+
+323
+00:18:18,450 --> 00:18:22,730
+请记住 很多医院都会把收集到的数据扔掉
+Remember that lots of hospitals throw out the data they gather
+
+324
+00:18:22,730 --> 00:18:25,650
+因为他们根本无法容纳所有数据
+because they literally can't hold it all
+
+325
+00:18:25,650 --> 00:18:30,980
+这就是我想重点讨论的数据泛滥的最后一块拼图
+That's what I wanna focus on as a last piece of the data flood puzzle
+
+326
+00:18:30,980 --> 00:18:32,650
+存储解决方案
+The storage solution
+
+327
+00:18:33,500 --> 00:18:35,610
+对于 ChRIS 来说 存储解决方案是
+For ChRIS, the storage solution
+
+328
+00:18:35,610 --> 00:18:39,770
+一个叫 Ceph 的开源项目
+came in the form of an open source project called Ceph
+
+329
+00:18:40,410 --> 00:18:44,970
+它使用的马萨诸塞州开放云 就基于 Ceph
+The Massachusetts Open Cloud, which ChRIS uses, depends on Ceph
+
+330
+00:18:44,970 --> 00:18:48,840
+我和 Ceph 的创造者 Sage Weil 聊了聊
+So, I got chatting with its creator, Sage Weil
+
+331
+00:18:48,840 --> 00:18:52,010
+想了解更多关于像波士顿儿童医院这样的地方
+to learn more about how places like Boston Children's
+
+332
+00:18:52,010 --> 00:18:55,730
+是如何以闪电般的速度处理海量数据的
+can process enormous amounts of data in lightning time
+
+333
+00:18:56,260 --> 00:18:58,220
+以下是我与 Sage 的对话
+Here's my conversation with Sage
+
+334
+00:18:59,970 --> 00:19:02,250
+我认为 第一个重要问题是
+I think a great first question is
+
+335
+00:19:02,250 --> 00:19:04,030
+什么是 Ceph 它能做什么
+what is Ceph and what does it do
+
+336
+00:19:04,030 --> 00:19:07,920
+当然 Ceph 是一个由软件定义的存储系统
+Sure. Ceph is a software-defined storage system that
+
+337
+00:19:07,920 --> 00:19:10,600
+它允许你提供可靠的存储服务
+allows you to provide a reliable storage service
+
+338
+00:19:10,600 --> 00:19:13,550
+并在不可靠的硬件上提供各种协议
+providing various protocols across unreliable hardware
+
+339
+00:19:13,550 --> 00:19:16,830
+它的设计从开始就是满足可扩展性
+It's designed from the ground up to be scalable
+
+340
+00:19:16,830 --> 00:19:19,320
+所以你可以拥有非常非常大的存储系统
+so you can have very, very large storage systems
+
+341
+00:19:19,320 --> 00:19:21,320
+非常大的数据集
+very large data sets
+
+342
+00:19:21,320 --> 00:19:23,176
+与此同时 系统对硬件故障和网络故障有优秀的容忍性
+and you can make them available and tolerate hardware failures and network failures and so on
+
+343
+00:19:23,176 --> 00:19:26,700
+ 所以即使出现了一些这类问题
+and you can make them available and tolerate hardware failures and network failures and so on
+
+344
+00:19:26,700 --> 00:19:29,080
+存储中的数据仍然不会变得难于访问
+without compromising availability
+
+345
+00:19:29,080 --> 00:19:30,475
+现在 数据太多了
+Nowadays, there's just so much data
+
+346
+00:19:30,475 --> 00:19:31,390
+现在 数据太多了
+Nowadays, there's just so much data
+是的
+Yes
+
+347
+00:19:31,390 --> 00:19:31,500
+如此大的工作量 要处理的东西实在是太多了
+So much consumption. There's just so much to get a handle on
+是的
+Yes
+
+348
+00:19:31,500 --> 00:19:35,610
+如此大的工作量 要处理的东西实在是太多了
+So much consumption. There's just so much to get a handle on
+
+349
+00:19:35,610 --> 00:19:39,710
+你认为这个解决方案出现得是时候吗
+Do you feel like the timing of it was part of the need for the solution
+
+350
+00:19:39,710 --> 00:19:42,970
+是的 肯定是这样 在当时 行业中
+Yes, definitely. At the time, it just seemed
+
+351
+00:19:42,970 --> 00:19:45,920
+这方面的严重不足是显而易见的
+painfully obvious that there's this huge gap in the industry
+
+352
+00:19:45,920 --> 00:19:47,960
+没有开源的解决方案可以
+There was no open source solution
+
+353
+00:19:47,960 --> 00:19:50,360
+解决可扩展的存储问题
+that would address the scalable storage problem
+
+354
+00:19:50,360 --> 00:19:53,260
+所以 我们显然得造个轮子
+So it was obvious that we needed to build something
+
+355
+00:19:53,260 --> 00:19:56,010
+考虑到我们每天要处理的数据量
+When we're thinking about the amount of data we're dealing with
+
+356
+00:19:56,010 --> 00:19:57,820
+考虑到我们每天要处理的数据量
+on a daily basis and the fact that it's
+
+357
+00:19:57,820 --> 00:20:00,210
+以及它将来只会越来越多
+only growing, it's only getting bigger
+
+358
+00:20:00,210 --> 00:20:01,760
+越来越难管理的事实 你认为当今该怎么做
+and harder to manage
+
+359
+00:20:01,760 --> 00:20:05,140
+越来越难管理的事实 你认为当今该怎么做
+what do you see that's being worked on today
+
+360
+00:20:05,140 --> 00:20:08,580
+才能解决这种日益增长的需求
+that will maybe address this growing need
+
+361
+00:20:09,390 --> 00:20:12,330
+我认为有几方面
+I think there are sort of several pieces of it
+
+362
+00:20:12,330 --> 00:20:13,540
+一方面
+The first thing is that
+
+363
+00:20:13,540 --> 00:20:16,050
+有令人难以置信的数据量正在产生
+there's incredible amount of data being generated, of course
+
+364
+00:20:16,050 --> 00:20:17,930
+所以你需要可扩展的系统
+so you need scalable systems that can
+
+365
+00:20:17,930 --> 00:20:21,330
+不仅可以在硬件和数据规模上进行扩展
+scale not just in the amount of hardware and data that you're storing
+
+366
+00:20:21,330 --> 00:20:25,900
+而且 它的管理成本应该是一定的 至少应该基本固定
+but also have a sort of fixed or nearly fixed operational overhead
+
+367
+00:20:25,900 --> 00:20:26,467
+嗯
+Mm-hmm (affirmative)
+
+368
+00:20:26,467 --> 00:20:30,250
+你不会想就为每多 10PB 存储空间或类似的东西就多雇一个员工吧
+You don't wanna pay another person per 10 petabytes or something like that
+
+369
+00:20:30,250 --> 00:20:34,410
+我认为这套系统在运维上也必须可扩展
+So it has to be scalable. Operationally scalable, I guess would be the way to put it 
+
+370
+00:20:34,410 --> 00:20:34,860
+是的
+Yeah
+
+371
+00:20:34,860 --> 00:20:38,290
+这是其中的一部分 我认为
+That's part of it. I think also the
+
+372
+00:20:38,290 --> 00:20:41,790
+人们利用存储空间的方式也在改变
+way that people interact with storage is changing as well, so
+
+373
+00:20:41,790 --> 00:20:44,500
+一开始 都是文件存储
+In the beginning, it was all file storage
+
+374
+00:20:44,500 --> 00:20:47,390
+然后我们有了虚拟机的块存储 我觉得对象存储
+and then we have block storage for VMs, object storage is sort of
+
+375
+00:20:47,390 --> 00:20:50,980
+在某种程度上是行业的重要趋势
+I think, a critical trend in the industry
+
+376
+00:20:50,980 --> 00:20:53,820
+我认为 下一个阶段的目标
+I think really the next phase of this is
+
+377
+00:20:53,820 --> 00:20:56,440
+并不局限于提供一个对象存储端点
+not so much around just providing an object storage endpoint
+
+378
+00:20:56,440 --> 00:20:58,880
+并将数据存储在集群中
+and being able to store data in one cluster
+
+379
+00:20:58,880 --> 00:21:01,130
+我们需要将解决方案进一步升级
+but really taking this sort of the level up
+
+380
+00:21:01,130 --> 00:21:03,650
+好让它能管理集群的集群
+and having clusters of clusters
+
+381
+00:21:03,650 --> 00:21:07,240
+抑或是对分布于不同地理位置的
+geographically distributed mesh of cloud footprints or
+
+382
+00:21:07,240 --> 00:21:09,840
+云空间及私有数据中心储存空间
+private datacenter footprints where data is stored
+
+383
+00:21:09,840 --> 00:21:13,100
+中的数据进行管理
+and being able to manage the data that's distributed across those
+
+384
+00:21:13,100 --> 00:21:15,850
+例如说 你现在将数据写入一个位置
+Maybe you write the data today in one location
+
+385
+00:21:15,850 --> 00:21:18,250
+随着时间的推移 你可能会想将数据分层到到其他位置
+ you tier it off to somewhere else over time because it's
+
+386
+00:21:18,250 --> 00:21:21,060
+因为它更便宜 或者服务器离你更近 或者 一旦数据太老
+cheaper, or it's closer, or the data's older
+
+387
+00:21:21,060 --> 00:21:25,210
+不会频繁使用了 你就需要将其移动到性能更低 容量更大的层次上
+and you need to move it to a lower-performance, higher-capacity
+
+388
+00:21:25,210 --> 00:21:27,580
+以保证存储的成本较低
+tier for pricing reasons
+
+389
+00:21:27,580 --> 00:21:29,290
+你可能也会为了遵循地方法规而移动数据
+Dealing with things like compliance
+
+390
+00:21:29,290 --> 00:21:31,450
+在欧洲的一些地区接收数据时
+so that when you ingest data in one
+
+391
+00:21:31,450 --> 00:21:33,450
+数据来源必须保持在
+in Europe, it has to stay within
+
+392
+00:21:33,450 --> 00:21:38,360
+特定的政治边界内
+certain political boundaries in order to comply with regulation
+
+393
+00:21:38,360 --> 00:21:41,280
+在某些行业 像 HIPAA 这样的东西
+In certain industries, you have things like HIPAA that
+HIPAA = 健康保险可携性和责任法案
+1996 年在美国通过。规定了医疗和医保行业中个人身份信息应受保护。
+
+394
+00:21:41,280 --> 00:21:46,530
+限制了数据的移动方式 我认为 随着现代 IT 组织越来越多地
+restricts the way that data's moved around. I think as modern IT organizations are
+
+395
+00:21:46,530 --> 00:21:50,240
+分布在不同的数据中心
+increasingly spread across lots of different datacenters and lots of public clouds
+
+396
+00:21:50,240 --> 00:21:51,890
+公有和私有云中
+and their own private cloud infrastructure
+
+397
+00:21:51,890 --> 00:21:54,490
+统一地 自动化地
+being able to manage all this data and
+
+398
+00:21:54,490 --> 00:21:58,020
+管理它们的能力正变得越加重要
+automate that management is becoming increasingly important
+
+399
+00:21:58,020 --> 00:22:01,660
+当你想到未来我们要如何管理和存储数据
+When you think about how we're going to manage and store data
+
+400
+00:22:01,660 --> 00:22:04,320
+以及如何处理数据的时候
+in the future, and process data in the future
+
+401
+00:22:04,320 --> 00:22:07,360
+开源在其中
+how does open source
+
+402
+00:22:07,360 --> 00:22:09,480
+扮演了怎样的角色 你曾提到
+play a role in that? You mentioned that you
+
+403
+00:22:09,480 --> 00:22:13,630
+你之所以要创建一个开源的解决方案 是因为你个人的理念
+wanted to create an open source solution because of your personal philosophy and
+
+404
+00:22:13,630 --> 00:22:15,860
+和你对自由和开源软件的强烈感情
+your strong feelings on free and open software
+
+405
+00:22:15,860 --> 00:22:21,310
+你如何看待开源对未来其他解决方案的影响
+How do you see open source affecting other solutions in the future
+
+406
+00:22:21,310 --> 00:22:23,150
+我认为
+I think that, um
+
+407
+00:22:23,150 --> 00:22:25,740
+特别是在基础设施领域
+particularly in the infrastructure space
+
+408
+00:22:26,720 --> 00:22:29,780
+解决方案正在向开源靠拢
+solutions are converging towards open source
+
+409
+00:22:29,780 --> 00:22:35,200
+我认为原因是基础设施领域的成本压力很大
+I think the reason for that is there are high cost pressures in the infrastructure space
+
+410
+00:22:35,200 --> 00:22:37,580
+特别是对于构建
+and particularly for people
+
+411
+00:22:37,580 --> 00:22:40,650
+软件即服务（SaaS）或云服务的人来说
+building software-as-a-service or cloud services
+
+412
+00:22:40,650 --> 00:22:43,220
+低成本的基础设施很重要
+it's important that they keep their infrastructure very cheap
+
+413
+00:22:43,220 --> 00:22:47,160
+从他们的角度来看 开源显然是一个非常好的方法
+and open source is obviously a very good way to do that from their perspective
+
+414
+00:22:47,960 --> 00:22:50,370
+第二个原因更多地
+And, I think the second reason is
+
+415
+00:22:50,370 --> 00:22:52,780
+是社会因素
+more of a, I think, a social reason
+
+416
+00:22:52,780 --> 00:22:56,850
+在这个快速发展的领域里有如此多
+and that it's such a fast-moving field where you have
+
+417
+00:22:56,850 --> 00:23:01,800
+新的工具 新的框架 新的协议 新的数据思维方式
+new tools, new frameworks, new protocols new ways of thinking about data
+
+418
+00:23:01,800 --> 00:23:05,380
+这个领域中有这么多创新和变化
+and there's so much innovation and change happening in that space
+
+419
+00:23:05,380 --> 00:23:08,650
+有这么多不同的产品
+and so many different products and
+
+420
+00:23:08,650 --> 00:23:11,530
+和项目在相互作用
+projects that are interacting, that it's very
+
+421
+00:23:11,530 --> 00:23:13,960
+所以很难以传统方式
+hard to do that in a way that is
+
+422
+00:23:13,960 --> 00:23:16,240
+做到这一点 比如说
+sort of based on the traditional model, where you have
+
+423
+00:23:16,240 --> 00:23:19,860
+让不同的公司互相签订合作协议 共同开发
+different companies having partnership agreements and co-development or whatever
+
+424
+00:23:19,860 --> 00:23:23,860
+开源可以消除此事上的所有阻力
+Open source removes all of that friction
+
+425
+00:23:27,740 --> 00:23:31,410
+Sage Weil 是红帽公司的高级咨询工程师
+Sage Weil is a senior consulting engineer at Red Hat
+
+426
+00:23:31,410 --> 00:23:33,410
+也是 Ceph 项目的负责人
+and the Ceph project lead
+
+427
+00:23:35,450 --> 00:23:38,900
+我要绕回到《经济学人》的 Kenneth Cukier
+I'm gonna circle back to Kenneth Cukier from The Economist
+
+428
+00:23:38,900 --> 00:23:41,180
+以从一个更整体的视角上进行讨论
+so we can zoom out a bit
+
+429
+00:23:41,180 --> 00:23:44,170
+因为我希望 我们能够记住他
+because I want us to remember that vision he had
+
+430
+00:23:44,170 --> 00:23:46,170
+关于人与数据之间关系的看法
+about our relationship with data
+
+431
+00:23:46,170 --> 00:23:50,380
+以及我们从泥板 到印刷机
+and how we've progressed from clay tablets to the printing press
+
+432
+00:23:50,380 --> 00:23:54,290
+再到像 Sage 打造的云端奇迹的进步历程
+to cloud-based wonders like the one Sage built
+
+433
+00:23:54,920 --> 00:23:56,760
+这关乎人类的进步
+This is about human progress
+
+434
+00:23:56,760 --> 00:23:59,130
+关乎我们如何更好地理解世界
+and it is about how we can understand the world
+
+435
+00:23:59,130 --> 00:24:02,920
+如何从现实中总结经验以及如何改善世界
+and the empirical evidence of the world better to improve the world
+
+436
+00:24:02,920 --> 00:24:07,410
+这进步也是人类一直以来的使命
+It is the same mission of progress that humans have always been on
+
+437
+00:24:08,620 --> 00:24:10,420
+使命永无止境
+The mission never ends
+
+438
+00:24:10,420 --> 00:24:14,290
+但是 与此同时 学会处理我们收集到的数据
+But, in the meantime, learning to process the data we've gathered
+
+439
+00:24:14,290 --> 00:24:16,250
+并将其投入使用 是整整一代人的开源任务
+and put that flood to work
+
+440
+00:24:16,250 --> 00:24:19,380
+并将其投入使用 是整整一代人的开源任务
+that's an open source mission for a whole generation
+
+441
+00:24:30,500 --> 00:24:33,120
+我们将在田纳西州的橡树岭国家实验室
+We're ending our data journey with a quick stop
+
+442
+00:24:33,120 --> 00:24:36,300
+短暂停留 结束我们的数据之旅
+at the Oak Ridge National Laboratory in Tennessee
+
+443
+00:24:36,300 --> 00:24:40,657
+它是世界上最快的超级计算机 Summit 的所在地 
+It's home to Summit, the world's fastest supercomputer 
+
+444
+00:24:40,657 --> 00:24:43,140
+ 至少在 2018 年是最快的超级计算机
+ or at least fastest as of 2018
+
+445
+00:24:43,470 --> 00:24:48,610
+这台机器每秒能处理
+This machine processes 200,000 trillion calculations
+
+446
+00:24:48,610 --> 00:24:49,870
+ 20 万亿次计算
+per second
+
+447
+00:24:49,870 --> 00:24:52,520
+换个计量单位 就是 200 petaflops
+That's 200 petaflops, if you're counting
+
+448
+00:24:53,300 --> 00:24:54,890
+这样的处理速度
+Processing speed like that
+
+449
+00:24:54,890 --> 00:24:57,780
+对于医院、银行或者今天
+isn't practical for hospitals or banks
+
+450
+00:24:57,780 --> 00:25:00,540
+所有受益于高性能计算的
+or all the thousands of organizations
+
+451
+00:25:00,540 --> 00:25:03,580
+成千上万的组织来说并不现实
+that benefit from high high performance computing today
+
+452
+00:25:04,180 --> 00:25:05,890
+像 Summit 这样的超级计算机
+Supercomputers like Summit
+
+453
+00:25:05,890 --> 00:25:09,810
+更多的是留给强子对撞机的领域
+are reserved more for Hadron Collider territory
+
+454
+00:25:09,810 --> 00:25:11,410
+不过话说回来
+But then again
+
+455
+00:25:11,410 --> 00:25:15,930
+我们曾经在泥板上记录的只是 100 字节的信息
+we were once recording just a hundred bytes of info on clay tablets
+
+456
+00:25:16,540 --> 00:25:19,520
+在数据存储和数据处理的领域中
+The story of data storage and data processing
+
+457
+00:25:19,520 --> 00:25:22,040
+非凡的壮举不断成为新的常态
+is one where extraordinary feats
+
+458
+00:25:22,040 --> 00:25:24,320
+非凡的壮举不断成为新的常态
+keep becoming the new normal
+
+459
+00:25:24,850 --> 00:25:29,790
+有一天 我们或许能将 Summit 级别的超级计算机装进口袋
+One day, we might all have Summit-sized supercomputers in our pockets.
+
+460
+00:25:29,790 --> 00:25:33,480
+想一想 到时候我们能够搜索到的答案
+Think of the answers we'll be able to search for then
+
+461
+00:25:42,010 --> 00:25:45,120
+下一集 我们聊聊无服务器
+Next episode, we're going serverless
+
+462
+00:25:45,120 --> 00:25:45,800
+或者 真的没服务器吗
+Or are we
+
+463
+00:25:46,170 --> 00:25:49,900
+第 7 集将会讲述我们与基于云的开发之间
+Episode 7 is all about our evolving relationship
+
+464
+00:25:49,900 --> 00:25:51,900
+不断发展的关系
+with cloud-based development
+
+465
+00:25:51,900 --> 00:25:55,240
+我们将会探究 在我们的工作中有
+We're figuring out how much of our work we can abstract
+
+466
+00:25:55,240 --> 00:25:58,040
+多少可以抽象化的部分 以及在这个过程可能会失去的东西
+and what we might be giving up in the process
+
+467
+00:25:58,040 --> 00:26:02,010
+同时 如果你想深入了 ChRIS 的故事
+Meantime, if you wanna dive deeper into the ChRIS story
+
+468
+00:26:02,010 --> 00:26:04,840
+请访问 redhat.com/chris
+visit redhat.com/chris
+
+469
+00:26:04,840 --> 00:26:06,620
+了解它是如何构建的
+to learn more about how it was built
+
+470
+00:26:06,620 --> 00:26:09,290
+以及如何为项目本身做出贡献
+and how you can contribute to the project itself
+
+471
+00:26:12,670 --> 00:26:16,000
+《代码英雄》是一款红帽公司原创的播客
+Command Line Heroes is an original podcast from Red Hat
+
+472
+00:26:16,360 --> 00:26:19,950
+你可以在苹果播客、谷歌播客
+Listen for free on Apple Podcasts, Google Podcasts
+
+473
+00:26:19,950 --> 00:26:21,360
+或任何你喜欢的平台上免费收听
+or wherever you do your thing
+
+474
+00:26:23,960 --> 00:26:27,860
+我是 Saron Yitbarek 坚持编程 下期再见
+I'm Saron Yitbarek. Until next time, keep on coding
+
