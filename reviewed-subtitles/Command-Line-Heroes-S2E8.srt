@@ -1,0 +1,2573 @@
+﻿1
+00:00:12,675 --> 00:00:15,443
+2012 年 8 月 6 日
+On August 6, 2012,
+
+2
+00:00:15,443 --> 00:00:18,901
+一枚汽车大小的漫游车 好奇号
+a car-size rover called Curiosity
+
+3
+00:00:18,901 --> 00:00:23,523
+从火星大气的顶层降落到了这颗星球的地表
+fell from the top of the Martian atmosphere to the planet's surface.
+
+4
+00:00:23,875 --> 00:00:26,555
+降落花了 7 分钟
+The fall took seven minutes.
+
+5
+00:00:26,905 --> 00:00:28,100
+下降的过程…
+Down,
+
+6
+00:00:28,100 --> 00:00:29,375
+…仿佛永无止境
+down.
+
+7
+00:00:30,000 --> 00:00:32,423
+漫游车携带着贵重的货物：
+The rover carried a precious cargo,
+
+8
+00:00:32,743 --> 00:00:35,878
+50万行代码
+500,000 lines of code,
+
+9
+00:00:36,134 --> 00:00:38,775
+76 台尖端科学仪器
+76 pyrotechnic devices,
+
+10
+00:00:38,775 --> 00:00:43,847
+以及另一些工具 用以开展前所未有的实验
+and a series of tools for conducting never-before-possible experiments.
+
+11
+00:00:44,167 --> 00:00:46,975
+先是超音速降落伞展开
+After releasing a supersonic parachute,
+
+12
+00:00:46,975 --> 00:00:49,550
+接着是隔热护盾分离
+after heat shield separation,
+
+13
+00:00:49,550 --> 00:00:51,180
+然后 反冲发动机启动
+after power descent,
+
+14
+00:00:51,180 --> 00:00:55,868
+甚至在半空中部署天车 -
+and even a sky crane deployment in mid-air,
+
+15
+00:00:56,425 --> 00:01:00,025
+最终 好奇号平稳着陆
+Curiosity at last touched down.
+
+16
+00:01:10,125 --> 00:01:12,093
+现在 是时候看看“好奇号”会将我们带向何方了
+"Time to see where Curiosity will take us."
+
+17
+00:01:12,875 --> 00:01:14,257
+听见那声音了吗？
+Hear that sound?
+
+18
+00:01:14,513 --> 00:01:19,585
+那就是火星车成功着陆后 满屋子工程师的欢呼声
+That's what it sounds like when a room full of engineers land a rover on Mars.
+
+19
+00:01:20,049 --> 00:01:25,645
+几天后 他们将收到来自贝拉克·奥巴马总统的贺电
+In a few days, they'll be getting a congrats phone call from President Barack Obama.
+
+20
+00:01:25,945 --> 00:01:28,133
+但现在是只属于他们的时刻
+But for now it's all about the team.
+
+21
+00:01:28,567 --> 00:01:32,871
+房间里的这群人 一同完成的事
+A room full of people who know they've just accomplished something together
+
+22
+00:01:32,871 --> 00:01:35,383
+是他们中的任何一人永远都无法独自做到的
+that they could never have accomplished on their own.
+
+23
+00:01:39,675 --> 00:01:41,259
+我是 Saron Yitbarek
+I'm Saron Yitbarek,
+
+24
+00:01:41,259 --> 00:01:45,371
+这里是代码英雄 由红帽提供的原创播客节目
+and this is Command Line Heroes, an original podcast from Red Hat.
+
+25
+00:01:46,925 --> 00:01:48,230
+本季以来
+All season long,
+
+26
+00:01:48,230 --> 00:01:52,618
+我们见证了开源技术对我们工作方式的重塑
+we've seen how open source technology remakes the way we work
+
+27
+00:01:52,618 --> 00:01:54,821
+及其对人们能力的拓展
+and what we're capable of accomplishing.
+
+28
+00:01:55,225 --> 00:01:58,750
+作为线索 社区这个要素贯穿了整季节目
+The through-line for me has always been community.
+
+29
+00:01:58,950 --> 00:02:03,013
+这些故事告诉我们该怎么团队协作
+It's always about discovering better ways to work together,
+
+30
+00:02:03,013 --> 00:02:05,256
+该怎么向行家学习
+better ways to learn from the pros,
+
+31
+00:02:05,256 --> 00:02:07,729
+以及 如何在这同时学会听取新人的意见
+while listening to fresh voices, too.
+
+32
+00:02:08,177 --> 00:02:10,177
+一言以蔽之 如何更好地与人交流
+Better ways to connect.
+
+33
+00:02:10,975 --> 00:02:12,919
+在第二季的终章
+For our season two finale,
+
+34
+00:02:12,919 --> 00:02:15,622
+在记住所有这些道理的同时
+we're holding on to all those lessons,
+
+35
+00:02:15,622 --> 00:02:20,525
+我们将探索开源是如何为那些伟大的项目赋能的
+while we discover how open source powers some of our grandest projects.
+
+36
+00:02:21,293 --> 00:02:23,455
+你也许在去年的十一月
+You might've been watching last November
+
+37
+00:02:23,455 --> 00:02:27,453
+观看了 NASA 的“洞察号”登陆器抵达火星地表
+when NASA's InSight Lander touched down on the surface of Mars.
+
+38
+00:02:27,645 --> 00:02:29,229
+彼时四周皆是欢呼与拥抱
+Hugs all around.
+
+39
+00:02:29,650 --> 00:02:31,470
+事实证明
+Well, it turns out that
+
+40
+00:02:31,470 --> 00:02:35,535
+向星星 - 向这颗红色的星球发射漫游车的任务
+shooting for the stars or the red planet only works
+
+41
+00:02:35,535 --> 00:02:37,750
+只有把宝押在众人合作上 才能完成
+when you bet everything on collaboration.
+
+42
+00:02:44,175 --> 00:02:48,625
+我刚才说过了吗？那台火星车有它自己的推特账号
+Did I mention that rover on Mars has its own Twitter account?
+
+43
+00:02:48,925 --> 00:02:50,925
+它还有四百万粉丝呢
+Four million followers.
+
+44
+00:02:51,053 --> 00:02:51,803
+这还不算什么
+No big deal.
+
+45
+00:02:52,315 --> 00:02:55,147
+最近它给地球人发送了一条推文
+And it recently tweeted a message to earthlings,
+
+46
+00:02:55,275 --> 00:02:58,100
+是一封邀请函
+an invitation to build a rover of their own,
+
+47
+00:02:58,228 --> 00:03:01,508
+邀请人们使用 NASA 喷气动力实验室开源的说明和代码
+complete with open source instructions and code,
+
+48
+00:03:01,508 --> 00:03:04,532
+建造一辆属于自己的漫游车
+courtesy of NASA's Jet Propulsion Lab.
+
+49
+00:03:04,978 --> 00:03:08,962
+我们跟踪采访了一个民间的组织 叫 SGVHAK 小组
+We caught up with some folks called the SGVHAK Group.
+
+50
+00:03:09,218 --> 00:03:11,962
+他们是第一批自己建造漫游车的人
+They're one of the first to build their own rover.
+
+51
+00:03:12,750 --> 00:03:14,750
+现在我要试试从坎上开过去
+I'm gonna try and drive over that curb.
+
+52
+00:03:15,050 --> 00:03:16,159
+看看她这样能不能行
+Let's see what she can do.
+
+53
+00:03:16,159 --> 00:03:18,287
+上来了 - - 不 不行
+Going up. Nope.
+
+54
+00:03:18,287 --> 00:03:18,870
+不行
+No.
+
+55
+00:03:20,500 --> 00:03:22,463
+她以前很容易就能开过去的
+She used to be able to go over pretty easily,
+
+56
+00:03:22,463 --> 00:03:24,911
+不过我们现在对轮子做了一些改动
+but with the changes we've made to the wheels,
+
+57
+00:03:24,911 --> 00:03:26,665
+她就有点不乐意了
+she's a little reluctant now.
+
+58
+00:03:27,305 --> 00:03:30,649
+这个小组的成员包括 Roger Cheng、Dave Flynn
+The group includes Roger Cheng, Dave Flynn, Emily Velasco, and Lan Dang.
+
+59
+00:03:30,649 --> 00:03:33,273
+Emily Velasco 以及 Lan Dang
+The group includes Roger Cheng, Dave Flynn, Emily Velasco, and Lan Dang.
+
+60
+00:03:34,425 --> 00:03:36,024
+Dave 包揽了所有机械设计
+Dave designs all the mechanical stuff,
+
+61
+00:03:36,024 --> 00:03:37,490
+我想我应该算是负责整合的
+and I guess I put things together.
+
+62
+00:03:37,874 --> 00:03:41,450
+Roger 是我们的程序员
+oger's our software guy, Dave's design,
+
+63
+00:03:41,450 --> 00:03:44,174
+Lan 是我们无畏的领导
+Lan is our fearless leader, so.
+
+64
+00:03:44,992 --> 00:03:46,448
+你也有东西的
+You are the one,
+
+65
+00:03:46,448 --> 00:03:49,344
+你是队里的机械制造专家
+you're the mechanical fabrication expert on the team.
+
+66
+00:03:49,344 --> 00:03:50,866
+大概吧 应该算是
+I guess. I guess so.
+
+67
+00:03:50,994 --> 00:03:53,275
+跟他们讲讲伺服电机架子的事
+Tell people about the servo bracket.
+
+68
+00:03:53,550 --> 00:03:54,087
+噢 好的
+Oh right.
+You're the one that built the servo cluge that
+是你把电机凑起来的
+
+69
+00:03:54,087 --> 00:03:56,941
+You're the one that built the servo cluge that
+是你把电机凑起来的
+
+70
+00:03:56,941 --> 00:03:58,460
+run it... the show.
+让它运行 演示一下
+
+71
+00:04:00,025 --> 00:04:03,778
+打造这样一部漫游车可不像拼装乐高积木
+Building one of these rovers isn't exactly a Lego project.
+
+72
+00:04:04,124 --> 00:04:09,644
+它需要真正的火箭科学家花 200 小时来完成
+It takes actual rocket scientists about 200 hours to complete.
+
+73
+00:04:10,156 --> 00:04:14,268
+所以 让我们给这些家伙几分钟的准备时间
+So yeah, let's give these guys a few minutes to get their act together.
+
+74
+00:04:14,460 --> 00:04:15,705
+稍后再回来
+We'll check in with them later.
+
+75
+00:04:19,675 --> 00:04:22,443
+与此同时 我想了解更多
+Meanwhile, I wanted to learn more about
+
+76
+00:04:22,443 --> 00:04:26,491
+关于为什么当初 NASA 要将漫游车的技术和代码向全世界开源
+why NASA gave the world an open source rover in the first place.
+
+77
+00:04:27,067 --> 00:04:29,530
+我恰好找到了回答这个问题的最佳人选
+And I found just the person to ask.
+
+78
+00:04:29,530 --> 00:04:30,875
+我叫 Tom Soderstorm
+My name is Tom Soderstrom.
+
+79
+00:04:30,875 --> 00:04:36,139
+我是 NASA 喷气推进实验室的 IT 部门的首席技术与创新官
+I am chief technology and innovation officer for IT at NASA's Jet Propulsion Laboratory.
+喷气推进实验室 = Jet Propulsion Laboratory (JPL)
+
+80
+00:04:37,675 --> 00:04:41,275
+JPL 总共有大约 6000 人
+JPL is a group of about 6,000 people.
+
+81
+00:04:41,595 --> 00:04:44,299
+它是 NASA 的研究中心之一 由联邦政府提供资金
+It's NASA's federally-funded research center,
+
+82
+00:04:44,525 --> 00:04:47,805
+专注于研究如何用无人机械进行太空探索
+and they focus on robotic exploration in space.
+
+83
+00:04:47,875 --> 00:04:49,925
+我们寻找地外生命
+We look for is there life out there?
+
+84
+00:04:50,245 --> 00:04:53,025
+我们也探究宇宙的起源和未来
+How did the universe originate, where is it going?
+
+85
+00:04:53,537 --> 00:04:56,555
+除此之外 考虑到可能的星际移民需求
+And in addition to that, should we ever need to export humanity,
+
+86
+00:04:56,555 --> 00:04:58,575
+我们也在寻找地球 2.0
+we're trying to find Earth 2.0.
+
+87
+00:04:58,895 --> 00:05:03,007
+也就是具有类似地球的环境的、另一个适宜人类居住的行星
+The earth-like planets that one day we could inhabit.
+
+88
+00:05:04,750 --> 00:05:06,635
+是的 他们肩负着伟大的使命
+Yeah, it's the big leagues.
+
+89
+00:05:07,050 --> 00:05:07,925
+不过 事情是这样的
+But here's the thing.
+
+90
+00:05:07,925 --> 00:05:08,160
+But here's the thing.
+
+91
+00:05:08,544 --> 00:05:12,080
+Tom 的团队并不是一群闭门造车的工程师
+Tom's team isn't some siloed group of engineers.
+
+92
+00:05:12,325 --> 00:05:16,975
+他们与下一代的科学家们有着深厚的联系
+They're deeply committed to connecting with the next generation of scientists.
+
+93
+00:05:17,487 --> 00:05:21,700
+他们常常采用全新的方式激发大众的创造性思维
+They're constantly trying to find new ways to spark original thinking.
+
+94
+00:05:22,148 --> 00:05:24,596
+事实上 这是他们工作中至关重要的一部分
+In fact, it's a crucial part of their job.
+
+95
+00:05:25,300 --> 00:05:28,708
+漫游车开源计划释放出了部分设计
+The open source rover project gives away those designs,
+
+96
+00:05:28,964 --> 00:05:33,268
+这样一来 NASA 之外的民间组织就能组建他们自己的漫游车了
+so teams of non-NASA folk can try building their own rover.
+
+97
+00:05:33,588 --> 00:05:37,572
+这是 NASA 促进创新的宏观战略的一部分
+That was part of NASA's larger strategy to promote innovation.
+
+98
+00:05:38,276 --> 00:05:43,220
+很自然地 Tom 从开源漫游车开始
+Tom and I got talking about why open sourcing NASA's work is so important.
+
+99
+00:05:43,575 --> 00:05:46,673
+向我讲述了为何开源 NASA 的成果是如此重要
+Starting naturally with that open source rover.
+
+100
+00:05:48,145 --> 00:05:48,735
+有很多人可能像我一样
+A lot of people are,
+
+101
+00:05:48,735 --> 00:05:49,925
+发现这个网站时 我想
+but when I found this site, I'm like,
+
+102
+00:05:49,925 --> 00:05:52,300
+天啊 也许我可以自己打造一个漫游车呢
+oh man, maybe I can make a rover.
+
+103
+00:05:53,050 --> 00:05:55,050
+这真是太激动人心了 这太令人神往了
+It's really exciting. It's really engaging.
+
+104
+00:05:55,150 --> 00:05:58,563
+我们打造这个开源网站 是为了能让公众和学校能够从中学习
+We built it for the public and schools to learn,
+
+105
+00:05:58,563 --> 00:06:00,293
+而且我们发现
+and we're realizing that as we did,
+
+106
+00:06:00,293 --> 00:06:03,895
+围绕漫游车开源形成的社区是非常优秀的实验平台
+it's becoming a wonderful experimentation platform for us.
+
+107
+00:06:04,279 --> 00:06:08,007
+所以当我们想测试新鲜事物的时候 这里就是最佳的演练场
+So as we try new things, it's the best place to try it,
+
+108
+00:06:08,263 --> 00:06:10,090
+非常简单 非常高效
+very easy, very quick,
+
+109
+00:06:10,375 --> 00:06:12,213
+我们能很快就把想要的技术应用到真正的漫游车上
+and then we can put it on the real rovers.
+
+110
+00:06:12,550 --> 00:06:15,848
+所以我们希望人们能够把像太阳能面板、
+So we're hoping that people will incorporate things like solar panels,
+
+111
+00:06:15,848 --> 00:06:18,488
+加速度传感器、科学实验仪器、
+accelerometers, the science payloads,
+
+112
+00:06:18,680 --> 00:06:21,704
+以及先进的人工智能程序等结合起来
+very advanced artificial intelligence programming,
+
+113
+00:06:21,704 --> 00:06:25,752
+我们只是希望这些经验能够扩散
+and we just want the experiences to proliferate
+
+114
+00:06:26,000 --> 00:06:30,176
+在这些方面感兴趣的人最终也能对太空感兴趣
+and the people get interested in this and eventually interested in space.
+
+115
+00:06:30,403 --> 00:06:31,587
+因为太空真的是太酷了
+Because space is way cool.
+
+116
+00:06:32,227 --> 00:06:34,500
+所以除了刚才提到的这些之外
+So besides the ideas that you have listed,
+
+117
+00:06:34,500 --> 00:06:36,363
+人们在这个项目中还做过哪些
+things that people can do,
+
+118
+00:06:36,491 --> 00:06:41,819
+让你印象深刻的 或者是让你觉得激动的事儿？
+what have people done with it that you were really excited about or impressed by
+
+119
+00:06:42,331 --> 00:06:45,511
+降价是一项非常令人印象深刻的工作
+The price reduction was one really impressive thing
+
+120
+00:06:45,511 --> 00:06:48,407
+而现在有一堆人在试着用人工智能干这个事儿
+and right now, there's a lot of artificial intelligence (AI) going on.
+
+121
+00:06:48,700 --> 00:06:51,325
+这是目前我见到的最有趣的事情之一
+So that's one of the most interesting things I see coming.
+
+122
+00:06:51,709 --> 00:06:54,285
+我很想看到有人能为漫游车添加一个机械臂
+I would love to see somebody add a robot arm to it.
+
+123
+00:06:54,669 --> 00:06:55,550
+真是太酷了
+Really cool.
+
+124
+00:06:55,550 --> 00:06:57,550
+这也是我们正在研究的问题之一
+And something we're thinking about.
+
+125
+00:06:57,975 --> 00:07:03,400
+这个项目是全方位开放的吗？
+So it sounds like this project is open on all angles, right?
+
+126
+00:07:03,400 --> 00:07:06,450
+我是指 对于硬件部分 你们给出了一份推荐的零部件清单
+I mean the hardware is a list of parts that are suggested
+
+127
+00:07:06,450 --> 00:07:09,150
+但参与者如果愿意 也能自行替换 换成更便宜的
+and it sounds like you can use your own thing, make it cheaper,
+
+128
+00:07:09,150 --> 00:07:11,850
+或者换成更贵的
+make it more expensive also, I guess if you wanted to.
+
+129
+00:07:12,170 --> 00:07:14,105
+而软件部分就完全是开源的了
+The software is completely open.
+
+130
+00:07:14,233 --> 00:07:16,561
+这中间有任何非开源的部分吗？
+Is there any part of this that isn't (open)?
+
+131
+00:07:16,689 --> 00:07:18,953
+没有 完全是开源的
+No, it's all completely open.
+
+132
+00:07:19,145 --> 00:07:20,846
+如果你告诉我
+So what's really amazing about this is
+
+133
+00:07:20,846 --> 00:07:25,243
+高中生都能通过这个项目自行制作漫游车 我会觉得非常震惊
+if you told me that high school students could build their own rovers,
+
+134
+00:07:25,755 --> 00:07:27,215
+那听起来太难了
+that would just sound too difficult,
+
+135
+00:07:27,215 --> 00:07:29,675
+你懂得 听起来太高端了
+you know, that sounds so advanced.
+
+136
+00:07:29,675 --> 00:07:32,318
+高到只有 NASA 才会去做的那种
+It sounds like something that only NASA would do. Right?
+
+137
+00:07:32,446 --> 00:07:35,965
+真正地组装火星车会是件容易的事吗？
+How simple is it really to put together?
+
+138
+00:07:35,965 --> 00:07:37,965
+我们并不想将这做成一个玩具
+So it's not meant to be a toy.
+
+139
+00:07:38,250 --> 00:07:40,000
+这个项目是货真价实的
+It's meant to be something real,
+
+140
+00:07:40,375 --> 00:07:42,725
+能给参与者带来实际的经验
+that really gives them the real experience.
+
+141
+00:07:42,917 --> 00:07:45,975
+加利福尼亚州的几所学校已经将其
+So several schools in California have already adopted it,
+
+142
+00:07:45,975 --> 00:07:52,391
+纳入他们的科学、工程与编程课程中
+to put it into their science and engineering and programming program.
+
+143
+00:07:52,625 --> 00:07:54,722
+比如所谓的机械电子学
+Something called Mechatronics, for instance,
+
+144
+00:07:54,722 --> 00:07:55,929
+就是上述几方面的结合体
+where it combines all of them.
+
+145
+00:07:56,313 --> 00:07:58,209
+这让我们非常高兴
+And that makes us very happy,
+
+146
+00:07:58,209 --> 00:08:03,725
+因为这样 在不久的将来就能有一批训练有素的专业人才来到 NASA
+because then we will get better trained people coming into NASA at one point.
+
+147
+00:08:03,853 --> 00:08:08,821
+但这似乎不仅有利于未来的 NASA 工程师
+But it sounds like at this point it's not only benefiting these future NASA people,
+
+148
+00:08:08,821 --> 00:08:10,578
+未来的科学家
+these future scientists,
+
+149
+00:08:10,578 --> 00:08:12,422
+也有利于你们
+but it's also benefiting you.
+
+150
+00:08:12,550 --> 00:08:13,913
+跟我多说说这方面吧
+Tell me a little bit more about that.
+
+151
+00:08:13,913 --> 00:08:14,901
+嗯…突然间
+So all of a sudden,
+
+152
+00:08:14,901 --> 00:08:18,486
+我们就有了一个非常简单易用的实验平台
+we have now a very simple platform to experiment with.
+
+153
+00:08:18,486 --> 00:08:24,686
+我能想象到开源的漫游车在 JPL 附近行驶 跟人打招呼
+So I can envision the open source rover driving around JPL and saying hello to people.
+
+154
+00:08:24,814 --> 00:08:28,158
+在于艰苦环境中验证某些技术之前
+So we can experiment very quickly in our own backyard
+
+155
+00:08:28,158 --> 00:08:32,718
+我们能在后院里对它们快速地进行试验
+on things that we would later on need to take to much more difficult places.
+
+156
+00:08:33,225 --> 00:08:37,337
+它成为了我们可以实验的移动平台
+So, it becomes a mobile platform that we can experiment with.
+
+157
+00:08:37,721 --> 00:08:41,216
+话又说回来 我认为人工智能会是这些技术中非常有趣的一样
+And again, I think AI is going to be the interesting one,
+
+158
+00:08:41,216 --> 00:08:42,740
+因为它发展得太快了
+because it's exploding so quickly,
+
+159
+00:08:43,125 --> 00:08:48,740
+给开源漫游车添加新的机械组件很容易 这也相当重要
+and the simplicity of adding new robotics parts to it is another factor.
+
+160
+00:08:49,875 --> 00:08:51,577
+所以 理论上来说
+So, theoretically you could have created your own mobile playground,
+
+161
+00:08:51,577 --> 00:08:55,200
+你们也可以创建一个你们自己的移动试验场
+So, theoretically you could have created your own mobile playground,
+
+162
+00:08:55,200 --> 00:08:59,275
+可以进行试验 也不用将其开源 对吧？
+a place to experiment and not made it open source, right?
+
+163
+00:08:59,275 --> 00:09:01,013
+它本来可以成为一个内部项目
+It could have just been like an internal thing.
+
+164
+00:09:01,275 --> 00:09:05,150
+但它现在是开源的
+How has the fact that it's been open source
+
+165
+00:09:05,525 --> 00:09:08,203
+这能让你们多学到什么呢？
+affected what you've been able to learn?
+
+166
+00:09:08,723 --> 00:09:10,301
+嗯 这是一个好问题
+So, that's a really good question.
+
+167
+00:09:10,301 --> 00:09:12,033
+为什么要开源？
+Why open source?
+
+168
+00:09:12,417 --> 00:09:15,286
+对我们来说 开源才是更困难的选择
+For us, it was more difficult to make it open source,
+
+169
+00:09:15,862 --> 00:09:17,970
+不过那也是挑战所在
+but that's kind of the challenge.
+
+170
+00:09:18,175 --> 00:09:19,515
+我们希望 通过将其开源
+So we wanted to make it open source
+
+171
+00:09:19,675 --> 00:09:22,287
+学校以及其他民间组织能够用上代码 并且将漫游车造出来
+so that other schools and all that could adopt it and build it.
+
+172
+00:09:23,575 --> 00:09:27,181
+编写一本不是机器人学专家的人也能看懂的手册
+It created a lot more work to create a manual that other people could use
+
+173
+00:09:27,181 --> 00:09:29,338
+带来了大量额外的工作
+who are not already robotics experts.
+
+174
+00:09:29,875 --> 00:09:31,364
+但起码
+But the bottom line is,
+
+175
+00:09:31,364 --> 00:09:33,674
+当我们最终将一些东西真正开源的时候
+I think when we release something into open source,
+
+176
+00:09:34,250 --> 00:09:37,466
+它变得更整洁、更紧凑、文档更完善了
+it's cleaner, it's tighter, it's better-documented,
+
+177
+00:09:37,850 --> 00:09:40,350
+因为我们知道 其他人会来使用这些东西
+because people know other people are going to reuse this,
+
+178
+00:09:40,850 --> 00:09:43,490
+所以也必须要具备一定的可扩展性
+and it has to be built to be extended.
+
+179
+00:09:43,810 --> 00:09:45,305
+因此 项目的质量提高了
+So the quality is higher.
+
+180
+00:09:46,201 --> 00:09:48,475
+我曾经和 Netflix 的人谈过 他们也有同样的感觉
+I talked to Netflix, and they had found the same thing,
+
+181
+00:09:48,475 --> 00:09:51,243
+被开源的代码
+that the code, once it was released open source,
+
+182
+00:09:51,475 --> 00:09:52,050
+普遍更加整洁、质量更好
+was cleaner.
+
+183
+00:09:52,050 --> 00:09:52,350
+普遍更加整洁、质量更好
+
+184
+00:09:52,350 --> 00:09:53,327
+普遍更加整洁、质量更好
+It was better.
+
+185
+00:09:54,159 --> 00:09:57,480
+你是怎样看待开源漫游车的？
+When you think about these open source rovers,
+
+186
+00:09:57,672 --> 00:10:00,568
+五年 十年 甚至将来的二十多年后
+5-, 10-, maybe even 20-plus years from now,
+
+187
+00:10:00,874 --> 00:10:03,926
+你觉得它们能做什么
+how do you see the things that they're able to do
+
+188
+00:10:03,926 --> 00:10:06,188
+而人们能够创造出什么？
+and what people have been able to create?
+
+189
+00:10:06,188 --> 00:10:09,916
+你认为这些能为身处地球的我们带来什么潜在利好？
+How do you see that possibly benefiting us here on earth?
+
+190
+00:10:11,132 --> 00:10:12,421
+能带来多方面的利好
+In many, many ways.
+
+191
+00:10:12,421 --> 00:10:16,341
+现在的漫游车被设计成使用轮子行驶
+So, today this rover is built to roll.
+
+192
+00:10:17,493 --> 00:10:20,773
+我可以说 它其实也可以被设计成采用步行
+I can see that it could be built to walk.
+
+193
+00:10:21,093 --> 00:10:22,865
+也可以对它进行扩展 加上跳跃的功能
+It could be extended to hop.
+
+194
+00:10:23,505 --> 00:10:26,999
+我们已经送了一架直升飞机上火星
+We're already sending a helicopter to Mars,
+
+195
+00:10:26,999 --> 00:10:28,054
+它现在还在飞着
+it's flying right now.
+
+196
+00:10:28,350 --> 00:10:33,075
+所以说 这些漫游车并不仅仅局限于现在我们所说的漫游车
+So these rovers are not just rovers of today.
+
+197
+00:10:33,075 --> 00:10:35,984
+有了全世界各地人们的实验
+Having people worldwide experiment with it
+
+198
+00:10:35,984 --> 00:10:39,840
+我们能走得更快 更远 不断探寻可能性的上限
+can help us move much, much faster to see what's possible,
+
+199
+00:10:40,150 --> 00:10:43,167
+并提出一些我们可能没有想到的想法
+and come up with ideas that frankly we might not have thought of.
+
+200
+00:10:44,575 --> 00:10:45,924
+未来到底会是什么样的？
+So what will it look like?
+
+201
+00:10:46,324 --> 00:10:47,250
+我迫切地想了解
+I can't wait to see.
+
+202
+00:10:47,378 --> 00:10:48,707
+不过我不知道
+I don't know.
+
+203
+00:10:49,283 --> 00:10:50,450
+通过创造这个平台
+By creating this platform,
+
+204
+00:10:50,450 --> 00:10:55,075
+你们已经为许多人提供了打造自己的“玩具”的机会
+you've kind of enabled and empowered a lot of people to make a lot of toys,
+
+205
+00:10:55,075 --> 00:10:56,625
+接下来就让我们拭目以待吧
+and then we'll see what turns up.
+
+206
+00:10:56,950 --> 00:10:59,150
+是的 这是很重要的一点
+Yes, and that's actually a very strong point,
+
+207
+00:10:59,150 --> 00:11:02,226
+因为我发现 凡是我能想到的主意
+because what I have noticed is if I can even think of something,
+
+208
+00:11:02,418 --> 00:11:03,585
+都已经有前人做过了
+somebody is already doing it.
+
+209
+00:11:03,775 --> 00:11:05,287
+但我们需要找到这些人
+It's a matter of finding them,
+
+210
+00:11:05,637 --> 00:11:08,221
+无论我们最开始做的是什么
+and whatever we came up with to start,
+
+211
+00:11:08,541 --> 00:11:10,485
+一旦到最终用户手上
+once the end users get their hands on it,
+
+212
+00:11:10,485 --> 00:11:12,125
+他们就能以我们无法想象的方式将其改进十倍
+they're gonna improve it tenfold,
+
+213
+00:11:12,125 --> 00:11:14,250
+他们就能以我们无法想象的方式将其改进十倍
+in ways that we never even imagined.
+
+214
+00:11:14,378 --> 00:11:16,800
+所以 向大众开放一些这样的“玩具” 任他们自由发挥
+So giving them toys to play with
+
+215
+00:11:17,150 --> 00:11:20,046
+他们会因此而得到锻炼 社区氛围会变好
+makes for a much stronger and better place with more advanced missions in the future.
+
+216
+00:11:20,046 --> 00:11:23,073
+这对将来使用更先进技术的任务也大有益处
+makes for a much stronger and better place with more advanced missions in the future.
+
+217
+00:11:23,265 --> 00:11:23,841
+这真是太棒了
+Beautiful.
+
+218
+00:11:29,253 --> 00:11:32,533
+如果你想了解开源漫游车项目
+If you feel like getting in on the open source rover mission,
+
+219
+00:11:32,725 --> 00:11:39,013
+你可以访问 opensourcerover.jpl.nasa.gov
+you can find out how at opensourcerover.jpl.nasa.gov.
+
+220
+00:11:39,269 --> 00:11:41,383
+你能在那儿玩个尽兴
+There is so much fun to be had there.
+
+221
+00:11:42,023 --> 00:11:44,791
+我们稍后再与 Tom Soderstrom 进行更多讨论
+We'll return for more with Tom Soderstrom.
+
+222
+00:11:45,175 --> 00:11:46,062
+但首先
+But first,
+
+223
+00:11:46,275 --> 00:11:50,835
+让我们来更深入地挖掘 NASA 与开源之间的关系
+I want us to dig a bit deeper into NASA's relationship with open source.
+
+224
+00:11:51,539 --> 00:11:53,412
+大家好 我是 Hila Lifshitz-Assaf
+Hi, I'm Hila Lifshitz-Assaf.
+
+225
+00:11:53,412 --> 00:11:56,436
+纽约大学商学院的教授
+I'm a professor at Stern School of Business, NYU.
+
+226
+00:11:56,925 --> 00:12:00,981
+Hila 正在研究 NASA 是如何打破知识壁垒的
+Hila's been studying how NASA breaks down knowledge barriers.
+
+227
+00:12:02,275 --> 00:12:04,791
+如果你能够回到过去 回到 15 世纪
+If you go back, even to 15th century,
+
+228
+00:12:04,791 --> 00:12:08,711
+看看那些孤独的发明家 就比如莱昂纳多·达芬奇
+and you think about lone inventors, likeLeonardo da Vinci and others,
+
+229
+00:12:08,975 --> 00:12:12,284
+他们某种程度上只在当地社区活动
+they were kind of connected only in their local communities.
+
+230
+00:12:12,284 --> 00:12:15,367
+之后 有了工业革命 有了实验室
+And then, we had the industrial revolution and the birth of the lab.
+
+231
+00:12:15,559 --> 00:12:20,887
+此后的两百多年里 人们都在实验室里工作
+And ever since, for 200 years or more, people have been working in their labs.
+
+232
+00:12:20,887 --> 00:12:23,532
+最大的变化发生在 21 世纪
+And the big change that's happened in the 21st century
+
+233
+00:12:23,532 --> 00:12:25,783
+数字革命之后
+with the digital revolution that we're experiencing
+
+234
+00:12:26,075 --> 00:12:29,000
+我们有了开源的概念
+has brought up things like open source,
+
+235
+00:12:29,384 --> 00:12:33,496
+而它打破了之前这类组织结构的边界
+which are debunking the need for those organizational boundaries that we had.
+
+236
+00:12:34,136 --> 00:12:39,528
+在 NASA 的工作方式中 Hila 见证了这种剧变的典型例子
+In NASA's work, Hila sees a prime example of that massive change.
+
+237
+00:12:39,720 --> 00:12:41,959
+NASA 最吸引我的一点在于
+One of the things that attracted me about NASA was
+
+238
+00:12:41,959 --> 00:12:43,299
+他们就某种意义上来说是最勇敢的
+that they were the bravest
+
+239
+00:12:43,299 --> 00:12:47,826
+因为他们勇于接受战略性的研究与开发挑战
+in the sense that they really took strategic R&D challenges,
+
+240
+00:12:47,826 --> 00:12:50,250
+他们的科学家、工程师 最优秀的一批人才
+that their scientists and engineers and top brains
+
+241
+00:12:50,250 --> 00:12:53,210
+为此而努力工作 并使这些挑战向大众开放
+were working at the same time and opened them to the crowd.
+
+242
+00:12:53,475 --> 00:12:55,443
+而且 我必须说 直到现在
+And I have to say that still to today,
+
+243
+00:12:55,443 --> 00:13:00,200
+很多其他的组织在做开源科学或是众包的时候
+many other organizations, when they do open source science or crowdsourcing,
+
+244
+00:13:00,200 --> 00:13:02,950
+他们不会把最核心的、战略性的难题交给社区
+they do not take their core strategic challenges.
+
+245
+00:13:03,270 --> 00:13:04,894
+而是只开放一些次要的任务
+They take something that is on the side,
+
+246
+00:13:04,894 --> 00:13:06,933
+无论成功还是失败 这都不会让他们的组织蒙受多大损失
+that doesn't risk their organization too much,
+
+247
+00:13:06,933 --> 00:13:09,023
+无论成功还是失败 这都不会让他们的组织蒙受多大损失
+whether it succeeds or fails,
+
+248
+00:13:09,275 --> 00:13:13,175
+而 NASA 做的事情 一旦成功了 就真的改变了一切
+and NASA did something that really changed things, once it succeeded.
+
+249
+00:13:14,450 --> 00:13:17,923
+自 2009 年起 NASA 就开始使用
+Starting back in 2009, NASA began using
+
+250
+00:13:17,923 --> 00:13:19,699
+像 Innocentive 和 Topcoder 这样的
+open innovation platforms,
+
+251
+00:13:19,825 --> 00:13:21,825
+开源创新平台
+like Innocentive and Topcoder.
+
+252
+00:13:22,150 --> 00:13:23,596
+而且 他们不是闹着玩的
+And they weren't playing around.
+
+253
+00:13:23,916 --> 00:13:25,135
+就像 Hila 所提到的
+Like Hila mentioned,
+
+254
+00:13:25,135 --> 00:13:29,308
+他们甚至把核心的 R&D 难题都放了上去
+they were putting their top R &D challenges on those platforms.
+
+255
+00:13:29,564 --> 00:13:31,086
+这些问题上传之后 甚至没过一年
+It didn't even took a full year
+
+256
+00:13:31,086 --> 00:13:34,400
+我们就已经陆续开始看到来自众包平台的解决方案
+to see solutions starting to come from crowdsourcing platforms.
+
+257
+00:13:34,673 --> 00:13:38,529
+这确实很快 我将在此举出一项研究成果
+Real quick, I want to give you just one of the home runs they got
+
+258
+00:13:38,529 --> 00:13:40,529
+它是 NASA 开源科研的诸多喜人硕果之一
+from opening up their research.
+
+259
+00:13:40,927 --> 00:13:42,301
+Hila 将向我们讲述
+Hila's gonna describe
+
+260
+00:13:42,301 --> 00:13:46,063
+他们是如何将太阳耀斑的预测技术提升一个台阶的
+how they were able to level-up their solar flare prediction.
+
+261
+00:13:46,300 --> 00:13:50,251
+嗯…太阳耀斑的预测是个太阳物理学难题
+So, predicting solar storms is a hard heliophysics problem
+
+262
+00:13:50,251 --> 00:13:53,175
+学术界已经在此事上花费了十年有余
+that people have been working on it for more than a decade.
+
+263
+00:13:53,495 --> 00:13:56,323
+总的来说 他们已经完成初步的构想
+And basically they formulated it in a way
+
+264
+00:13:56,643 --> 00:14:00,506
+以便更多的人可以参与这方面的研究
+that was able to be solved by a wide area of people.
+
+265
+00:14:00,506 --> 00:14:02,139
+而且他们就是冲着这个来的
+And they were very intentional about it.
+
+266
+00:14:02,675 --> 00:14:04,221
+这让我觉得很惊奇
+That's the amazing thing that I found
+
+267
+00:14:04,221 --> 00:14:08,100
+因为他们居然真的希望能从太阳物理学圈子外的人那里找到解决方案
+that they were trying to get solutions from people outside of heliophysics.
+
+268
+00:14:08,100 --> 00:14:11,049
+因为他们居然真的希望能从太阳物理学圈子外的人那里找到解决方案
+They were really looking for an innovative solution.
+
+269
+00:14:11,049 --> 00:14:12,000
+Bruce Kragan 是一名半退休的无线电工程师
+And indeed,
+
+270
+00:14:12,000 --> 00:14:15,097
+Bruce Kragan 是一名半退休的无线电工程师
+Bruce Kragan, a semi-retired radio engineer from rural New Hampshire,
+
+271
+00:14:15,097 --> 00:14:16,225
+他来自新罕布什尔州乡下
+Bruce Kragan, a semi-retired radio engineer from rural New Hampshire,
+
+272
+00:14:16,673 --> 00:14:19,827
+只过了三个月 他就给我们带来了太阳耀斑的预测方法
+in 3 months brought us solutions that predicted solar flares.
+
+273
+00:14:19,827 --> 00:14:21,301
+当 NASA 验证模型时
+And when the NASA folks ran it,
+
+274
+00:14:21,301 --> 00:14:23,848
+他们发现 这种预测方法的准确率有 80%
+they actually saw that he predicted at 80%.
+
+275
+00:14:24,175 --> 00:14:26,425
+用传统方式需要花费数百万美元、数年时间才能获取的成果
+So basically, something that in the traditional model
+
+276
+00:14:26,425 --> 00:14:28,425
+用传统方式需要花费数百万美元、数年时间才能获取的成果
+will take years and millions of dollars
+
+277
+00:14:28,600 --> 00:14:35,016
+在三个月内就被收获了 开销大概在三万和四五万美元之间
+happened in 3 months in something around $30,000 to $40,000, $50,000.
+
+278
+00:14:36,525 --> 00:14:38,135
+你也许已经猜到了
+You might have already guessed,
+
+279
+00:14:38,135 --> 00:14:42,550
+这样的变化需要 NASA 内部的文化作出改变
+this kind of change required some culture shifts over at NASA.
+
+280
+00:14:42,650 --> 00:14:47,750
+他们中的有些人选择邀请外来的解决方案提供者
+So, some of them invited those external solvers
+
+281
+00:14:47,750 --> 00:14:49,325
+进入项目组
+to come to their organizations,
+
+282
+00:14:49,325 --> 00:14:52,750
+还有一些选择提供实习或合作机会
+other created internships or collaboration,
+
+283
+00:14:52,942 --> 00:14:55,848
+他们采用了很多有意思的方法来交流知识
+all types of interesting ways to bring that knowledge in,
+
+284
+00:14:55,848 --> 00:14:57,848
+使其不至于淤塞
+and not to keep it kind of buffered.
+
+285
+00:14:58,809 --> 00:15:02,281
+仔细想想 这其实是很美好的
+There's something kind of beautiful there when you think about it.
+
+286
+00:15:02,601 --> 00:15:06,457
+就如我们所知 很多组织仍然抵制开源开发
+A lot of organizations still resist open source development
+
+287
+00:15:06,713 --> 00:15:09,450
+不愿放弃专有软件
+and don't like giving up proprietary software,
+
+288
+00:15:09,625 --> 00:15:12,400
+但在这里 你可以找到这个星球上最具创新性
+but here you've got the most innovative,
+
+289
+00:15:12,700 --> 00:15:15,725
+愿景宏大的一群科学家
+biggest-picture group of scientists on the planet,
+
+290
+00:15:15,950 --> 00:15:18,750
+而他们说 嗨
+and they're saying, yeah, you know what?
+
+291
+00:15:18,900 --> 00:15:20,229
+我们一起来
+Let's do this together.
+
+292
+00:15:20,575 --> 00:15:22,257
+这样的态度有绝大的影响力
+That's a powerful thing.
+
+293
+00:15:22,700 --> 00:15:24,743
+我们已经看到了开源给软件行业带来的变革
+We've seen that revolution is software.
+
+294
+00:15:24,743 --> 00:15:28,239
+我们目前尚未在科学与技术方面见到太多改变
+We have not yet fully seen it in science and technology,
+
+295
+00:15:28,559 --> 00:15:31,327
+不过 我认为 现在就是最好的时机
+and I think it is prime time to go through it.
+
+296
+00:15:31,700 --> 00:15:35,926
+计算物理学、计算生物学越是崛起
+The more we see the rise of computational physics, computational biology,
+
+297
+00:15:35,926 --> 00:15:38,428
+这就越有可能实现
+the more this will become possible.
+
+298
+00:15:38,684 --> 00:15:41,189
+我认为 大众还可以更多地参与到科研中
+I think much more of the population
+
+299
+00:15:41,189 --> 00:15:43,600
+协助处理不同的任务
+can participate and help in different type of tasks,
+
+300
+00:15:43,600 --> 00:15:44,893
+以这种方式
+and maybe this way,
+
+301
+00:15:45,021 --> 00:15:48,685
+科学技术的发展速度或许甚至能够超过应用开发
+science technology can really make progress beyond developing a new app.
+
+302
+00:15:51,475 --> 00:15:56,995
+Hila Lifshitz-Assaf 是纽约大学斯特恩商学院的教授
+Hila Lifshitz-Assaf is a professor at the Stern School of business at NYU.
+
+303
+00:16:00,625 --> 00:16:05,100
+NASA 在开放他们的研究课题的道路上受益良多
+NASA benefits massively from opening up their research challenges,
+
+304
+00:16:05,450 --> 00:16:07,522
+但他们同时也打造着另一种社区
+but another way they build communities
+
+305
+00:16:07,522 --> 00:16:11,122
+其中关键就在于“中小企业创新资助计划”
+via the Small Business Innovation Grant program,
+
+306
+00:16:11,400 --> 00:16:14,050
+- 这个项目鼓励私营经济中的创新
+which supports innovative work in the private sector.
+
+307
+00:16:14,500 --> 00:16:17,268
+所有大胆的项目都有风险 可能付出代价
+All those blue sky projects that are risky
+"Blue Sky Projects"：指看起来不切实际的大胆项目 字面译为“蓝天项目”
+
+308
+00:16:17,524 --> 00:16:19,377
+但有时回报也尤其丰厚
+but might pay off big time.
+
+309
+00:16:22,375 --> 00:16:24,375
+大家好 我叫 Dan Wachspress
+Hi, my name is Dan Wachspress.
+
+310
+00:16:24,550 --> 00:16:28,375
+我是一名航空工程师 在 Continuum Dynamics 集团工作
+I'm an aeronautical engineer working at Continuum Dynamics Incorporated.
+
+311
+00:16:28,759 --> 00:16:34,599
+Dan 的公司专注于研究与开发旋翼飞行器
+Dan's company, CDI, does R&D related to the rotorcraft industry.
+
+312
+00:16:35,025 --> 00:16:37,700
+也就是直升机、旋翼飞机这类
+So that's helicopters, gyrocopters -
+
+313
+00:16:38,020 --> 00:16:41,172
+使用螺旋桨的飞行器
+anything that uses wings or blades to fly,
+
+314
+00:16:41,364 --> 00:16:43,364
+一看就很“蓝天”
+literally blue sky.
+
+315
+00:16:43,875 --> 00:16:47,375
+他们一直与 NASA 合作 致力于解决垂直起降的问题
+They've been working with NASA researching vertical takeoff.
+
+316
+00:16:47,759 --> 00:16:50,275
+让飞行器能变得像是 Jetson 的“空中出租车”那样
+Think Jetson-style air taxis.
+
+317
+00:16:50,550 --> 00:16:51,515
+总体的构思是
+The whole idea is,
+
+318
+00:16:51,515 --> 00:16:56,125
+只要用电动机代替载具上的燃气轮机
+once you have electric motors instead of gas turbine engines on your vehicles,
+
+319
+00:16:56,125 --> 00:16:57,830
+你就可以安装更多推进器
+you can have many more propulsors.
+
+320
+00:16:57,830 --> 00:16:59,744
+它们会比现有的更安静、更安全
+They could be much quieter, safer,
+
+321
+00:17:00,128 --> 00:17:04,450
+直升机所有恼人的问题统统消失
+and all issues with helicopters that annoy people could go away,
+
+322
+00:17:04,750 --> 00:17:06,750
+而我们可能会得到这样的未来：
+and we might have a world where
+
+323
+00:17:06,750 --> 00:17:11,378
+你打个的就能从达拉斯去到沃斯堡
+you call up a taxi that takes you from Dallas to Fort Worth, let's say,
+
+324
+00:17:11,378 --> 00:17:15,170
+而那是一辆准乘 5 人、无人驾驶的电动飞的
+in an electric-powered air taxi with 4 other passengers and no pilot,
+
+325
+00:17:15,600 --> 00:17:18,560
+而非一辆汽车 在汽车里面你还得跟堵车较劲
+as opposed to getting in a car and trying to battle through the traffic.
+
+326
+00:17:18,950 --> 00:17:20,023
+这就是我们的愿景
+That's the vision.
+
+327
+00:17:21,775 --> 00:17:24,351
+有很多公司 比如 Uber
+A lot of companies, including Uber,
+
+328
+00:17:24,543 --> 00:17:28,207
+对这种空中出租车的设想非常感兴趣
+are very interested in the potential of air taxis.
+
+329
+00:17:28,463 --> 00:17:31,425
+而 NASA 在这之中扮演的角色是伟大的：
+And the great thing about NASA's role here is that
+
+330
+00:17:31,425 --> 00:17:34,425
+它打破了不同公司本要各自为营死磕研究的壁垒
+it breaks down barriers that would exist
+
+331
+00:17:34,425 --> 00:17:38,375
+它打破了不同公司本要各自为营死磕研究的壁垒
+if each of those companies were slogging through the research on their own.
+
+332
+00:17:38,631 --> 00:17:41,523
+那些公司必定不想走漏风声
+Companies do not want to divulge information necessarily.
+
+333
+00:17:41,523 --> 00:17:45,975
+他们想保持商业机密 不愿共享成果
+They want to keep trade secrets, and they won't share knowledge.
+
+334
+00:17:46,884 --> 00:17:47,700
+NASA 的目标就是
+NASA's goal is
+
+335
+00:17:47,700 --> 00:17:50,925
+把尽可能多的研究成果送到他们手里 让他们尽可能地获得能力
+to put as much knowledge and have as much capability as possible
+
+336
+00:17:50,925 --> 00:17:52,146
+把尽可能多的研究成果送到他们手里 让他们尽可能地获得能力
+out there in their hands.
+
+337
+00:17:52,722 --> 00:17:55,718
+而且我敢说你如果去问他们任何一家公司
+And I think if you talk to any of these companies,
+
+338
+00:17:55,718 --> 00:17:57,718
+他们肯定会说
+they'll agree that they're just,
+
+339
+00:17:58,225 --> 00:18:00,925
+没有 NASA 长久以来的技术支持 他们没法做到这么快地开发
+they wouldn't be able to do what they're doing as fast as they're doing
+
+340
+00:18:00,925 --> 00:18:03,075
+没有 NASA 长久以来的技术支持 他们没法做到这么快地开发
+if they weren't supported by NASA
+
+341
+00:18:03,075 --> 00:18:07,579
+没有 NASA 长久以来的技术支持 他们没法做到这么快地开发
+and the technology NASA is pushing on today and has pushed on in the past.
+
+342
+00:18:13,300 --> 00:18:15,141
+NASA 有一些非常棒的风洞 我看这总不能是坏事
+I'm guessing it doesn't hurt that
+
+343
+00:18:15,141 --> 00:18:18,421
+NASA 有一些非常棒的风洞 我看这总不能是坏事
+that NASA has already got some pretty killer wind tunnels, too.
+
+344
+00:18:19,850 --> 00:18:22,490
+从火星漫游车到飞行汽车
+From Mars Rovers to flying cars,
+
+345
+00:18:22,750 --> 00:18:24,607
+你有感觉了吗？
+are you getting a certain vibe here?
+
+346
+00:18:25,055 --> 00:18:29,575
+我们谈论的是创新 天穹尚且不是我们的极限
+We're talking about innovation, where the sky is not even the limit.
+
+347
+00:18:30,100 --> 00:18:33,825
+而且这一切都归功于我们全地球级别的合作
+And it's all because of the planet-sized collaboration
+
+348
+00:18:34,017 --> 00:18:36,876
+而正是开源观念让这一切成为可能
+that the open source mindset makes possible.
+
+349
+00:18:41,650 --> 00:18:44,866
+我们再回来和 NASA 的 Tom Soderstrom 聊聊
+I promise we'd come back to NASA's Tom Soderstrom.
+
+350
+00:18:45,378 --> 00:18:48,075
+Tom 认为 我们两季以来探讨的开源的“魔力”
+Tom figures that all the open source magic
+
+351
+00:18:48,075 --> 00:18:50,651
+Tom 认为 我们两季以来探讨的开源的“魔力”
+we've been exploring for the past 2 seasons
+
+352
+00:18:50,651 --> 00:18:53,931
+已经形成了一股巨大的推动力
+is building up into a massive shift point
+
+353
+00:18:54,200 --> 00:18:57,825
+他称之为第四次工业革命
+that he calls the Fourth Industrial Revolution.
+
+354
+00:18:59,100 --> 00:19:02,625
+创新总是与科技的潮流挂钩
+When you look at how innovation happens,
+
+355
+00:19:02,625 --> 00:19:05,850
+创新总是与科技的潮流挂钩
+it's really about technology waves.
+
+356
+00:19:06,250 --> 00:19:09,018
+当今 有好几波科技浪潮同时袭来
+And there's a lot of technology waves that are coming right now,
+
+357
+00:19:09,300 --> 00:19:11,694
+它们的合流将引起巨大的海啸
+and they're all building to a giant tsunami.
+
+358
+00:19:11,694 --> 00:19:13,499
+它们逼近得越来越快
+They're coming faster and faster,
+
+359
+00:19:14,075 --> 00:19:17,419
+所有事物都会为之改变
+and they're all going to change everything,
+
+360
+00:19:17,750 --> 00:19:20,774
+因此 我称其为第四次工业革命
+so that's why we call it the Fourth Industrial Revolution.
+
+361
+00:19:21,478 --> 00:19:24,886
+我将简单几句带过那些浪潮
+I'm just going to break down what's in those waves super fast,
+
+362
+00:19:25,142 --> 00:19:28,684
+虽然就它们中的每一样都可以独立讲一期节目
+even though each one of them could be an episode in itself.
+
+363
+00:19:29,004 --> 00:19:31,925
+Tom 所说的“即将到冲击我们生活的潮流”
+When Tom talks about those waves that are hitting us,
+
+364
+00:19:32,250 --> 00:19:36,389
+包括了大规模的网络安全问题
+he's talking about things like cybersecurity challenges at scale,
+
+365
+00:19:36,645 --> 00:19:40,245
+量子计算之类 也包括了各类“软件定义的”东西
+quantum computing, and software-defined everything.
+
+366
+00:19:40,725 --> 00:19:42,405
+但这些只是其中的一小部分
+But wait, there's more.
+
+367
+00:19:42,725 --> 00:19:45,483
+他还提到了普适计算、
+He's also talking about ubiquitous computing,
+
+368
+00:19:45,650 --> 00:19:48,736
+自然用户界面 和物联网
+natural interfaces, and the internet of things.
+
+369
+00:19:49,184 --> 00:19:51,225
+这些技术都将是那场海啸的一部分
+These all build to the giant tsunami,
+
+370
+00:19:51,225 --> 00:19:53,441
+生活将因为无处不在的内置智能而大为改观
+which is built-in intelligence everywhere.
+
+371
+00:19:53,761 --> 00:19:57,025
+想象一下海啸发生的样子
+When you imagine this tsunami,
+
+372
+00:19:57,025 --> 00:19:58,977
+如果这些技术合流
+this moment when it all comes together
+
+373
+00:19:58,977 --> 00:20:01,375
+产生了 1+1 大于 2 的效应
+and creates something bigger than its individual parts,
+
+374
+00:20:01,823 --> 00:20:03,954
+那会带来什么？
+what does that look like?
+
+375
+00:20:04,658 --> 00:20:06,776
+我不认为这种变化会是突然发生的
+I think it's not gonna be like one day somebody stands up and says, "look at this."
+
+376
+00:20:06,776 --> 00:20:09,875
+不会有像是一个人站起来感叹“你看这个”
+I think it's not gonna be like one day somebody stands up and says, "look at this."
+
+377
+00:20:09,875 --> 00:20:12,618
+“我现在宣布内置智能无处不在”这样的情况
+"I am now announcing built-in intelligence everywhere."
+
+378
+00:20:13,066 --> 00:20:15,125
+它会逐渐渗透进生活的各个方面
+It's creeping into everything that we do.
+
+379
+00:20:15,850 --> 00:20:17,150
+“智能” 对吧？
+We say smart, right?
+
+380
+00:20:17,150 --> 00:20:19,717
+比如智能电视 或者智能会议室
+The smart TV, a smart conference room.
+
+381
+00:20:19,717 --> 00:20:23,850
+我们会发现生活中的事物
+That's really where we will start realizing
+
+382
+00:20:23,850 --> 00:20:26,049
+变得越来越智能 越来越聪明
+that it's becoming smarter and smarter and smarter,
+
+383
+00:20:26,575 --> 00:20:30,815
+对于企业来说 它意味着 你可以对着一个房间提出问题
+and for the enterprise it means you can just ask a question by speaking to the room
+
+384
+00:20:31,199 --> 00:20:33,875
+然后程序会为你在好几 PB 的数据里
+and it searches through petabytes of data
+
+385
+00:20:33,875 --> 00:20:38,425
+从几千种数据源里找出答案
+in thousands of different data sources and gets you the answer.
+
+386
+00:20:38,975 --> 00:20:40,875
+而这背后 就是自然语言处理、
+So it's natural language processing.
+
+387
+00:20:40,875 --> 00:20:42,550
+深度学习、机器学习这样的技术
+It's deep learning, it's machine learning,
+
+388
+00:20:42,550 --> 00:20:45,510
+而我们不会突然说 “哇 我们已经发展到这种地步了”
+and we're not gonna say all of a sudden, wow we're here.
+
+389
+00:20:45,958 --> 00:20:48,726
+不会的 这是一个循序渐进、潜移默化的过程
+It's just going keep morphing and getting better and better.
+
+390
+00:20:49,174 --> 00:20:52,273
+这第四次工业革命
+Thinking about this Fourth Industrial Revolution,
+
+391
+00:20:52,273 --> 00:20:56,833
+又会如何影响你在 JPL 的工作呢？
+how does that influence the way you do work at the Jet Propulsion Lab?
+
+392
+00:20:57,150 --> 00:20:59,150
+我认为首先是实验
+I think the experimentation,
+
+393
+00:20:59,975 --> 00:21:04,450
+下一场工业革命可以帮助我们更快地完成实验
+this next industrial revolution is really helping us experiment quicker
+
+394
+00:21:04,925 --> 00:21:08,077
+并且利用更好的组件
+and to take advantage of much better components,
+
+395
+00:21:08,077 --> 00:21:09,403
+包括软件和硬件
+both software and hardware,
+
+396
+00:21:10,235 --> 00:21:12,700
+也许我们不需要把所有的东西都造出来
+that perhaps we don't have to build all of it,
+
+397
+00:21:12,875 --> 00:21:15,113
+但是我们可以更智能地使用它
+but we can just be more intelligent about using it.
+
+398
+00:21:15,700 --> 00:21:17,005
+然后是开源
+And then open source.
+
+399
+00:21:17,197 --> 00:21:22,782
+开源真是一项颠覆我们工作方式和工作内容的事业
+Open source is really what's changing a lot of how we work and what we do.
+
+400
+00:21:22,974 --> 00:21:24,290
+此话怎讲？
+How so? Tell me more about that.
+
+401
+00:21:24,290 --> 00:21:29,618
+说到开源这东西 我的资历足够老 我当年也经历过开源战争
+I think the open source, I'm old enough to have gone through the open source wars,
+
+402
+00:21:29,850 --> 00:21:33,750
+当时开源还只是玩具
+where the open source was a toy.
+
+403
+00:21:33,750 --> 00:21:38,182
+那时的开源很糟糕 开源软件似乎比商业软件低一等似的
+It was bad, it was inferior to commercial.
+
+404
+00:21:38,700 --> 00:21:40,716
+不过 那些都已经是过去了
+All of that has kind of gone away,
+
+405
+00:21:40,716 --> 00:21:41,985
+至少在喷气动力实验室是这样的
+at least at JPL.
+
+406
+00:21:42,225 --> 00:21:44,925
+现在 开源的方式更适合我们
+Now it's what's most appropriate for the problem at hand.
+
+407
+00:21:45,250 --> 00:21:46,679
+开源的研究与开发更加经济划算
+It's more economical.
+
+408
+00:21:46,999 --> 00:21:48,593
+也可以更快地做实验验证
+It's much faster to experiment.
+
+409
+00:21:48,721 --> 00:21:50,925
+另外 因为开源软件的存在
+Another one is in open sources,
+
+410
+00:21:50,925 --> 00:21:53,163
+现在我们再也不用全部从头造轮子了
+we don't have to develop everything ourselves anymore.
+
+411
+00:21:53,547 --> 00:21:57,979
+我们可以自己开发 在此之后 如果我们选择将之开源
+We can develop it, and then if we can release it open source,
+
+412
+00:21:58,250 --> 00:22:00,250
+就能从社区获得帮助 对成果进行改进
+we can get help to make it better.
+
+413
+00:22:01,098 --> 00:22:03,875
+开源的软件和科研也能为我们招贤纳士
+And then it helps us retain and attract talent.
+
+414
+00:22:03,875 --> 00:22:05,100
+这就很有趣了
+This one is interesting.
+
+415
+00:22:05,400 --> 00:22:06,661
+确实很有意思
+Oh, that is interesting.
+
+416
+00:22:06,950 --> 00:22:11,126
+我认为现在的人们 特别是新一代
+I think people, the new generation especially,
+
+417
+00:22:11,126 --> 00:22:16,969
+可以将他们的项目开源 以此获得更大影响力 得到尽可能多的星标
+get their street creds from submitting to open source and getting as many stars as possible.
+
+418
+00:22:16,969 --> 00:22:18,538
+你可以看见他们的简历上写着
+So that's what you'll see on the resume.
+
+419
+00:22:18,538 --> 00:22:20,538
+我开发的软件得到了多少星标
+My software got x stars.
+
+420
+00:22:21,075 --> 00:22:22,335
+有一点让我很感兴趣：
+What's really interesting about
+
+421
+00:22:22,335 --> 00:22:28,003
+让你们的工作方式和内容发生变化的开源
+how much open source has affected and helped the work that you're doing
+
+422
+00:22:28,003 --> 00:22:30,676
+并不是什么新鲜事物 对吧？
+is the fact that open source isn't new, right?
+
+423
+00:22:30,676 --> 00:22:34,725
+你说你经历过开源战争
+You mentioned yourself that you've lived through the open source wars.
+
+424
+00:22:34,725 --> 00:22:36,725
+你也见证了开源在这么多年来的发展
+You've seen it progress over the years.
+
+425
+00:22:36,725 --> 00:22:40,168
+那么 当今的开源
+What is it about open source today
+
+426
+00:22:40,488 --> 00:22:43,256
+有哪些优势是十年、十五年、二十年前没有的呢？
+that allows you to really take advantage of it
+
+427
+00:22:43,256 --> 00:22:47,025
+有哪些优势是十年、十五年、二十年前没有的呢？
+in a way that maybe you couldn't 10, 15, 20 years ago?
+
+428
+00:22:47,473 --> 00:22:48,175
+有好几点
+There's a couple.
+
+429
+00:22:48,175 --> 00:22:50,879
+一个就是云计算
+One of them is simply cloud computing.
+
+430
+00:22:51,263 --> 00:22:53,001
+我们不用压上很多钱
+We don't have to do the big bet
+
+431
+00:22:53,001 --> 00:22:58,025
+购买一堆软件然后使用许多年
+and buy a bunch of software and own it for many years.
+
+432
+00:22:58,345 --> 00:22:59,415
+我们可以在云端简单地做个实验
+We can just experiment.
+
+433
+00:22:59,415 --> 00:23:00,568
+这点相当重要
+So that's been a big one.
+
+434
+00:23:00,568 --> 00:23:02,824
+还有另外一点
+The other one is the realization that
+
+435
+00:23:03,400 --> 00:23:07,384
+就是开源并不比闭源的安全性差
+open source is no less secure than commercial source.
+
+436
+00:23:07,640 --> 00:23:08,975
+这早就不是
+It's no longer,
+
+437
+00:23:08,975 --> 00:23:11,399
+- 请原谅我的用词 - 一个信仰的问题了
+forgive the expression, a religious argument.
+
+438
+00:23:11,655 --> 00:23:14,879
+这更多地只是一个实用性和经济性的问题
+It's just more of an economical and practical discussion.
+
+439
+00:23:15,263 --> 00:23:18,875
+开源显然在你的工作当中扮演了一个重要的角色
+Open source has clearly played a big part in what you all are doing,
+
+440
+00:23:18,875 --> 00:23:22,675
+尤其是当你谈及喷气动力实验室的未来
+especially when you think about the future of JPL
+
+441
+00:23:22,675 --> 00:23:24,351
+以及你期望它以怎样的方式前行的时候
+and what you hope to accomplish moving forward.
+
+442
+00:23:24,351 --> 00:23:29,166
+开源似乎仍将是故事的重要组成部分
+It sounds like open source will probably continue to be a big part of that story.
+
+443
+00:23:29,422 --> 00:23:33,831
+你认为在最理想的情况下 能够导向怎么样的成果
+When you think about the most exciting or the most ideal outcome
+
+444
+00:23:33,831 --> 00:23:36,420
+如果要采取开源社区式的合作开发的话？
+of that collaboration, that participation,
+
+445
+00:23:36,740 --> 00:23:42,086
+而对于人类 它的意义又是什么？
+what might that look like and what do you think it will mean for humankind?
+
+446
+00:23:42,625 --> 00:23:43,746
+好问题
+That's a great question.
+
+447
+00:23:43,746 --> 00:23:49,330
+我认为你刚刚已经说出了正确答案 - - “人类”
+I think that the real answer is you just said it, humankind.
+
+448
+00:23:49,714 --> 00:23:53,378
+它的理想结果是能让每个人都参与到这份工作中来 它的意义也在此
+it's getting everybody more involved in what we do.
+
+449
+00:23:53,762 --> 00:23:56,775
+你知道 总有一天我们会把人送上火星
+You know, one day we're going to put humans on Mars.
+
+450
+00:23:57,159 --> 00:24:01,271
+我们要探索更广袤的深空 去寻找地球 2.0
+We're going to explore even further to find Earth 2.0.
+
+451
+00:24:01,591 --> 00:24:06,030
+我们还要再开展一次载人登月
+We're going to put humans on the moon again.
+
+452
+00:24:06,575 --> 00:24:10,879
+这些都需要来自世界各地的人们积极参与
+All of that will require a lot more involvement from the world.
+
+453
+00:24:14,750 --> 00:24:16,237
+我被这场变革深深的吸引了
+I'm into that revolution.
+
+454
+00:24:16,813 --> 00:24:21,565
+Tom Soderstrom 是 NASA 喷气动力实验室的首席技术与创新官
+Tom Soderstrom is the chief technology and innovation officer for IT
+
+455
+00:24:21,565 --> 00:24:24,205
+Tom Soderstrom 是 NASA 喷气动力实验室的首席技术与创新官
+at NASA's Jet Propulsion Laboratory.
+
+456
+00:24:28,875 --> 00:24:32,283
+从地球 2.0 的话题 回到地球 1.0
+From Earth 2.0, back to Earth 1.0.
+
+457
+00:24:32,525 --> 00:24:37,853
+我们应当铭记 “第四次工业革命”的起源 也是艰苦朴素的
+It's time to remember the humble origins of that Fourth Industrial Revolution.
+
+458
+00:24:38,237 --> 00:24:40,926
+开源项目固然可以变得宏大无比 但千里之行毕竟始于足下
+As grand as open source projects can get,
+
+459
+00:24:41,246 --> 00:24:46,362
+伟大事业的伊始 或许只是几名极客试图让漫游车正常工作
+it all starts with a group of hackers just trying to make their rover work.
+
+460
+00:24:47,553 --> 00:24:49,214
+我们再看看这样它能不能跑起来
+So we're gonna see if it'll run.
+
+461
+00:24:49,598 --> 00:24:52,942
+我们会 - 再加一样东西 方便它从坎上过去
+We're gonna, we put down another thing to help it get over the curb.
+
+462
+00:24:57,775 --> 00:24:59,590
+过去了！好耶！
+It made it. Yay!
+
+463
+00:24:59,974 --> 00:25:01,138
+好耶
+Yay!
+
+464
+00:25:02,153 --> 00:25:02,603
+唉呀
+Uh-oh.
+
+465
+00:25:03,525 --> 00:25:04,623
+我下不来了
+Now I can't get down.
+
+466
+00:25:04,623 --> 00:25:05,879
+它被卡在花坛里了
+It's stuck in the flower bed.
+
+467
+00:25:13,675 --> 00:25:15,460
+我们把它抬出来就行了
+We're just going to have to lift it out.
+
+468
+00:25:16,425 --> 00:25:18,590
+这又不是在火星 你可以直接走过去 把它拿起来
+It's not on Mars. You can just go over and pick it up.
+
+469
+00:25:20,375 --> 00:25:22,180
+我觉得他们有所进步
+I think they're making progress.
+
+470
+00:25:25,175 --> 00:25:29,671
+让我们和这些代码英雄说再见吧
+We're going to leave those command line heroes just the way we found them,
+
+471
+00:25:30,028 --> 00:25:33,308
+他们要继续学习、探索、投入他们的工作了
+exploring, learning, diving into their work,
+
+472
+00:25:33,308 --> 00:25:38,479
+他们会知道 通过开源 我们总有一天可以到达天空之外的高度
+and knowing that, through open source, the sky's not even the limit.
+
+473
+00:25:40,492 --> 00:25:43,754
+如果你想升级自己的开源水平
+If you're ready to level up your own open source game,
+
+474
+00:25:43,875 --> 00:25:48,064
+不要忘了我们正在开发《代码英雄》游戏
+don't forget, we've been building Command Line Heroes: The Game,
+
+475
+00:25:48,320 --> 00:25:51,700
+开发已经持续了一整季的时间 现在你仍然可以贡献代码
+all season long and you can still contribute.
+
+476
+00:25:51,700 --> 00:25:52,701
+嗨 我是 Michael
+Hi, I'm Michael.
+
+477
+00:25:52,701 --> 00:25:53,768
+嗨 我是 Jared
+Hi, I'm Jared.
+
+478
+00:25:53,768 --> 00:25:57,096
+我们是《代码英雄》游戏的开发人员
+And we're the developers of Command Line Heroes: The Game.
+
+479
+00:25:58,175 --> 00:26:01,718
+我们请来了红帽的 Jared Sprague 和 Michael Clayton
+We checked in with Jared Sprague and Michael Clayton from Red Hat
+
+480
+00:26:01,718 --> 00:26:03,575
+看看情况怎么样
+to find out how it's going.
+
+481
+00:26:03,750 --> 00:26:09,164
+我有点惊讶于我们这么快就引来了这么多的感兴趣的人
+I was a little surprised at how much interest we got so quickly.
+
+482
+00:26:09,164 --> 00:26:15,580
+反响非常好 提交的拉取请求蹭蹭上涨
+The response was just phenomenal, and the pull requests started flowing.
+
+483
+00:26:15,772 --> 00:26:18,893
+你认为是什么让大家这么激动？
+What do you think it is that got people so excited?
+
+484
+00:26:19,425 --> 00:26:23,281
+我认为我们播客的许多听众都受到了鼓励
+I think this just was for a lot of people listening to the podcast,
+
+485
+00:26:23,665 --> 00:26:26,881
+因此他们看到这个开源项目就迫不及待地想试试看
+kind of a catalyst for them to try it out,
+
+486
+00:26:27,137 --> 00:26:31,889
+尤其是自从我们开始征求不限类型的贡献
+especially since we put out a call for all types of contributions,
+
+487
+00:26:32,017 --> 00:26:35,525
+让任何想要贡献的创意人员、
+any type of creative person that wants to contribute or
+
+488
+00:26:36,250 --> 00:26:37,551
+任何类型的工程师都能够参与项目后
+an engineer of any type,
+
+489
+00:26:37,551 --> 00:26:39,346
+听众就找到事儿做了
+there's something that they can do on it.
+
+490
+00:26:39,650 --> 00:26:43,100
+那么你接下来希望社区能给大家带来什么？
+So what do you hope to see next from the community?
+
+491
+00:26:43,100 --> 00:26:46,508
+这游戏还在开发中 你最想见到什么?
+The game is still in development. What do you hope to see?
+
+492
+00:26:46,828 --> 00:26:53,050
+我个人非常享受开发过程中的进入节奏的感觉
+I would personally really like to get into the groove of development,
+
+493
+00:26:53,050 --> 00:26:59,082
+我们让大家贡献美术素材 音乐 音效
+where we have people contributing art assets and music and sound effects,
+
+494
+00:26:59,082 --> 00:27:04,282
+故事线 代码 所有这些东西都可以并行不悖
+storyline, coding, and all of these things can all work in parallel,
+
+495
+00:27:04,538 --> 00:27:07,927
+一旦每个人都进入节奏
+and once we get everyone into that groove,
+
+496
+00:27:07,927 --> 00:27:11,315
+我们可以一起开发 共同看着游戏被开发出来
+and we're all just building a game and we can see it coming together,
+
+497
+00:27:11,443 --> 00:27:12,980
+那真是太美妙了
+that's going to be a great time.
+
+498
+00:27:14,025 --> 00:27:17,659
+顺带一提 我们的游戏的公测版将会在五月七日到九日
+By the way, we'll have a beta of the game on display
+原播客于2018年上线
+
+499
+00:27:17,659 --> 00:27:20,363
+在波士顿开办的红帽峰会发布
+at this year's Red Hat Summit - in Boston,
+
+500
+00:27:20,683 --> 00:27:24,731
+届时 数千名像你一样的代码英雄
+May 7-9 - thousands of command line heroes just like you
+
+501
+00:27:24,731 --> 00:27:28,971
+会前来进行为期三天的创新与教育之旅
+are coming together for 3 days of innovation and education.
+
+502
+00:27:29,375 --> 00:27:33,173
+访问 redhat.com/summit 以查看详情
+Check out the details at redhat.com/summit.
+
+503
+00:27:34,133 --> 00:27:36,133
+最后一件事
+And one final announcement.
+
+504
+00:27:36,378 --> 00:27:40,362
+这或许是第二季的最终章 但这不是真正的告别
+This may be the end of season 2, but it's not really goodbye.
+
+505
+00:27:40,653 --> 00:27:43,165
+第三季已经在制作中！
+Season 3 is already in the works!
+
+506
+00:27:43,506 --> 00:27:48,091
+与此同时 我们也会为大家带来一期番外
+And in the meantime, we've got a bonus episode coming your way.
+
+507
+00:27:48,386 --> 00:27:52,178
+我们开展了一次圆桌会议
+We're hosting a roundtable with some of our favorite thinkers -
+
+508
+00:27:52,478 --> 00:27:55,182
+与你们最喜爱的思想家们探讨开源的未来
+getting them talking about what's next for open source.
+
+509
+00:27:55,502 --> 00:27:57,477
+请锁定一月份
+Look for that one in January.
+
+510
+00:27:57,669 --> 00:28:02,229
+如果你不想错过最新一期节目 记得订阅哦
+And remember, if you don't want to worry about missing new episodes, just subscribe.
+
+511
+00:28:02,445 --> 00:28:04,082
+就点一下 点一下又不会怎么样
+It's one click, it's free,
+
+512
+00:28:04,082 --> 00:28:07,490
+这样你就能在第一时间收到新内容的通知了
+and you'll be the first to know when new content drops.
+
+513
+00:28:09,225 --> 00:28:10,563
+我是 Saron Yitbarek
+I'm Saron Yitbarek.
+
+514
+00:28:10,563 --> 00:28:14,687
+感谢你聆听本季节目 生命不止 编码不休
+Thanks for listening all season long and keep on coding.
+
