@@ -1,0 +1,2157 @@
+﻿1
+00:00:02,650 --> 00:00:07,000
+1965 年是美国历史上发生重大变化的一年
+1965 was a year of massive change in America.
+
+2
+00:00:07,000 --> 00:00:09,000
+《民权法案》就是在那年签署的
+The Civil Rights Act was signed.
+
+3
+00:00:09,000 --> 00:00:11,570
+Congress passes the most sweeping civil rights bill ever to be written into the law.
+“…国会通过了史上影响最为广泛的《民权法案》”
+
+4
+00:00:11,570 --> 00:00:12,450
+Congress passes the most sweeping civil rights bill ever to be written into the law.
+“并将它写进了法律里…”
+
+5
+00:00:12,450 --> 00:00:15,320
+作战部队被第一次被派往越南
+Combat troops were sent to Vietnam for the first time.
+
+6
+00:00:15,320 --> 00:00:17,373
+Ways against North Vietnamese party.
+“…对抗北越的方式…”
+
+7
+00:00:17,373 --> 00:00:19,000
+男人们烧掉了他们的征兵证
+Men burned their draft cards.
+
+8
+00:00:19,000 --> 00:00:21,000
+Draft cards on the steps of a Boston courthouse.
+“…征兵证被放在波士顿法院的台阶上”
+
+9
+00:00:21,000 --> 00:00:24,000
+A group of high school boys set upon them with fists.
+“一群高中男生挥拳猛捶它们…”
+
+10
+00:00:25,500 --> 00:00:29,250
+在纽约 披头士乐队举行了世界上第一场体育馆内的音乐会
+The Beatles delivered the world's first stadium concert in New York.
+
+11
+00:00:31,375 --> 00:00:37,000
+但在距离这些大新闻很远的地方 一场与众不同的革命正在酝酿
+But, far from all those headlines, a revolution of a different kind was underway.
+
+12
+00:00:39,311 --> 00:00:41,000
+5 月 1 号 凌晨 4 点
+4:00 AM, May 1st.
+
+13
+00:00:41,575 --> 00:00:44,242
+约翰·凯梅尼教授和一名本科生
+Professor John Kemeny and an undergrad student
+
+14
+00:00:44,242 --> 00:00:48,606
+正在达特茅斯的 GE 225 型电脑上忙碌着
+were working at a GE 225 computer at Dartmouth University.
+
+15
+00:00:48,978 --> 00:00:51,000
+他们运行了一个刚写好的程序
+They ran a program they'd been working on.
+
+16
+00:00:51,294 --> 00:00:56,000
+电传打字机的三行输出
+And then the teletypewriter produced three short lines of output.
+
+17
+00:00:56,606 --> 00:01:00,329
+永远地改变了计算机编程领域
+Those three lines changed computer programming forever.
+
+18
+00:01:04,450 --> 00:01:10,000
+欢迎来到红帽原创播客《代码英雄》的第 3 季第 2 集
+Welcome to episode 2 of Command Line Heroes, an original podcast from Red Hat.
+
+19
+00:01:10,275 --> 00:01:12,000
+我是主持人 Saron Yitbarek
+I'm your host, Saron Yitbarek.
+
+20
+00:01:12,899 --> 00:01:19,865
+在这一集 我们将继续本季的“编程语言的过去与未来”的旅程
+In this episode, we continue our season-long journey into the history and future of programming languages.
+
+21
+00:01:20,825 --> 00:01:23,657
+在第 1 集中 我们深入研究了 Python
+In episode 1, we dove into Python
+
+22
+00:01:23,977 --> 00:01:26,621
+并了解了开源社区如何在其领导阶层的大动荡中生存下来
+and learned how open-source language communities
+
+23
+00:01:26,621 --> 00:01:29,698
+并了解了开源社区如何在其领导阶层的大动荡中生存下来
+survive major upheavals in their leadership.
+
+24
+00:01:30,146 --> 00:01:33,282
+比起上一期节目 本次节目会更注重于个人
+But this time, we're getting more personal.
+
+25
+00:01:33,800 --> 00:01:36,150
+我们的话题是 大家都有过的一种体验
+We're looking at an experience we've all had.
+
+26
+00:01:36,499 --> 00:01:40,346
+也就是 与入门语言的邂逅
+The experience of encountering our very first language.
+
+27
+00:01:40,690 --> 00:01:43,290
+我将带领你们领略我学习的第一门语言 Ruby
+We'll take a look at my first language, Ruby.
+
+28
+00:01:43,725 --> 00:01:49,239
+以及新手语言是如何用游戏的形式 来到我们身边的
+And we'll learn how some first languages come to us in the form of a game.
+
+29
+00:01:50,000 --> 00:01:51,728
+不过 我得先举个例子
+But we're beginning with an example
+
+30
+00:01:51,728 --> 00:01:56,215
+好让大家都能明白“新手语言”到底是什么意思
+that can help us understand what first languages really means.
+
+31
+00:01:56,575 --> 00:01:58,175
+这门语言诞生于
+It's the language that was born
+
+32
+00:01:58,175 --> 00:02:02,423
+之前提到的 达特茅斯实验室的三行输出
+in that Dartmouth laboratory with those three short lines of output.
+
+33
+00:02:02,975 --> 00:02:05,769
+在 1965 年那一天的黎明之前
+At that pre-dawn meeting in 1965,
+
+34
+00:02:05,769 --> 00:02:10,541
+约翰·凯梅尼作为创造者之一 见证了 BASIC 的诞生
+John Kemeny witnessed the birth of his co-creation, BASIC.
+
+35
+00:02:14,375 --> 00:02:15,200
+BASIC 的意思是“初学者的泛用符号指令代码”
+BASIC.
+
+36
+00:02:15,200 --> 00:02:15,453
+BASIC 的意思是“初学者的泛用符号指令代码”
+
+37
+00:02:15,453 --> 00:02:20,103
+BASIC 的意思是“初学者的泛用符号指令代码”
+It stands for Beginners' All-Purpose Symbolic Instruction Code.
+
+38
+00:02:20,503 --> 00:02:24,270
+这里面的第一个词 “初学者” 正是其不凡之处所在
+In that first word, "beginners'", is where the magic lies.
+
+39
+00:02:24,600 --> 00:02:26,348
+在早期
+In the early days of programming,
+
+40
+00:02:26,348 --> 00:02:30,222
+就算是少量的编程工作 也需要一名博士来完成
+you pretty much needed a PhD in order to do a little coding.
+
+41
+00:02:30,700 --> 00:02:34,431
+这是一种极高的要求 需要大量的教育
+It was an elite pursuit that required major education, not to mention major hardware.
+
+42
+00:02:34,431 --> 00:02:36,814
+更不用说那些高级的硬件了
+It was an elite pursuit that required major education, not to mention major hardware.
+
+43
+00:02:37,450 --> 00:02:40,556
+但是凯梅尼教授和他的团队希望改变现状
+But Professor Kemeny and his team wanted to change all that.
+
+44
+00:02:41,100 --> 00:02:44,950
+他们想知道：如果要创造一种所有人都可以使用的编程语言
+What would it look like, they wondered, to produce a programming language that anybody could use?
+
+45
+00:02:44,950 --> 00:02:46,508
+那会带来怎样的不同？
+What would it look like, they wondered, to produce a programming language that anybody could use?
+
+46
+00:02:46,925 --> 00:02:50,860
+当美国各地的青年们剧烈地抗议 要求变革时
+While teenage baby boomers were demanding change all across America
+
+47
+00:02:51,150 --> 00:02:54,566
+达特茅斯团队提出了一种另类的革命
+the team at Dartmouth proposed a shake-up of another kind.
+
+48
+00:02:56,875 --> 00:03:03,206
+他们的秘密武器是一个房间那么大的大型电脑 - GE 225
+Their secret weapon was a room-sized mainframe computer, that GE-225
+
+49
+00:03:03,450 --> 00:03:06,644
+它重达 2000 磅 这个重量是健康的证明
+weighing in at a healthy 2,000 pounds, it was capable of something brand new.
+2000 磅大约是 900 千克
+
+50
+00:03:06,644 --> 00:03:09,125
+和这份不得了的重量相匹配的是 它具备某些全新的功能
+weighing in at a healthy 2,000 pounds, it was capable of something brand new.
+
+51
+00:03:09,450 --> 00:03:13,638
+那就是分时功能
+The GE-225 was capable of time-sharing.
+也就是时间片 实现了多用户多进程快速切换的技术
+
+52
+00:03:14,200 --> 00:03:21,162
+突然间 编程不再需要复杂的打孔卡系统或庞大的开关墙了
+Suddenly, the complicated system of punch cards or enormous walls of switches wasn't necessary anymore.
+
+53
+00:03:21,675 --> 00:03:27,562
+分时意味着程序们都可以同时执行
+Time-sharing meant that a whole bunch of programs could be executed almost simultaneously
+
+54
+00:03:27,853 --> 00:03:30,989
+因为系统会根据不同用户的需要来回切换其处理内容
+with the machine's attention bouncing between users.
+
+55
+00:03:31,550 --> 00:03:36,813
+分时意味着 使用者可以用惊人的新方式来访问计算机
+Time-sharing meant that access to computing could expand in amazing new ways.
+
+56
+00:03:37,403 --> 00:03:39,000
+这是来自达特茅斯的些许录音
+Here's some audio from Dartmouth,
+
+57
+00:03:39,000 --> 00:03:43,099
+记录了 BASIC 刚诞生的时候
+featuring one of the undergrads studying there when BASIC first appeared.
+
+58
+00:03:43,419 --> 00:03:46,427
+65 级的本科生 John McGeachie 学习的实况
+Here's John McGeachie, class of '65.
+
+59
+00:03:47,417 --> 00:03:54,649
+我们把这台相当贵的、原本只能一次让一个人用的计算机
+We had taken a fairly expensive computer that could only be used by one person at a time
+
+60
+00:03:54,777 --> 00:04:00,300
+变成了可以…让超过 30 人使用的东西
+and converted it into something where it wasn't just 30 users who could use it
+
+61
+00:04:00,600 --> 00:04:05,420
+30 名本科生可以同时在这上面编程
+it was 30 undergraduate students using this computer simultaneously
+
+62
+00:04:05,720 --> 00:04:08,498
+还能快速得到输出
+writing programs, getting answers quickly.
+
+63
+00:04:08,498 --> 00:04:14,386
+它是史无前例的简洁直接
+It was a combination of immediacy and simplicity that had not previously existed.
+
+64
+00:04:15,525 --> 00:04:21,106
+约翰·凯梅尼联合另一位技术普及的布道师托马斯·卡茨
+John Kemeny had teamed up with Thomas Kurtz, another evangelist for computer literacy
+
+65
+00:04:21,106 --> 00:04:23,282
+共同开发了 BASIC 语言
+to develop the BASIC language.
+
+66
+00:04:23,375 --> 00:04:26,755
+他们发现 分时让计算机使用变得更亲民
+They saw how time-sharing democratized things,
+
+67
+00:04:26,755 --> 00:04:30,607
+因此准入门槛降低了许多
+and knew that the barrier for entry was suddenly so much lower.
+
+68
+00:04:31,175 --> 00:04:36,419
+而剩下的工作则是编写一门简单直白的编程语言
+All that was needed was a language that prioritized simplicity and immediacy,
+
+69
+00:04:36,750 --> 00:04:38,406
+一门像 BASIC 那样的语言
+a language like BASIC.
+
+70
+00:04:38,950 --> 00:04:42,614
+他们开发了像 HELLO 和 GOODBYE 这样的指令
+They developed commands like "hello" and "goodbye" instead of "log on" and "log off".
+
+71
+00:04:42,614 --> 00:04:44,814
+来代替 LOG ON 和 LOG OFF 命令
+They developed commands like "hello" and "goodbye" instead of "log on" and "log off".
+
+72
+00:04:45,225 --> 00:04:50,295
+事实上 初版 BASIC 只有 14 个简单的指令
+In fact, the first version of BASIC only had 14 simple commands,
+
+73
+00:04:50,295 --> 00:04:53,815
+比如条件判断 IF 和 GOTO 之类的简单选项
+just easy options like "if", "then", and "go to".
+
+74
+00:04:54,725 --> 00:04:55,901
+我是 Tom Cormen
+I am Tom Cormen. I'm a professor of computer science at Dartmouth College.
+
+75
+00:04:55,901 --> 00:04:58,875
+我是达特茅斯大学的一名计算机科学教授
+I am Tom Cormen. I'm a professor of computer science at Dartmouth College.
+
+76
+00:04:58,875 --> 00:05:02,550
+Cormen 教授将与我们谈论所谓“初学者的革命”
+Professor Cormen spoke with us about that beginner's revolution
+
+77
+00:05:02,825 --> 00:05:07,067
+以及 BASIC 的出现如何成为时代精神的一部分
+and how the creation of BASIC really did feel like part of a new zeitgeist
+
+78
+00:05:07,250 --> 00:05:08,268
+它带来了一个新世界 在其中
+a world where
+
+79
+00:05:08,268 --> 00:05:10,552
+计算机技术对更多人来说不仅不再遥不可及 甚至还是激动人心的
+computing was exciting to more people,
+
+80
+00:05:10,872 --> 00:05:12,571
+ - 编程甚至变得有点时髦了
+even a little bit hip.
+
+81
+00:05:13,975 --> 00:05:16,025
+据说在 60 年代
+At the time in the 1960s,
+
+82
+00:05:16,025 --> 00:05:18,526
+男学生会在这里（计算机中心）约会
+it said that the male students would bring their dates there.
+
+83
+00:05:19,000 --> 00:05:20,950
+我真是不能想象如果发生在现在会是什么样子
+I can't really imagine that happening now,
+
+84
+00:05:20,950 --> 00:05:24,000
+但在那个时候 计算机中心一度是约会的最佳场所
+but at the time the computer center was the cool place to be.
+
+85
+00:05:24,406 --> 00:05:26,902
+这种在校园兴起的编程热潮
+This new interest in computing on campus
+
+86
+00:05:26,902 --> 00:05:30,650
+是“初学者语言”诞生所带来的直接结果
+was the immediate result of that first beginner's language.
+
+87
+00:05:30,800 --> 00:05:35,920
+BASIC 为那些计算机爱好者降低了准入门槛
+BASIC opened up computing to people who weren't just computer jocks,
+
+88
+00:05:35,920 --> 00:05:37,456
+就如同我们过去说的那样
+as we used to say back then.
+
+89
+00:05:38,000 --> 00:05:42,725
+不想学习 FORTRAN 这类编程语言的社会科学家
+Social scientists who really didn't want to get into the weeds of a language like Fortran
+
+90
+00:05:42,725 --> 00:05:44,000
+可以使用 BASIC
+could use BASIC.
+
+91
+00:05:44,408 --> 00:05:47,382
+从事人文艺术的人们
+and people doing work in the arts and humanities
+
+92
+00:05:47,382 --> 00:05:52,310
+可以用它做文本处理 甚至用来创作艺术作品
+if they were doing text analysis or even trying to create art
+
+93
+00:05:52,310 --> 00:05:54,166
+这些完全可以用 BASIC 来完成
+they could use BASIC for that.
+
+94
+00:05:54,625 --> 00:05:59,350
+没过几年 人们就开始写电脑游戏
+So after a few years, people were doing things like writing computer games
+
+95
+00:05:59,625 --> 00:06:03,318
+也时常在编程中实现图形化的内容
+and also incorporating computer graphics routinely into their work.
+
+96
+00:06:04,395 --> 00:06:08,811
+对于所有那些不将自己视为程序员的孩子们
+All those kids who didn't necessarily see themselves as programmers
+
+97
+00:06:09,178 --> 00:06:12,617
+编程领域的大门 突然间以一种近乎直观的方式打开了
+suddenly got into programming on an almost intuitive level.
+
+98
+00:06:13,000 --> 00:06:16,585
+它让我想起格蕾丝·赫柏所追求的世界
+It reminds me of the kind of world Grace Hopper pushed for.
+
+99
+00:06:17,225 --> 00:06:19,273
+当我们上一季谈到赫柏时
+When we talked about Hopper last season,
+
+100
+00:06:19,631 --> 00:06:23,727
+我们谈到了她的语言创新如何将编程带到更多人眼前
+we saw how her language innovations brought programming to a wider circle.
+
+101
+00:06:24,384 --> 00:06:28,672
+BASIC 的此时此刻就像是赫柏梦想的延续
+This BASIC moment, it was like a continuation of Hopper's dream.
+
+102
+00:06:29,100 --> 00:06:31,303
+我非常确信 如果格蕾丝·赫柏能看到更多人开始写代码
+I'm sure Grace Hopper would have liked seeing more people coding.
+
+103
+00:06:31,303 --> 00:06:32,492
+她会非常高兴
+I'm sure Grace Hopper would have liked seeing more people coding.
+
+104
+00:06:32,892 --> 00:06:38,000
+她可能会喜欢 BASIC 和 COBOL 的不同之处
+She probably would have liked that BASIC had a different slant from COBOL
+
+105
+00:06:38,140 --> 00:06:41,724
+因为这种不同为人们提供了更多的选择
+and that it just opened things up to people even more and gave them a choice.
+
+106
+00:06:41,724 --> 00:06:43,940
+他们可以写 COBOL 可以写 FORTRAN
+They could write in COBOL, they could write in Fortran,
+
+107
+00:06:43,940 --> 00:06:46,271
+可以写 BASIC 可以写 ALGOL
+they could write in BASIC, they could write in ALGOL
+
+108
+00:06:46,625 --> 00:06:49,000
+可以选择当时任何流行的语言
+any of the popular languages of the time.
+
+109
+00:06:54,303 --> 00:06:58,354
+Tom Cormen 是达特茅斯计算机科学系的一名教授
+Tom Cormen is a professor in Dartmouth's Computer Science Department.
+
+110
+00:07:01,025 --> 00:07:05,310
+当初 计算机技术中的几大变化催生了新一代的程序员
+So a new generation of computer programmers was ushered in
+
+111
+00:07:05,310 --> 00:07:05,560
+当初 计算机技术中的几大变化催生了新一代的程序员
+
+112
+00:07:05,560 --> 00:07:07,875
+当初 计算机技术中的几大变化催生了新一代的程序员
+thanks to a couple of major changes
+
+113
+00:07:08,178 --> 00:07:13,874
+分时功能使并行工作成为可能 而 BASIC 使入门编程变得简单了
+simultaneous work made possible by time sharing, and a new simple language, BASIC.
+
+114
+00:07:14,275 --> 00:07:18,610
+这两个因素结合在一起 创造出了改变游戏规则的星星之火
+Those two factors combined to create a game-changing spark.
+
+115
+00:07:19,000 --> 00:07:23,000
+很快 编程就不仅是大型机构的专利
+Soon, it wasn't just massive institutions that could get into programming
+
+116
+00:07:23,154 --> 00:07:24,157
+这一代程序员中
+it was mavericks, like Bill Gates and Steve Wozniak.
+
+117
+00:07:24,157 --> 00:07:26,546
+既有像比尔·盖茨和史蒂夫·沃兹尼亚克这样的特立独行者
+it was mavericks, like Bill Gates and Steve Wozniak.
+
+118
+00:07:26,642 --> 00:07:31,570
+也有在个人电脑上每天默默耕耘的开发者
+It was also everyday programmers just exploring on their personal computers.
+
+119
+00:07:32,475 --> 00:07:39,325
+BASIC 能够在程序出错时立即给使用者以反馈
+To be able to interact with a language to get immediate feedback when something was wrong
+
+120
+00:07:39,325 --> 00:07:44,000
+这让它的使用体验变得不同 它让你沉浸其中 使你继续前进
+that made all the difference in the world because it sucked you in, it kept you going
+
+121
+00:07:44,000 --> 00:07:49,000
+这种交互是有意义的 就因为它是一种交互
+and the interaction was meaningful because it was an interaction.
+
+122
+00:07:50,300 --> 00:07:55,000
+这位是 Denise Dumas 她带领 RHEL 工程师团队
+This is Denise Dumas. She runs the Red Hat Enterprise Linux Engineering Team.
+
+123
+00:07:55,000 --> 00:08:00,000
+我认为 BASIC 使编程变得民主了许多
+I mean, BASIC democratized programming in a big way, right?
+
+124
+00:08:00,000 --> 00:08:05,876
+因为 BASIC 把它自身交予学生、大众
+Because it put it in the hands of students, in the hands of people
+
+125
+00:08:06,150 --> 00:08:10,117
+当时的其他语言 - 像是 COBOL、FORTRAN 之类
+in a way that COBAL, Fortran, the other languages of the day,
+
+126
+00:08:10,117 --> 00:08:12,218
+- 根本做不到这一点
+it just wasn't possible.
+
+127
+00:08:12,486 --> 00:08:18,000
+当 CRT（阴极射线管显示器）流行的时候 BASIC 更为火爆
+It became really popular at a time when CRTs became popular.
+
+128
+00:08:18,000 --> 00:08:23,000
+因为在你输入了信息之后 输出不再是被打印在一张纸上
+And so instead of typing something in and getting it printed on a piece of paper
+
+129
+00:08:23,000 --> 00:08:25,617
+而是显示在你面前的屏幕上
+it displayed on a screen in front of you.
+
+130
+00:08:26,000 --> 00:08:30,000
+我们现在有时候会嘲笑命令行 对吧？
+We laugh at command lines sometimes now, right?
+
+131
+00:08:30,270 --> 00:08:34,686
+现在一切都图形化了 但当时 有命令行已经很好了
+Everything is graphics, but the command line was what there was.
+
+132
+00:08:35,000 --> 00:08:38,782
+它比命令行之前的时代有了很大的改进
+And it was such an improvement over what had been.
+
+133
+00:08:39,614 --> 00:08:43,582
+这一重大改进就是 你输入指令能够立即得到回应了
+That was huge. Just to type something in and get a response.
+
+134
+00:08:43,838 --> 00:08:45,748
+我认为 BASIC 降低了准入门槛
+I think that BASIC lowered the bar.
+
+135
+00:08:46,000 --> 00:08:50,325
+虽然我是那种控制狂 我喜欢汇编 但我还是会这么说的
+And I say this as someone who actually loves assembler
+
+136
+00:08:50,325 --> 00:08:52,565
+虽然我是那种控制狂 我喜欢汇编 但我还是会这么说的
+because that's the kind of control freak I am
+
+137
+00:08:52,885 --> 00:08:56,085
+BASIC 使编程变得更加平易近人
+but I think BASIC made it much more approachable.
+
+138
+00:08:59,000 --> 00:09:03,000
+BASIC 在 1980 年代带来的这份激情一直延续到了今日
+The excitement BASIC created in the 1980s lives on today.
+
+139
+00:09:03,153 --> 00:09:05,100
+现在 有许多语言
+With a whole fleet of languages
+
+140
+00:09:05,100 --> 00:09:09,324
+能被初学者用作进入编程世界的光明大道
+that beginners use as shiny red doors into the world of programming.
+
+141
+00:09:09,825 --> 00:09:12,588
+但如今发生了另一些重要的改变：
+And yet something important has changed.
+
+142
+00:09:12,925 --> 00:09:17,260
+编程入门不再只有进入大学学习一途
+Because those entrances don't just show up on university campuses anymore.
+
+143
+00:09:17,625 --> 00:09:21,000
+今日 条条大路通罗马
+The way into programming is becoming even more open.
+
+144
+00:09:29,328 --> 00:09:33,975
+尽管 BASIC 很神奇 但格蕾丝·赫柏的梦想不会止步于此
+As amazing as BASIC was, Grace Hopper's dream wasn't going to stop there.
+
+145
+00:09:34,281 --> 00:09:37,801
+如今 初学者有上百种方法可以开始编程
+Today, beginners have a hundred ways to find their start.
+
+146
+00:09:38,275 --> 00:09:40,750
+就我而言
+And for me, learning a first language
+
+147
+00:09:40,750 --> 00:09:45,000
+我是在纽约市一家名为 Flatiron 的学校学习的第一门语言
+meant attending an institution called the Flatiron School in New York City.
+
+148
+00:09:45,325 --> 00:09:47,465
+我为那个项目准备了几个月
+I prepared for months for that program.
+
+149
+00:09:47,900 --> 00:09:50,629
+我阅读了所有可能的编程资源和教程
+I read every single programming resource and tutorial
+
+150
+00:09:50,629 --> 00:09:54,000
+以确保它们也许能让我在训练营中获得最大收益
+that I possibly could to make sure I got the most out of my boot camp.
+
+151
+00:09:54,533 --> 00:09:59,461
+我想了解当今人们是如何接触自己的入门语言的
+I wanted to learn about how people today discovered that first language.
+
+152
+00:09:59,800 --> 00:10:03,109
+所以 今天我采访了自己当初的那位老师
+So I headed back to interview my old teacher.
+
+153
+00:10:03,450 --> 00:10:05,000
+我是 Avi Flombaum
+I'm Avi Flombaum.
+
+154
+00:10:05,000 --> 00:10:07,426
+Avi 是 Flatiron 学校的创始人之一
+Avi is one of the founders of the Flatiron School.
+
+155
+00:10:07,575 --> 00:10:12,439
+对我来说 和他一起探究有关入门语言的思想
+So it was a treat for me to dig into Avi's thoughts about first languages.
+
+156
+00:10:12,695 --> 00:10:14,807
+和我们接触入门语言的方式
+And how our approaches to first languages
+
+157
+00:10:14,807 --> 00:10:17,943
+与 BASIC 的旧时代相比有什么变化 是一种享受
+have changed since the old days of BASIC.
+
+158
+00:10:21,655 --> 00:10:27,400
+当你教别人该如何编程时 先从哪里下手呢？
+So when you are teaching someone how to code, where do you begin?
+
+159
+00:10:27,400 --> 00:10:30,765
+我记得当我学习第一门编程语言时
+Because I remember when I first learned my first programming language
+
+160
+00:10:30,765 --> 00:10:32,698
+我觉得这一切可真是太奇怪了
+thinking, this is so weird.
+
+161
+00:10:32,698 --> 00:10:35,845
+我在大学读的是英语专业 在学校里我很喜欢数学
+You know, I was an English major. I really liked maths when I was in school.
+
+162
+00:10:35,845 --> 00:10:37,246
+也喜欢有机化学
+I liked organic chemistry.
+
+163
+00:10:37,246 --> 00:10:40,126
+我喜欢很多不同的科目 各种各样的东西
+There are a lot of things that I was really into, a lot of different subjects.
+
+164
+00:10:40,126 --> 00:10:43,326
+但是没有什么是和编程相似的
+But there was nothing I could connect coding to.
+
+165
+00:10:43,326 --> 00:10:45,438
+因此 我也没办法将编程比作什么
+There was nothing that was a good analogy.
+
+166
+00:10:45,438 --> 00:10:47,308
+它自成一套 就像一个自己的小世界
+You know, it just felt like its own little world.
+
+167
+00:10:47,308 --> 00:10:49,219
+所以 作为老师 你会从哪里开始呢
+So as a teacher, where do you start?
+
+168
+00:10:49,675 --> 00:10:53,827
+我认为生活中你所熟悉的任何事物 曾经都是陌生的
+I think that anything that is familiar to you in life was once foreign
+
+169
+00:10:53,827 --> 00:10:56,674
+只有经历过
+and experiencing it and, you know,
+
+170
+00:10:56,674 --> 00:10:59,106
+真正花时间去做
+waiting in its waters and actually spending time with it
+
+171
+00:10:59,106 --> 00:11:00,778
+才会让你对它感到习惯
+is what makes you comfortable with it.
+
+172
+00:11:00,778 --> 00:11:05,322
+这是不断重复练习的问题 只关乎你投入的时间的多少
+And it's just a question of reps and really just time that you put into it.
+
+173
+00:11:05,650 --> 00:11:09,475
+我认为编程之所以困难 之所以让人感觉如此陌生
+I think what makes programming difficult and what makes it feel so foreign
+
+174
+00:11:09,475 --> 00:11:15,128
+是因为它用极其特殊的语法来表达一些东西
+is that it is a tremendously particular syntax for expressing something.
+
+175
+00:11:15,450 --> 00:11:20,376
+没有任何歧义 没有错误的余地 要么成功 要么失败
+There's zero ambiguity. There's no margin of error. It either works or it doesn't.
+
+176
+00:11:20,800 --> 00:11:22,521
+当我们互相交流的时候
+And when we communicate to each other,
+
+177
+00:11:22,521 --> 00:11:25,225
+我们一般没有那种要求
+we generally don't have that kind of requirement
+
+178
+00:11:25,225 --> 00:11:27,350
+一切都必须完全正确
+where everything has to be exactly correct.
+
+179
+00:11:27,350 --> 00:11:31,510
+一个逗号丢了 一个括号缺了 就全坏了
+You know, one comma is off, one parenthesis missing and just it's all broken.
+
+180
+00:11:31,875 --> 00:11:33,593
+我总是说 计算机是愚蠢的
+I always say that computers are stupid
+
+181
+00:11:33,593 --> 00:11:36,848
+为了使计算机理解我们的意思 我们必须做到完美
+and we have to just be perfect in order to get them understand what we mean.
+
+182
+00:11:37,000 --> 00:11:40,176
+这个我喜欢 机器是笨蛋
+I like that. I like this idea of the machine being the stupid one
+
+183
+00:11:40,176 --> 00:11:43,000
+我比它聪明 我同意
+and me being the smart one. I approve of this. This is great.
+
+184
+00:11:43,000 --> 00:11:43,575
+是啊
+Yeah.
+
+185
+00:11:44,318 --> 00:11:48,606
+我的第一门编程语言是 Ruby
+For me, that first language, the one I cut my teeth on, was Ruby.
+
+186
+00:11:49,000 --> 00:11:52,702
+根据经验 我可以告诉你 这是一种非常可爱的入门语言
+From experience, I can tell you it's a pretty sweet first language.
+
+187
+00:11:53,000 --> 00:11:56,000
+当你阅读代码时 感觉就像你在阅读英语
+When you read the code, it feels like you're reading English.
+
+188
+00:11:56,222 --> 00:11:58,000
+它有很多不错的库
+It's got tons of great libraries.
+
+189
+00:11:58,206 --> 00:11:59,742
+这里插播一则知识补充
+And here's a bit of trivia.
+
+190
+00:11:59,998 --> 00:12:02,878
+Ruby 的创造者 松本行弘
+The creator of Ruby, Yukihiro Matsumoto,
+
+191
+00:12:03,070 --> 00:12:05,758
+是通过学习 BASIC 进入编程领域的
+he got into programming by learning BASIC.
+
+192
+00:12:06,150 --> 00:12:11,000
+如今 许多新手可能会改用 Python 或 JavaScript
+These days, a lot of newbies might be tackling Python or JavaScript instead.
+
+193
+00:12:11,170 --> 00:12:13,500
+而我想知道 Avi 你觉得
+And I wanted to know whether Avi thought
+
+194
+00:12:13,500 --> 00:12:16,950
+有没有最理想的入门语言
+any one language was a better front door than all the others.
+
+195
+00:12:18,000 --> 00:12:22,838
+我想知道 是否有首选的入门语言？
+I'm wondering, are there preferred starter languages?
+
+196
+00:12:22,838 --> 00:12:26,166
+如果某人没有技术背景
+If someone's coming into this with no tech background,
+
+197
+00:12:26,166 --> 00:12:28,434
+没有编程经验 也没有计算机科学学历而进入这个领域
+no coding experience, no CS degree,
+
+198
+00:12:28,434 --> 00:12:32,786
+那么他们就是从一开始 甚至说从零开始…
+they're starting from absolutely nothing from square one, square zero even.
+
+199
+00:12:32,914 --> 00:12:38,418
+随着时间的推移 有没有更好的初始语言冒出来呢？
+Are there preferred languages that are good starting points that have changed over time?
+
+200
+00:12:39,000 --> 00:12:43,417
+首先 我要说的是每个人都没有背景
+Well, first, I'll say that everyone comes into it with no background.
+
+201
+00:12:43,417 --> 00:12:45,337
+没有谁生下来就是程序员
+No one is born a programmer.
+
+202
+00:12:45,785 --> 00:12:48,225
+因此 无论你是有计算机科学学历
+So whether you formally learned it in a CS program
+
+203
+00:12:48,225 --> 00:12:51,809
+还是在社区中心里学习 抑或读书自学
+or in your community center or read books and taught yourself,
+
+204
+00:12:51,809 --> 00:12:53,345
+每个人都是从初学者开始的
+everyone started as a beginner.
+
+205
+00:12:53,729 --> 00:12:58,017
+然后 就初学者的首选语言而言
+And then in terms of the preferred beginner language,
+
+206
+00:12:58,017 --> 00:13:00,984
+我认为你最先看到的语言就是最好的
+I think it's really whatever speaks to you first.
+
+207
+00:13:01,667 --> 00:13:06,570
+我对初学者的建议始终是 选择一种语言并学习它 不要改变
+My advice to beginners is always just pick a language and learn it. Don't change.
+
+208
+00:13:06,570 --> 00:13:10,122
+我认为 初学者最容易犯的错是
+I think the biggest thing that beginners do is
+
+209
+00:13:10,422 --> 00:13:13,706
+我先学习 Python 遭了挫折
+start learning Python and then get frustrated with it
+
+210
+00:13:13,706 --> 00:13:16,586
+就说 Python 很烂 现在我要去用 JavaScript 了
+and say Python sucks and now I'm going to go do JavaScript.
+
+211
+00:13:16,586 --> 00:13:19,338
+他们学习 JavaScript 然后对 JavaScript 感到沮丧
+And then they learn JavaScript and then they get frustrated with JavaScript
+
+212
+00:13:19,338 --> 00:13:20,234
+然后又换了起来
+and then they jump again.
+
+213
+00:13:22,000 --> 00:13:26,000
+如你所知 我个人认为 Ruby 是一种很棒的初学者语言
+I personally, as you know, think that Ruby is a great beginner language.
+
+214
+00:13:26,000 --> 00:13:29,265
+我认为它的语法真的很漂亮
+I think that its syntax is just really beautiful.
+
+215
+00:13:29,265 --> 00:13:33,425
+它的理念 明确地就是要使你（程序员）感到高兴
+Its value explicitly is to make you the programmer happy.
+
+216
+00:13:33,809 --> 00:13:37,476
+我不知道是否有其他发明来就是要叫程序员开心的语言
+I don't know any other language that was invented to make a programmer happy.
+
+217
+00:13:37,476 --> 00:13:40,484
+我知道人们发明了许多语言来使机器开心
+I know a lot of languages are invented to make machines happy.
+
+218
+00:13:40,484 --> 00:13:43,000
+但我认为 Ruby 确实很自然
+But I think Ruby is really natural.
+
+219
+00:13:43,812 --> 00:13:48,356
+这一点我们可以达成共识 但是同样 这里没有错误的答案
+We can agree on that one. But again, there's no wrong answer here.
+
+220
+00:13:48,600 --> 00:13:51,288
+毕竟 入门语言就是这样
+A first language after all is just that.
+
+221
+00:13:51,288 --> 00:13:56,000
+它只是开始 我们所有人都有一生的时间用来学习
+A first. We've all got a whole lifetime of language learning ahead of us.
+
+222
+00:13:56,472 --> 00:13:59,300
+而且 选择一种语言而不是另一种语言
+And besides, choosing one language over another
+
+223
+00:13:59,300 --> 00:14:03,625
+并不会阻止你成为出色的程序员
+isn't going to stop you from becoming the awesome programmer you were destined to be.
+
+224
+00:14:04,905 --> 00:14:09,577
+我喜欢画画 但我不会为了一支笔而死去活来
+You know, I like to draw, but I will not live and die by a particular pen.
+
+225
+00:14:09,577 --> 00:14:12,550
+我不会因为我使用的笔而大动干戈
+You know, like I don't get all worked up over the pen that I use.
+
+226
+00:14:12,550 --> 00:14:14,465
+我为我所创造的东西而激动
+I get worked up over the things I create.
+
+227
+00:14:14,465 --> 00:14:18,400
+那么从你的经验来看 为什么会这样呢？
+And so from your experience, where does that come from?
+
+228
+00:14:18,400 --> 00:14:20,779
+在大家面前辩护 让大家相信
+Where does that need to defend and convince everyone
+
+229
+00:14:20,779 --> 00:14:22,750
+你对一种编程语言的看法是正确的
+that you were right about a programming language?
+
+230
+00:14:22,750 --> 00:14:24,000
+这样的一种思维是从何而来的呢？
+Where does that come from?
+
+231
+00:14:24,000 --> 00:14:25,534
+我也不知道
+I guess, I don't know.
+
+232
+00:14:25,534 --> 00:14:27,435
+因为我很喜欢你关于笔与作品的比喻 我首先想到的是…
+The first thing that came into my head,
+
+233
+00:14:27,435 --> 00:14:32,000
+因为我很喜欢你关于笔与作品的比喻 我首先想到的是…
+because I loved your metaphor of the pen versus the output.
+
+234
+00:14:32,000 --> 00:14:35,883
+在我的设想中 人们死死地抓住工具
+I just imagine that some of the output is not that great.
+
+235
+00:14:36,375 --> 00:14:40,000
+恐怕是因为作品并不吸引人
+So the only thing that people can hold on to is the tool.
+
+236
+00:14:40,650 --> 00:14:42,000
+这就很好笑了
+That's hilarious.
+
+237
+00:14:42,506 --> 00:14:46,763
+如果你做的东西就是不厉害 不伟大
+If the things you make just aren't awesome and aren't great
+
+238
+00:14:46,763 --> 00:14:49,000
+对这个世界也没有太大的价值
+and don't have a lot of value for the world
+
+239
+00:14:49,195 --> 00:14:51,563
+你还想捍卫你的手艺
+and you want to still defend your craft,
+
+240
+00:14:51,563 --> 00:14:55,531
+你唯一能指出的就是 是啊 看我把那把锤子挥得多好
+the only thing you can point to is like, yeah, but look how well I swung that hammer.
+
+241
+00:14:55,531 --> 00:14:57,963
+当然 房子虽然倒了
+Sure, the house fell apart,
+
+242
+00:14:57,963 --> 00:15:02,000
+但那把锤子 那把锤子真的很棒 我知道怎么用
+but that hammer, that hammer is really great and I know how to use it.
+
+243
+00:15:02,507 --> 00:15:03,170
+你知道
+And you know,
+
+244
+00:15:03,170 --> 00:15:06,434
+我这个人…我也觉得建造出的东西
+as someone like, I always was more interested in the things I built
+
+245
+00:15:06,434 --> 00:15:08,000
+比你建造它的方式更重要
+than the manner in which I built them.
+
+246
+00:15:08,910 --> 00:15:09,870
+说得好
+That's a good point.
+
+247
+00:15:10,125 --> 00:15:12,374
+现在 初学者不止可以选择 BASIC 或者 FORTRAN
+Now that beginners have more to choose from
+
+248
+00:15:12,374 --> 00:15:14,678
+现在 初学者不止可以选择 BASIC 或者 FORTRAN
+than just BASIC or, I don't know, Fortran,
+
+249
+00:15:15,000 --> 00:15:18,006
+我们已经拥有一整套的入门语言清单
+now that we have a whole menu of first languages,
+
+250
+00:15:18,006 --> 00:15:19,841
+但总有一种危险
+there's always the danger
+
+251
+00:15:19,841 --> 00:15:23,000
+那就是你忘记了这些语言仍然是达到目的的一种手段
+that you forget these languages are still a means to an end.
+
+252
+00:15:23,318 --> 00:15:26,646
+语言是工具 不是你要制作的东西
+The language is the tool. It's not the thing you're making.
+
+253
+00:15:27,542 --> 00:15:32,201
+我认为技术的价值在于 为人们创造有意义的事物
+I think that the value of technology is to create meaningful things for people.
+
+254
+00:15:33,000 --> 00:15:36,700
+说到底 如果你确实是一名非常非常好的程序员
+Ultimately, if you're a programmer and you're really, really good,
+
+255
+00:15:36,700 --> 00:15:42,000
+但是你做的东西没有人需要 没有人喜欢…
+but you're building things that no one needs and no one likes and, you know
+
+256
+00:15:42,325 --> 00:15:43,989
+它没有为世界增加价值
+aren't adding value to the world,
+
+257
+00:15:43,989 --> 00:15:46,271
+但是你真的真的非常擅长这门手艺
+but you're really, really good at the craft
+
+258
+00:15:46,271 --> 00:15:49,471
+我想你可能会深入研究并讨论所使用的工具
+and you just can't find a way to actually make the impact you want.
+
+259
+00:15:50,000 --> 00:15:54,527
+我想你可能会深入研究并讨论所使用的工具
+I imagine that you'd probably dig in and talk about the tool you used.
+
+260
+00:15:56,000 --> 00:15:57,006
+非常感谢 Avi
+Well, thank you so much, Avi,
+
+261
+00:15:57,006 --> 00:16:00,782
+感谢你分享你的所有经验以及对编程语言的想法
+for sharing all your experiences and your thoughts about programming languages.
+
+262
+00:16:00,782 --> 00:16:01,676
+那我们就谈到这里？
+You want to say goodbye?
+
+263
+00:16:01,676 --> 00:16:04,392
+是的 这非常好玩 很高兴再次跟你交流
+Yeah, this was super fun. It was nice connecting again.
+
+264
+00:16:04,392 --> 00:16:09,768
+我希望大家都找到自己喜欢的语言 每天都能用它写代码
+And I hope you all find a language that you love and get to work in it every day.
+
+265
+00:16:10,000 --> 00:16:10,848
+听起来不错
+Sounds good.
+
+266
+00:16:13,000 --> 00:16:16,584
+Avi Flombaum 是 Flatiron 学校的联合创始人之一
+Avi Flombaum is one of the co-founders of Flatiron School.
+
+267
+00:16:20,000 --> 00:16:25,518
+编程学校可以将教育和知识获取的精神提升到一个全新的高度
+Coding schools can bring that spirit of access and education to a whole new level.
+
+268
+00:16:25,902 --> 00:16:28,526
+这是我们在达特茅斯看到的一切的延续
+It's a continuation of what we saw at Dartmouth.
+
+269
+00:16:29,000 --> 00:16:31,568
+但如今 在一个多样化的开发生态系统中
+But in a rich development ecosystem,
+
+270
+00:16:31,568 --> 00:16:35,472
+新的、更加自然的入门方式将会不断涌现
+we'll keep getting more and more natural points of entry.
+
+271
+00:16:36,000 --> 00:16:41,552
+初学者们已经有了更理想的手段来开始他们的编程“游戏”
+And first-time coders are already discovering next-level ways to get into the game.
+
+272
+00:16:42,061 --> 00:16:43,664
+有时 他们甚至真是从玩游戏开始的
+Sometimes, literally.
+
+273
+00:16:45,600 --> 00:16:48,785
+你试过其他键吗？试试 G 键
+Have you tried like a different key? So, why don't you try the G key?
+
+274
+00:16:52,207 --> 00:16:53,210
+现在 在这暂停
+Now, hold on.
+
+275
+00:16:53,210 --> 00:16:57,818
+这不是一群年轻的程序员在默默地背诵 O'Reilly 的课本
+That is not a bunch of young coders silently memorizing an O'Reilly textbook.
+
+276
+00:16:58,000 --> 00:17:00,442
+也不是在 Flatiron 学校的讲座
+And it's not a lecture at the Flatiron School either.
+
+277
+00:17:00,853 --> 00:17:05,525
+这其实是红帽在伦敦泰特现代美术馆里开办的一节实践课
+It's actually a little lab that Red Hat ran at the Tate Modern in London.
+
+278
+00:17:06,000 --> 00:17:08,469
+那些孩子呢？他们在学习写代码
+And those kids, they're learning to code.
+
+279
+00:17:08,661 --> 00:17:12,629
+对于新一代来说 编程的乐趣就是他们首先体会到的
+For a new generation, the joy of coding is what they first encounter.
+
+280
+00:17:13,333 --> 00:17:18,133
+好的 嗨 我叫 Femi 网名是 Hackerfemo
+Okay. Hi, my name is Femi, aka Hackerfemo.
+大家可以在 Github 找到他的账号 不过他这两年好像没怎么活动 :(
+
+281
+00:17:18,425 --> 00:17:21,653
+Femi Owolade-Coombes 只有 13 岁
+Femi Owolade-Coombes is only 13 years old,
+
+282
+00:17:21,775 --> 00:17:25,231
+但他已经是新一代程序员中的一名领袖
+but he's already a leader in a new wave of young coders.
+
+283
+00:17:26,511 --> 00:17:29,261
+我八岁的时候第一次接触到编程
+I first encountered coding when I was eight,
+
+284
+00:17:29,261 --> 00:17:34,445
+那时我去约克参加一项活动 活动本身其实是数学主题的
+and I went to an event in York, actually, about maths.
+
+285
+00:17:34,445 --> 00:17:39,754
+不过我在那里看到了个很酷的东西 - 合法地黑入 Minecraft
+And there, I saw this cool thing, you know, hacking Minecraft, ethically.
+
+286
+00:17:40,450 --> 00:17:43,263
+作为八岁的孩子 那时候的我认为那真的很酷
+And as an eight-year-old, I thought that was really cool.
+
+287
+00:17:43,263 --> 00:17:44,804
+所以我就这样入门了编程
+So that's how I got into coding.
+
+288
+00:17:47,000 --> 00:17:51,780
+他不是孤例 Minecraft 已经将一代人引入了编程领域
+He's not alone. Minecraft has introduced a whole generation to coding.
+
+289
+00:17:52,164 --> 00:17:55,812
+而且这不需要过去几代人所经历的痛苦和枯燥的学习
+And it's done that without any of the pain or dry studying
+
+290
+00:17:55,812 --> 00:17:58,000
+而且这不需要过去几代人所经历的痛苦和枯燥的学习
+that past generations suffered through.
+
+291
+00:17:58,308 --> 00:18:01,000
+游戏的魔力正在消除障碍
+The magic of gaming is dropping barriers.
+
+292
+00:18:01,316 --> 00:18:03,007
+Minecraft 是基于 Java 的
+Minecraft is Java-based,
+
+293
+00:18:03,007 --> 00:18:06,399
+它也为该语言注入了新的活力
+and it's been credited with breathing new life into that language
+
+294
+00:18:06,800 --> 00:18:10,367
+催生了一大群新的 Java 粉丝
+spawning a whole crowd of fresh-faced Java fans.
+
+295
+00:18:10,725 --> 00:18:12,223
+但不一定是 Java
+But it doesn't have to be Java.
+
+296
+00:18:12,598 --> 00:18:16,191
+对于 Femi来 说 Python 是他在 Minecraft 中发现的语言
+For Femi, Python was the language he discovered in Minecraft.
+
+297
+00:18:16,450 --> 00:18:21,178
+如果你玩的是树莓派版的 Minecraft 你就可以用 Python
+You can use Python when you're using the Raspberry Pi in Minecraft
+
+298
+00:18:21,178 --> 00:18:25,748
+因为树莓派上的 Minecraft 是特殊编写的版本 它很酷
+because Minecraft have created a special edition for the Raspberry Pi, which is so cool
+
+299
+00:18:25,748 --> 00:18:29,350
+只要导入这个库 你就可以黑进去
+because you can hack it by just importing this, like, library,
+
+300
+00:18:29,350 --> 00:18:32,806
+到处放置爆炸性的 TNT
+and you can put exploding TNT everywhere.
+
+301
+00:18:33,126 --> 00:18:35,500
+你可以在自己身后创建方块
+And you can create blocks behind you.
+
+302
+00:18:35,500 --> 00:18:38,828
+也可以创造建筑物 你可以拿它做各种各样的事
+You can create whole buildings, all sorts of things.
+
+303
+00:18:41,772 --> 00:18:45,250
+当我第一次玩它时 我发现可以添加很多类似 mod 的东西
+When I first played it, I knew there were quite a few things like mods you could add on,
+
+304
+00:18:45,250 --> 00:18:46,506
+这也很酷
+which are pretty cool.
+
+305
+00:18:46,506 --> 00:18:48,590
+mod 这东西本身就有点像黑进游戏一样
+Those were like little hacks in themselves.
+
+306
+00:18:48,840 --> 00:18:51,525
+但 mod 的存在让我意识到
+But this was the first time that I realized you could, like,
+
+307
+00:18:51,525 --> 00:18:54,890
+我们也可以用正规的方法改变游戏 让它以你希望的方式行事
+properly hack it and really make it do what you want.
+
+308
+00:18:55,594 --> 00:18:57,322
+我认为这真的很酷
+I thought it was really cool.
+
+309
+00:18:57,750 --> 00:19:00,010
+Femi 打开了一个编程世界
+A world of coding opened up for Femi,
+
+310
+00:19:00,478 --> 00:19:03,422
+而通往世界的大门是他最喜欢的游戏
+and the door to that world was his favorite game.
+
+311
+00:19:04,050 --> 00:19:07,326
+然后 他做了一件了不起的事情
+And then Femi did something kind of amazing.
+
+312
+00:19:07,725 --> 00:19:10,206
+他开始向其他孩子分享那扇门
+He started showing other kids that door.
+
+313
+00:19:10,625 --> 00:19:13,325
+嗯 我想与同伴分享我的知识
+Well, I wanted to share my knowledge with my peers,
+
+314
+00:19:13,325 --> 00:19:18,445
+因为我觉得 你知道吗？他们会非常喜欢的
+because I thought, you know what, they will really enjoy this.
+
+315
+00:19:18,575 --> 00:19:21,382
+我也会因此度过愉快的时光
+And I have, and I had a great time,
+
+316
+00:19:21,382 --> 00:19:26,000
+我想与其他所有人共享这些 这样他们就能了解它
+I want to share this with everyone else, so that they can learn about it
+
+317
+00:19:26,000 --> 00:19:28,560
+甚至可以参与编程
+and so that they can even get into coding.
+
+318
+00:19:30,744 --> 00:19:34,456
+Femi 将此事贯彻到底 创办了“南伦敦树莓酱”社团
+Femi went ahead and founded the South London Raspberry Jam.
+Jam 有即兴演奏的意思
+
+319
+00:19:34,750 --> 00:19:39,256
+在那里 他已经看到了全新一代的编程者
+And there, he's been able to watch a whole new generation of coders
+
+320
+00:19:39,512 --> 00:19:44,000
+他们正挑战人们以往对编程初体验的预判
+defy expectations about what a first language experience should look like.
+
+321
+00:19:44,632 --> 00:19:46,616
+除了“黑进 Minecraft”之外
+Besides those Minecraft hacks,
+
+322
+00:19:46,891 --> 00:19:49,240
+像 Scratch 或 Fruit 这样的可视化语言
+visual languages like Scratch or Fruit
+
+323
+00:19:49,240 --> 00:19:54,000
+也让越来越年轻的用户拥有基础知识可以实现编程
+are making the basics of coding achievable to younger and younger users.
+
+324
+00:19:54,232 --> 00:19:56,329
+我确实喜欢玩游戏这个点子
+I do like the idea of playing a game,
+
+325
+00:19:56,329 --> 00:20:00,873
+比起在课堂上学习代码 我肯定更想在游戏里学习
+and I most certainly do it over, you know, learning to code in a classroom.
+
+326
+00:20:01,075 --> 00:20:06,505
+我最喜欢的是能够控制游戏中发生的事情
+But it's the idea of, you know, being able to control what happens in that game.
+
+327
+00:20:06,825 --> 00:20:08,500
+而代码是背后的魔法
+And code is behind that,
+
+328
+00:20:08,500 --> 00:20:14,132
+代码给了你那种非常酷的能力 让游戏做你想要的事情
+and code gives you that really cool ability to make the game do what you want.
+
+329
+00:20:15,025 --> 00:20:17,588
+Femi 的妈妈告诉我们
+Femi's mom told us how happy she was
+
+330
+00:20:17,588 --> 00:20:21,000
+当她发现玩游戏并非一种弊大于利的追求时 她有多么高兴
+to discover that gaming didn't have to be a passive pursuit.
+
+331
+00:20:21,492 --> 00:20:26,676
+我喜欢他的故事 因为这故事是从游戏开始的 却没有结束于游戏
+What I love about his story is that it starts with gaming, sure, but it doesn't end there.
+
+332
+00:20:27,050 --> 00:20:30,004
+他建立了一个属于年轻程序员的、了不起的社区
+He built an amazing community of young coders,
+
+333
+00:20:30,452 --> 00:20:32,820
+Femi 自己的代码生涯也在起飞
+and Femi's own coding life is taking off.
+
+334
+00:20:33,250 --> 00:20:35,316
+不再是围绕着 Minecraft 了
+It's not just Minecraft anymore.
+
+335
+00:20:35,650 --> 00:20:38,675
+他学会了使用 HTML、JavaScript 和 CSS
+He works in HTML, JavaScript and CSS,
+
+336
+00:20:38,675 --> 00:20:41,000
+建立网站 做网页设计
+building websites and doing Web design.
+
+337
+00:20:41,334 --> 00:20:44,406
+他甚至在用 Unity 打造自己的游戏
+He's even building his own games using Unity.
+
+338
+00:20:44,750 --> 00:20:49,590
+每个人都应该有权利学习编程 因为这是未来
+Everyone really should have a right to learn how to code because it is the future.
+
+339
+00:20:52,598 --> 00:20:56,822
+Minecraft 真的是一所巨型编程大学吗？
+So is Minecraft really a giant programming university?
+
+340
+00:20:57,125 --> 00:21:00,300
+明日的程序员 是否会通过游戏和玩耍来吸收新的语言呢？
+Are the coders of tomorrow going to absorb new languages
+
+341
+00:21:00,300 --> 00:21:03,000
+明日的程序员 是否会通过游戏和玩耍来吸收新的语言呢？
+through games and simply messing around?
+
+342
+00:21:03,436 --> 00:21:06,316
+只通过环境渗透能否真正地学习语言？
+Will languages be learned just through osmosis?
+
+343
+00:21:06,625 --> 00:21:08,236
+嗨 我叫 Robyn Bergeron
+Hi, my name is Robyn Bergeron.
+是第二季番外篇请到过的人:)
+
+344
+00:21:08,236 --> 00:21:12,000
+Robyn 是红帽的 Ansible 社区架构师
+Robyn's the community architect for Ansible over at Red Hat.
+
+345
+00:21:12,460 --> 00:21:14,827
+她有几个孩子
+And she also happens to have a couple kids
+
+346
+00:21:14,827 --> 00:21:17,259
+这些孩子们偶然间接触到了编程
+who've stumbled into programming themselves.
+
+347
+00:21:18,000 --> 00:21:20,100
+那是晚饭时刻
+So there was a moment at dinner one night.
+
+348
+00:21:20,100 --> 00:21:21,115
+我在做饭
+I was actually cooking.
+
+349
+00:21:21,115 --> 00:21:22,000
+每个人对这件事情都印象深刻
+Everyone was impressed.
+
+350
+00:21:22,000 --> 00:21:24,670
+我的女儿来到厨房 她说:
+My daughter came into the kitchen area and she said,
+
+351
+00:21:24,670 --> 00:21:27,550
+“妈妈 我给 Minecraft 提交了一个 bug！”
+Mommy, I filed a bug in Minecraft.
+
+352
+00:21:28,000 --> 00:21:29,408
+我从事软件工作
+You know, I work in software.
+
+353
+00:21:29,408 --> 00:21:33,312
+我看到过很多很多错误报告
+I get to see lots, you know, lots and lots and lots of bug reports.
+
+354
+00:21:33,625 --> 00:21:38,900
+我真的很好奇 她这么讲究竟是什么意思
+And I was just really curious about what that meant in that universe, right?
+
+355
+00:21:38,900 --> 00:21:44,276
+是说我在推特上和别人聊了聊 说它坏了 还是什么？
+Is that like, you know, I've talked to someone on Twitter and said it's broken or what?
+
+356
+00:21:45,192 --> 00:21:46,528
+我让她给我看看
+And I asked her to show me.
+
+357
+00:21:46,528 --> 00:21:49,152
+于是她打开了电脑
+So she opened up, you know, her computer
+
+358
+00:21:49,152 --> 00:21:53,184
+她已经在 Mojang 的系统中创建了一个 Jira 帐户
+and she had created a Jira account in Mojang system.
+
+359
+00:21:53,700 --> 00:21:57,000
+我们应该注意到 Robyn 的女儿在当时只有 11 岁
+We should note Robyn's daughter was 11 when she did this.
+
+360
+00:21:57,536 --> 00:21:59,809
+她把表格填得像模像样
+She had filled out their form exactly.
+
+361
+00:21:59,809 --> 00:22:03,475
+我见过很多内容不完整的错误报告
+And, you know, I see lots of bug reports that are not well formed
+
+362
+00:22:03,475 --> 00:22:05,757
+也见过很多口吻过于尖锐的错误报告
+or they're very mean. I see a lot of that too.
+
+363
+00:22:05,757 --> 00:22:08,701
+但这是一个完美的报告…这份报告里有说“发生了什么事”
+But it was a perfectly, you know, here's what happened.
+
+364
+00:22:08,975 --> 00:22:10,450
+“我预期会发生什么事”
+Here's what I expected to happen.
+
+365
+00:22:10,875 --> 00:22:13,569
+以及“如何重现错误”
+And here's all of the steps to reproduce,
+
+366
+00:22:13,800 --> 00:22:17,725
+对于很多人来说 这是他们与项目的第一次互动
+which is, you know, for a lot of people that's their first interaction with any project,
+
+367
+00:22:17,725 --> 00:22:19,389
+无论是商业的
+whether it's a, you know, commercial
+
+368
+00:22:19,389 --> 00:22:22,048
+专有的软件项目 比如一个电子游戏
+you know, proprietary software project like a video game
+
+369
+00:22:22,048 --> 00:22:24,352
+还是一个开源软件项目
+or a open source software project.
+
+370
+00:22:24,775 --> 00:22:27,000
+我很自豪
+And I was so proud.
+
+371
+00:22:27,625 --> 00:22:30,700
+我告诉她 之后我们完全可以去参加 Minecraft 大会
+And I told her we could totally go to the Minecraft conference after that
+
+372
+00:22:30,700 --> 00:22:32,200
+因为他们一直很想去
+because they had been dying to go.
+
+373
+00:22:33,000 --> 00:22:37,498
+Robyn 意识到 当我们其他人从事日常工作时
+Robyn was about to realize that while the rest of us were going about our day jobs
+
+374
+00:22:37,775 --> 00:22:40,122
+孩子们却开始了一场革命
+the kids were starting a revolution.
+
+375
+00:22:40,650 --> 00:22:42,554
+以下是在那场 Minecraft 大会上发生的事情
+Here's what happened at that conference.
+
+376
+00:22:43,000 --> 00:22:46,550
+我们去参加主题演讲 我说 就算我们排在最后进去也没事的
+We went to the keynotes and I said, oh, we'll go at the last second.
+
+377
+00:22:46,550 --> 00:22:47,510
+会在第二排找到位置
+We'll be fine.
+
+378
+00:22:47,510 --> 00:22:49,000
+会在第二排找到位置
+We'll totally be like in the second row.
+
+379
+00:22:49,000 --> 00:22:49,494
+完全错了
+Oh, no.
+
+380
+00:22:50,000 --> 00:22:50,748
+大错特错
+No, no, no.
+
+381
+00:22:50,748 --> 00:22:55,228
+我们坐得就跟房间后面那 10 个大屏幕一样靠后
+We were like 10 of those gigantic big screens back in the room.
+
+382
+00:22:55,975 --> 00:22:58,940
+不过这并没有减少孩子们的热情
+But it was nonstop cool stuff for kids.
+
+383
+00:22:58,940 --> 00:23:02,425
+大会的其中一天 全体开发人员也出场了 这可把孩子们激动坏了
+And they had a moment on one of the days where they brought out all of the developers.
+
+384
+00:23:02,803 --> 00:23:04,339
+当工程师们出来的时候
+And when the engineers came out,
+
+385
+00:23:05,100 --> 00:23:08,640
+所有在场的孩子都站起来尖叫
+literally every kid in this audience was like standing on their chair screaming.
+
+386
+00:23:08,640 --> 00:23:11,160
+如果你看过披头士乐队表演的视频
+Like if you've ever seen a, here's the Beatles,
+
+387
+00:23:11,160 --> 00:23:13,550
+那时候就像披头士乐队来美国时一样
+like the Beatles come to America video.
+
+388
+00:23:13,550 --> 00:23:13,875
+那时候就像披头士乐队来美国时一样
+
+389
+00:23:13,875 --> 00:23:14,550
+那时候就像披头士乐队来美国时一样
+It was like that.
+
+390
+00:23:14,550 --> 00:23:19,275
+粉丝们就好像是“我没办法相信 他们就在我们眼前 他们太棒了”
+I mean, it was like, I can't believe we're like near them and they're amazing.
+
+391
+00:23:19,275 --> 00:23:21,350
+在讲演期间
+And, you know, during the sessions,
+
+392
+00:23:21,350 --> 00:23:23,370
+人们都在试图得到他们的签名
+people were trying to get their autographs and it was,
+
+393
+00:23:23,882 --> 00:23:26,186
+这是…我和我的孩子坐在那里
+you know, I'm sitting there with my kids being like
+
+394
+00:23:26,186 --> 00:23:30,850
+我在想 我开发操作系统 连接互联网
+I work on operating systems that connect the Internet
+
+395
+00:23:30,850 --> 00:23:34,690
+这样你们才能在一起玩游戏吧？
+so that you guys can actually game together.
+
+396
+00:23:34,690 --> 00:23:36,575
+我们做错了什么 才会如此默默无闻呢？
+What are we doing wrong?
+
+397
+00:23:36,575 --> 00:23:37,700
+但是孩子们就像
+But, you know, kids are just being like,
+
+398
+00:23:37,700 --> 00:23:40,850
+我长大后要成为使用 JavaScript 的人！
+I'm going to be a JavaScript person when I grow up.
+
+399
+00:23:40,850 --> 00:23:41,525
+我长大后要成为使用 JavaScript 的人！
+Yes.
+
+400
+00:23:41,525 --> 00:23:48,000
+是的 那个活动带来的热烈氛围令人着迷
+And, you know, just watching the level of enthusiasm at that event was fascinating.
+
+401
+00:23:48,000 --> 00:23:50,000
+但…这是一个电子游戏
+But it's a video game.
+
+402
+00:23:51,400 --> 00:23:53,832
+在 70 年代的某一段时间
+There was a time back in the seventies
+
+403
+00:23:54,024 --> 00:23:56,584
+每个人的入门语言都是 BASIC
+when everyone's first language was BASIC.
+
+404
+00:23:57,000 --> 00:23:58,632
+然后可能是 C
+And then maybe it was C.
+
+405
+00:23:59,000 --> 00:24:03,000
+近来 人们开始使用 Java 或 Python
+More recently, people have been starting with Java or Python.
+
+406
+00:24:03,368 --> 00:24:05,608
+但是可视化语言编程和游戏
+But visual languages and games
+
+407
+00:24:05,608 --> 00:24:10,000
+正在催生我们鲜有设想的编程未来
+are ushering in a coding future that we're only beginning to imagine.
+
+408
+00:24:10,280 --> 00:24:14,312
+尽管对于已经从事多年编程工作的人来说 这似乎微不足道
+Even though it may seem trivial to someone who's been programming for years,
+
+409
+00:24:14,312 --> 00:24:17,937
+但我开始游玩的那一刻
+it's, you know, like that first moment of, I'm playing.
+
+410
+00:24:17,937 --> 00:24:20,232
+我甚至没有意识到 我其实是在学习一种
+And I don't even realize that I'm actually learning something
+
+411
+00:24:20,232 --> 00:24:21,768
+可以让我受益终生的东西
+that could turn into a lifelong skill.
+
+412
+00:24:23,750 --> 00:24:28,000
+Robyn Bergeron 是红帽的 Ansible 社区架构师
+Robyn Bergeron is the community architect of Ansible at Red Hat.
+
+413
+00:24:32,262 --> 00:24:35,820
+BASIC 邀请大学生进入编程世界
+BASIC invited college students into the world of programming.
+
+414
+00:24:36,332 --> 00:24:40,876
+而 Minecraft 等游戏则邀请小学生进入当今的编程世界
+And games like Minecraft invite elementary school students into that world today.
+
+415
+00:24:41,452 --> 00:24:46,252
+但是从某种意义上说 创造的动力并没有改变
+But in a way, the creative impulse behind all of this hasn't changed.
+
+416
+00:24:46,650 --> 00:24:48,748
+那些大学生在学习 BASIC？
+Those college kids exploring BASIC.
+
+417
+00:24:48,925 --> 00:24:51,954
+是的 他们经常用它来编写游戏
+Yeah, they were often using it to build their own games.
+
+418
+00:24:52,175 --> 00:24:54,514
+最常见的似乎是足球题材
+Lots of fantasy football, apparently.
+
+419
+00:24:55,000 --> 00:25:00,000
+创新精神是驱使我们学习编程语言的第一推动力
+Our creative spirit is what drives us toward programming languages in the first place.
+
+420
+00:25:00,402 --> 00:25:05,202
+这种驱动力让我们使世界变得更好 或变得更加有趣
+That drive to tweak the world, make it better or just more fun.
+
+421
+00:25:08,274 --> 00:25:10,066
+下次 在第 3 集中
+Next time in episode three,
+
+422
+00:25:10,442 --> 00:25:14,000
+我们会讲述 全新的编程语言究竟从何而来？
+where do brand new programming languages come from anyway?
+
+423
+00:25:14,282 --> 00:25:16,846
+我们会了解到 巨大挑战
+We're learning how incredible challenges
+
+424
+00:25:17,075 --> 00:25:20,467
+是如何推动着开发人员从过去的语言中走出来
+push developers to walk away from the languages of yesterday
+
+425
+00:25:20,595 --> 00:25:23,000
+并在今天创造出新事物的
+and build something totally new today.
+
+426
+00:25:26,250 --> 00:25:29,706
+《代码英雄》是红帽出品的原创播客
+Command Line Heroes is an original podcast from Red Hat.
+
+427
+00:25:30,730 --> 00:25:33,482
+如果你想更深入地了解 BASIC 的起源
+If you want to dive deeper into the origins of BASIC
+
+428
+00:25:33,610 --> 00:25:35,722
+或在本集中听到的其他内容
+or anything else you heard on this episode,
+
+429
+00:25:35,967 --> 00:25:40,319
+请转至 redhat.com/commandlineheroes
+head on over to to redhat.com/commandlineheroes.
+
+430
+00:25:44,000 --> 00:25:45,487
+我是 Saron Yitbarek
+I'm Saron Yitbarek. Until next time, keep on coding.
+
+431
+00:25:45,487 --> 00:25:47,709
+在下期节目到来之前 也请继续编程
+I'm Saron Yitbarek. Until next time, keep on coding.
+
